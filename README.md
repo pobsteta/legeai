@@ -24,9 +24,11 @@ tomes/
     echantillon-de-voix.md         — l'échantillon validé des trois registres (p. 3, 8-12, 44-45, 49, 51)
     texte/livraison-1-p01-27.md    — texte définitif des pages 1 à 27 (ouverture, planche, état civil, l'année)
     pdf/livraison-1-p01-27.pdf     — le PDF de relecture correspondant
+    cartes/carte-cassini-forets-de-chene.{svg,pdf,png} — carte « à la manière de Cassini » des plus belles forêts de chêne (base de la p. 58)
 outils/
   build_pdf.py                     — markdown d'une livraison → PDF de relecture (reportlab)
   geai_suivi.py                    — génère le classeur de suivi des photos vierge (openpyxl)
+  carte_cassini.py                 — génère la carte de Cassini des forêts de chêne (shapely, SVG ; données Natural Earth et france-geojson, voir l'en-tête du script)
   requirements.txt
 ```
 
@@ -68,6 +70,9 @@ python3 outils/build_pdf.py tomes/01-le-chene/texte/livraison-1-p01-27.md tomes/
 
 # Classeur de suivi des photos vierge
 python3 outils/geai_suivi.py photos/suivi-des-photos.xlsx
+
+# Carte de Cassini des forêts de chêne (télécharger d'abord les données : voir l'en-tête du script)
+python3 outils/carte_cassini.py && rsvg-convert -f pdf -o carte.pdf geo/carte-cassini-forets-de-chene.svg
 ```
 
 `build_pdf.py` utilise les polices Caladea et Carlito (paquet `fonts-crosextra-caladea` / `fonts-crosextra-carlito` sous Debian/Ubuntu) ; adapter le chemin `FD` en tête du script si elles sont ailleurs.
