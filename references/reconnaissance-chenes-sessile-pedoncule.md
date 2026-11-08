@@ -1,13 +1,13 @@
 # Références — Distinguer le chêne sessile du chêne pédonculé
 
-*Fiches techniques de reconnaissance, relevées le 8 novembre 2026. Elles servent de sources aux pages 4-5 du tome 1 (planche d'identification, « Les trois gestes ») et à la vérification des planches contre la* Flore forestière française. *Les fichiers PDF sont à déposer dans ce dossier, sous le nom indiqué, dès qu'ils ont été téléchargés (les serveurs du CNPF et de l'INRAE ne sont pas accessibles depuis l'environnement qui a préparé ce dépôt).*
+*Fiches techniques de reconnaissance, relevées le 8 novembre 2026. Elles servent de sources aux pages 4-5 du tome 1 (planche d'identification, « Les trois gestes ») et à la vérification des planches contre la* Flore forestière française. *Les PDF sont dans ce dossier, sous les noms indiqués (déposés le 8 novembre 2026) ; seule la fiche du CNPF Nouvelle-Aquitaine reste à télécharger.*
 
-| Fichier attendu | Document | Lien |
+| Fichier | Document | Lien |
 |---|---|---|
 | `cnpf-bretagne-pdl_distinguer-chenes-sessile-pedoncule_2018.pdf` | CNPF Bretagne–Pays de la Loire, *Distinguer les chênes sessile et pédonculé* (janvier 2010, mises à jour septembre 2015 et mars 2018) | https://bretagne-paysdelaloire.cnpf.fr/sites/bretagne-paysdelaloire/files/2021-12/distinguer_les_chenes_sessile_et_pedoncule_PDL.pdf |
 | `cnpf-bfc_chene-sessile-chene-pedoncule_comment-les-reconnaitre.pdf` | CNPF Bourgogne-Franche-Comté, *Chêne sessile, chêne pédonculé — Comment les reconnaître ?* | https://bourgognefranchecomte.cnpf.fr/sites/socle/files/cnpf-old/chene_sessile_chene_pedoncule.pdf |
 | `cnpf-ifc_fiche-essence-1_chene-pedoncule-sessile-pubescent_2024.pdf` | CNPF Île-de-France–Centre, *Fiche essence 1 — Chêne pédonculé, sessile et pubescent* (2024) | https://ifc.cnpf.fr/sites/ifc/files/2024-03/Fiche%20Essence%201%20-%20Che%CC%82ne%20Pe%CC%81doncule%CC%81,%20Sessile%20et%20Pubescent.pdf |
-| `cnpf-nouvelle-aquitaine_fiche-essence-chenes_2024.pdf` | CNPF Nouvelle-Aquitaine, *Fiche essence — Chênes* (2024) | https://nouvelle-aquitaine.cnpf.fr/sites/nouvelle-aquitaine/files/2024-07/FICHE%20ESSENCE-Ch%C3%AAnes%20-%202024.pdf |
+| `cnpf-nouvelle-aquitaine_fiche-essence-chenes_2024.pdf` *(à télécharger)* | CNPF Nouvelle-Aquitaine, *Fiche essence — Chênes* (2024) | https://nouvelle-aquitaine.cnpf.fr/sites/nouvelle-aquitaine/files/2024-07/FICHE%20ESSENCE-Ch%C3%AAnes%20-%202024.pdf |
 | `onf-lebourgeois_reconnaissance-chenes-sessile-pedoncule_formation-2008.pdf` | F. Lebourgeois (AgroParisTech Nancy), *Reconnaissance des chênes sessile et pédonculé*, support de formation ONF, 17-18 juin 2008 | https://silva.nancy.hub.inrae.fr/Media/Files/francois-lebourgeois/enseignement/reconnaissance_chenes.pdf |
 
 ## Ce que disent les fiches (synthèse)
