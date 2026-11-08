@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Sorties temporaires
+/preview/
+*.tmp
+~$*
+
+# Système
+.DS_Store
+Thumbs.db
