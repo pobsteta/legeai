@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Assemble les planches comparatives chêne pédonculé / chêne sessile à partir des dessins générés."""
+"""Assemble les planches comparatives chêne pédonculé / chêne sessile à partir des dessins de elements/.
+
+Usage (depuis la racine du dépôt) : python3 outils/compose_planches.py
+Pour remplacer un dessin : déposer le nouveau fichier dans tomes/01-le-chene/planches/elements/ sous le même nom
+(600 × 800 px ou plus, fond blanc ; le script normalise le point blanc et redimensionne).
+"""
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import textwrap, os
 
-SRC = "/tmp/claude-tool-results/5a9c9548-5d63-52b4-bd3e-b7055519ccb1/"
-OUT = "/home/claude/planches/"
+SRC = "tomes/01-le-chene/planches/elements/"  # dessins déjà préparés (600 × 800, fond blanc)
+OUT = "tomes/01-le-chene/planches/"
 F = "/usr/share/fonts/truetype/"
 f_title = ImageFont.truetype(F + "google-fonts/Lora-Variable.ttf", 54)
 f_sub = ImageFont.truetype(F + "google-fonts/Lora-Italic-Variable.ttf", 30)
@@ -17,14 +22,14 @@ INK = (43, 36, 24)
 GREY = (110, 104, 92)
 
 ELEMENTS = {  # clé : (fichier, recadrage bas en fraction, nom de fichier de sortie)
-    "feuille_ped": ("mcp-Magnific-blob-1794146295615-voguds-ef818d43.jpg", 0.0, "pedoncule_feuille.png"),
-    "feuille_ses": ("mcp-Magnific-blob-1794146306973-3k4kwd-1b4ee38e.jpg", 0.0, "sessile_feuille.png"),
-    "gland_ped": ("mcp-Magnific-blob-1794146371970-q1rzar-cc23fa4c.jpg", 0.0, "pedoncule_glands.png"),
-    "gland_ses": ("mcp-Magnific-blob-1794146376644-wa4br8-7a3fa466.jpg", 0.0, "sessile_glands.png"),
-    "bourgeon_ped": ("mcp-Magnific-blob-1794146387036-f3mzdy-3d4e6c4f.jpg", 0.0, "pedoncule_bourgeons.png"),
-    "bourgeon_ses": ("mcp-Magnific-blob-1794146393966-r908xs-92a48216.jpg", 0.0, "sessile_bourgeons.png"),
-    "ecorce_ped": ("mcp-Magnific-blob-1794146438428-cl8bgh-539bd4b4.jpg", 0.17, "pedoncule_ecorce.png"),
-    "ecorce_ses": ("mcp-Magnific-blob-1794146442605-98gob9-7a0f41b2.jpg", 0.0, "sessile_ecorce.png"),
+    "feuille_ped": ("pedoncule_feuille.png", 0.0, "pedoncule_feuille.png"),
+    "feuille_ses": ("sessile_feuille.png", 0.0, "sessile_feuille.png"),
+    "gland_ped": ("pedoncule_glands.png", 0.0, "pedoncule_glands.png"),
+    "gland_ses": ("sessile_glands.png", 0.0, "sessile_glands.png"),
+    "bourgeon_ped": ("pedoncule_bourgeons.png", 0.0, "pedoncule_bourgeons.png"),
+    "bourgeon_ses": ("sessile_bourgeons.png", 0.0, "sessile_bourgeons.png"),
+    "ecorce_ped": ("pedoncule_ecorce.png", 0.0, "pedoncule_ecorce.png"),
+    "ecorce_ses": ("sessile_ecorce.png", 0.0, "sessile_ecorce.png"),
 }
 
 def prep(key, w=600, h=800):
