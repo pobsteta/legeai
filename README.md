@@ -25,6 +25,8 @@ tomes/
     texte/livraison-1-p01-27.md    — texte définitif des pages 1 à 27 (ouverture, planche, état civil, l'année)
     pdf/livraison-1-p01-27.pdf     — le PDF de relecture correspondant
     cartes/carte-cassini-forets-de-chene.{svg,pdf,png} — carte « à la manière de Cassini » des plus belles forêts de chêne (base de la p. 58)
+references/                        — fiches techniques de référence (CNPF, ONF…) et leur synthèse
+  reconnaissance-chenes-sessile-pedoncule.md — les fiches pour distinguer les deux chênes, liens et critères ; PDF à déposer à côté
 outils/
   build_pdf.py                     — markdown d'une livraison → PDF de relecture (reportlab)
   geai_suivi.py                    — génère le classeur de suivi des photos vierge (openpyxl)
