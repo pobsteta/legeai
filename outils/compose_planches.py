@@ -208,7 +208,8 @@ def poser_loupe(cell, key, transfo):
     gp = normaliser(Image.open(SRC + fn).convert("L"))
     bbox = ImageOps.invert(gp).getbbox()
     gp = gp.crop(bbox)
-    side = int(2 * r_loupe * 0.86)
+    gp = gp.crop((0, 0, gp.width, int(gp.height * 0.78)))  # le bourgeon et sa base, moins de rameau
+    side = int(2 * r_loupe * 0.88)
     gp = ImageOps.contain(gp, (side, side), method=Image.LANCZOS)
     disque = Image.new("L", (2 * r_loupe, 2 * r_loupe), 255)
     disque.paste(gp, ((2 * r_loupe - gp.width) // 2, (2 * r_loupe - gp.height) // 2))
