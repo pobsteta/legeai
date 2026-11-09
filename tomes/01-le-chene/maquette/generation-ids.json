@@ -1,0 +1,226 @@
+{
+ "_doc": "Identifiants Magnific des images générées pour la maquette illustrée (9 novembre 2026, compte abonné, 2 k, mode auto). Clé = page (et zone s'il y en a plusieurs). Les originaux sont dans le projet personnel Magnific de l'auteur ; les copies locales (1024 px) sont dans tomes/01-le-chene/images/.",
+ "1": {
+  "id": "TdlylfPVNR",
+  "ratio": "3:4",
+  "style": "gravure"
+ },
+ "3": {
+  "id": "fHZcZSSCDY",
+  "ratio": "3:4",
+  "style": "scène",
+  "ref": "JNhfAn4Oq4"
+ },
+ "6-7/2": {
+  "id": "eI767rRdqL",
+  "ratio": "2:1",
+  "style": "gravure",
+  "controle": "planche d'identification : sept feuilles à contrôler contre la Flore"
+ },
+ "8": {
+  "id": "fHZcZ44CDY",
+  "ratio": "3:4",
+  "style": "scène",
+  "provisoire": "individu suivi : à refaire d'après la photo de l'auteur"
+ },
+ "9": {
+  "id": "LwdhdMFswO",
+  "ratio": "2:1",
+  "style": "scène"
+ },
+ "10": {
+  "id": "jUemeePLD0",
+  "ratio": "3:2",
+  "style": "gravure + rouge"
+ },
+ "11": {
+  "id": "u5GVGWBQLD",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "12": {
+  "id": "8a424ZkIrU",
+  "ratio": "3:2",
+  "style": "scène"
+ },
+ "13": {
+  "id": "fHZcZBBCDY",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "14": {
+  "id": "P3fbf7X42C",
+  "ratio": "3:2",
+  "style": "gravure"
+ },
+ "15": {
+  "id": "mE6z6tAhJQ",
+  "ratio": "3:4",
+  "style": "gravure"
+ },
+ "16": {
+  "id": "1lM8DLbr4r",
+  "ratio": "3:2",
+  "style": "gravure"
+ },
+ "17": {
+  "id": "mE6ziQThJQ",
+  "ratio": "3:2",
+  "style": "scène"
+ },
+ "18": {
+  "id": "0esOlItTfW",
+  "ratio": "3:4",
+  "style": "scène",
+  "provisoire": "individu suivi : à refaire d'après la photo de l'auteur"
+ },
+ "19": {
+  "id": "79mQhG1JAL",
+  "ratio": "2:1",
+  "style": "gravure"
+ },
+ "20": {
+  "id": "1lM8Digr4r",
+  "ratio": "4:3",
+  "style": "scène",
+  "ref": "JNhfAn4Oq4",
+  "note": "carte des caches à poser en vectoriel"
+ },
+ "21": {
+  "id": "iGFrbhR3uK",
+  "ratio": "3:4",
+  "style": "gravure + brun"
+ },
+ "22": {
+  "id": "TdlyUrAVNR",
+  "ratio": "3:2",
+  "style": "scène"
+ },
+ "23": {
+  "id": "Cq20z2lEEy",
+  "ratio": "3:4",
+  "style": "scène",
+  "provisoire": "individu suivi : à refaire d'après la photo de l'auteur ; médaillon bourgeons et vignette du village à ajouter"
+ },
+ "24": {
+  "id": "lJBaItBgv9",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "25": {
+  "id": "8a426AKIrU",
+  "ratio": "3:4",
+  "style": "gravure"
+ },
+ "26": {
+  "id": "gOoftQtSXO",
+  "ratio": "3:2",
+  "style": "scène"
+ },
+ "27": {
+  "id": "dtJiPnvXSL",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "28": {
+  "id": "vQ3Y2B6a47",
+  "ratio": "3:2",
+  "style": "gravure"
+ },
+ "29": {
+  "id": "s7Xvtwml8e",
+  "ratio": "3:2",
+  "style": "scène"
+ },
+ "30": {
+  "id": "UPIEaNjwny",
+  "ratio": "4:3",
+  "style": "scène",
+  "note": "les trois cercles (10 m, 30 m, 300 m-1 km) à poser en vectoriel sur la vue"
+ },
+ "31": {
+  "id": "yiaqQnJPW9",
+  "ratio": "2:1",
+  "style": "gravure"
+ },
+ "32": {
+  "id": "O6vHu08ynm",
+  "ratio": "1:1",
+  "style": "scène"
+ },
+ "33": {
+  "id": "jUem8GELD0",
+  "ratio": "2:1",
+  "style": "gravure"
+ },
+ "34": {
+  "id": "6AQ15hhiJO",
+  "ratio": "3:4",
+  "style": "scène",
+  "provisoire": "individu suivi : à refaire d'après la photo de l'auteur ; médaillon coupe du tronc à ajouter"
+ },
+ "35": {
+  "id": "MBS4OsnDCm",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "37": {
+  "id": "s7Xvto4l8e",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "38": {
+  "id": "KLTBdqZkqp",
+  "ratio": "3:4",
+  "style": "planche en couleur"
+ },
+ "39": {
+  "id": "bxcdeK15Y2",
+  "ratio": "2:1",
+  "style": "scène"
+ },
+ "40-41": {
+  "id": "XmO3iv5Bfo",
+  "ratio": "3:4",
+  "style": "scène",
+  "note": "les trente numéros à poser en vectoriel"
+ },
+ "42-43": {
+  "id": "3zHxrVyREY",
+  "ratio": "2:1",
+  "style": "planche en couleur",
+  "ref": "JNhfAn4Oq4",
+  "note": "le réseau « qui dépend de qui » à dessiner en vectoriel sous les portraits"
+ },
+ "44": {
+  "id": "0esOJftTfW",
+  "ratio": "2:1",
+  "style": "gravure"
+ },
+ "45": {
+  "id": "cpLJ7EC0eP",
+  "ratio": "3:4",
+  "style": "scène"
+ },
+ "48": {
+  "id": "Sy8CfVMUb8",
+  "ratio": "2:1",
+  "style": "scène"
+ },
+ "49": {
+  "id": "p8wN9soehw",
+  "ratio": "3:2",
+  "style": "scène"
+ },
+ "50/frise": {
+  "id": "9ZEK5KCNYZ",
+  "ratio": "2:1 (4:1 refusé par le mode auto)",
+  "style": "gravure"
+ },
+ "53": {
+  "id": "P3fbqx242C",
+  "ratio": "2:1",
+  "style": "scène",
+  "ref": "JNhfAn4Oq4"
+ }
+}

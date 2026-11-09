@@ -28,7 +28,9 @@ tomes/
     texte/livraison-3-p46-53.md    — texte définitif des pages 46 à 53 (d'où il vient, où il va ; l'arbre et nous, menaces et protection)
     pdf/livraison-{1,2,3}-*.pdf    — les PDF de relecture correspondants (texte seul)
     pdf/maquette-illustree.pdf     — maquette de relecture illustrée des livraisons disponibles : images existantes en place, cadres « image à produire » avec leur brief, le Jacques à chaque bulle
-    maquette/images.json           — images déjà produites, par page (chemin, note « image provisoire », hauteur maximale)
+    maquette/images.json           — images placées dans la maquette, par page (chemin, note, hauteur, zones, une planche par page)
+    maquette/generation-ids.json   — identifiants Magnific des images générées le 9 novembre (originaux 2 k dans le compte de l'auteur)
+    images/                        — les 44 images générées (copies 1 024 px) et les 7 figures vectorielles (PNG + PDF) ; prompts-images.md : prompts, identifiants, contrôle, écartés
     maquette/poses.json            — attitude du Jacques (J1-J12) à poser près de chaque bulle et Parole, par page
     cartes/carte-cassini-forets-de-chene.{svg,pdf,png} — carte « à la manière de Cassini » des plus belles forêts de chêne (base de la p. 58)
     planches/                      — planches comparatives pédonculé / sessile (maquette d'étude, p. 4-5) : planches I (feuille, gland), II (bourgeon, écorce) et III (port, fleur), éléments, prompts et contrôle
@@ -37,6 +39,7 @@ references/                        — fiches techniques de référence (CNPF, O
 outils/
   build_pdf.py                     — markdown d'une livraison → PDF de relecture (reportlab) ; avec --illustre, maquette illustrée (images, cadres à produire, Jacques et bulles en Patrick Hand)
   build_maquette.py                — enchaîne les livraisons disponibles en mode illustré dans un seul PDF numéroté en continu
+  figures_vectorielles.py          — cartes, échelle des vies, chromosomes et graphique IGN dessinés en vectoriel (matplotlib, shapely ; données Natural Earth et france-geojson, voir l'en-tête)
   geai_suivi.py                    — génère le classeur de suivi des photos vierge (openpyxl)
   carte_cassini.py                 — génère la carte de Cassini des forêts de chêne (shapely, SVG ; données Natural Earth et france-geojson, voir l'en-tête du script)
   compose_planches.py              — assemble les planches comparatives à partir de planches/elements/ (Pillow)
@@ -89,7 +92,10 @@ python3 outils/build_pdf.py tomes/01-le-chene/texte/livraison-3-p46-53.md tomes/
   --livraison "Texte, livraison 3 — pages 46 à 53" --contenu "D'où il vient, où il va · L'arbre et nous, menaces et protection" \
   --date "9 novembre 2026"
 
-# Maquette de relecture illustrée (toutes les livraisons présentes dans texte/, 64 pages A4 le 9 novembre)
+# Figures de données (télécharger d'abord les GeoJSON dans GEO_DIR : voir l'en-tête du script)
+GEO_DIR=/tmp/geo python3 outils/figures_vectorielles.py
+
+# Maquette de relecture illustrée (toutes les livraisons présentes dans texte/ ; 100 pages A4 le 9 novembre au soir)
 python3 outils/build_maquette.py --date "9 novembre 2026"
 
 # Classeur de suivi des photos vierge
@@ -105,7 +111,7 @@ python3 outils/carte_cassini.py && rsvg-convert -f pdf -o carte.pdf geo/carte-ca
 
 - Collection : positionnement, charte, 24 charades, fiche de personnage et brief de la planche modèle rédigés et validés. Générateur d'images retenu : Magnific. **Planche modèle v0 du Jacques** (trois angles, douze attitudes, huit têtes) générée le 9 novembre d'après la seule description de la fiche — maquette d'étude, à refaire en v1 à partir des photos de geais de l'auteur (`collection/jacques/`).
 - Photos : fiche de prises de vue et tableur de suivi prêts ; la campagne commence maintenant (glandée en cours, geais au travail — point E, indispensable à la planche modèle du Jacques).
-- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraisons 1 (p. 1-27), 2 (p. 28-45) et 3 (p. 46-53) écrites et sourcées** (les livraisons 2 et 3 reprennent les pages 44-45, 49 et 51 de l'échantillon de voix, désormais sourcées ; la p. 51 corrige l'entrée « tanins contre le mildiou », infirmée par l'étude de 2025), carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude (pièce de 1 € à l'échelle dans chaque case au centimètre, homme debout pour le port ; loupe sur le bourgeon terminal dans les cases des bourgeons ; tous les dessins régénérés en 2 k le 9 novembre sur le compte Magnific abonné — voir `planches/prompts-planches-comparatives.md`). **Maquette de relecture illustrée** des pages 1 à 53 assemblée le 9 novembre (`pdf/maquette-illustree.pdf`) : planches p. 4-5 et Jacques v0 en place, 45 cadres « image à produire » avec leur brief, le Jacques posé à chacune des 52 bulles et Paroles. Reste la livraison 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite), puis la production des images page par page.
+- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraisons 1 (p. 1-27), 2 (p. 28-45) et 3 (p. 46-53) écrites et sourcées** (les livraisons 2 et 3 reprennent les pages 44-45, 49 et 51 de l'échantillon de voix, désormais sourcées ; la p. 51 corrige l'entrée « tanins contre le mildiou », infirmée par l'étude de 2025), carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude (pièce de 1 € à l'échelle dans chaque case au centimètre, homme debout pour le port ; loupe sur le bourgeon terminal dans les cases des bourgeons ; tous les dessins régénérés en 2 k le 9 novembre sur le compte Magnific abonné — voir `planches/prompts-planches-comparatives.md`). **Maquette de relecture illustrée** des pages 1 à 53 (`pdf/maquette-illustree.pdf`, 9 novembre au soir) : **toutes les images sont en place** — les trois planches (une par page), 44 images générées avec Magnific en 2 k d'après les légendes (3 245 crédits, deux reprises : pic mar, manuscrit sans texte), 7 figures de données dessinées en vectoriel, le Jacques à chacune des 52 bulles et Paroles. Statut maquette d'étude : les vues de l'individu suivi (p. 8, 18, 23, 34) et le Jacques sont à refaire d'après les photos de l'auteur ; les planches d'identification sont à contrôler ; numéros, cercles et légendes internes seront posés en vectoriel (`images/prompts-images.md`). Reste la livraison 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite), puis la production des images page par page.
 - À fournir par l'auteur : le lieu de l'individu suivi (pour vérifier les regards sur Cassini et le cadastre), une photographie ancienne du village, les dates réelles de débourrement, les noms lorrains du chêne, le chapitre « De quercu » de la *Physica* (Monat ou Verten), un chêne remarquable lorrain pour la p. 58, le nom d'auteur de couverture.
 
 ## Droits

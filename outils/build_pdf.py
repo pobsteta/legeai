@@ -15,6 +15,8 @@ suivent lui appartiennent jusqu'au prochain marqueur, note, titre ou séparateur
 """
 import re
 import argparse
+from reportlab import rl_config
+rl_config.useA85 = 0  # pas d'encodage ASCII85 des images : PDF un quart plus léger
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.lib import colors
@@ -47,7 +49,7 @@ ap.add_argument("--note-couverture", dest="note_couverture", default=None, help=
 ARGS = ap.parse_args()
 SRC, OUT, DATE = ARGS.src, ARGS.out, ARGS.date
 
-import os, json
+import os, json, tempfile
 REPO = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 ENTETE = ARGS.entete or ("Maquette de relecture illustrée" if ARGS.illustre else "Manuscrit de travail")
 
@@ -226,6 +228,29 @@ parole_style = ParagraphStyle("parole", parent=bulle_style, fontSize=11.5, leadi
 note_image = ParagraphStyle("note_image", parent=legende, textColor=OCHRE, fontName="Carlito")
 
 
+_VIGNETTES = {}
+
+
+def vignette_reader(pose, max_h_px=420):
+    """Un seul ImageReader par attitude (copie réduite, PNG à transparence), réutilisé pour toutes les bulles :
+    une image dans le PDF par attitude au lieu d'une par bulle."""
+    if pose not in _VIGNETTES:
+        fichier, _ = JACQUES_POSES[pose]
+        src = os.path.join(JACQUES_DIR, fichier)
+        try:
+            from PIL import Image as PILImage
+            os.makedirs(_CACHE, exist_ok=True)
+            out = os.path.join(_CACHE, fichier[:-4] + "_%dpx.png" % max_h_px)
+            if not os.path.exists(out):
+                im = PILImage.open(src).convert("RGBA")
+                im.thumbnail((max_h_px * 2, max_h_px), PILImage.LANCZOS)
+                im.save(out, "PNG", optimize=True)
+            _VIGNETTES[pose] = ImageReader(out)
+        except Exception:
+            _VIGNETTES[pose] = ImageReader(src)
+    return _VIGNETTES[pose]
+
+
 class JacquesBulle(Flowable):
     """Le Jacques détouré et sa bulle vectorielle (Patrick Hand), côte à côte sur la largeur du texte.
     La bulle n'est jamais générée dans l'image : elle est dessinée ici, à la mise en page."""
@@ -233,12 +258,12 @@ class JacquesBulle(Flowable):
     def __init__(self, text, pose, W, kind="Bulle"):
         Flowable.__init__(self)
         fichier, cote = JACQUES_POSES[pose]
-        self.img = os.path.join(JACQUES_DIR, fichier)
+        self.img = vignette_reader(pose)
         self.cote = cote  # bec à droite ('d') : oiseau à gauche, bulle à droite ; 'g' : l'inverse
         self.W = W
         self.kind = kind
         self.vh = (30 if kind == "Bulle" else 38) * mm
-        iw, ih = ImageReader(self.img).getSize()
+        iw, ih = self.img.getSize()
         self.vw = self.vh * iw / ih
         self.gap, self.tail, self.pad = 4 * mm, 6 * mm, 4 * mm
         txt = text.strip()
@@ -296,41 +321,92 @@ def jacques_illustre(text, W, kind, page_key, counter):
     return [KeepTogether(out)]
 
 
-def image_zone(page_key, legende_text, W, max_h=118 * mm):
-    """Image(s) existante(s) de la page + légende ; sinon cadre gris « image à produire » portant la légende (le brief)."""
+_CACHE = os.path.join(tempfile.gettempdir(), "legeai_maquette_cache")
+
+
+def _leger(f, max_px=1600):
+    """Copie JPEG allégée d'un PNG opaque (planches, figures) pour la maquette de relecture ; les PNG à transparence
+    et les JPEG sont pris tels quels. Le fichier d'origine n'est jamais modifié."""
+    if not f.lower().endswith(".png"):
+        return f
+    try:
+        from PIL import Image as PILImage
+        im = PILImage.open(f)
+        if im.mode in ("RGBA", "LA") or "transparency" in im.info:
+            return f
+        os.makedirs(_CACHE, exist_ok=True)
+        out = os.path.join(_CACHE, os.path.basename(f)[:-4] + "_%d.jpg" % os.path.getmtime(f))
+        if not os.path.exists(out):
+            im = im.convert("RGB")
+            if max(im.size) > max_px:
+                im.thumbnail((max_px, max_px), PILImage.LANCZOS)
+            im.save(out, "JPEG", quality=88, optimize=True)
+        return out
+    except Exception:
+        return f
+
+
+def _fit(f, max_w, max_h):
+    f = _leger(f)
+    iw, ih = ImageReader(f).getSize()
+    w, h = max_w, max_w * ih / iw
+    if h > max_h:
+        w, h = max_h * iw / ih, max_h
+    return RLImage(f, width=w, height=h)
+
+
+def image_zone(page_key, legende_text, W, max_h=118 * mm, zone=0):
+    """Image(s) existante(s) de la page + légende ; sinon cadre gris « image à produire » portant la légende (le brief).
+    images.json : liste de fichiers, ou objet {fichiers, note, hauteur_mm, empiler, une_par_page}, ou {zones: [...]}
+    quand la page a plusieurs emplacements d'image (zone = rang de l'emplacement dans la page)."""
     spec = IMAGES.get(page_key)
+    if isinstance(spec, dict) and "zones" in spec:
+        zones = spec["zones"]
+        spec = zones[zone] if zone < len(zones) else None
     note = None
     files = []
+    empiler = une_par_page = False
     if isinstance(spec, dict):
         files, note = spec.get("fichiers", []), spec.get("note")
+        empiler, une_par_page = bool(spec.get("empiler")), bool(spec.get("une_par_page"))
         if spec.get("hauteur_mm"):
             max_h = float(spec["hauteur_mm"]) * mm
     elif isinstance(spec, list):
         files = spec
     files = [os.path.join(REPO, f) for f in files if os.path.exists(os.path.join(REPO, f))]
     out = []
+    leg = box([Paragraph("LÉGENDE", label), Paragraph(inline(legende_text), legende)], left_bar=RULE, pad=5, width=W)
+    if files and une_par_page:
+        # chaque image sur sa propre page, pleine hauteur ; la légende sous la dernière
+        flow = []
+        for i, f in enumerate(files):
+            flow.append(PageBreak())
+            img = _fit(f, W, 228 * mm if i == len(files) - 1 else 252 * mm)
+            img.hAlign = "CENTER"
+            flow.append(img)
+        if note:
+            flow += [Spacer(1, 3), Paragraph("<b>Image provisoire —</b> " + inline(note), note_image)]
+        flow += [Spacer(1, 4), leg, Spacer(1, 7)]
+        return flow
     if files:
         n = len(files)
         gap = 5 * mm
-        cw = (W - gap * (n - 1)) / n
-        cells = []
-        for f in files:
-            iw, ih = ImageReader(f).getSize()
-            h = cw * ih / iw
-            w = cw
-            if h > max_h:
-                w, h = max_h * iw / ih, max_h
-            cells.append(RLImage(f, width=w, height=h))
-        t = Table([cells], colWidths=[cw] * n, hAlign="CENTER")
-        t.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "BOTTOM"), ("ALIGN", (0, 0), (-1, -1), "CENTER"),
-                               ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-                               ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
-        out.append(t)
+        if empiler:
+            for f in files:
+                img = _fit(f, W, max_h); img.hAlign = "CENTER"
+                out += [img, Spacer(1, 4)]
+        else:
+            cw = (W - gap * (n - 1)) / n
+            cells = [_fit(f, cw, max_h) for f in files]
+            t = Table([cells], colWidths=[cw] * n, hAlign="CENTER")
+            t.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "BOTTOM"), ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+                                   ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                                   ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
+            out.append(t)
         if note:
             out.append(Paragraph("<b>Image provisoire —</b> " + inline(note), note_image))
             out.append(Spacer(1, 2))
-        out.append(box([Paragraph("LÉGENDE", label), Paragraph(inline(legende_text), legende)],
-                       left_bar=RULE, pad=5, width=W))
+        out.append(leg)
     else:
         inner = [Paragraph("IMAGE À PRODUIRE — PAGE %s" % page_key, label_ochre),
                  Spacer(1, 16 * mm),
@@ -506,6 +582,7 @@ def build():
     intro_skipped = 0
     cur_page = None       # clé de page courante ('28', '4-5') pour la maquette illustrée
     jacques_count = 0     # compteur pour le cycle d'attitudes par défaut
+    zone_idx = 0          # rang de l'emplacement d'image dans la page courante
     for kind, data in blocks:
         if kind == "doctitle":
             continue
@@ -524,6 +601,7 @@ def build():
                 pending_season = None
             m = re.match(r"^(Pages? [\d\-]+|Annexe) — (.*)$", data)
             cur_page = m.group(1).split(" ", 1)[1] if (m and m.group(1) != "Annexe") else None
+            zone_idx = 0
             if m:
                 story.append(Paragraph(m.group(1).upper(), h_pagenum))
                 story.append(Paragraph(inline(m.group(2), flag_brackets=False), h_page))
@@ -556,12 +634,15 @@ def build():
                 else:
                     story += jacques_box(rest, W, "Parole")
             elif mk == "Légende":
-                story += image_zone(cur_page, rest, W) if illustre else legende_box(rest, W)
+                if illustre:
+                    story += image_zone(cur_page, rest, W, zone=zone_idx); zone_idx += 1
+                else:
+                    story += legende_box(rest, W)
             elif mk.startswith("Encadré"):
                 title = mk.split("—", 1)[1].strip() if "—" in mk else ""
                 story += encadre_box(title, rest, W)
             elif mk in ("Image", "Carte") and illustre:
-                story += image_zone(cur_page, mk + " : " + rest, W)
+                story += image_zone(cur_page, mk + " : " + rest, W, zone=zone_idx); zone_idx += 1
             else:  # Image, Carte, Sommaire
                 story += placeholder_box(mk, rest, W)
             continue

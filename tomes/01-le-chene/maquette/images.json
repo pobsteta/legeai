@@ -1,29 +1,274 @@
 {
-  "_doc": "Images existantes à placer dans la maquette illustrée, par page (clé = numéro de page tel qu'écrit dans le markdown : '28' ou '4-5'). Chemins relatifs à la racine du dépôt. Une entrée est soit une liste de fichiers, soit un objet {fichiers:[...], note:'...'} quand l'image ne couvre qu'une partie de la légende. Les pages absentes reçoivent un cadre gris « image à produire » avec leur légende pour brief. Clé facultative hauteur_mm : hauteur maximale de l'image (défaut 118).",
-  "3": {
-    "fichiers": [
-      "collection/jacques/vignettes/Jacques_J02_porteur_v0.png"
-    ],
-    "note": "Jacques v0 (planche modèle, attitude J2 « le porteur ») — à remplacer par le Jacques v1 issu des photos de l'auteur.",
-    "hauteur_mm": 70
-  },
-  "4-5": [
-    "tomes/01-le-chene/planches/planche-I-feuille-gland.png",
-    "tomes/01-le-chene/planches/planche-II-bourgeon-ecorce.png",
-    "tomes/01-le-chene/planches/planche-III-port-fleur.png"
+ "_doc": "Images placées dans la maquette illustrée, par page (clé = numéro de page tel qu'écrit dans le markdown : '28' ou '4-5'). Chemins relatifs à la racine du dépôt. Une entrée est une liste de fichiers, ou un objet {fichiers, note, hauteur_mm, empiler, une_par_page}, ou {zones:[...]} quand la page a plusieurs emplacements d'image dans l'ordre du texte. Les pages absentes reçoivent un cadre gris « image à produire ». Générations Magnific du 9 novembre 2026 (2 k, copies locales 1 024 px, identifiants dans generation-ids.json) ; figures de données dessinées par outils/figures_vectorielles.py.",
+ "1": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p01-gland-germe_TdlylfPVNR.jpg"
   ],
-  "20": {
+  "hauteur_mm": 110
+ },
+ "3": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p03-jacques-porteur_fHZcZSSCDY.jpg"
+  ],
+  "hauteur_mm": 95,
+  "note": "le Jacques dessiné d'après sa planche modèle v0 — à remplacer par le Jacques v1 issu des photos de l'auteur ; le gosier gonflé n'est pas lisible"
+ },
+ "4-5": {
+  "fichiers": [
+   "tomes/01-le-chene/planches/planche-I-feuille-gland.png",
+   "tomes/01-le-chene/planches/planche-II-bourgeon-ecorce.png",
+   "tomes/01-le-chene/planches/planche-III-port-fleur.png"
+  ],
+  "une_par_page": true
+ },
+ "6-7": {
+  "zones": [
+   {
     "fichiers": [
-      "collection/jacques/vignettes/Jacques_J03_planteur_v0.png"
+     "tomes/01-le-chene/images/p06-07-carte-deux-chenes.png"
     ],
-    "note": "Partie gauche seulement (le Jacques planteur, v0) ; reste à produire : la carte des caches autour du chêne isolé.",
-    "hauteur_mm": 58
-  },
-  "42-43": {
+    "hauteur_mm": 105,
+    "note": "schéma par département transcrit des cartes IGN ; à vérifier avant maquette finale"
+   },
+   {
     "fichiers": [
-      "collection/jacques/vignettes/Jacques_J01_guetteur_v0.png"
+     "tomes/01-le-chene/images/p06-07-feuilles-des-cousins_eI767rRdqL.jpg"
     ],
-    "note": "Premier des cinq portraits (le geai, v0) ; restent à produire : cynips, processionnaire, lucane, balanin, et le réseau en bas de double page.",
-    "hauteur_mm": 58
-  }
+    "note": "planche d'identification : les sept feuilles sont à contrôler une à une contre la Flore forestière française"
+   }
+  ]
+ },
+ "8": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p08-chene-fin-avril_fHZcZ44CDY.jpg"
+  ],
+  "hauteur_mm": 125,
+  "note": "individu suivi : image provisoire générée d'après la description ; à refaire d'après la photographie de l'auteur, même point de vue à chaque saison"
+ },
+ "9": [
+  "tomes/01-le-chene/images/p09-rameau-quatre-stades_LwdhdMFswO.jpg"
+ ],
+ "10": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p10-chaton-fleurs-femelles_jUemeePLD0.jpg"
+  ],
+  "note": "fleurs femelles : stigmates à vérifier sur le vivant en mai (trois stigmates, fleur minuscule)"
+ },
+ "11": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p11-chenille-mesange_u5GVGWBQLD.jpg"
+  ],
+  "hauteur_mm": 110
+ },
+ "12": [
+  "tomes/01-le-chene/images/p12-pousse-saint-jean_8a424ZkIrU.jpg"
+ ],
+ "13": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p13-canopee-vue-d-en-bas_fHZcZBBCDY.jpg"
+  ],
+  "hauteur_mm": 125
+ },
+ "14": [
+  "tomes/01-le-chene/images/p14-cinq-galles_P3fbf7X42C.jpg"
+ ],
+ "15": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p15-cerne-agrandi_mE6z6tAhJQ.jpg"
+  ],
+  "hauteur_mm": 115,
+  "note": "schéma du cerne : à vérifier contre une coupe réelle (bois initial à gros vaisseaux, bois final dense)"
+ },
+ "16": [
+  "tomes/01-le-chene/images/p16-balanin_1lM8DLbr4r.jpg"
+ ],
+ "17": [
+  "tomes/01-le-chene/images/p17-rameau-fin-aout_mE6ziQThJQ.jpg"
+ ],
+ "18": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p18-chene-octobre-glandee_0esOlItTfW.jpg"
+  ],
+  "hauteur_mm": 125,
+  "note": "individu suivi : image provisoire générée d'après la description ; à refaire d'après la photographie de l'auteur, même point de vue à chaque saison"
+ },
+ "19": [
+  "tomes/01-le-chene/images/p19-six-glands-six-signatures_79mQhG1JAL.jpg"
+ ],
+ "20": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p20-jacques-planteur_1lM8Digr4r.jpg"
+  ],
+  "hauteur_mm": 100,
+  "note": "partie gauche ; reste à produire la carte des caches autour du chêne isolé (vectoriel)"
+ },
+ "21": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p21-gland-sous-la-litiere_iGFrbhR3uK.jpg"
+  ],
+  "hauteur_mm": 115
+ },
+ "22": [
+  "tomes/01-le-chene/images/p22-friche-novembre_TdlyUrAVNR.jpg"
+ ],
+ "23": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p23-chene-janvier_Cq20z2lEEy.jpg"
+  ],
+  "hauteur_mm": 120,
+  "note": "individu suivi : image provisoire générée d'après la description ; à refaire d'après la photographie de l'auteur, même point de vue à chaque saison ; médaillon des bourgeons (planche II) et vignette du village à ajouter"
+ },
+ "24": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p24-ecorce-habitee_lJBaItBgv9.jpg"
+  ],
+  "hauteur_mm": 118
+ },
+ "25": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p25-rondelle-tariere_8a426AKIrU.jpg"
+  ],
+  "hauteur_mm": 118,
+  "note": "cernes à légender en vectoriel ([année] sécheresse, défoliation, bonne année)"
+ },
+ "26": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p26-abroutissement_gOoftQtSXO.jpg"
+  ],
+  "note": "la trace de dents est dessinée sur un tronc : à refaire sur une tige fine"
+ },
+ "27": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p27-friche-fin-mars_dtJiPnvXSL.jpg"
+  ],
+  "hauteur_mm": 120
+ },
+ "28": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p28-gland-en-coupe_vQ3Y2B6a47.jpg"
+  ],
+  "note": "coupe : cupule, paroi, tégument, cotylédons, embryon — termes à poser en vectoriel"
+ },
+ "29": [
+  "tomes/01-le-chene/images/p29-nature-morte-glands_s7Xvtwml8e.jpg"
+ ],
+ "30": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p30-village-vue-aerienne_UPIEaNjwny.jpg"
+  ],
+  "note": "les trois cercles (dix mètres, trente mètres, trois cents mètres à un kilomètre) à poser en vectoriel sur la vue"
+ },
+ "31": [
+  "tomes/01-le-chene/images/p31-gland-plantule_yiaqQnJPW9.jpg"
+ ],
+ "32": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p32-six-dangers_O6vHu08ynm.jpg"
+  ],
+  "hauteur_mm": 118
+ },
+ "33": [
+  "tomes/01-le-chene/images/p33-quatre-ages_jUem8GELD0.jpg"
+ ],
+ "34": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p34-chene-ete-adulte_6AQ15hhiJO.jpg"
+  ],
+  "hauteur_mm": 125,
+  "note": "individu suivi : image provisoire générée d'après la description ; à refaire d'après la photographie de l'auteur, même point de vue à chaque saison ; médaillon de la coupe du tronc à ajouter"
+ },
+ "35": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p35-sous-terre_MBS4OsnDCm.jpg"
+  ],
+  "hauteur_mm": 118
+ },
+ "36": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p36-echelle-des-vies.png"
+  ],
+  "hauteur_mm": 125,
+  "note": "figure vectorielle, valeurs de l'annexe A à confirmer"
+ },
+ "37": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p37-vieux-chene-senescent_s7Xvto4l8e.jpg"
+  ],
+  "hauteur_mm": 125,
+  "note": "les repères numérotés (tête de cerf, champignons, cavités) à poser en vectoriel"
+ },
+ "38": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p38-hotes-du-vieux-bois_1lM8te4r4r.jpg"
+  ],
+  "hauteur_mm": 125
+ },
+ "39": [
+  "tomes/01-le-chene/images/p39-mort-debout-couche_bxcdeK15Y2.jpg"
+ ],
+ "40-41": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p40-41-immeuble_XmO3iv5Bfo.jpg"
+  ],
+  "hauteur_mm": 150,
+  "note": "les trente numéros à poser en vectoriel ; vérifier que les trente habitants du texte y sont"
+ },
+ "42-43": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p42-43-cinq-a-connaitre_3zHxrVyREY.jpg"
+  ],
+  "note": "le réseau « qui dépend de qui » reste à dessiner en vectoriel sous les portraits"
+ },
+ "44": [
+  "tomes/01-le-chene/images/p44-trois-chenes-trois-vies_0esOJftTfW.jpg"
+ ],
+ "45": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p45-komorebi_cpLJ7EC0eP.jpg"
+  ],
+  "hauteur_mm": 125
+ },
+ "46": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p46-europe-refuges.png"
+  ],
+  "hauteur_mm": 118,
+  "note": "figure vectorielle ; limite des glaces et refuges simplifiés"
+ },
+ "47": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p47-france-trois-chenes.png"
+  ],
+  "note": "figure vectorielle ; aires par département indicatives, à vérifier"
+ },
+ "48": [
+  "tomes/01-le-chene/images/p48-charpente-merrain-barrique_Sy8CfVMUb8.jpg"
+ ],
+ "49": [
+  "tomes/01-le-chene/images/p49-grimoire-ecorce-galles_tCNGnybmZJ.jpg"
+ ],
+ "50": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p50-frise-chene-et-pouvoir_9ZEK5KCNYZ.jpg",
+   "tomes/01-le-chene/images/p50-carte-toponymes.png"
+  ],
+  "empiler": true,
+  "hauteur_mm": 95,
+  "note": "la carte des noms est une illustration à compléter avec les noms lorrains"
+ },
+ "51": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p51-chromosomes.png"
+  ],
+  "note": "figure vectorielle ; longueurs et positions indicatives"
+ },
+ "52": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p52-graphique-ign.png"
+  ],
+  "note": "figure vectorielle ; la hauteur de la barre 2015-2024 n'est qu'indicative (+ 125 %)"
+ },
+ "53": [
+  "tomes/01-le-chene/images/p53-haie-en-octobre_P3fbqx242C.jpg"
+ ]
 }
