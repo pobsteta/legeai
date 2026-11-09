@@ -71,7 +71,7 @@ pip install -r outils/requirements.txt
 # PDF de relecture d'une livraison (une page A4 par page du livre + couverture + annexe)
 python3 outils/build_pdf.py tomes/01-le-chene/texte/livraison-1-p01-27.md tomes/01-le-chene/pdf/livraison-1-p01-27.pdf \
   --tome "Tome 1" --titre "Le Chêne" --sous-titre "La vie secrète du roi de nos forêts" \
-  --livraison "Texte, livraison 1 — pages 1 à 27" --date "8 novembre 2026"
+  --livraison "Texte, livraison 1 — pages 1 à 27" --date "8 novembre 2026 · p. 4-5 revues le 9"
 
 # Classeur de suivi des photos vierge
 python3 outils/geai_suivi.py photos/suivi-des-photos.xlsx

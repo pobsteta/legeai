@@ -68,47 +68,56 @@ Je suis un geai des chênes. Ici, en Lorraine, on met l'article devant les prén
 
 ## Pages 4-5 — Reconnaître les deux chênes
 
+*Revu le 9 novembre 2026 d'après les planches comparatives (fiches CNPF, formation ONF 2008 de F. Lebourgeois, planche du CDAF-Chimay, Flore forestière française).*
+
 ### Pédonculé (page de gauche)
 
-**La feuille.** Pétiole très court, deux à sept millimètres : la feuille semble collée au rameau. À sa base, deux petits lobes repliés, les **oreillettes**. Lobes profonds et irréguliers, nervures qui s'arrêtent parfois entre deux lobes.
+**La feuille.** Pétiole très court, deux à huit millimètres : la feuille semble collée au rameau. À sa base, deux petits lobes arrondis, repliés vers le bas, rarement égaux — les **oreillettes**. Lobes profonds et irréguliers, la plus grande largeur vers le haut. Entre les grandes nervures qui vont au bout des lobes, de petites nervures s'arrêtent au fond des échancrures : les nervures intercalaires, trois ou davantage (1).
 
-**Le gland.** Allongé, souvent rayé de brun dans sa jeunesse, par un à trois sur un **pédoncule de deux à huit centimètres** — c'est lui qui donne son nom à l'arbre.
+**Le gland.** Allongé, cylindrique, rayé de brun à l'état frais, par un à trois, **séparés** le long d'un pédoncule grêle de trois à huit centimètres — c'est lui qui donne son nom à l'arbre.
 
-**Le bourgeon.** Ovoïde, brun clair, à écailles nombreuses ; les bourgeons sont **groupés en bouquet** au bout du rameau, chez l'un comme chez l'autre : c'est la signature du genre.
+**Le bourgeon.** Ovoïde, trapu, presque globuleux, brun clair ; écailles larges, lisses, peu nombreuses, bordées de cils. Groupés en bouquet au bout du rameau, chez l'un comme chez l'autre : c'est la signature du genre.
 
-**L'écorce.** Lisse et grise sur les jeunes, puis crevassée en long, épaisse, à crêtes serrées.
+**L'écorce.** Lisse et grise sur les jeunes ; puis épaisse, grossière, profondément crevassée en long et en travers, découpée en plaquettes trapézoïdales rangées en colonnes (2).
 
-**Les fleurs.** Chatons mâles pendants, jaune-vert, en avril-mai ; fleurs femelles minuscules au bout d'une petite tige.
+**Les fleurs.** En avril-mai, avec les feuilles. Chatons mâles longs, grêles, pendants, à la base de la pousse. Fleurs femelles minuscules, par une à cinq, au bout d'un long pédoncule dressé : le futur pédoncule des glands.
 
-**La silhouette.** Houppier large, branches maîtresses tortueuses, fût souvent court quand l'arbre a poussé seul.
+**La silhouette.** Tronc court et massif, divisé bas ; branches maîtresses tortueuses, qui partent en coude ; houppier large et irrégulier, plus large que haut quand l'arbre a poussé seul.
 
 ### Sessile (page de droite)
 
-**La feuille.** Pétiole long, un à deux centimètres et demi ; base en coin, sans oreillettes ; lobes réguliers, nervures qui vont toutes jusqu'au bout d'un lobe.
+**La feuille.** Pétiole long, treize à dix-sept millimètres, parfois jusqu'à deux centimètres et demi ; base en coin, sans oreillettes ; lobes courts et réguliers, la plus grande largeur au milieu ; les nervures vont toutes, ou presque, au bout d'un lobe — pas ou peu de nervures intercalaires. Dessous, de petits poils en étoile, visibles à la loupe (1).
 
-**Le gland.** Sans pédoncule ou presque : **assis** sur le rameau, en petits groupes — *sessile* veut dire assis.
+**Le gland.** Trapu, ovoïde, plus large à la base, sans pédoncule ou presque : **assis** sur le rameau, en bouquet serré — *sessile* veut dire assis.
 
-**Le bourgeon.** Plus pointu, plus brun ; même bouquet au bout du rameau.
+**Le bourgeon.** Ovoïde allongé, **pointu**, effilé ; mêmes écailles larges et ciliées ; même bouquet, au bout d'un rameau plus mince.
 
-**L'écorce.** Semblable, à crêtes un peu moins marquées.
+**L'écorce.** Plus mince, plus lisse, gris clair ; fissurée en long en fines lanières, coupées en petites plaquettes carrées (2).
 
-**La silhouette.** Fût droit et long, houppier plus régulier, branches moins tortueuses.
+**Les fleurs.** Une à deux semaines plus tard. Mêmes chatons mâles. Fleurs femelles minuscules, par deux à cinq, **sans pédoncule**, à l'aisselle des feuilles du haut de la pousse.
 
-### Les trois gestes (bandeau central)
+**La silhouette.** Fût droit et long, sans branche basse ; branches plus fines, dressées en éventail ; houppier régulier, plus haut que large.
+
+### Les quatre gestes (bandeau central)
 
 1. **Le pétiole.** Court comme un ongle : pédonculé. Long comme une allumette : sessile.
 2. **Le pied du gland.** Au bout d'une queue de plusieurs centimètres : pédonculé. Assis sur le rameau : sessile.
 3. **La base de la feuille.** Deux oreillettes : pédonculé. Un coin net : sessile.
+4. **Les nervures.** Comptez celles qui n'atteignent pas un lobe. Trois ou plus : pédonculé. Moins : sessile (1).
 
-Trois gestes d'accord : vous savez. Deux sur trois : lisez l'encadré.
+Quatre gestes d'accord : vous savez. Trois sur quatre : lisez l'encadré. Et l'hiver, sans feuille ni gland ? Le bourgeon et l'écorce prennent le relais : globuleux et plaquettes profondes d'un côté, pointu et fines lanières de l'autre (2).
 
-**[Encadré — Quand les gestes ne s'accordent pas]** Les deux chênes se croisent volontiers ; leurs hybrides, qu'on nomme *Quercus × rosacea*, portent des caractères mêlés — un pétiole moyen, des oreillettes à peine marquées, des glands à court pédoncule. Dans une haie où les deux voisinent, un arbre sur plusieurs peut être un métis. Quand on hésite longtemps, ce n'est pas qu'on regarde mal (1).
+**[Encadré — Quand les gestes ne s'accordent pas]** Les deux chênes se croisent volontiers ; leurs hybrides, qu'on nomme *Quercus × rosacea*, portent des caractères mêlés — un pétiole moyen, des oreillettes à peine marquées, des glands à court pédoncule. Dans une haie où les deux voisinent, un arbre sur plusieurs peut être un métis. Quand on hésite longtemps, ce n'est pas qu'on regarde mal (3).
 
-**[Légende]** Tous les détails à la même échelle ; la pièce de un euro donne la mesure. Silhouettes : arbres de quatre-vingts ans, un adulte au pied.
+**[Légende]** Chaque ligne de la planche a son échelle ; la pièce de un euro donne la mesure, et la loupe grossit le bourgeon et la fleur femelle une dizaine de fois. Silhouettes : arbres adultes, un homme au pied.
 
 **[Bulle]** « L'un met son pied au gland, l'autre à la feuille. C'est tout ce qu'il faut retenir. »
 
-**(1)** Rameau J.-C., Mansion D., Dumé G., *Flore forestière française*, t. 1, Plaines et collines, IDF — critères d'identification et hybridation des chênes blancs.
+**(1)** CNPF Bretagne – Pays de la Loire, *Distinguer les chênes sessile et pédonculé*, 2018 ; CNPF Bourgogne-Franche-Comté, *Chêne sessile, chêne pédonculé : comment les reconnaître ?* — pétiole, oreillettes, nervures intercalaires, pilosité.
+
+**(2)** Lebourgeois F., *Reconnaissance des chênes sessile et pédonculé*, formation ONF, AgroParisTech-ENGREF, juin 2008 — port, écorce (rhytidome épais et trapézoïdal, ou mince et en lanières), bourgeons ; CDAF-Chimay, planche comparative pédonculé / sessile (bourgeon, feuille, fleur, fruit, écorce, silhouette), 2012.
+
+**(3)** Rameau J.-C., Mansion D., Dumé G., *Flore forestière française*, t. 1, Plaines et collines, IDF — critères d'identification et hybridation des chênes blancs.
 
 ---
 
