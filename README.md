@@ -15,6 +15,7 @@ collection/                        — ce qui vaut pour les 25 tomes
   03-les-24-charades-de-l-enigme.md — une charade à tiroirs par tome ; réponses ILS ONT MARCHÉ / ELLES ONT VOLÉ
   04-fiche-de-personnage-le-jacques.md — le narrateur : identité, anatomie, douze attitudes, expressions, bulle, voix, INPI
   05-brief-atrioma-planche-modele-du-jacques.md — le brief prêt à coller dans le générateur (FR + EN)
+  jacques/                         — images du Jacques : planche modèle v0 (trois angles), douze attitudes détourées, huit têtes, police des bulles (maquette d'étude du 9 nov.)
 photos/                            — la banque de photos, chemin critique de la production
   fiche-de-prises-de-vue.md        — protocole, liste universelle, fiches des 25 espèces, calendrier
   suivi-des-photos.xlsx            — grille de suivi (25 espèces × 20 cases), individus suivis, sorties, fenêtres
@@ -33,6 +34,7 @@ outils/
   geai_suivi.py                    — génère le classeur de suivi des photos vierge (openpyxl)
   carte_cassini.py                 — génère la carte de Cassini des forêts de chêne (shapely, SVG ; données Natural Earth et france-geojson, voir l'en-tête du script)
   compose_planches.py              — assemble les planches comparatives à partir de planches/elements/ (Pillow)
+  jacques_planche.py               — détoure les vignettes du Jacques et compose sa planche de présentation
   retouche_oreillettes.py          — retouche de la base de la feuille de pédonculé (9 nov. au matin), remplacée le jour même par une génération 2 k ; conservé comme trace
   requirements.txt
 ```
@@ -84,7 +86,7 @@ python3 outils/carte_cassini.py && rsvg-convert -f pdf -o carte.pdf geo/carte-ca
 
 ## État au 9 novembre 2026
 
-- Collection : positionnement, charte, 24 charades, fiche de personnage et brief de la planche modèle rédigés et validés. Générateur d'images retenu : Magnific.
+- Collection : positionnement, charte, 24 charades, fiche de personnage et brief de la planche modèle rédigés et validés. Générateur d'images retenu : Magnific. **Planche modèle v0 du Jacques** (trois angles, douze attitudes, huit têtes) générée le 9 novembre d'après la seule description de la fiche — maquette d'étude, à refaire en v1 à partir des photos de geais de l'auteur (`collection/jacques/`).
 - Photos : fiche de prises de vue et tableur de suivi prêts ; la campagne commence maintenant (glandée en cours, geais au travail — point E, indispensable à la planche modèle du Jacques).
 - Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraison 1 (p. 1-27) écrite et sourcée**, carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude (pièce de 1 € à l'échelle dans chaque case au centimètre, homme debout pour le port ; loupe sur le bourgeon terminal dans les cases des bourgeons ; tous les dessins régénérés en 2 k le 9 novembre sur le compte Magnific abonné — voir `planches/prompts-planches-comparatives.md`). Restent les livraisons 2 (p. 28-45 : la vie, les habitants, « Seul ou en forêt »), 3 (p. 46-53 : le voyage, l'arbre et nous, menaces) et 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
 - À fournir par l'auteur : le lieu de l'individu suivi (pour vérifier les regards sur Cassini et le cadastre), une photographie ancienne du village, les dates réelles de débourrement, les noms lorrains du chêne, le chapitre « De quercu » de la *Physica* (Monat ou Verten), un chêne remarquable lorrain pour la p. 58, le nom d'auteur de couverture.
