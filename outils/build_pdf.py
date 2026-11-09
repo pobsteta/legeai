@@ -35,8 +35,47 @@ ap.add_argument("--sous-titre", dest="sous_titre", default="La vie secrète du r
 ap.add_argument("--livraison", default="Texte, livraison 1 — pages 1 à 27")
 ap.add_argument("--contenu", default="Ouverture · Reconnaître · Qui êtes-vous ? · L'année (printemps, été, automne, hiver)")
 ap.add_argument("--date", default="8 novembre 2026")
+# --- Maquette illustrée ---
+ap.add_argument("--illustre", action="store_true",
+                help="maquette illustrée : images existantes en place, cadres « image à produire », le Jacques à chaque bulle")
+ap.add_argument("--images", default=None, help="JSON page → images existantes (défaut : tomes/01-le-chene/maquette/images.json)")
+ap.add_argument("--poses", default=None, help="JSON page → attitude du Jacques (défaut : tomes/01-le-chene/maquette/poses.json)")
+ap.add_argument("--entete", default=None, help="mention d'en-tête (défaut : « Manuscrit de travail », ou « Maquette de relecture illustrée » avec --illustre)")
+ap.add_argument("--sans-couverture", dest="sans_couverture", action="store_true", help="ne pas produire la page de couverture")
+ap.add_argument("--premiere-page", dest="premiere_page", type=int, default=1, help="numéro de la première page du PDF (pour assembler plusieurs livraisons)")
+ap.add_argument("--note-couverture", dest="note_couverture", default=None, help="paragraphe ajouté au cadre de conventions de la couverture")
 ARGS = ap.parse_args()
 SRC, OUT, DATE = ARGS.src, ARGS.out, ARGS.date
+
+import os, json
+REPO = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+ENTETE = ARGS.entete or ("Maquette de relecture illustrée" if ARGS.illustre else "Manuscrit de travail")
+
+
+def _load_json(path, default_rel):
+    p = path or os.path.join(REPO, default_rel)
+    if not os.path.exists(p):
+        return {}
+    with open(p, encoding="utf-8") as f:
+        d = json.load(f)
+    d.pop("_doc", None)
+    return d
+
+
+IMAGES = _load_json(ARGS.images, "tomes/01-le-chene/maquette/images.json") if ARGS.illustre else {}
+POSES = _load_json(ARGS.poses, "tomes/01-le-chene/maquette/poses.json") if ARGS.illustre else {}
+
+# Les douze attitudes du Jacques (planche modèle v0) : identifiant → (fichier détouré, côté du bec g/d)
+JACQUES_DIR = os.path.join(REPO, "collection", "jacques", "vignettes")
+JACQUES_POSES = {
+    "J1": ("Jacques_J01_guetteur_v0.png", "d"), "J2": ("Jacques_J02_porteur_v0.png", "d"),
+    "J3": ("Jacques_J03_planteur_v0.png", "g"), "J4": ("Jacques_J04_chercheur_v0.png", "g"),
+    "J5": ("Jacques_J05_en-vol_v0.png", "d"), "J6": ("Jacques_J06_vantard_v0.png", "d"),
+    "J7": ("Jacques_J07_vexe_v0.png", "d"), "J8": ("Jacques_J08_dubitatif_v0.png", "d"),
+    "J9": ("Jacques_J09_sentinelle_v0.png", "d"), "J10": ("Jacques_J10_gourmand_v0.png", "d"),
+    "J11": ("Jacques_J11_patient_v0.png", "d"), "J12": ("Jacques_J12_scribe_v0.png", "d"),
+}
+POSE_CYCLE = ["J1", "J8", "J6", "J2", "J7", "J11", "J9", "J4", "J3", "J5", "J10", "J12"]
 
 # ---------- Polices ----------
 FD = "/usr/share/fonts/truetype/crosextra/"
@@ -52,6 +91,13 @@ pdfmetrics.registerFont(TTFont("Carlito-Bold", FD + "Carlito-Bold.ttf"))
 pdfmetrics.registerFont(TTFont("Carlito-BoldItalic", FD + "Carlito-BoldItalic.ttf"))
 pdfmetrics.registerFontFamily("Carlito", normal="Carlito", bold="Carlito-Bold",
                               italic="Carlito-Italic", boldItalic="Carlito-BoldItalic")
+# Patrick Hand (OFL) : la police des bulles du Jacques, choisie dans la charte
+_PH = os.path.join(REPO, "collection", "jacques", "PatrickHand-Regular.ttf")
+HAS_PATRICK = os.path.exists(_PH)
+if HAS_PATRICK:
+    pdfmetrics.registerFont(TTFont("PatrickHand", _PH))
+    pdfmetrics.registerFontFamily("PatrickHand", normal="PatrickHand", bold="PatrickHand",
+                                  italic="PatrickHand", boldItalic="PatrickHand")
 
 # ---------- Couleurs ----------
 GREEN = colors.HexColor("#2E5339")
@@ -168,6 +214,130 @@ def encadre_box(title, text, W):
 def placeholder_box(kind, text, W):
     return [KeepTogether(box([Paragraph(kind.upper(), label), Paragraph(inline(text), legende)],
                              bg=PLACE_BG, border=RULE, pad=5, width=W)), Spacer(1, 6)]
+
+
+# ---------- Maquette illustrée ----------
+from reportlab.platypus import Flowable, Image as RLImage
+from reportlab.lib.utils import ImageReader
+
+bulle_style = ParagraphStyle("bulle", fontName="PatrickHand" if HAS_PATRICK else "Carlito",
+                             fontSize=12.5, leading=15.5, textColor=DARK, alignment=TA_LEFT)
+parole_style = ParagraphStyle("parole", parent=bulle_style, fontSize=11.5, leading=14.5)
+note_image = ParagraphStyle("note_image", parent=legende, textColor=OCHRE, fontName="Carlito")
+
+
+class JacquesBulle(Flowable):
+    """Le Jacques détouré et sa bulle vectorielle (Patrick Hand), côte à côte sur la largeur du texte.
+    La bulle n'est jamais générée dans l'image : elle est dessinée ici, à la mise en page."""
+
+    def __init__(self, text, pose, W, kind="Bulle"):
+        Flowable.__init__(self)
+        fichier, cote = JACQUES_POSES[pose]
+        self.img = os.path.join(JACQUES_DIR, fichier)
+        self.cote = cote  # bec à droite ('d') : oiseau à gauche, bulle à droite ; 'g' : l'inverse
+        self.W = W
+        self.kind = kind
+        self.vh = (30 if kind == "Bulle" else 38) * mm
+        iw, ih = ImageReader(self.img).getSize()
+        self.vw = self.vh * iw / ih
+        self.gap, self.tail, self.pad = 4 * mm, 6 * mm, 4 * mm
+        txt = text.strip()
+        txt = re.sub(r"^«\s*", "", txt); txt = re.sub(r"\s*»$", "", txt)
+        self.para = Paragraph(inline(txt), bulle_style if kind == "Bulle" else parole_style)
+        self.bw = self.W - self.vw - self.gap - self.tail
+        _, ph = self.para.wrap(self.bw - 2 * self.pad, 10000)
+        self.bh = ph + 2 * self.pad
+        self.height = max(self.vh, self.bh) + 2 * mm
+
+    def wrap(self, aw, ah):
+        return (self.W, self.height)
+
+    def draw(self):
+        c = self.canv
+        if self.cote == "d":
+            xv, xb = 0, self.vw + self.gap + self.tail
+        else:
+            xb, xv = 0, self.bw + self.tail + self.gap
+        yv = 0
+        yb = max(0, (self.vh - self.bh) / 2) if self.bh < self.vh else 0
+        c.drawImage(self.img, xv, yv, self.vw, self.vh, mask="auto", preserveAspectRatio=True)
+        c.setFillColor(JACQUES_BG); c.setStrokeColor(OCHRE); c.setLineWidth(0.9)
+        c.roundRect(xb, yb, self.bw, self.bh, 3 * mm, stroke=1, fill=1)
+        # la queue de la bulle vise la tête de l'oiseau (vers 72 % de sa hauteur)
+        yh = yv + 0.72 * self.vh
+        y1 = min(max(yh - 4 * mm, yb + 3 * mm), yb + self.bh - 9 * mm)
+        y2 = y1 + 6 * mm
+        p = c.beginPath()
+        if self.cote == "d":
+            p.moveTo(xb, y1); p.lineTo(xb - self.tail, yh); p.lineTo(xb, y2)
+            c.drawPath(p, stroke=1, fill=1)
+            c.setStrokeColor(JACQUES_BG); c.setLineWidth(1.6); c.line(xb, y1 + 0.6, xb, y2 - 0.6)
+        else:
+            xr = xb + self.bw
+            p.moveTo(xr, y1); p.lineTo(xr + self.tail, yh); p.lineTo(xr, y2)
+            c.drawPath(p, stroke=1, fill=1)
+            c.setStrokeColor(JACQUES_BG); c.setLineWidth(1.6); c.line(xr, y1 + 0.6, xr, y2 - 0.6)
+        self.para.drawOn(c, xb + self.pad, yb + self.pad)
+
+
+def jacques_illustre(text, W, kind, page_key, counter):
+    """Choisit l'attitude (poses.json, sinon cycle) et renvoie le flowable composite."""
+    spec = POSES.get(page_key)
+    pose = None
+    if isinstance(spec, dict):
+        pose = spec.get("P" if kind == "Parole" else "B")
+    elif isinstance(spec, str):
+        pose = spec
+    if pose not in JACQUES_POSES:
+        pose = POSE_CYCLE[counter % len(POSE_CYCLE)]
+    lab = Paragraph("PAROLE DU JACQUES", label_ochre) if kind == "Parole" else None
+    out = [lab] if lab else []
+    out += [JacquesBulle(text, pose, W, kind), Spacer(1, 7)]
+    return [KeepTogether(out)]
+
+
+def image_zone(page_key, legende_text, W, max_h=118 * mm):
+    """Image(s) existante(s) de la page + légende ; sinon cadre gris « image à produire » portant la légende (le brief)."""
+    spec = IMAGES.get(page_key)
+    note = None
+    files = []
+    if isinstance(spec, dict):
+        files, note = spec.get("fichiers", []), spec.get("note")
+        if spec.get("hauteur_mm"):
+            max_h = float(spec["hauteur_mm"]) * mm
+    elif isinstance(spec, list):
+        files = spec
+    files = [os.path.join(REPO, f) for f in files if os.path.exists(os.path.join(REPO, f))]
+    out = []
+    if files:
+        n = len(files)
+        gap = 5 * mm
+        cw = (W - gap * (n - 1)) / n
+        cells = []
+        for f in files:
+            iw, ih = ImageReader(f).getSize()
+            h = cw * ih / iw
+            w = cw
+            if h > max_h:
+                w, h = max_h * iw / ih, max_h
+            cells.append(RLImage(f, width=w, height=h))
+        t = Table([cells], colWidths=[cw] * n, hAlign="CENTER")
+        t.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "BOTTOM"), ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+                               ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                               ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
+        out.append(t)
+        if note:
+            out.append(Paragraph("<b>Image provisoire —</b> " + inline(note), note_image))
+            out.append(Spacer(1, 2))
+        out.append(box([Paragraph("LÉGENDE", label), Paragraph(inline(legende_text), legende)],
+                       left_bar=RULE, pad=5, width=W))
+    else:
+        inner = [Paragraph("IMAGE À PRODUIRE — PAGE %s" % page_key, label_ochre),
+                 Spacer(1, 16 * mm),
+                 Paragraph("<i>Brief :</i> " + inline(legende_text), legende),
+                 Spacer(1, 12 * mm)]
+        out.append(box(inner, bg=PLACE_BG, border=RULE, pad=8, width=W))
+    return [KeepTogether(out), Spacer(1, 7)]
 
 
 def season_banner(name, W):
@@ -292,25 +462,27 @@ def build():
 
     def on_page(canv, doc):
         canv.saveState()
-        if doc.page > 1:
+        if doc.page > 1 or ARGS.sans_couverture:
             canv.setFont("Carlito", 8.5); canv.setFillColor(GREY)
             canv.drawString(LM, PAGE_H - 13 * mm, "LE GEAI · %s · %s — %s" % (ARGS.tome, ARGS.titre, ARGS.livraison))
-            canv.drawRightString(PAGE_W - RM, PAGE_H - 13 * mm, "Manuscrit de travail — " + DATE)
+            canv.drawRightString(PAGE_W - RM, PAGE_H - 13 * mm,
+                                 DATE if ARGS.livraison.startswith(ENTETE) else ENTETE + " — " + DATE)
             canv.setStrokeColor(RULE); canv.setLineWidth(0.5)
             canv.line(LM, PAGE_H - 15 * mm, PAGE_W - RM, PAGE_H - 15 * mm)
             canv.setFont("Carlito", 9)
-            canv.drawCentredString(PAGE_W / 2, 11 * mm, str(doc.page))
+            canv.drawCentredString(PAGE_W / 2, 11 * mm, str(doc.page + ARGS.premiere_page - 1))
         canv.restoreState()
 
     frame = Frame(LM, BM, W, PAGE_H - TM - BM, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
     doc = BaseDocTemplate(OUT, pagesize=A4, pageTemplates=[PageTemplate(id="p", frames=[frame], onPage=on_page)],
                           title="Le Geai — %s : %s — %s" % (ARGS.tome, ARGS.titre, ARGS.livraison),
-                          author="Collection Le Geai", subject="Manuscrit de travail", lang="fr")
+                          author="Collection Le Geai", subject=ENTETE, lang="fr")
 
     story = []
     # --- Couverture ---
     intro_paras = [b[1] for b in blocks if b[0] == "para"][:2]  # les deux paragraphes d'introduction
-    story += [Spacer(1, 55 * mm),
+    if not ARGS.sans_couverture:
+      story += [Spacer(1, 55 * mm),
               Paragraph("LE GEAI — ARBRES &amp; ARBUSTES DE FRANCE", cover_small),
               Paragraph(esc(ARGS.tome), cover_meta),
               Paragraph(esc(ARGS.titre), cover_title),
@@ -318,18 +490,22 @@ def build():
               Spacer(1, 10 * mm),
               Paragraph(esc(ARGS.livraison), ParagraphStyle("c3", parent=cover_meta, fontSize=12.5, leading=16, textColor=DARK)),
               Paragraph(esc(ARGS.contenu), cover_meta),
-              Paragraph("Manuscrit de travail — " + DATE, cover_meta),
+              Paragraph(ENTETE + " — " + DATE, cover_meta),
               Spacer(1, 18 * mm)]
-    conv = [Paragraph("CONVENTIONS ET ÉTAT DU SOURÇAGE", label_green)]
-    for p in intro_paras:
-        txt = p.strip("*")
-        conv.append(Paragraph(inline(txt), cover_body))
-    story.append(box(conv, bg=REGARD_BG, left_bar=GREEN, width=W))
-    story.append(PageBreak())
+      conv = [Paragraph("CONVENTIONS ET ÉTAT DU SOURÇAGE", label_green)]
+      if ARGS.note_couverture:
+          conv.append(Paragraph(inline(ARGS.note_couverture), cover_body))
+      for p in intro_paras:
+          txt = p.strip("*")
+          conv.append(Paragraph(inline(txt), cover_body))
+      story.append(box(conv, bg=REGARD_BG, left_bar=GREEN, width=W))
+      story.append(PageBreak())
 
     first_page_done = False
     pending_season = None
     intro_skipped = 0
+    cur_page = None       # clé de page courante ('28', '4-5') pour la maquette illustrée
+    jacques_count = 0     # compteur pour le cycle d'attitudes par défaut
     for kind, data in blocks:
         if kind == "doctitle":
             continue
@@ -347,6 +523,7 @@ def build():
                 story += season_banner(pending_season, W)
                 pending_season = None
             m = re.match(r"^(Pages? [\d\-]+|Annexe) — (.*)$", data)
+            cur_page = m.group(1).split(" ", 1)[1] if (m and m.group(1) != "Annexe") else None
             if m:
                 story.append(Paragraph(m.group(1).upper(), h_pagenum))
                 story.append(Paragraph(inline(m.group(2), flag_brackets=False), h_page))
@@ -367,15 +544,24 @@ def build():
             continue
         if kind == "marker":
             mk, rest = data
+            illustre = ARGS.illustre and cur_page is not None
             if mk == "Bulle":
-                story += jacques_box(rest, W, "Bulle")
+                if illustre:
+                    story += jacques_illustre(rest, W, "Bulle", cur_page, jacques_count); jacques_count += 1
+                else:
+                    story += jacques_box(rest, W, "Bulle")
             elif mk == "Parole du Jacques":
-                story += jacques_box(rest, W, "Parole")
+                if illustre:
+                    story += jacques_illustre(rest, W, "Parole", cur_page, jacques_count); jacques_count += 1
+                else:
+                    story += jacques_box(rest, W, "Parole")
             elif mk == "Légende":
-                story += legende_box(rest, W)
+                story += image_zone(cur_page, rest, W) if illustre else legende_box(rest, W)
             elif mk.startswith("Encadré"):
                 title = mk.split("—", 1)[1].strip() if "—" in mk else ""
                 story += encadre_box(title, rest, W)
+            elif mk in ("Image", "Carte") and illustre:
+                story += image_zone(cur_page, mk + " : " + rest, W)
             else:  # Image, Carte, Sommaire
                 story += placeholder_box(mk, rest, W)
             continue

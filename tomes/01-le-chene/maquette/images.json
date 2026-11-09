@@ -1,0 +1,29 @@
+{
+  "_doc": "Images existantes à placer dans la maquette illustrée, par page (clé = numéro de page tel qu'écrit dans le markdown : '28' ou '4-5'). Chemins relatifs à la racine du dépôt. Une entrée est soit une liste de fichiers, soit un objet {fichiers:[...], note:'...'} quand l'image ne couvre qu'une partie de la légende. Les pages absentes reçoivent un cadre gris « image à produire » avec leur légende pour brief. Clé facultative hauteur_mm : hauteur maximale de l'image (défaut 118).",
+  "3": {
+    "fichiers": [
+      "collection/jacques/vignettes/Jacques_J02_porteur_v0.png"
+    ],
+    "note": "Jacques v0 (planche modèle, attitude J2 « le porteur ») — à remplacer par le Jacques v1 issu des photos de l'auteur.",
+    "hauteur_mm": 70
+  },
+  "4-5": [
+    "tomes/01-le-chene/planches/planche-I-feuille-gland.png",
+    "tomes/01-le-chene/planches/planche-II-bourgeon-ecorce.png",
+    "tomes/01-le-chene/planches/planche-III-port-fleur.png"
+  ],
+  "20": {
+    "fichiers": [
+      "collection/jacques/vignettes/Jacques_J03_planteur_v0.png"
+    ],
+    "note": "Partie gauche seulement (le Jacques planteur, v0) ; reste à produire : la carte des caches autour du chêne isolé.",
+    "hauteur_mm": 58
+  },
+  "42-43": {
+    "fichiers": [
+      "collection/jacques/vignettes/Jacques_J01_guetteur_v0.png"
+    ],
+    "note": "Premier des cinq portraits (le geai, v0) ; restent à produire : cynips, processionnaire, lucane, balanin, et le réseau en bas de double page.",
+    "hauteur_mm": 58
+  }
+}
