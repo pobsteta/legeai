@@ -267,8 +267,8 @@ if __name__ == "__main__":
               ("bourgeon_ped", "Bourgeons ovoïdes globuleux, courts et arrondis, groupés en bouquet au bout du rameau anguleux (rameau grossi trois fois)"),
               ("bourgeon_ses", "Bourgeons ovoïdes pointus, allongés et effilés, groupés eux aussi en bouquet terminal (même grossissement)")),
              ("L'écorce",
-              ("ecorce_ped", "Rhytidome épais, profondément crevassé, découpé en plaques trapézoïdales larges et bombées, sillons profonds"),
-              ("ecorce_ses", "Rhytidome mince et grisâtre, fissuré en long, en fines lanières verticales étroites et peu profondes"))],
+              ("ecorce_ped", "Grossière, rugueuse : crevasses profondes, longitudinales et transversales, découpant le rhytidome épais en plaquettes trapézoïdales anguleuses — dessin à refaire (voir prompts v3)"),
+              ("ecorce_ses", "Plus lisse, moins rugueuse : rhytidome mince et gris clair, fines lanières longitudinales coupées en petites plaquettes carrées, peu profondes — dessin à refaire (voir prompts v3)"))],
             "planche-II-bourgeon-ecorce")
 
     planche("III", "Le port — l'arbre entier, en hiver",
