@@ -30,6 +30,8 @@ ELEMENTS = {  # clé : (fichier, recadrage bas en fraction, nom de fichier de so
     "bourgeon_ses": ("sessile_bourgeons.png", 0.0, "sessile_bourgeons.png"),
     "ecorce_ped": ("pedoncule_ecorce.png", 0.0, "pedoncule_ecorce.png"),
     "ecorce_ses": ("sessile_ecorce.png", 0.0, "sessile_ecorce.png"),
+    "port_ped": ("pedoncule_port.png", 0.0, "pedoncule_port.png"),
+    "port_ses": ("sessile_port.png", 0.0, "sessile_port.png"),
 }
 
 def prep(key, w=600, h=800):
@@ -107,7 +109,7 @@ def planche(num, titre, rows, out_name, note_rows=None):
     # pied
     foot = ("Dessins générés par IA (Magnific, mode auto) à partir des seuls critères écrits des fiches CNPF et de la formation ONF 2008 "
             "(F. Lebourgeois), puis contrôlés contre ces fiches et la Flore forestière française ; aucune photographie d'autrui n'a été fournie "
-            "au générateur. Maquette d'étude pour Le Geai, tome 1, pages 4-5 — 8 novembre 2026.")
+            "au générateur. Maquette d'étude pour Le Geai, tome 1, pages 4-5 — 8 et 9 novembre 2026.")
     for i, ln in enumerate(wrap(d, foot, f_foot, W - 2 * M - 40)):
         d.text((W / 2, H - M - 70 + i * 28), ln, font=f_foot, fill=GREY, anchor="mt")
     im.save(OUT + out_name + ".png", dpi=(200, 200))
@@ -132,8 +134,8 @@ planche("II", "Bourgeon et écorce — quand il n'y a ni feuilles ni glands",
           ("ecorce_ses", "Rhytidome mince et grisâtre, fissuré en long, en fines lanières verticales étroites et peu profondes"))],
         "planche-II-bourgeon-ecorce")
 
-planche("III", "Le port — à compléter (dessins à générer)",
+planche("III", "Le port — l'arbre entier, en hiver",
         [("Le port",
-          (None, "Chêne pédonculé : tronc court et massif, grosses branches tortueuses partant en coude, ramification désordonnée, houppier large et irrégulier. Dessin à générer (quota du jour atteint)."),
-          (None, "Chêne sessile : fût droit, long et conique, branches régulières et fines dressées en éventail, houppier régulier plus haut que large. Dessin à générer (quota du jour atteint)."))],
+          ("port_ped", "Tronc court et massif, divisé bas en grosses branches maîtresses tortueuses partant en coude · ramification désordonnée · houppier large et irrégulier, plus large que haut (arbre de haie ou de pré)"),
+          ("port_ses", "Fût droit, long et cylindrique, sans branche basse · branches fines et régulières dressées en éventail · houppier régulier, plus haut que large (arbre de futaie)"))],
         "planche-III-port")

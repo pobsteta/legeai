@@ -1,5 +1,7 @@
 # Le Geai — Brief Atrioma : planche modèle du Jacques
 
+> **Outil retenu (9 novembre 2026) : Magnific.** Les blocs ci-dessous se collent tels quels dans Magnific — mode Auto en offre gratuite (1 k, quota journalier) pour les essais ; offre payante pour la planche modèle définitive en 2 k, avec la planche gelée comme image de référence (`references`, type `image`) à partir de la passe B.
+
 *Brief prêt à coller dans le générateur. Il reprend la fiche de personnage sous forme de blocs de consignes : un bloc de style et un bloc de sujet, fixes, qu'on colle en tête de chaque génération ; puis trois passes — A, la planche modèle (trois angles) ; B, les douze attitudes ; C, la feuille d'expressions. Chaque bloc existe en français et en anglais : utiliser la langue à laquelle l'outil répond le mieux, sans mélanger les deux dans une même génération. Les bulles ne sont jamais générées : elles sont ajoutées à la maquette.*
 
 ---

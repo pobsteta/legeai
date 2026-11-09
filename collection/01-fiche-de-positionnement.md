@@ -215,7 +215,10 @@ Réponse : **ELLES ONT VOLÉ** — dans le ventre des oiseaux. Révélée dans l
 - Trois registres d'écriture : le regard (temps long, en ouverture, ancré sur Cassini et le cadastre), l'enquête (faits, sans adjectif de sentiment), le Jacques (marges).
 - Trois regards venus d'ailleurs dans chaque tome : « Seul ou en forêt » (haie, parc, rue / forêt mélangée / peuplement pur, avec le bain de forêt et ce que la science a mesuré), le grimoire « Hildegarde dit » (*Physica*, livre III, cité comme histoire), et « Ce qu'on découvre aujourd'hui » (découvertes et usages des quinze dernières années, datés, sourcés, avec statut).
 - Référence botanique : la *Flore forestière française* (3 tomes, IDF), pour les critères, l'écologie et la vérification des planches — jamais comme source d'images.
-- Images et croquis générés par IA (Atrioma) à partir des photographies de l'auteur, dans une bible visuelle fixe ; vérification de chaque planche contre la *Flore* et contre la photo ; mention au colophon et déclaration à KDP ; aucune allégation « fait main ».
+- Images et croquis générés par IA à partir des photographies de l'auteur, dans une bible visuelle fixe ; vérification de chaque planche contre la *Flore* et contre la photo ; mention au colophon et déclaration à KDP ; aucune allégation « fait main ».
+
+**Décidé (9 novembre 2026)**
+- Outil de génération d'images : **Magnific** (mode Auto en offre gratuite pour les maquettes d'étude, 1 k ; offre payante pour les images définitives en 2 k avec image de référence). Les prompts du dépôt (`tomes/01-le-chene/planches/`, brief de la planche modèle du Jacques) sont écrits pour lui. Premières planches comparatives pédonculé / sessile produites les 8 et 9 novembre ; aucune photographie d'autrui n'est donnée au générateur.
 
 **Ouvert**
 - Mois de lancement réel (octobre recommandé : la campagne photo d'un an le permet).

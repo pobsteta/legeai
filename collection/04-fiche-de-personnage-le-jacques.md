@@ -1,6 +1,6 @@
 # Le Geai — Fiche de personnage : le Jacques
 
-*Cette fiche fixe le narrateur de la collection une fois pour toutes : qui il est, à quoi il ressemble, comment il se tient, comment il parle, et ce qu'il ne fait jamais. Elle complète la charte de style (sections 5, 6 et 7) et sert de gabarit à Atrioma pour toutes les vignettes, du tome 1 au hors-série. Elle est aussi la pièce de référence pour le dépôt à l'INPI.*
+*Cette fiche fixe le narrateur de la collection une fois pour toutes : qui il est, à quoi il ressemble, comment il se tient, comment il parle, et ce qu'il ne fait jamais. Elle complète la charte de style (sections 5, 6 et 7) et sert de gabarit au générateur d'images (Magnific, outil retenu le 9 novembre 2026) pour toutes les vignettes, du tome 1 au hors-série. Elle est aussi la pièce de référence pour le dépôt à l'INPI.*
 
 ---
 
@@ -140,7 +140,7 @@ Le lecteur doit lire l'humeur du Jacques sans le texte. Chaque signal a un sens 
 
 ---
 
-## 9. Production avec Atrioma
+## 9. Production avec Magnific
 
 1. **Photographies de référence.** Trente photos de geais au minimum, prises par l'auteur (fiche de prises de vue, point E) : de profil, de trois-quarts, de face, en vol, au sol avec un gland, huppe dressée, huppe plaquée. Le *Guide ornitho* reste sur la table, pas dans le générateur.
 2. **La planche modèle.** Générer le Jacques dans le style fixé : trois angles (profil, trois-quarts, face) puis les douze poses, à partir des photos. Itérer jusqu'à validation, puis **geler** la planche sous le nom `Jacques_modele_v1`. Toutes les générations suivantes la prennent comme image de référence : c'est elle qui garantit qu'on retrouve le même oiseau au tome 19.

@@ -1,6 +1,6 @@
 # Tome 1 — Planches comparatives pédonculé / sessile : prompts et état
 
-*Dessins « hyperréalistes » en noir et blanc, style gravure botanique, générés le 8 novembre 2026 avec Magnific (mode auto, offre gratuite, 1 k) à partir des seuls critères écrits des fiches CNPF et de la formation ONF 2008 de F. Lebourgeois — les photographies de ces documents sont protégées et n'ont jamais été données au générateur ; elles ont servi au contrôle, après coup, comme le veut la charte (section 6). Les originaux (1 024 px) sont dans le projet personnel Magnific de l'auteur, sous les identifiants ci-dessous ; les copies du dépôt font 600 × 800 px (maquette d'étude). Pour l'impression, régénérer en 2 k ou refaire dans Atrioma avec les mêmes prompts, puis repasser la liste de contrôle.*
+*Dessins « hyperréalistes » en noir et blanc, style gravure botanique, générés les 8 et 9 novembre 2026 avec Magnific (mode auto, offre gratuite, 1 k ; outil retenu pour la collection le 9 novembre) à partir des seuls critères écrits des fiches CNPF et de la formation ONF 2008 de F. Lebourgeois — les photographies de ces documents sont protégées et n'ont jamais été données au générateur ; elles ont servi au contrôle, après coup, comme le veut la charte (section 6). Les originaux (1 024 px) sont dans le projet personnel Magnific de l'auteur, sous les identifiants ci-dessous ; les copies du dépôt font 600 × 800 px (maquette d'étude). Pour l'impression, régénérer en 2 k ou refaire dans Atrioma avec les mêmes prompts, puis repasser la liste de contrôle.*
 
 ## Bloc de style (en tête de chaque prompt)
 
@@ -20,6 +20,8 @@ Gravure botanique scientifique en noir et blanc, dessin hyperréaliste à la plu
 | Bourgeons sessile | `u5GOm10QLD` | `elements/sessile_bourgeons.png` | Bourgeons pointus, effilés : conforme (bouquet de deux ; en préférer quatre ou cinq dans la version définitive). |
 | Écorce pédonculé | `1lMRF8Er4r` (recadrée : signature parasite en bas à droite) | `elements/pedoncule_ecorce.png` | Plaques larges et profondes, sillons marqués : conforme aux photos Lebourgeois (rhytidome épais, trapézoïdal). |
 | Écorce sessile | `fHZw8DqCDY` | `elements/sessile_ecorce.png` | Fissures fines en long, lanières étroites : conforme (rhytidome mince, fissuré en long). |
+| Port pédonculé | `dtJ7zsLXSL` (9 nov.) | `elements/pedoncule_port.png` | Tronc court divisé bas, branches tortueuses, houppier large : conforme aux silhouettes de Lebourgeois (p. 2). |
+| Port sessile | `TdlsRJyVNR` (9 nov.) | `elements/sessile_port.png` | Fût long et droit, houppier régulier en éventail : conforme. |
 
 ## Écartés
 
@@ -28,7 +30,8 @@ Gravure botanique scientifique en noir et blanc, dessin hyperréaliste à la plu
 - `xSp2HzLjfW` : « oreillettes » caricaturales, deux lobes ronds énormes.
 - `p8w5YWVehw` : pédoncule qui continue au-delà des glands.
 - `gOoY1ftSXO` : écorce en plaques rondes, aspect de boue séchée.
-- `mE6ldDphJQ` : port trop régulier et symétrique pour un pédonculé — à refaire.
+- `mE6ldDphJQ`, `3zHFUaJREY` : port trop régulier et symétrique pour un pédonculé.
+- `8a4PcN0IrU`, `gOoBqtPSXO` : « plus haut que large » pris au pied de la lettre — silhouettes de peuplier, pas de chêne sessile ; le prompt retenu fixe les proportions (tronc nu sur la moitié de la hauteur, houppier ovale large des deux tiers de sa hauteur) et dit « c'est un chêne, pas un peuplier ».
 
 ## Prompts des éléments
 
@@ -48,11 +51,11 @@ Gravure botanique scientifique en noir et blanc, dessin hyperréaliste à la plu
 
 **Écorce sessile.** Un carré d'environ 30 centimètres de tronc d'un chêne sessile adulte : rhytidome mince, finement fissuré dans le sens de la longueur, en fines lanières verticales étroites, peu profondes et régulières, aspect finement strié. Cadrage serré sur l'écorce seule.
 
-## À générer (quota du jour atteint) — planche III, le port
+## Planche III, le port (générée le 9 novembre)
 
-**Port pédonculé.** Dessin à la plume, noir et blanc, sans texte. Silhouette complète d'un chêne pédonculé adulte isolé dans un pré, en hiver, sans feuilles, vu de face, des racines à la cime : tronc court et massif qui se divise bas en grosses branches maîtresses tortueuses et noueuses partant en coude ; ramification désordonnée ; houppier très large, plus large que haut, au contour irrégulier. Un homme debout au pied pour l'échelle. *Insister sur l'irrégularité : le premier essai a donné un arbre symétrique.*
+**Port pédonculé.** Silhouette complète d'un vieux chêne pédonculé isolé dans un pré, en hiver, sans feuilles, vu de face, des racines à la cime : tronc court et très massif qui se divise bas, à hauteur d'homme, en plusieurs grosses branches maîtresses tortueuses et noueuses, qui partent en coude, zigzaguent et changent de direction ; ramification désordonnée, asymétrique ; houppier très large, nettement plus large que haut, au contour irrégulier et bosselé ; aucune symétrie. Un homme debout au pied pour l'échelle.
 
-**Port sessile.** Même consigne : fût droit, long et conique, sans branche basse, qui monte haut avant de se diviser ; branches régulières, fines, dressées en éventail ; houppier régulier, plus haut que large. Un homme au pied.
+**Port sessile.** Silhouette complète d'un chêne sessile adulte ayant poussé en forêt, en hiver, sans feuilles, vu de face, avec un homme au pied. C'est un chêne, pas un peuplier : proportions réalistes. Tronc droit et cylindrique, nu sur la moitié inférieure de la hauteur totale, puis prolongé dans le houppier en s'affinant ; houppier ovale et ample, à peu près aussi large que les deux tiers de sa propre hauteur, formé de branches assez fortes montant obliquement en éventail, ramification de chêne, rameaux anguleux ; contour régulier, sans branche basse.
 
 ## Assemblage
 

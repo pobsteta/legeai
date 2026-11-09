@@ -4,7 +4,7 @@
 
 Dépôt de travail de la collection **Le Geai** : vingt-cinq tomes mensuels sur les arbres et arbustes de France, pour les 7 à 77 ans, dans l'esprit de *La Hulotte*, racontés par **le Jacques**, un geai des chênes. Tout ce qui sert à fabriquer la série est ici : le positionnement, la charte, les énigmes, le personnage, le plan de photographie, le chemin de fer et le texte de chaque tome, et les outils qui produisent les PDF de relecture et le tableur de suivi.
 
-Référence botanique de toute la collection : la *Flore forestière française* (IDF, 3 tomes). Les images sont générées avec Atrioma à partir des photographies de l'auteur, vérifiées contre la *Flore*, déclarées à KDP et mentionnées au colophon.
+Référence botanique de toute la collection : la *Flore forestière française* (IDF, 3 tomes). Les images sont générées avec Magnific (outil retenu le 9 novembre 2026) à partir des photographies de l'auteur, vérifiées contre la *Flore*, déclarées à KDP et mentionnées au colophon.
 
 ## Arborescence
 
@@ -25,7 +25,7 @@ tomes/
     texte/livraison-1-p01-27.md    — texte définitif des pages 1 à 27 (ouverture, planche, état civil, l'année)
     pdf/livraison-1-p01-27.pdf     — le PDF de relecture correspondant
     cartes/carte-cassini-forets-de-chene.{svg,pdf,png} — carte « à la manière de Cassini » des plus belles forêts de chêne (base de la p. 58)
-    planches/                      — planches comparatives pédonculé / sessile (maquette d'étude, p. 4-5) : planches I et II, éléments, prompts et contrôle
+    planches/                      — planches comparatives pédonculé / sessile (maquette d'étude, p. 4-5) : planches I, II et III, éléments, prompts et contrôle
 references/                        — fiches techniques de référence (CNPF, ONF…) et leur synthèse
   reconnaissance-chenes-sessile-pedoncule.md — les fiches pour distinguer les deux chênes, liens et critères ; PDF à déposer à côté
 outils/
@@ -81,11 +81,11 @@ python3 outils/carte_cassini.py && rsvg-convert -f pdf -o carte.pdf geo/carte-ca
 
 `build_pdf.py` utilise les polices Caladea et Carlito (paquet `fonts-crosextra-caladea` / `fonts-crosextra-carlito` sous Debian/Ubuntu) ; adapter le chemin `FD` en tête du script si elles sont ailleurs.
 
-## État au 8 novembre 2026
+## État au 9 novembre 2026
 
-- Collection : positionnement, charte, 24 charades, fiche de personnage et brief Atrioma rédigés et validés.
+- Collection : positionnement, charte, 24 charades, fiche de personnage et brief de la planche modèle rédigés et validés. Générateur d'images retenu : Magnific.
 - Photos : fiche de prises de vue et tableur de suivi prêts ; la campagne commence maintenant (glandée en cours, geais au travail — point E, indispensable à la planche modèle du Jacques).
-- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraison 1 (p. 1-27) écrite et sourcée**. Restent les livraisons 2 (p. 28-45 : la vie, les habitants, « Seul ou en forêt »), 3 (p. 46-53 : le voyage, l'arbre et nous, menaces) et 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
+- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraison 1 (p. 1-27) écrite et sourcée**, carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude. Restent les livraisons 2 (p. 28-45 : la vie, les habitants, « Seul ou en forêt »), 3 (p. 46-53 : le voyage, l'arbre et nous, menaces) et 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
 - À fournir par l'auteur : le lieu de l'individu suivi (pour vérifier les regards sur Cassini et le cadastre), une photographie ancienne du village, les dates réelles de débourrement, les noms lorrains du chêne, le chapitre « De quercu » de la *Physica* (Monat ou Verten), un chêne remarquable lorrain pour la p. 58, le nom d'auteur de couverture.
 
 ## Droits
