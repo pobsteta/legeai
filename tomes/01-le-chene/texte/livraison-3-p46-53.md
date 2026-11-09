@@ -11,7 +11,7 @@
 ### Page 46 — Hier
 
 **[Regard]**
-*Posez le doigt sur [lieu], tout en haut de la carte. Au temps des glaces, là où vous êtes, il n'y avait pas un arbre : de l'herbe rase, du vent, des rennes. Les chênes attendaient très loin au sud, serrés dans les montagnes, et personne ne savait qu'ils reviendraient. Sur la carte de Cassini, bien plus tard, le bois de [nom du bois sur Cassini] est déjà dessiné à sa place. Entre les deux, il y a ce que raconte cette page.*
+*Posez le doigt sur Pange, tout en haut de la carte. Au temps des glaces, là où vous êtes, il n'y avait pas un arbre : de l'herbe rase, du vent, des rennes. Les chênes attendaient très loin au sud, serrés dans les montagnes, et personne ne savait qu'ils reviendraient. Sur la carte de Cassini, bien plus tard, le bois de [nom du bois sur Cassini] est déjà dessiné à sa place. Entre les deux, il y a ce que raconte cette page.*
 
 Il y a vingt mille ans, la glace couvrait la Scandinavie, la Baltique et la moitié des îles Britanniques ; la France était une steppe froide. Les chênes avaient reculé jusqu'aux montagnes du sud de l'Espagne, du sud de l'Italie et des Balkans — trois refuges, que l'on a retrouvés en lisant le pollen fossile au fond des lacs et des tourbières (1).
 
@@ -21,7 +21,7 @@ Les deux chênes n'ont d'ailleurs pas voyagé de la même façon. Le pédonculé
 
 Reste la vitesse. Le pollen la mesure : cinq cents mètres par an en moyenne, jusqu'à mille certaines années (1). Un gland tombe au pied de l'arbre ; un mulot le porte à trente mètres (page 30). En 1899, le géologue anglais Clement Reid fit le calcul : à ce rythme, le chêne aurait mis près d'un million d'années pour remonter jusqu'en Écosse. Il y est arrivé en quelques milliers. C'est le **paradoxe de Reid**, et sa solution la plus probable porte des plumes bleues : un oiseau qui emporte les glands à des centaines de mètres, parfois à un kilomètre, et en oublie quelques-uns au bon endroit (3). Il suffit d'un voyage lointain sur dix mille pour que la forêt avance au pas de l'oiseau, pas à celui du gland.
 
-**[Légende]** L'Europe au gabarit de la collection : la glace en blanc, la steppe en ocre, les trois refuges en vert sombre ; les flèches datées de la remontée, avec leur vitesse. Le cercle rouge : [lieu].
+**[Légende]** L'Europe au gabarit de la collection : la glace en blanc, la steppe en ocre, les trois refuges en vert sombre ; les flèches datées de la remontée, avec leur vitesse. Le cercle rouge : Pange.
 
 **[Bulle]** « Cinq cents mètres par an. À mon rythme. »
 
@@ -66,7 +66,7 @@ Les forestiers n'attendent pas. Depuis 2011, l'ONF plante des hêtres et des ch�
 ### Page 48 — Le bois, hier et aujourd'hui
 
 **[Regard]**
-*[Sur la photographie ancienne de lieu : la rue, les maisons, et ce qu'on y voit de chêne — les poutres, un portail, les piquets d'une clôture. À écrire devant l'image, une fois fournie.] Regardez bien la maison du fond. Tout ce qui, dedans, tient le toit depuis qu'elle existe est sorti d'une forêt qu'on voit au bout de la rue.*
+*[Sur la carte postale ancienne du château de Pange : la façade sur la Nied, le pont, les arbres du parc, et ce qu'on y voit de chêne — à écrire devant l'image, une fois fournie.] Regardez bien la toiture. Ce qui la tient, depuis que le château existe, est sorti d'une forêt qu'on voit depuis la terrasse [charpente et provenance du bois à vérifier auprès des propriétaires].*
 
 Trois qualités ont fait du chêne le bois de l'Europe : il est **dur**, **durable** et **fendable**. Dur : il porte des charges sans plier. Durable : son cœur, gorgé de tanins, résiste aux champignons et aux insectes pendant des siècles, dehors comme dedans. Fendable : son fil est droit, et un coin bien placé le sépare en planches sans scie, le long des fibres — ce que ni le hêtre ni le charme ne permettent.
 
@@ -187,7 +187,7 @@ Les causes se superposent, et c'est leur accumulation qui tue : les étés secs 
 
 **[Légende]** Graphique au gabarit de la collection : volume annuel d'arbres morts en France, par période d'inventaire, 2005-2013, 2013-2021, 2015-2024 ; en encart, la part d'arbres avec symptômes par essence, campagne 2025. Chiffres IGN, cités avec leur année.
 
-**[Bulle]** « Dix sur cent. Dans ma haie, c'est le deuxième à gauche. »
+**[Bulle]** « Dix sur cent. Dans mon parc, c'est le deuxième à gauche. »
 
 **(1)** IGN, *Mémento de l'inventaire forestier*, édition 2023 : mortalité passée de 7,4 à 13,1 millions de m³ par an entre 2005-2013 et 2013-2021.
 **(2)** IGN, *Inventaire forestier national*, résultats 2025 et *Mémento* édition 2025 (14 octobre 2025) : mortalité en hausse de 125 % en dix ans ; 670 000 ha en dépérissement, 5 % de la surface forestière ; symptômes sur 26 % des frênes, 21 % des châtaigniers, 10 % des chênes pédonculés et des épicéas communs.
@@ -206,7 +206,7 @@ Pas de sermon : un inventaire des gestes qui marchent, avec ce qu'on en sait.
 
 **Laisser des haies et des lisières.** C'est là que le geai plante : en terrain ouvert, à quelques centaines de mètres des vieux chênes qui donnent les glands (page 30). Une haie sans vieux chêne ne se renouvelle pas ; un vieux chêne sans friche autour n'a pas de descendance.
 
-**[Carte]** La France des petits bois : le nombre de bois et forêts de feuillus pour cent kilomètres carrés, département par département, compté dans la carte de l'IGN. Là où ils sont nombreux — Limousin, Charentes, Gascogne, Bretagne —, le geai trouve une lisière à chaque vol ; les plaines de grande culture en ont le moins. Le cercle rouge : [lieu].
+**[Carte]** La France des petits bois : le nombre de bois et forêts de feuillus pour cent kilomètres carrés, département par département, compté dans la carte de l'IGN. Là où ils sont nombreux — Limousin, Charentes, Gascogne, Bretagne —, le geai trouve une lisière à chaque vol ; les plaines de grande culture en ont le moins. Le cercle rouge : Pange.
 
 **Préférer la régénération naturelle.** À Tronçais, la moitié de la forêt se renouvelle seule, à partir des glands tombés et semés ; les forestiers ne plantent que là où elle échoue (3). Les semis nés sur place ont les racines qu'il faut pour le sol qu'ils ont. C'est aussi ce que conseillent les généticiens : des semis denses où la sélection fait son tri, et des générations plus courtes, pour que les arbres nés sous le climat d'aujourd'hui remplacent plus vite ceux nés sous celui d'hier (page 47).
 
@@ -237,7 +237,7 @@ Pas de sermon : un inventaire des gestes qui marchent, avec ce qu'on en sait.
 **Reste à relever :**
 - Le chapitre « De quercu » de la *Physica* (texte latin, chapitre, colonne) pour l'encadré de la page 49 — l'auteur.
 - Les noms lorrains du chêne et les toponymes de la région (page 50) — l'auteur.
-- La photographie ancienne du village (regard de la page 48) et le nom du bois sur la feuille de Cassini (regard de la page 46) — l'auteur.
+- La carte postale ancienne du château de Pange (regard de la page 48) et le nom du bois sur la feuille de Cassini (regard de la page 46) — l'auteur. Le lieu est fixé le 9 novembre : parc du château de Pange (Moselle).
 - Un exemple précis de forêt carolingienne évaluée en porcs (polyptyque d'Irminon, éd. Guérard).
 - La lignée génétique des chênes de Lorraine sur la carte de Petit et al. 2002 (page 46).
 - L'étymologie *tanno* → *tan* (Delamarre), et la couronne de chêne de la Légion d'honneur (règlement de 1802) — vérifications de détail.

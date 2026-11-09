@@ -40,6 +40,7 @@ OUT = os.path.join(REPO, "tomes", "01-le-chene", "images")
 DON = os.path.join(REPO, "tomes", "01-le-chene", "donnees")
 GEO = os.environ.get("GEO_DIR", "/tmp/geo")
 os.makedirs(OUT, exist_ok=True)
+LIEU = (6.353896, 49.083583)  # château de Pange (Moselle), géocodeur IGN, objet « château », 9 novembre 2026
 FOND = "Fond de carte : IGN Admin Express (via france-geojson)."
 
 
@@ -117,8 +118,9 @@ def fig_carte_deux_chenes():
             draw_geom(ax, g, facecolor=GREEN, edgecolor="white", linewidth=0.4, alpha=0.5)
         else:
             draw_geom(ax, g, facecolor="#F1F1EC", edgecolor="white", linewidth=0.4)
-    ax.plot([6.2], [48.7], marker="o", ms=7, color=RED, mec="white", mew=1.2)
-    ax.text(6.2, 48.35, "[lieu de l'individu suivi]", fontsize=8.5, color=RED, ha="center", va="top")
+    ax.plot([LIEU[0]], [LIEU[1]], marker="o", ms=7, color=RED, mec="white", mew=1.2)
+    ax.text(LIEU[0], LIEU[1] - 0.3, "Pange (Moselle), l'individu suivi", fontsize=8.5, color=RED, ha="center", va="top",
+            bbox=dict(boxstyle="round,pad=0.2", facecolor="white", edgecolor="none", alpha=0.9))
     ax.add_patch(plt.Rectangle((-5.1, 42.0), 0.45, 0.32, facecolor=GREEN_L)); ax.text(-4.5, 42.16, "pédonculé seul", fontsize=9, va="center")
     ax.add_patch(plt.Rectangle((-5.1, 41.55), 0.45, 0.32, facecolor=GREEN, alpha=0.85)); ax.text(-4.5, 41.71, "pédonculé et sessile", fontsize=9, va="center")
     ax.add_patch(plt.Rectangle((-1.9, 42.0), 0.45, 0.32, facecolor="#F1F1EC", edgecolor=GREY_L)); ax.text(-1.3, 42.16, "ni l'un ni l'autre (ou rares)", fontsize=9, va="center")
@@ -206,8 +208,8 @@ def fig_europe():
     arrow((12, 47.5), (12.5, 52.8), -0.1)
     arrow((22, 48), (24, 52), 0.05, "il y a 6 000 ans :\naire actuelle atteinte", (29, 49))
     # le lieu
-    ax.plot([6.2], [48.7], marker="o", ms=9, mfc="none", mec=RED, mew=2)
-    ax.text(7.2, 48.4, "[lieu]", fontsize=9, color=RED)
+    ax.plot([LIEU[0]], [LIEU[1]], marker="o", ms=9, mfc="none", mec=RED, mew=2)
+    ax.text(7.3, 48.7, "Pange", fontsize=9, color=RED)
     ax.text(-11.5, 65.2, "Schéma d'après Brewer et al. 2002 et Petit et al. 2002 (pollen fossile, ADN des chloroplastes) ; limite des glaces simplifiée.", **NOTE)
     save(fig, "p46-europe-refuges")
 
@@ -383,8 +385,8 @@ def fig_petits_bois():
     ax.add_patch(plt.Rectangle((x0, y0 - 0.38 * 6 - 0.1), 0.5, 0.3, facecolor="white", edgecolor=GREY, linewidth=0.5, hatch="////"))
     ax.text(x0 + 0.65, y0 - 0.38 * 6 + 0.05, "non calculé (Corse-du-Sud)", fontsize=8, va="center", color=GREY)
     # le lieu
-    ax.plot([6.2], [48.7], marker="o", ms=8, mfc="none", mec=RED, mew=1.8)
-    ax.text(6.55, 48.7, "[lieu]", fontsize=8.5, color=RED, va="center")
+    ax.plot([LIEU[0]], [LIEU[1]], marker="o", ms=8, mfc="none", mec=RED, mew=1.8)
+    ax.text(LIEU[0] + 0.35, LIEU[1], "Pange", fontsize=8.5, color=RED, va="center")
     ax.text(-5.3, 51.3, "Nombre d'objets « forêt fermée de feuillus » de la BD TOPO (IGN) dont le contour touche le département, rapporté à sa surface : "
             "un compte de bois distincts,\npas une surface boisée. Relevé par le service WFS de la Géoplateforme le 9 novembre 2026 ; "
             "départements côtiers sommés par arrondissement ou canton. " + FOND, **NOTE)
@@ -497,17 +499,17 @@ def fig_chenes_a_visiter():
         dx, dy = decal[c["n"]]
         ax.text(x + dx, y + dy, c["nom"], fontsize=9, color=GREEN, va="center", ha="left" if dx > 0 else "right",
                 bbox=dict(boxstyle="round,pad=0.15", facecolor="white", edgecolor="none", alpha=0.85))
-    ax.plot([6.2], [48.7], marker="o", ms=9, mfc="none", mec=RED, mew=1.8)
-    ax.text(6.55, 48.7, "[lieu]", fontsize=8.5, color=RED, va="center")
+    ax.plot([LIEU[0]], [LIEU[1]], marker="o", ms=9, mfc="none", mec=RED, mew=1.8)
+    ax.text(LIEU[0] + 0.35, LIEU[1], "Pange", fontsize=8.5, color=RED, va="center")
     lignes = ["1  Allouville-Bellefosse (76) — le chêne aux deux chapelles",
-              "2  Tronçais (03) — le chêne Carré, la Sentinelle, les Jumeaux",
+              "2  Tronçais (03) — le chêne Stebbing, parcelle 227",
               "3  Bercé (72) — la Futaie des Clos, le chêne Boppe",
               "4  Concoret (56) — le chêne à Guillotin",
               "5  Plassay (17) — le vieux chêne de la Jacqueterie",
               "6  Montmédy (55) — le chêne de l'Attaque"]
     for i, l in enumerate(lignes):
         ax.text(-5.2, 43.1 - 0.42 * i, l, fontsize=8.5, color=DARK, va="center")
-    ax.text(-5.3, 51.25, "Six chênes à aller voir ; positions relevées par le géocodeur de l'IGN (9 novembre 2026), les deux arbres bretons et lorrain comme objets « arbre ». " + FOND, **NOTE)
+    ax.text(-5.3, 51.25, "Six chênes à aller voir ; positions relevées par le géocodeur de l'IGN (9 novembre 2026), les chênes de Tronçais, de Concoret et de Montmédy comme objets « arbre ». " + FOND, **NOTE)
     save(fig, "p58-carte-six-chenes")
 
 

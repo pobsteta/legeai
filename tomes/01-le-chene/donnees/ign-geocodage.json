@@ -190,10 +190,10 @@
   {
    "n": 2,
    "nom": "Tronçais",
-   "libelle": "Forêt de Tronçais, Braize (03)",
-   "lon": 2.668335,
-   "lat": 46.642865,
-   "kind": "bois",
+   "libelle": "Chêne Stebbing II, Saint-Bonnet-Tronçais (03)",
+   "lon": 2.716296,
+   "lat": 46.656331,
+   "kind": "arbre",
    "dept": "03"
   },
   {
@@ -241,5 +241,15 @@
    "kind": "lieu-dit habité",
    "dept": "88"
   }
- ]
+ ],
+ "lieu_individu_suivi": {
+  "nom": "Château de Pange",
+  "commune": "Pange",
+  "dept": "57",
+  "lon": 6.353896,
+  "lat": 49.083583,
+  "kind": "château",
+  "source": "géocodeur IGN (Géoplateforme), 9 novembre 2026",
+  "note": "l'individu suivi est un chêne du parc du château ; position de l'arbre lui-même à relever sur place"
+ }
 }

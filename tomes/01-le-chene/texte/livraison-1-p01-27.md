@@ -1,6 +1,6 @@
 # Le Geai — Tome 1 : *Le Chêne* — Texte, livraison 1 (pages 1 à 27)
 
-*Texte définitif proposé pour l'ouverture et le chapitre « L'année ». Conventions : **[Regard]** = paragraphe en italique sur l'image pleine page ; corps de texte = l'enquête ; **[Bulle]** et **[Parole du Jacques]** = le Jacques ; **[Légende]** = sous l'image ; **[Encadré]** = cadre dans la page ; **(n)** = note de bas de page, numérotée par page. Les crochets [ ] signalent ce qui dépend de l'individu suivi et de son lieu, à remplir après vérification (Cassini, cadastre, archives). Les notes marquées « à préciser » attendent une page ou un chiffre exact ; les sources principales sont établies.*
+*Texte définitif proposé pour l'ouverture et le chapitre « L'année ». Conventions : **[Regard]** = paragraphe en italique sur l'image pleine page ; corps de texte = l'enquête ; **[Bulle]** et **[Parole du Jacques]** = le Jacques ; **[Légende]** = sous l'image ; **[Encadré]** = cadre dans la page ; **(n)** = note de bas de page, numérotée par page. Les crochets [ ] signalent ce qui dépend de l'individu suivi et de son lieu, à remplir après vérification (Cassini, cadastre, archives). Toutes les notes sont sourcées (passe de sourçage du 9 novembre 2026).*
 
 *Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les noms lorrains du chêne ; la photographie ancienne du village pour le regard d'hiver ; le chapitre d'Hildegarde (livraison 3).*
 
@@ -23,7 +23,7 @@ raconté par le Jacques
 
 ## Page 2 — Comment lire ce livre
 
-Ce livre raconte un arbre sur deux horloges. **L'année** (pages 8 à 27) suit un seul chêne, le même du printemps à l'hiver, dans une haie de [lieu]. **La vie** (pages 28 à 39) suit l'espèce du gland au vieux tronc mort, sur dix siècles.
+Ce livre raconte un arbre sur deux horloges. **L'année** (pages 8 à 27) suit un seul chêne, le même du printemps à l'hiver, dans le parc du château de Pange, en Moselle, au bord de la Nied. **La vie** (pages 28 à 39) suit l'espèce du gland au vieux tronc mort, sur dix siècles.
 
 Trois voix s'y partagent les pages. *En italique, sur les grandes images*, un regard sur le paysage et le temps long. En romain, l'enquête : des faits, des chiffres, des sources en bas de page. Dans les marges, le Jacques — un geai des chênes qui commente, se vante et se trompe parfois ; si vous enlevez ses bulles, le livre tient debout sans lui.
 
@@ -41,11 +41,11 @@ Les codes QR renvoient au cri du geai, au débourrement en accéléré et aux ph
 
 ### Octobre, sept heures
 
-Il fait à peine jour. La brume traîne sur le pré, et le chêne du bout, celui de la mare, n'a plus que la moitié de ses feuilles. Sous lui, le sol craque : des milliers de glands, tombés cette nuit.
+Il fait à peine jour. La brume traîne sur la Nied, et le grand chêne du parc n'a plus que la moitié de ses feuilles. Sous lui, le sol craque : des milliers de glands, tombés cette nuit.
 
 J'en prends un. Pas n'importe lequel — je les soupèse du bec, je rejette ceux qui sonnent creux et ceux que le ver a percés. Celui-là est lourd, lisse, brun comme une châtaigne. Je le glisse dans mon gosier, qui est fait pour ça ; j'en ajoute un deuxième ; j'en coince un troisième au bout du bec. Et je pars.
 
-Trois cents mètres. Le pré, la route, la friche aux ronces. Je me pose. Je regarde autour de moi — on ne sait jamais qui regarde. Un coup de bec dans la mousse, le gland au fond du trou, un brin d'herbe par-dessus. Rien ne dépasse. Je repars.
+Trois cents mètres. La rivière, la route, la friche aux ronces. Je me pose. Je regarde autour de moi — on ne sait jamais qui regarde. Un coup de bec dans la mousse, le gland au fond du trou, un brin d'herbe par-dessus. Rien ne dépasse. Je repars.
 
 Je ferai cela trois cents fois aujourd'hui. Plusieurs milliers de fois d'ici la fin de l'automne (1). L'hiver venu, je reviendrai les chercher : je me souviens de presque tout.
 
@@ -145,7 +145,7 @@ Les deux chênes blancs sont la première essence de France : **333 millions de 
 
 Ils ne se partagent pourtant pas le territoire au hasard. Le pédonculé aime les sols profonds et frais : les plaines, les fonds de vallée, les bords de rivière, les prés humides et leurs haies. Le sessile se contente de moins d'eau : les coteaux, les plateaux, les sols qui sèchent en été. Sur les plateaux de Lorraine, la forêt type s'appelle la chênaie-charmaie : des chênes au-dessus, des charmes en dessous — et c'est le sessile qui y domine, le pédonculé restant dans les creux [à confirmer sur la carte de la forêt du lieu].
 
-**[Carte]** France : présence du pédonculé (vert clair) et du sessile (vert sombre), d'après l'inventaire forestier. Le point : [lieu de l'individu suivi].
+**[Carte]** France : présence du pédonculé (vert clair) et du sessile (vert sombre), d'après l'inventaire forestier. Le point : Pange (Moselle), où pousse l'individu suivi.
 
 ### Les cousins
 
@@ -165,17 +165,17 @@ Le **chêne pubescent**, du Sud et des coteaux calcaires, au duvet sous les feui
 ### Page 8 — Tout le monde est vert, sauf lui
 
 **[Regard]**
-*Le pré a reverdi, la haie aussi, et le saule de la mare s'est couvert le premier de son feuillage d'argent. Seul le chêne attend. Il attend sur une lisière qui n'a pas bougé : la haie où il pousse est déjà tracée sur la carte de Cassini, dressée sous Louis XV, et le chemin d'où vous le regardez figure au vieux cadastre, celui des géomètres de l'Empire. Le village a changé de clocher, de route et de maîtres ; la haie, non. Elle a laissé passer des générations de gelées. Elle peut bien attendre celle-ci.*
+*La prairie a reverdi, les saules de la rivière se sont couverts les premiers de leur feuillage d'argent, et le jardin, en bas, a ses premières fleurs. Seul le chêne attend. Il attend à une place qui n'a pas bougé : le domaine est déjà dessiné sur la carte de Cassini, dressée sous Louis XV, et le parc où il pousse figure sur les plans du siècle suivant, quand on le voulut à l'anglaise. Le château a perdu ses douves et ses tours, a vu passer des armées, des cosaques aux Américains, a été vidé puis rendu à ses maîtres ; le chêne, non. Il a laissé passer des générations de gelées. Il peut bien attendre celle-ci.*
 
-Fin avril. Le saule est en feuilles depuis trois semaines ; le chêne n'a pas une feuille.
+Fin avril. Les saules de la Nied sont en feuilles depuis trois semaines ; le chêne n'a pas une feuille.
 
-Regardez-le depuis le chemin : un squelette gris dans un paysage qui a déjà repris des couleurs. Les bourgeons sont là, serrés par petits bouquets au bout des rameaux, bruns, gros comme des grains de blé. Ils gonflent depuis mars. Ils n'ont pas bougé.
+Regardez-le depuis l'allée : un squelette gris dans un paysage qui a déjà repris des couleurs. Les bourgeons sont là, serrés par petits bouquets au bout des rameaux, bruns, gros comme des grains de blé. Ils gonflent depuis mars. Ils n'ont pas bougé.
 
 Ce retard est une assurance. Un chêne qui ouvre ses feuilles trop tôt les perd à la première gelée blanche, et il doit alors tout refaire avec des réserves entamées. Celui-ci a quatre-vingts printemps derrière lui et débourre, chaque année, parmi les derniers de la haie. Seul le frêne, en face, sortira ses feuilles plus tard encore.
 
 Et puis un matin, sans prévenir, les écailles des bourgeons s'écartent.
 
-**[Légende]** Notre chêne, le [25 avril], depuis le chemin. Le saule, à gauche, est en feuilles depuis le [3 avril]. Même point de vue à chaque saison.
+**[Légende]** Notre chêne, le [25 avril], depuis l'allée du parc. Les saules de la Nied, au bord de l'eau, sont en feuilles depuis le [3 avril]. Même point de vue à chaque saison.
 
 **[Bulle]** « Moi, à cette date, j'ai déjà un nid et des œufs. Lui, pas une feuille. Chacun son rythme. »
 
@@ -185,7 +185,7 @@ Et puis un matin, sans prévenir, les écailles des bourgeons s'écartent.
 
 C'est le débourrement : l'ouverture des bourgeons. Les premières feuilles ne sont pas vertes. Elles sortent rouges, cuivrées, molles comme du papier de soie, pliées en éventail le long de leurs nervures. En une semaine elles s'étalent ; en deux, elles verdissent ; en trois, elles ont leur forme définitive — ce limbe à lobes arrondis que tout le monde reconnaît, avec, à la base, les deux petites oreillettes du pédonculé.
 
-Pourquoi rouges ? Les pigments rouges des jeunes feuilles sont les mêmes que ceux de l'automne. Au printemps, ils font office de parasol : ils protègent des tissus tout neufs, encore incapables de se défendre, d'un soleil d'avril déjà fort (1). Quand la feuille a fabriqué assez de chlorophylle, le rouge s'efface.
+Pourquoi rouges ? Les pigments rouges des jeunes feuilles sont les mêmes que ceux de l'automne. On leur prête deux rôles au printemps : un parasol pour des tissus tout neufs, encore incapables de se défendre d'un soleil d'avril déjà fort ; et une protection contre les insectes, qui mangent moins les feuilles rouges que les vertes — c'est ce second rôle que l'on a le mieux mesuré, chez un chêne du Midi (1). Quand la feuille a fabriqué assez de chlorophylle, le rouge s'efface.
 
 Le vrai danger est ailleurs. Une gelée tardive, début mai, et les jeunes feuilles noircissent en une nuit. Le chêne n'en meurt pas. Il garde en réserve des bourgeons dormants, et six semaines plus tard il a refait un feuillage complet. Il a perdu un mois et une part de ses réserves. Il recommencera l'an prochain, au même calendrier.
 
@@ -195,7 +195,7 @@ Le vrai danger est ailleurs. Une gelée tardive, début mai, et les jeunes feuil
 
 **[Bulle]** « Les feuilles rouges, c'est de la crème solaire. Moi, j'ai des plumes. Chacun ses solutions. »
 
-**(1)** Rôle protecteur des anthocyanes dans les jeunes feuilles : Lee D.W., Gould K.S., 2002, *Anthocyanins in leaves and other vegetative organs*, Advances in Botanical Research 37 — à préciser.
+**(1)** Rôle des anthocyanes dans les jeunes feuilles : Lee D.W., Gould K.S., 2002, *Anthocyanins in leaves and other vegetative organs: an introduction*, Advances in Botanical Research 37 : 1-16 ; sur un chêne, le kermès (*Quercus coccifera*) : Karageorgou P., Manetas Y., 2006, *The importance of being red when young: anthocyanins and the protection of young leaves of Quercus coccifera from insect herbivory and excess light*, Tree Physiology 26 : 613-621 — l'effet parasol n'est que faiblement mesuré sur le terrain ; les feuilles rouges sont surtout moins attaquées par les insectes que les vertes.
 
 ---
 
@@ -235,7 +235,7 @@ Cet accord entre le bourgeon, la chenille et l'oiseau tient depuis des millénai
 
 **[Bulle]** « Elles descendent au bout d'un fil quand on les dérange. Je n'ai qu'à ouvrir le bec. »
 
-**(1)** Jusqu'à 900 becquées par jour pour un couple de mésanges charbonnières — chiffre repris par le Muséum national d'histoire naturelle et la LPO dans leurs documents grand public ; à préciser par la source primaire.
+**(1)** Jusqu'à 900 becquées par jour : maximum pour une grande nichée, chiffre repris par le Muséum national d'histoire naturelle et la LPO. Mesures de la fréquence de nourrissage de la mésange charbonnière, au nichoir et par caméra : Gibb J.A., 1955, *Feeding rates of great tits*, British Birds 48 : 49-58 ; Royama T., 1966, *Factors governing feeding rate, food requirement and brood size of nestling great tits*, Ibis 108 : 313-347 ; Barba E. et al., 2009, *Patterns of nestling provisioning by a single-prey loader bird, great tit Parus major*, Bird Study 56 : 187-197 — la fréquence croît avec la taille de la nichée et l'âge des poussins ; plusieurs centaines de visites par jour est l'ordre de grandeur courant.
 **(2)** Reed T.E., Grøtan V., Jenouvrier S., Sæther B.-E., Visser M.E., 2013, *Population growth in a wild bird is buffered against phenological mismatch*, Science 340 — population de mésanges du parc national de la Hoge Veluwe, suivie depuis 1955.
 **(3)** Visser M.E. et al., 2021, *Recent natural variability in global warming weakened phenological mismatch and selection on seasonal timing in great tits*, Proceedings of the Royal Society B.
 
@@ -264,7 +264,7 @@ Mais l'été qui vient a d'autres projets pour lui.
 ### Page 13 — La ville suspendue
 
 **[Regard]**
-*Levez la tête. En juillet, sous le chêne, il fait plus frais qu'au pré, et il y a plus de bruit qu'on ne croit : un froissement continu, des cris courts, le bourdonnement de ce qui ne se voit pas. Le feuillage est une ville posée sur un seul pied, avec ses étages, ses quartiers à l'ombre et ses quartiers au soleil, ses habitants de passage et ses familles installées depuis des générations — bien avant que le village ne compte ses maisons. On l'habitait déjà quand les premiers chemins y menaient les troupeaux ; on l'habite encore, sans permis ni cadastre.*
+*Levez la tête. En juillet, sous le chêne, il fait plus frais que sur la pelouse en plein soleil, et il y a plus de bruit qu'on ne croit : un froissement continu, des cris courts, le bourdonnement de ce qui ne se voit pas. Le feuillage est une ville posée sur un seul pied, avec ses étages, ses quartiers à l'ombre et ses quartiers au soleil, ses habitants de passage et ses familles installées depuis des générations — bien avant que le jardin d'en bas ne soit dessiné. On l'habitait déjà quand le parc était à l'anglaise ; on l'habite encore, sans permis ni cadastre.*
 
 Combien d'habitants ? Personne ne les a comptés en France. Au Royaume-Uni, des chercheurs ont dressé la liste de tout ce qui vit sur les deux chênes blancs ou s'en sert — oiseaux, mousses, champignons, lichens, insectes, mammifères : **2 300 espèces**, dont **326 ne vivent nulle part ailleurs** que sur un chêne (1). La liste s'arrête aux êtres visibles ; bactéries et micro-organismes n'y sont pas.
 
@@ -294,8 +294,8 @@ La noix de galle a écrit l'Europe. Écrasée dans l'eau, mêlée de sulfate de 
 
 **[Bulle]** « Un insecte qui oblige l'arbre à lui construire une maison. Et on dit que je suis vantard. »
 
-**(1)** Cycle hétérogonique des cynips du chêne : *Flore forestière française*, t. 1, et littérature entomologique — à préciser (ex. Stone G.N. et al., 2002, Annual Review of Entomology 47).
-**(2)** Histoire et chimie de l'encre ferro-gallique — à préciser (ex. Bibliothèque nationale de France, dossiers sur les encres anciennes).
+**(1)** Cycle hétérogonique des cynips du chêne (alternance d'une génération sexuée et d'une génération de femelles seules, chacune avec sa galle) : Stone G.N., Schönrogge K., Atkinson R.J., Bellido D., Pujade-Villar J., 2002, *The population biology of oak gall wasps (Hymenoptera: Cynipidae)*, Annual Review of Entomology 47 : 633-668 ; *Flore forestière française*, t. 1.
+**(2)** Encre ferro-gallique — composition (tanins de noix de galle, sulfate de fer, gomme arabique), usage du haut Moyen Âge au XXe siècle, altération des manuscrits : Rouchon V. et al., 2011, *Les encres ferro-galliques*, CeROArt ; Université de Liège, atelier *Encres anciennes : l'encre ferro-gallique*, 2012 ; la recette est page 55.
 
 ---
 
@@ -330,13 +330,13 @@ Le balanin des glands, *Curculio glandium*, est un charançon de cinq à huit mi
 
 Un gland sur dix, un sur trois les mauvaises années : le balanin prélève sa part avant tout le monde. Le Jacques, lui, les trie au poids et rejette ceux qui sonnent creux — page 20.
 
-Et dans le fourré, de l'autre côté de la haie, les sangliers attendent. Ils savent, eux aussi, compter les glands verts.
+Et dans les bois du domaine, pas loin, les sangliers attendent. Ils savent, eux aussi, compter les glands verts.
 
 **[Légende]** Le balanin grandeur ×8, rostre déployé ; un gland vert en coupe, la larve dans sa chambre ; un gland d'automne avec son trou de sortie.
 
 **[Bulle]** « Un museau plus long que le corps. Le mien est très bien comme il est. »
 
-**(1)** Biologie du balanin des glands : *Flore forestière française*, t. 1 ; Bonal R. et al., travaux sur *Curculio* et la prédation des glands — à préciser.
+**(1)** Biologie du balanin des glands : *Flore forestière française*, t. 1 ; Espelta J.M., Bonal R., Sánchez-Humanes B., 2009, *Pre-dispersal acorn predation in mixed oak forests*, Journal of Ecology 97 : 1416-1423 (*Curculio glandium* et *C. elephas* : ponte dans le gland vert, phénologie, taille minimale du gland) ; Bonal R., Muñoz A., 2009, *Seed weevils living on the edge*, Ecological Entomology 34 : 304-309 (la larve accomplit tout son développement dans un seul gland, aux dépens des cotylédons) ; Bonal R., Muñoz A., Díaz M., 2007, *Satiation of predispersal seed predators*, Evolutionary Ecology 21 : 367-380 (la part prélevée est plus forte les années de petite récolte).
 
 ---
 
@@ -346,7 +346,7 @@ Fin août, les glands sont pleins. Encore verts, mais lourds : la cupule ne les 
 
 Le ciel aussi se charge. Les premières nuits fraîches arrivent, et avec elles les premiers glands qui tombent — pas encore la pluie, mais quelques coups, la nuit, sur le chemin.
 
-Dans la haie, un oiseau criard commence à faire des réserves.
+Dans le parc, un oiseau criard commence à faire des réserves.
 
 **[Légende]** Le rameau de la page 9, fin août : feuilles fatiguées, glands verts prêts à brunir.
 
@@ -359,7 +359,7 @@ Dans la haie, un oiseau criard commence à faire des réserves.
 ### Page 18 — La glandée
 
 **[Regard]**
-*Octobre. Sous le chêne, le sol craque à chaque pas, et la haie sent la feuille mouillée et le champignon. Le mot est ancien et le village l'a connu avant d'avoir un nom pour la rue : la glandée. On y menait les cochons, en automne, par le droit qu'avaient les habitants de ramasser ce que l'arbre donnait, et les registres de la seigneurie en gardent la trace, comme les sentiers que l'on prend encore sans savoir pourquoi ils passent là. Les cochons ne viennent plus. Les sangliers, si.*
+*Octobre. Sous le chêne, le sol craque à chaque pas, et le parc sent la feuille mouillée et le champignon. Le mot est ancien et la seigneurie l'a connu avant d'avoir un château de pierre : la glandée. On menait les cochons sous les chênes, en automne, par le droit qu'avaient les habitants de ramasser ce que l'arbre donnait, et les registres des seigneurs de Pange en gardent la trace [à vérifier aux archives], comme les allées que l'on prend encore sans savoir pourquoi elles passent là. Les cochons ne viennent plus. Les sangliers, si.*
 
 Une bonne année, un chêne adulte laisse tomber plusieurs dizaines de milliers de glands ; les très grandes années, on approche les cent mille (1). L'année suivante, presque rien. Et ce qui frappe, c'est que tous les chênes de la région font la même chose la même année : glandée partout, ou nulle part.
 
@@ -371,8 +371,8 @@ Ce qui déclenche la glandée se décide dix-huit mois plus tôt : un printemps 
 
 **[Bulle]** « Cent mille glands. Je ne peux pas tout prendre. Je fais ce que je peux. »
 
-**(1)** Production de glands d'un chêne adulte : ONF, *Rendez-vous techniques* n° 13, 2006 (fructification des chênes) ; WSL, réseau mastweb.ch, fiche *Quercus robur* — ordres de grandeur, à préciser.
-**(2)** Synchronisation de la fructification et hypothèse de la satiété des prédateurs : *Flore forestière française*, t. 1, et littérature sur le *masting* — à préciser (ex. Kelly D., Sork V.L., 2002, Annual Review of Ecology and Systematics 33).
+**(1)** Production de glands d'un chêne adulte : ONF, *Rendez-vous techniques* n° 13, 2006 (fructification des chênes) ; Crawley M.J., Long C.R., 1995, *Alternate bearing, predator satiation and seedling recruitment in Quercus robur L.*, Journal of Ecology 83 : 683-696 — quinze ans de comptages sur trente pédonculés du sud de l'Angleterre, récoltes variant de plus de cent fois d'une année à l'autre, avec une synchronie marquée entre arbres ; les « dizaines de milliers » et le « presque rien » sont des ordres de grandeur, l'arbre, l'année et la station faisant tout varier.
+**(2)** Synchronisation de la fructification et hypothèse de la satiété des prédateurs : Kelly D., Sork V.L., 2002, *Mast seeding in perennial plants: why, how, where?*, Annual Review of Ecology and Systematics 33 : 427-447 ; Crawley & Long 1995 (ci-dessus) : chez le pédonculé, les petites récoltes perdent aux insectes une part plus forte de leurs glands que les grandes, ce qui va dans le sens de la satiété, sans permettre de trancher entre stratégie évoluée et simple contrainte de ressources ; *Flore forestière française*, t. 1.
 **(3)** Wohlgemuth T., Nussbaumer A., Burkart A., Bollmann K., 2016, *Eichenmast und Wildschweine*, Zürcher Wald 3/16 : deux fois plus de sangliers abattus l'année suivant une forte glandée, canton de Zurich.
 
 ---
@@ -403,7 +403,7 @@ Et nous. Pendant des siècles, les villages ont mené leurs porcs sous les chên
 
 ### Page 20 — Le Jacques au travail
 
-Regardez la haie en octobre, vers huit heures du matin. Un oiseau roux et gris, ailes barrées de bleu, va et vient entre le chêne et la friche, toutes les quatre ou cinq minutes, sans un cri.
+Regardez le parc en octobre, vers huit heures du matin. Un oiseau roux et gris, ailes barrées de bleu, va et vient entre le chêne et la friche, toutes les quatre ou cinq minutes, sans un cri.
 
 Il remplit son gosier. Un geai y loge plusieurs glands à la fois, plus un dans le bec, et il les choisit : il les prend dans le bec, les soupèse, en rejette un sur deux — trop petits, trop légers, troués par le balanin (1). Puis il part, et il part loin : à plusieurs centaines de mètres, parfois à plus d'un kilomètre (2). Il se pose au sol, en terrain découvert — une friche, un pré, une lisière, une jeune plantation de pins —, enfonce un gland dans la mousse ou l'herbe d'un coup de bec, le recouvre, et repart. Un gland par cache, rarement deux.
 
@@ -428,14 +428,14 @@ Un gland tombé en octobre ne dort pas. Quelques semaines dans une litière humi
 
 C'est une graine qui ne sait pas attendre. La plupart des graines d'arbres — faînes, pignons, samares — se dessèchent, se conservent, germent quand les conditions reviennent. Le gland, non : s'il perd une part de son eau, il meurt. Il doit germer tout de suite ou disparaître (1). D'où l'urgence d'octobre : tout ce qui n'est pas mangé en quelques semaines a déjà commencé à devenir un arbre.
 
-En novembre, les feuilles du chêne brunissent — pas de rouge, pas d'or : un brun de tanin, sec, qui bruit au vent. Elles tombent tard, parmi les dernières de la haie. Sur les jeunes chênes et les branches basses, elles ne tombent pas du tout : mortes, elles restent accrochées jusqu'au printemps. On dit qu'elles sont marcescentes. Les forestiers y voient une protection des bourgeons contre le froid et les dents ; la question n'est pas tranchée (2).
+En novembre, les feuilles du chêne brunissent — pas de rouge, pas d'or : un brun de tanin, sec, qui bruit au vent. Elles tombent tard, parmi les dernières du parc. Sur les jeunes chênes et les branches basses, elles ne tombent pas du tout : mortes, elles restent accrochées jusqu'au printemps. On dit qu'elles sont marcescentes. Les forestiers y voient une protection des bourgeons contre le froid et les dents ; la question n'est pas tranchée (2).
 
 **[Légende]** Un gland sous la litière, fin novembre : la radicule a vingt centimètres, la tige n'existe pas encore. Coupe du sol.
 
 **[Bulle]** « Il germe avant que j'aie fini de le cacher. C'est vexant, pour un planteur. »
 
 **(1)** Graines récalcitrantes (sans dormance, sensibles à la dessiccation) : *Flore forestière française*, t. 1 ; ONF, *Rendez-vous techniques* n° 13, 2006, sur la conservation des glands.
-**(2)** Marcescence : hypothèses discutées — à préciser.
+**(2)** Marcescence : trois hypothèses discutées, aucune tranchée. Protection contre les dents : Svendsen C.R., 2001, *Effects of marcescent leaves on winter browsing by large herbivores in northern temperate deciduous forests*, Alces 37 : 475-482 — en février, les cerfs ont moins brouté le hêtre et le charme feuillés que défeuillés, mais le chêne autant dans les deux cas. Recyclage des éléments minéraux au printemps : Otto C., Nilsson L.M., 1981, *Why do beech and oak trees retain leaves until spring?*, Oikos 37 : 387-390 — non confirmé chez un chêne espagnol par Abadía A. et al., 1996, *Marcescence and senescence in a submediterranean oak*, Plant, Cell & Environment 19 : 685-694, qui y voient plutôt une photosynthèse prolongée en arrière-saison. La marcescence est plus fréquente sur les jeunes arbres et les branches basses.
 
 ---
 
@@ -443,7 +443,7 @@ En novembre, les feuilles du chêne brunissent — pas de rouge, pas d'or : un b
 
 Fin novembre, le chêne a lâché ses dernières feuilles. Le chemin est jonché de cupules vides, de glands troués, de coques entaillées. Les sangliers sont passés deux fois ; le sol de la lisière ressemble à un champ retourné.
 
-Mais sous les feuilles mortes, dans la friche où le Jacques est venu trois cents fois, dans la mousse du talus, au pied du grillage du pré, quatre mille petites racines descendent dans le noir.
+Mais sous les feuilles mortes, dans la friche où le Jacques est venu trois cents fois, dans la mousse de la berge, au pied de la clôture de la prairie, quatre mille petites racines descendent dans le noir.
 
 L'hiver peut venir : le chêne a déjà commencé.
 
@@ -458,7 +458,7 @@ L'hiver peut venir : le chêne a déjà commencé.
 ### Page 23 — Le même qu'autrefois
 
 **[Regard]**
-*Janvier. Le chêne est nu sur un ciel blanc, et c'est maintenant qu'on le reconnaît le mieux : la même silhouette que sur la photographie du village d'avant la guerre, celle où l'on voit la haie, le toit de la ferme et un homme en blouse qui regarde ailleurs. Les branches ont changé — l'une est tombée, deux ont poussé — mais le dessin est le même, tortueux, large, planté. Le photographe est mort, la ferme a changé trois fois de main, et l'arbre a gardé la pose.*
+*Janvier. Le chêne est nu sur un ciel blanc, et c'est maintenant qu'on le reconnaît le mieux : la même silhouette que sur la carte postale du château d'avant la Grande Guerre, celle où l'on voit la Nied, la façade et les arbres du parc [à vérifier sur la carte postale]. Les branches ont changé — l'une est tombée, deux ont poussé — mais le dessin est le même, tortueux, large, planté. Le photographe est mort, le château a été occupé, vidé, rendu, restauré, et l'arbre a gardé la pose.*
 
 Comment reconnaître un chêne sans feuilles ? Par ses bourgeons : au bout de chaque rameau, trois, quatre, cinq bourgeons serrés en bouquet, bruns, ovoïdes — aucun autre arbre de la haie ne fait cela (1). Par ses rameaux, anguleux, qui changent de direction à chaque année de pousse. Par ses grosses branches, tortueuses, qui partent en coude. Par son écorce, crevassée en long. Et par le sol : des cupules vides, des glands troués, et sur les jeunes sujets, des feuilles mortes encore accrochées.
 
@@ -466,7 +466,7 @@ Ce que l'arbre fait en hiver se voit peu. Il ne dort pas tout à fait : les raci
 
 **[Encadré — Chez le sessile]** En hiver, la différence se voit de loin : le sessile a le fût droit et les branches plus régulières ; le pédonculé a les coudes.
 
-**[Légende]** L'individu suivi en janvier, même point de vue. En médaillon : le bouquet de bourgeons au bout d'un rameau, grandeur ×3. [Vignette : la photographie ancienne du village, redessinée, si elle existe.]
+**[Légende]** L'individu suivi en janvier, même point de vue. En médaillon : le bouquet de bourgeons au bout d'un rameau, grandeur ×3. [Vignette : la carte postale ancienne du château et du parc, redessinée, si l'arbre y figure.]
 
 **[Bulle]** « Même silhouette qu'avant la guerre. Moi, j'ai changé de plumes dix-huit fois. »
 
@@ -488,7 +488,7 @@ Rien de tout cela ne dérange le chêne. L'écorce est morte en surface ; ce qui
 
 **[Bulle]** « La hulotte a sa revue. Moi aussi, maintenant. »
 
-**(1)** Lichens corticoles comme indicateurs de la qualité de l'air : méthode de l'indice de pureté atmosphérique — à préciser (ex. Van Haluwyn C., Lerond M., 1993, *Guide des lichens*).
+**(1)** Lichens corticoles comme indicateurs de la qualité de l'air : LeBlanc F., De Sloover J., 1970, *Relation between industrialization and the distribution and growth of epiphytic lichens and mosses in Montreal*, Canadian Journal of Botany 48 : 1485-1496 (indice de pureté atmosphérique) ; Van Haluwyn C., Lerond M., 1993, *Guide des lichens*, Lechevalier ; AFNOR, norme NF X43-903 (2008), *Biosurveillance de l'environnement — détermination d'un indice biologique de lichens épiphytes*.
 
 ---
 
@@ -526,14 +526,14 @@ Quand les cerfs et les chevreuils sont trop nombreux, une forêt de chênes ne s
 
 **[Bulle]** « Je plante, ils mangent. On n'a pas la même idée d'une forêt. »
 
-**(1)** Mémoire spatiale et récupération des caches : Bossema I., 1979 ; études comparées sur les corvidés — à préciser.
+**(1)** Mémoire spatiale et récupération des caches : Bossema I., 1979, Behaviour 70 (repères visuels, récupération plusieurs mois après) ; chez d'autres corvidés cacheurs : Balda R.P., Kamil A.C., 1992, *Long-term spatial memory in Clark's nutcracker*, Animal Behaviour 44 : 761-769 (caches retrouvées après neuf mois) ; Clayton N.S., Dickinson A., 1998, *Episodic-like memory during cache recovery by scrub jays*, Nature 395 : 272-274.
 **(2)** IGN, *Mémento de l'inventaire forestier*, édition 2024, « Signes de présence des grands ongulés » : près de la moitié des jeunes chênes sessiles présentent des traces d'abroutissement.
 
 ---
 
 ### Page 27 — Fin de l'année
 
-Mars, de nouveau. Les bourgeons ont gonflé ; ils ne bougent pas encore. Sur le chemin, les cupules de l'automne sont noires et molles. Dans la friche aux ronces, à trois cents mètres, là où le Jacques est venu un matin d'octobre, un gland oublié a une racine de trente centimètres et pas encore une feuille.
+Mars, de nouveau. Les bourgeons ont gonflé ; ils ne bougent pas encore. Sur l'allée, les cupules de l'automne sont noires et molles. Dans la friche aux ronces, à trois cents mètres, là où le Jacques est venu un matin d'octobre, un gland oublié a une racine de trente centimètres et pas encore une feuille.
 
 Au printemps, il lèvera. Quatre à six feuilles, rouges d'abord, sur une tige de la taille d'un crayon. Le Jacques ne s'en souviendra pas ; le chevreuil, peut-être. Dans dix ans, si tout va bien, ce sera un arbre. Dans cent, il fera de l'ombre à la route.
 
@@ -548,7 +548,7 @@ Comment un gland devient un chêne, et combien de temps cela prend : c'est tout 
 ## Annexe — Ce qui reste à relever pour cette livraison
 
 - Les noms lorrains et vosgiens du chêne (glossaires : Lucien Adam, Richard, Mathis, Oberlin — voir Lexilogos).
-- La photographie ancienne du village pour le regard de la page 23 ; la carte de Cassini et le cadastre napoléonien pour le regard de la page 8 ; les archives seigneuriales ou communales pour la glandée de la page 18.
+- Le lieu est fixé (9 novembre) : le parc du château de Pange, Moselle, au bord de la Nied française ; les regards des pages 8, 11, 18 et 23 ont été réécrits pour ce décor d'après les documents publics sur le domaine (château de 1720, douves et tours supprimées en 1806, parc à l'anglaise du XIXe siècle, occupations militaires, jardin de Louis Benech 2000-2003, « chênes tricentenaires »). Restent à l'auteur : la carte postale ancienne du château pour le regard de la page 23 ; la feuille de Cassini et les plans du parc (XVIIIe siècle, comte de Choulot) pour la page 8 ; les archives de la seigneurie pour la glandée de la page 18 ; la position exacte du chêne dans le parc, son tour et son âge (page 34).
 - Les dates réelles du débourrement et des quatre passages photographiques (pages 8-9).
 - Les cernes à légender sur la rondelle de la page 25 (années de sécheresse connues du lieu).
-- Références primaires à préciser : anthocyanes (Lee & Gould 2002), cycle des cynips (Stone et al. 2002), encre ferro-gallique (BnF), balanin (Bonal), *masting* (Kelly & Sork 2002), marcescence, lichens bio-indicateurs, nourrissage des mésanges (source primaire derrière les « 900 becquées »).
+- Références primaires : levées le 9 novembre 2026 (anthocyanes : Lee & Gould 2002, Karageorgou & Manetas 2006 ; cynips : Stone et al. 2002 ; encre : Rouchon 2011, Liège 2012 ; balanin : Espelta 2009, Bonal 2007, 2009 ; glandée : Crawley & Long 1995, Kelly & Sork 2002 ; marcescence : Svendsen 2001, Otto & Nilsson 1981, Abadía 1996 ; lichens : LeBlanc & De Sloover 1970, AFNOR 2008 ; mésanges : Gibb 1955, Royama 1966, Barba 2009 ; caches : Balda & Kamil 1992, Clayton & Dickinson 1998). La phrase sur les feuilles rouges (p. 9) a été réécrite : l'effet parasol est une hypothèse peu confirmée, l'effet contre les insectes est mesuré.

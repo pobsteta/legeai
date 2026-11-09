@@ -22,7 +22,7 @@ Tout le pari du chêne tient dans ce paquet : donner à l'embryon assez de rése
 
 **[Bulle]** « Deux à huit grammes. Je les pèse au bec, je sais de quoi je parle. »
 
-**(1)** Dimensions et poids des glands : *Flore forestière française*, t. 1 ; composition (amidon, lipides, protéines, tanins) : ordres de grandeur de la littérature sur les glands de chênes blancs européens — à préciser (ex. travaux de l'INRAE sur la conservation des glands ; analyses alimentaires des glands).
+**(1)** Dimensions et poids des glands : *Flore forestière française*, t. 1. Composition — amidon autour de la moitié du poids sec, protéines et lipides de quelques pour cent chacun chez les chênes blancs, tanins variables selon l'espèce et la maturité : Vinha A.F., Barreira J.C.M., Costa A.S.G., Oliveira M.B.P.P., 2016, *A new age for Quercus spp. fruits: review on nutritional and phytochemical composition and related biological activities of acorns*, Comprehensive Reviews in Food Science and Food Safety 15 : 947-981 ; Suszka B., Muller C., Bonnet-Masimbert M., 1994, *Graines des feuillus forestiers : de la récolte au semis*, INRA Éditions.
 
 ---
 
@@ -30,7 +30,7 @@ Tout le pari du chêne tient dans ce paquet : donner à l'embryon assez de rése
 
 La plupart des graines d'arbres savent dormir. La faîne du hêtre, la graine du pin, la samare du frêne se dessèchent, se conservent des mois ou des années, et germent quand les conditions reviennent. On les stocke en sacs, au sec, au froid ; les pépiniéristes en font des réserves.
 
-Le gland, non. Il est gorgé d'eau — près de la moitié de son poids — et qu'il en perde une part, un quart suffit, il meurt (1). Il n'a pas de dormance : tombé en octobre dans une litière humide, il germe en novembre (page 21). On ne peut pas le garder d'une année sur l'autre, même en chambre froide : les forestiers qui veulent semer des chênes récoltent en automne et sèment avant l'hiver ou au tout début du printemps, et pas plus tard. Les botanistes disent de cette graine qu'elle est **récalcitrante** : elle refuse d'attendre.
+Le gland, non. Il est gorgé d'eau — près de la moitié de son poids — et qu'il en perde une part, un cinquième suffit, il meurt (1). Il n'a pas de dormance : tombé en octobre dans une litière humide, il germe en novembre (page 21). On ne peut pas le garder d'une année sur l'autre, même en chambre froide : les forestiers qui veulent semer des chênes récoltent en automne et sèment avant l'hiver ou au tout début du printemps, et pas plus tard. Les botanistes disent de cette graine qu'elle est **récalcitrante** : elle refuse d'attendre.
 
 C'est une faiblesse — un automne sec, une glandée mangée, et il n'y a pas de deuxième chance dans le sol. C'est aussi ce qui a fait du chêne un arbre d'oiseaux et de rongeurs : une graine qui ne se conserve pas doit être déplacée vite, par quelqu'un qui a intérêt à la cacher au frais.
 
@@ -40,9 +40,9 @@ Les humains, eux, ont appris à la garder autrement. Le gland a nourri les homme
 
 **[Bulle]** « Je ne les lessive pas, moi. »
 
-**(1)** Graines récalcitrantes, sensibles à la dessiccation : *Flore forestière française*, t. 1 ; ONF, *Rendez-vous techniques* n° 13, 2006 ; seuil de teneur en eau — ordre de grandeur, à préciser.
-**(2)** Consommation humaine des glands (lessivage des tanins, farine, succédané de café) : Couplan F., *Le régal végétal* ; témoignages des deux guerres mondiales sur les ersatz de café — à préciser par une source historique.
-**(3)** Intoxication des bovins et des chevaux par les glands (tanins) : littérature vétérinaire — à préciser (ex. fiches du Centre national d'informations toxicologiques vétérinaires).
+**(1)** Graines récalcitrantes : Finch-Savage W.E., 1992, *Embryo water status and survival in the recalcitrant species Quercus robur L.: evidence for a critical moisture content*, Journal of Experimental Botany 43 : 663-669 — le gland mûr contient 45 à 50 % d'eau ; la viabilité chute dès que la teneur passe sous 40 % environ, seuil critique retenu par les pépinières (Suszka, Muller & Bonnet-Masimbert 1994 ; ONF, *Rendez-vous techniques* n° 13, 2006) ; *Flore forestière française*, t. 1.
+**(2)** Consommation humaine des glands (lessivage des tanins, farine, succédané de café) : Couplan F., *Le régal végétal* ; Vinha et al. 2016 (ci-dessus). Succédanés de café — glands, orge, figues, chicorée — plus courants que le vrai café jusqu'à la Seconde Guerre mondiale : *Dictionnaire historique de la Suisse*, art. « Café » ; en France sous l'Occupation, glands et céréales torréfiés à la maison faute de café : Veillon D., 1995, *Vivre et survivre en France, 1939-1947*, Payot.
+**(3)** Intoxication des bovins et des chevaux par les glands — tanins hydrolysables, glands verts les plus toxiques, pédonculé plus que sessile, atteinte digestive puis rénale, accoutumance de certains animaux : GDS Creuse (Boubet B.), *L'intoxication aux glands, une pathologie souvent mortelle chez les bovins*, 2020 et 2025, d'après le Centre national d'informations toxicologiques vétérinaires (CNITV, VetAgro Sup, Lyon) : la moitié des appels pour intoxication végétale des bovins, quatrième motif d'appel pour les équidés.
 
 ---
 
@@ -62,9 +62,9 @@ Mesurez les trois distances.
 
 **[Parole du Jacques]** « Mon record personnel, je ne le connais pas : je ne compte pas en mètres. Mais les gens qui m'ont suivi avec leurs jumelles et leurs émetteurs disent plusieurs centaines de mètres par voyage, et parfois le kilomètre (2). Trois cents voyages par jour en octobre, pendant des semaines. Je retrouve presque tout. Ce que je ne retrouve pas, je ne sais pas où c'est — c'est bien le problème. Alors je ne peux pas vous dire lequel de mes glands est devenu la forêt. Je peux vous dire que c'est un des miens. »
 
-**[Légende]** Les trois distances à l'échelle du village de [lieu] : le cercle de la gravité (dix mètres), celui du mulot (trente mètres), celui du geai (trois cents mètres à un kilomètre). Le clocher, pour l'échelle.
+**[Légende]** Les trois distances à l'échelle de Pange : le cercle de la gravité (dix mètres), celui du mulot (trente mètres), celui du geai (trois cents mètres à un kilomètre). Le château et le clocher, pour l'échelle.
 
-**(1)** Mise en réserve des glands par les rongeurs forestiers (mulots *Apodemus*) et distances de transport : *Flore forestière française*, t. 1 ; den Ouden J., Jansen P.A., Smit R., 2005, dans Forget P.-M. et al. (dir.), *Seed Fate*, CABI — à préciser.
+**(1)** Mise en réserve des glands par les mulots (*Apodemus sylvaticus*) et distances de transport, quelques dizaines de mètres, sous couvert : den Ouden J., Jansen P.A., Smit R., 2005, *Jays, mice and oaks: predation and dispersal of Quercus robur and Q. petraea in north-western Europe*, dans Forget P.-M., Lambert J.E., Hulme P.E., Vander Wall S.B. (dir.), *Seed Fate: Predation, Dispersal and Seedling Establishment*, CABI, p. 223-239 ; *Flore forestière française*, t. 1.
 **(2)** Bossema I., 1979, *Jays and oaks*, Behaviour 70 ; Gómez J.M., 2003, Ecography 26 : dispersion au-delà de 250 m, jusqu'à 1 km ; Pons J., Pausas J.G., 2007, Oecologia 153 : suivi radio de glands transportés par des geais.
 
 ---
@@ -83,7 +83,7 @@ D'où l'alliance avec le Jacques : il pose les glands exactement là où le jeun
 
 **[Bulle]** « Six feuilles et déjà plus haut que moi quand je suis posé. Ça commence mal. »
 
-**(1)** Germination hypogée et croissance de la plantule la première année : *Flore forestière française*, t. 1 ; proportion racine/tige au premier été — ordre de grandeur des pépinières forestières, à préciser selon la station.
+**(1)** Germination hypogée et croissance de la plantule la première année : *Flore forestière française*, t. 1 ; Harmer R., 1990, *Relation of shoot growth phases in seedling oak to development of the tap root, lateral roots and fine root tips*, New Phytologist 115 : 23-27 (le pivot pousse avant et entre les poussées de la tige) ; *La Hulotte*, *Plantez un chêne*, 2024 (20 à 40 cm de tige, près d'un mètre de racine au premier été) ; les proportions varient avec le sol, l'ombre et l'eau.
 **(2)** Tempérament des deux chênes (pédonculé héliophile dès le jeune âge et pionnier ; sessile post-pionnier, plus tolérant à l'ombre) : ONF, *Rendez-vous techniques*, stratégie chêne sessile ; Ducousso A., Bordács S., *Fiche technique pour la conservation génétique : chênes pédonculé et sessile*, EUFORGEN.
 
 ---
@@ -110,7 +110,7 @@ Sur mille glands tombés, quelques dizaines lèvent ; sur ces quelques dizaines,
 
 **(1)** IGN, *Mémento de l'inventaire forestier*, édition 2024, « Signes de présence des grands ongulés » : près de la moitié des jeunes chênes sessiles présentent des traces d'abroutissement.
 **(2)** Oïdium du chêne, *Erysiphe alphitoides* : premiers foyers épidémiques en France en 1907, extension à toute l'Europe dès 1908, origine exotique présumée — Desprez-Loustau M.-L., Mougou A., Feau N., Dutech C., *Oïdium des chênes : une maladie, plusieurs agents pathogènes*, INRA ; Mougou-Hamdane A. et al., 2010, Mycoscience 52 ; fiche WSL *Néomycètes : oïdium du chêne*, 2020.
-**(3)** Effet protecteur des ronciers contre l'abroutissement des semis de chêne : études de régénération en forêt feuillue — à préciser (ONF, INRAE).
+**(3)** Effet protecteur des buissons et des ronces contre l'abroutissement des semis de chêne : Jensen A.M., Götmark F., Löf M., 2012, *Shrubs protect oak seedlings against ungulate browsing in temperate broadleaved forests of conservation interest: a field experiment*, Forest Ecology and Management 266 : 187-193 — dix forêts du sud de la Suède : moins de dégâts de dents sous les buissons, mais plus de mortalité au bout de deux ans et demi, car ce qui protège fait aussi de l'ombre ; Smit C., den Ouden J., Müller-Schärer H., 2006, *Unpalatable plants facilitate tree sapling survival in wooded pastures*, Journal of Applied Ecology 43 : 305-312.
 
 ---
 
@@ -131,7 +131,7 @@ Le chêne a aussi une autre vie, plus courte. Coupez-le au ras du sol : la souch
 **[Bulle]** « Trois cents ans pour grandir. Moi, à un an, j'avais fini. »
 
 **(1)** Largeur moyenne des cernes de chênes sessiles et pédonculés, 2 à 3 mm par an dans les jeunes âges, variable selon l'âge et la station : Lebourgeois F., 2001, *Les chênes sessile et pédonculé dans le réseau Renecofor : rythme de croissance radiale, anatomie du bois, de l'aubier et de l'écorce*, Revue forestière française.
-**(2)** Âge de première fructification : « se reproduisent en général entre 40 et 100 ans » — Ducousso A., Bordács S., *Fiche technique pour la conservation génétique : chênes pédonculé et sessile*, EUFORGEN ; arbres isolés plus précoces : *Flore forestière française*, t. 1 — à préciser.
+**(2)** Âge de première fructification : « se reproduisent en général entre 40 et 100 ans » — Ducousso A., Bordács S., *Fiche technique pour la conservation génétique : chênes pédonculé et sessile*, EUFORGEN ; arbres isolés plus précoces, vers 20 à 30 ans : *Flore forestière française*, t. 1 ; les trente pédonculés suivis quinze ans par Crawley & Long (1995, Journal of Ecology 83) pour leurs glands allaient de 43 cm à plus de 6 m de tour.
 
 ---
 
@@ -139,7 +139,7 @@ Le chêne a aussi une autre vie, plus courte. Coupez-le au ras du sol : la souch
 
 Un chêne adulte mesure vingt-cinq à quarante mètres ; son tronc atteint un mètre de diamètre vers cent cinquante ou deux cents ans ; son houppier, en plein champ, couvre vingt à trente mètres — la surface d'une maison et de son jardin (1).
 
-Le nôtre a quatre-vingts ans. Un mètre quatre-vingts de tour à hauteur de poitrine, vingt-deux mètres de haut [à mesurer], des branches maîtresses qui partent à trois mètres du sol parce qu'il a toujours eu le pré d'un côté. Dans la forêt voisine, un chêne du même âge serait plus haut d'un tiers et sans branche basse ; il attendrait encore ses premiers glands.
+Le nôtre : [tour à 1,30 m, hauteur et âge à mesurer dans le parc de Pange — les chênes du parc sont dits tricentenaires ; le tour permettra d'en juger, page 54]. Un chêne de parc de quatre-vingts ans, lui, fait un mètre quatre-vingts de tour à hauteur de poitrine et une vingtaine de mètres de haut, avec des branches maîtresses qui partent à trois mètres du sol parce qu'il a toujours eu la lumière d'un côté. Dans la forêt voisine, un chêne du même âge serait plus haut d'un tiers et sans branche basse ; il attendrait encore ses premiers glands.
 
 Un adulte, pour un chêne, c'est un arbre qui fructifie, qui tient sa place dans le peuplement et qui ne grandit plus guère en hauteur : il s'élargit. C'est aussi l'âge de la récolte. Dans les grandes futaies de l'Allier et de la Sarthe, on laisse les sessiles pousser deux cents à deux cent cinquante ans, lentement, serrés, pour obtenir un bois à grain fin, sans nœud, que les tonneliers fendent en merrains — on y revient page 48. La forêt de Tronçais a été mise en réserve en 1670, sous Colbert, pour fournir des mâts et des membrures à la marine du roi ; quand ses chênes ont été mûrs, deux siècles plus tard, les navires étaient en acier. Ils font aujourd'hui des barriques (2).
 
@@ -148,7 +148,7 @@ Un adulte, pour un chêne, c'est un arbre qui fructifie, qui tient sa place dans
 **[Bulle]** « Quatre-vingts ans. Un gamin. »
 
 **(1)** Dimensions des chênes adultes : *Flore forestière française*, t. 1 ; Ducousso & Bordács, EUFORGEN (30-40 m).
-**(2)** Forêt de Tronçais : réformation et mise en réserve pour la marine sous Colbert (1670), futaie dite « Colbert », chênes de 200 à 300 ans destinés aujourd'hui à la tonnellerie — ONF, forêt domaniale de Tronçais ; à préciser (dates et sources d'archives).
+**(2)** Forêt de Tronçais : réformation et mise en réserve pour la marine sous Colbert (1670), futaie dite « Colbert », chênes de 200 à 300 ans destinés aujourd'hui à la tonnellerie — ordonnance de Colbert sur le fait des eaux et forêts (août 1669) et réformation de la forêt de Tronçais (1670) pour la marine ; ONF, forêt domaniale de Tronçais, Forêt d'Exception® (2018) ; Corvol A., 1987, *L'Homme aux bois. Histoire des relations de l'homme et de la forêt, XVIIe-XXe siècle*, Fayard.
 
 ---
 
@@ -166,7 +166,7 @@ Ces filaments relient-ils les arbres entre eux ? Un même champignon peut s'atta
 
 **[Bulle]** « Sous mes glands, il y a tout un internet. Enfin, c'est ce qu'on dit. »
 
-**(1)** Mycorhizes des chênes et champignons associés : *Flore forestière française*, t. 1 ; Mitchell R.J. et al., 2019, OakEcol (champignons associés aux chênes, Royaume-Uni) ; hôtes de la truffe noire *Tuber melanosporum* (chênes pubescent et vert, sols calcaires) : INRAE, filière trufficole — à préciser.
+**(1)** Mycorhizes des chênes et champignons associés : *Flore forestière française*, t. 1 ; Mitchell R.J. et al., 2019, OakEcol (champignons associés aux chênes, Royaume-Uni) ; hôtes de la truffe noire *Tuber melanosporum* (chênes pubescent et vert, noisetier, sols calcaires) : Le Tacon F., 2017, *Les truffes. Biologie, écologie et domestication*, AgroParisTech, Nancy, 304 p.
 **(2)** Karst J., Jones M.D., Hoeksema J.D., 2023, *Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests*, Nature Ecology & Evolution 7 : 501-511.
 
 ---
@@ -203,7 +203,7 @@ Et c'est là que la forêt commence à vivre de lui. Cavités, fissures, branche
 
 **[Bulle]** « Il perd sa tête et il continue. J'aimerais bien. »
 
-**(1)** Descente de cime et sénescence des chênes : Drénou C., *Les racines, face cachée des arbres* et *L'arbre : au-delà des idées reçues*, IDF — à préciser (chapitres) ; Raimbault P., modèles architecturaux des arbres.
+**(1)** Descente de cime et sénescence des chênes : Raimbault P., Tanguy M., 1993, *La gestion des arbres d'ornement. 1re partie : une méthode d'analyse et de diagnostic de la partie aérienne*, Revue forestière française 45 (2) : 97-117 — dix stades de développement, le neuvième étant la descente de cime, le dixième la dislocation ; Drénou C., Bouvier M., Lemaire J., 2011 et 2012 (méthode ARCHI, voir page 44) ; Drénou C., 2016, *L'arbre : au-delà des idées reçues*, IDF.
 **(2)** Part des espèces forestières dépendantes du bois mort et des vieux arbres, « près d'un quart » : Vallauri D., André J., Dodelin B., Eynard-Machet R., Rambaud D. (coord.), 2005, *Bois mort et à cavités, une clé pour des forêts vivantes*, Lavoisier ; repris par l'ONF (fiche *Arbres bio*, instruction 09-T-71) et l'Office fédéral suisse de l'environnement (« environ un quart des espèces vivant en forêt »).
 
 ---
@@ -247,7 +247,7 @@ Disons-le clairement : ces âges sont revendiqués, rarement mesurés. On ne peu
 
 **[Bulle]** « Douze cents ans, dit la pancarte. Personne n'a compté. Moi non plus. »
 
-**(1)** Décomposition du bois mort de chêne et succession des organismes : Vallauri D. et al., 2005, *Bois mort et à cavités* ; durées — ordres de grandeur, à préciser.
+**(1)** Décomposition du bois mort de chêne et succession des organismes : Vallauri D. et al., 2005, *Bois mort et à cavités* ; durées : Rock J., Badeck F.-W., Harmon M.E., 2008, *Estimating decomposition rate constants for European tree species from literature sources*, European Journal of Forest Research 127 : 301-313 — le chêne a l'une des constantes de décomposition les plus faibles des feuillus européens : plusieurs décennies pour perdre la moitié de sa masse, un siècle et plus pour un gros tronc.
 **(2)** Chêne d'Allouville-Bellefosse (Seine-Maritime) : chapelles aménagées en 1696 ; âge estimé entre 800 et 1 200 ans selon les sources, non mesuré — commune d'Allouville-Bellefosse, dossier des arbres remarquables (association A.R.B.R.E.S.) ; forêt de Tronçais : ONF, chênes remarquables de la futaie Colbert ; chênes lorrains et autres sujets à vérifier avant la page 58.
 
 ---
@@ -268,11 +268,11 @@ Un chêne de quatre-vingts ans, en juillet, coupé de haut en bas comme une mais
 
 **Troisième étage : la couronne.** 23. Les chenilles de la tordeuse et leurs cornets (page 11). 24. Les galles du cynips, en cerise sous les feuilles et en artichaut au bout des rameaux (page 14). 25. La mésange charbonnière, neuf cents becquées par jour. 26. L'écureuil roux et son nid de branches, la hotte. 27. Le pigeon ramier, qui avale les glands entiers. 28. Le pouillot siffleur, qui chante en descendant. 29. Le Jacques.
 
-**Toit.** 30. La buse variable, posée sur la plus haute branche morte, qui surveille le pré.
+**Toit.** 30. La buse variable, posée sur la plus haute branche morte, qui surveille la prairie.
 
-**[Légende]** Coupe verticale pleine double page, du sous-sol à la cime ; les trente numéros renvoient au texte. Tous ces habitants sont présents en juillet sur un chêne de haie de plaine ; aucun n'a été inventé pour la page.
+**[Légende]** Coupe verticale pleine double page, du sous-sol à la cime ; les trente numéros renvoient au texte. Tous ces habitants sont présents en juillet sur un chêne de parc ou de haie, en plaine ; aucun n'a été inventé pour la page.
 
-**[Bulle]** « Je suis au troisième. Avec vue sur la friche. »
+**[Bulle]** « Je suis au troisième. Avec vue sur la Nied. »
 
 ---
 
@@ -300,7 +300,7 @@ Cinq habitants, grandeur nature, à retenir avant tous les autres.
 
 **[Bulle]** « Les processionnaires ? Je les laisse au coucou. »
 
-**(1)** Processionnaire du chêne : biologie, poils urticants dès le troisième stade larvaire (fin mai), nids urticants pendant un à deux ans, expansion dans l'Est et le Nord-Ouest — Ministère de l'Agriculture, Département de la santé des forêts, fiche *La processionnaire du chêne* ; FREDON Grand Est / ARS, fiche espèce ; Blaser S. et al., 2022, *La processionnaire du chêne : connaissances de base et recommandations pratiques*, Notice pour le praticien 71, WSL ; régime du coucou gris (chenilles velues) : LPO, fiche *Cuculus canorus* — à préciser.
+**(1)** Processionnaire du chêne : biologie, poils urticants dès le troisième stade larvaire (fin mai), nids urticants pendant un à deux ans, expansion dans l'Est et le Nord-Ouest — Ministère de l'Agriculture, Département de la santé des forêts, fiche *La processionnaire du chêne* ; FREDON Grand Est / ARS, fiche espèce ; Blaser S. et al., 2022, *La processionnaire du chêne : connaissances de base et recommandations pratiques*, Notice pour le praticien 71, WSL ; régime du coucou gris — les chenilles velues qu'aucun autre oiseau ne mange, processionnaires comprises : Barbaro L., Battisti A., 2011, *Birds as predators of the pine processionary moth*, Biological Control 56 : 107-114 (coucou gris et coucou geai, prédateurs réguliers grâce à la paroi de leur gésier) ; Cramp S. (dir.), 1985, *The Birds of the Western Palearctic*, vol. IV, Oxford University Press.
 **(2)** Mitchell R.J. et al., 2019, OakEcol, Data in Brief 25 : 326 espèces obligatoires et 229 fortement associées, sur 2 300 recensées.
 **(3)** Dispersion des glands par le geai : Bossema 1979 ; Gómez 2003 (voir pages 20 et 30).
 
@@ -361,11 +361,7 @@ Vingt minutes. Sans téléphone. Le chêne ne demande rien ; c'est précisément
 
 ## Annexe — Ce qui reste à relever pour cette livraison
 
-- Composition du gland (amidon, lipides, protéines, tanins) et seuil de dessiccation : une source quantitative (INRAE, littérature sur les graines récalcitrantes).
-- Sources historiques du « café de glands » et du pain de glands (deux guerres, famines) ; intoxication des bovins et chevaux (CNITV).
-- Croissance des semis selon la station (hauteur et racine au premier été) ; effet protecteur de la ronce (ONF, INRAE).
-- Descente de cime : chapitres précis de Drénou ; durées de décomposition du bois mort de chêne.
-- Chênes remarquables : âges mesurés ou estimés, sources (A.R.B.R.E.S., ONF Tronçais), et le chêne lorrain de la page 58 — à visiter.
+- Sources levées le 9 novembre 2026 : composition du gland (Vinha 2016 ; Suszka 1994) et seuil de dessiccation (Finch-Savage 1992 : « un cinquième » remplace « un quart ») ; café de glands (DHS ; Veillon 1995) ; bovins (GDS Creuse d'après le CNITV) ; mulot (den Ouden 2005) ; plantule (Harmer 1990 ; La Hulotte 2024) ; ronce (Jensen 2012 ; Smit 2006) ; Tronçais (Colbert 1669-1670 ; Corvol 1987) ; truffe (Le Tacon 2017) ; descente de cime (Raimbault & Tanguy 1993) ; bois mort (Rock 2008) ; coucou (Barbaro & Battisti 2011 ; Cramp 1985).
+- Chênes remarquables : traités page 58 (livraison 4) ; le chêne lorrain est celui de l'Attaque, à Montmédy.
 - Mesures de l'individu suivi pour la page 34 : tour à 1,30 m, hauteur, hauteur de la première branche.
-- Les trente habitants de l'immeuble (p. 40-41) : vérifier la présence de chacun sur le chêne suivi ou dans sa haie, en juillet ; remplacer ceux qui manquent.
-- Régime du coucou gris (chenilles velues, processionnaires) : fiche LPO ou source ornithologique.
+- Les trente habitants de l'immeuble (p. 40-41) : vérifier la présence de chacun sur le chêne suivi ou dans le parc de Pange, en juillet ; remplacer ceux qui manquent.
