@@ -283,5 +283,62 @@
     ]
    }
   ]
+ },
+ "54": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p54-fiche-mon-chene.png"
+  ],
+  "hauteur_mm": 210,
+  "note": "fiche vectorielle au gabarit de la collection ; les trois croquis d'aide de la marge restent à dessiner"
+ },
+ "55": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p55-planter-un-chene_ksVIGuz16B.jpg",
+   "tomes/01-le-chene/images/p55-encre-de-chene_EbAM9CHuuO.jpg"
+  ],
+  "hauteur_mm": 58,
+  "note": "deux pas-à-pas côte à côte (planter / encre) ; les numéros 1 à 6 sont posés à la mise en page"
+ },
+ "56": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p56-quatre-gestes_9ZE1tRYNYZ.jpg"
+  ],
+  "hauteur_mm": 62,
+  "note": "bandeau des quatre gestes ; les trois codes QR (vectoriels, testés) sont ajoutés au montage quand les adresses seront fixées"
+ },
+ "57": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p57-grille-douze-glands.png"
+  ],
+  "hauteur_mm": 60,
+  "note": "grille vectorielle ; le Jacques plume à la patte sera ajouté au montage"
+ },
+ "58": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p58-carte-six-chenes.png"
+  ],
+  "hauteur_mm": 125,
+  "note": "carte exacte (géocodeur IGN) ; les six vignettes attendent les photographies de l'auteur sur place"
+ },
+ "62": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p62-jacques-au-bureau_KLT8GUEkqp.jpg"
+  ],
+  "hauteur_mm": 88,
+  "note": "Jacques v0 (référence JNhfAn4Oq4) ; à refaire avec le Jacques v1"
+ },
+ "63": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p63-branche-de-sapin_If9zwbYtvE.jpg"
+  ],
+  "hauteur_mm": 105,
+  "note": "gravure 3:4 ; vue de trois quarts, pas de dessous : légende ajustée"
+ },
+ "64": {
+  "fichiers": [
+   "tomes/01-le-chene/images/p64-les-25-dos.png"
+  ],
+  "hauteur_mm": 75,
+  "note": "figure vectorielle ; couleurs des tomes 2 à 25 à fixer"
  }
 }

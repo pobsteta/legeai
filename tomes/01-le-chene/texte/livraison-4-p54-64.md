@@ -1,0 +1,255 @@
+# Le Geai — Tome 1 : *Le Chêne* — Texte, livraison 4 (pages 54 à 64)
+
+*Texte définitif proposé pour les pages de fin : « À faire » (pages 54 à 56), « L'énigme du Jacques » (page 57), « Chênes à visiter » (page 58), le lexique (page 59), les sources (pages 60-61), le courrier du Jacques (page 62), le prochain tome et le colophon (page 63), la collection (page 64). Mêmes conventions que les livraisons 1 à 3 : corps de texte = l'enquête ; **[Bulle]** et **[Parole du Jacques]** = le Jacques ; **[Légende]** sous l'image ; **[Encadré]** cadre dans la page ; **(n)** note de bas de page, numérotée par page. Les crochets [ ] signalent ce qui dépend du lieu ou reste à fixer (adresses web, ISBN, dépôt légal, nom d'auteur).*
+
+*Bilan de la passe de sourçage : règle d'estimation de l'âge par le tour du tronc (Mitchell 1974 ; White 1998) ; semis de glands — test de flottaison, profondeur, grillage contre les rongeurs (La Hulotte 2024 ; Prévosto et al., INRAE-Cemagref, Forêt méditerranéenne) ; encre ferro-gallique — composition et recette (CeROArt 2011 ; université de Liège 2012) ; chênes remarquables — Allouville-Bellefosse (base Mérimée ; presse régionale), Tronçais (ONF ; Wikipédia d'après ONF), Bercé (Lebourgeois, Cousseau & Ducos 2003, 2004 ; fiche PR Thoiré-sur-Dinan), chêne à Guillotin (Département du Morbihan ; CPIE Brocéliande), chêne de Plassay (Nature Environnement 17), chêne de l'Attaque (DREAL Grand Est, site classé 1937) ; positions relevées par le géocodeur de l'IGN ; sapin pectiné (Flore forestière française, t. 2). Restent à relever : les adresses web, les codes QR, l'ISBN et le dépôt légal, le nom d'auteur ; l'arbre de Charente-Maritime voulu par l'auteur (« Montravail », introuvable dans les inventaires : remplacé provisoirement par le chêne de Plassay) ; le choix définitif du chêne lorrain (Montmédy proposé, Bainville-aux-Saules en réserve).*
+
+---
+
+## À FAIRE
+
+### Page 54 — Mon chêne : la fiche
+
+Choisissez un chêne — celui de la haie, du parc, du chemin de l'école — et remplissez cette page. Photocopiez-la avant, si vous voulez en suivre plusieurs ; le Jacques ne vous en voudra pas.
+
+**Où et quand.** Lieu (commune, lieu-dit, « à gauche après le pont ») ; date ; météo du jour.
+
+**Qui est-il ?** Les quatre gestes de la planche (pages 4-5), à cocher : pétiole court comme un ongle / long comme une allumette ; gland au bout d'une queue / assis sur le rameau ; base de la feuille à oreillettes / en coin ; nervures qui n'atteignent pas un lobe : trois ou plus / moins. Quatre réponses d'un côté : pédonculé ou sessile, vous le savez. Mélangées : un hybride, peut-être — écrivez « je ne sais pas », c'est une réponse de naturaliste.
+
+**Comment vit-il ?** Seul (haie, pré, parc, rue) ; accompagné (forêt mélangée) ; en peuplement pur (futaie). Page 44 pour se souvenir de ce que cela change.
+
+**Sa hauteur, sans grimper.** La méthode du bâton : tenez un bâton à bout de bras, verticalement, et reculez jusqu'à ce qu'il paraisse exactement aussi haut que l'arbre, du pied à la cime. La distance qui vous sépare alors du tronc est, à peu près, la hauteur de l'arbre : comptez-la en grands pas d'un mètre. C'est une mesure de bûcheron, juste à un ou deux mètres près (1).
+
+**Son tour, et son âge à peu près.** Mesurez le tour du tronc à hauteur de poitrine, un mètre trente du sol, avec une ficelle que vous reporterez sur un mètre. Un chêne qui a poussé seul, en pleine lumière, grossit d'environ deux centimètres et demi de tour par an : divisez le tour, en centimètres, par 2,5, et vous avez son âge, à peu près. En forêt, serré par ses voisins, il grossit moitié moins vite : divisez par 1,5. Un chêne de pré de deux mètres cinquante de tour a donc une centaine d'années ; le même tour en forêt, cent soixante-dix (2). C'est un ordre de grandeur, pas une mesure : le sol, l'eau, les coupes et les tailles font varier la règle, et les forestiers eux-mêmes s'y trompent largement. Au-delà de cinq ou six mètres de tour, elle ne vaut plus rien (page 39).
+
+**Qui habite là ?** Cochez ce que vous voyez : galles sur les feuilles ; chenilles ou feuilles trouées ; lichens sur l'écorce ; champignons au pied ; une cavité ; du bois mort dans la cime ; un pic (ou ses trous) ; une mésange ; un écureuil ; un geai — ou ses cris. Et la case vide : ce que vous ne savez pas nommer. Dessinez-le.
+
+**La saison.** Bourgeons fermés ; feuilles qui sortent ; feuilles d'été ; glands ; feuilles brunes ; branches nues et quelques feuilles mortes accrochées.
+
+**[Légende]** La fiche « Mon chêne », au gabarit de la collection : cases à cocher, deux lignes pour les mesures, un cadre pour le croquis, et le mot « photocopiez-moi » en pied. Sur le côté, trois croquis d'aide : le bâton à bout de bras, la ficelle à hauteur de poitrine, la feuille et ses quatre gestes.
+
+**[Bulle]** « Deux centimètres et demi par an. Moi, je grossis surtout en octobre. »
+
+**(1)** Méthode dite du bâton (ou de la croix du bûcheron), fondée sur les triangles semblables : usage courant des forestiers et des naturalistes, précision de l'ordre de 5 à 10 % sur un terrain plat.
+**(2)** Mitchell A., 1974, *A Field Guide to the Trees of Britain and Northern Europe*, Collins — accroissement moyen de 2,5 cm de circonférence par an pour un feuillu de plein découvert, de 1,25 à 1,5 cm en forêt (« règle de Mitchell ») ; White J., 1998, *Estimating the Age of Large and Veteran Trees in Britain*, Forestry Commission Information Note 12 — limites de la règle pour les très gros arbres, dont la croissance ralentit avec l'âge.
+
+---
+
+### Page 55 — Deux recettes
+
+**Planter un chêne.** Le Jacques le fait depuis dix mille ans sans mode d'emploi ; en voici un tout de même.
+
+1. **Ramassez** fin septembre ou en octobre, sous un beau chêne du pays — un arbre de haie ou de pré, qui a l'âge d'en donner (page 33). Prenez les glands bruns, lourds, sans trou : le trou rond, c'est le balanin qui est sorti (page 16).
+2. **Faites-les nager.** Un seau d'eau : ceux qui flottent sont vides ou véreux, et ont perdu ; gardez ceux qui coulent (1).
+3. **Plantez aussitôt.** Un gland sec est un gland mort (page 29) : le jour même, ou dans les deux ou trois jours, en terre. Trois à cinq centimètres de profondeur, le gland couché, dans un pot d'au moins vingt centimètres de haut — la racine descend avant que la tige ne monte — ou directement en place, là où l'arbre pourra rester : à dix mètres au moins d'un mur, d'une maison ou d'un autre arbre.
+4. **Protégez-le des dents.** Un carré de grillage à mailles fines posé à plat sur le gland, sous deux centimètres de terre, arrête les mulots ; un manchon ou quelques branches épineuses arrêtent le chevreuil et le lapin (2). Ne le posez pas au pied d'un grand chêne : l'ombre le tuerait en trois ans (page 32).
+5. **Attendez.** Rien l'hiver. Fin avril, une tige rouge, puis quatre à six feuilles. À la fin du premier été, vingt à quarante centimètres dehors, presque un mètre de racine dessous (3).
+6. **Laissez-le partir.** Un chêne en pot ne reste pas en pot : dès le premier ou le deuxième automne, en place, avec sa motte, sans tordre la racine. Puis des années sans rien faire, sauf regarder.
+
+**Fabriquer de l'encre de chêne.** C'est l'encre de la page 14 et du grimoire de la page 49 : celle qui a écrit l'Europe pendant mille ans. **Avec un adulte, des gants, et sans jamais goûter** : le sulfate de fer irrite la peau et les yeux, et n'est pas comestible.
+
+1. **Ramassez** une poignée de noix de galle — les boules dures et brunes des rameaux, pas les cerises molles des feuilles (page 14) ; les vieilles, percées d'un trou, sont les meilleures : le cynips est parti, le tanin est resté.
+2. **Broyez-les** au marteau, dans un chiffon, puis au mortier, le plus fin possible : trois grammes de poudre, une cuillerée à café.
+3. **Faites-les bouillir** dans un demi-verre d'eau — cinq centilitres — jusqu'à ce que le liquide ait un peu réduit et pris la couleur du thé fort. C'est le tanin qui sort.
+4. **Ajoutez la gomme arabique**, une demi-cuillerée à café, un gramme et demi : elle épaissit l'encre et la fait tenir sur le papier. Filtrez dans un filtre à café.
+5. **Ajoutez le sulfate de fer**, une demi-cuillerée à café, un gramme et demi, et regardez : le brun pâle tourne au gris, puis au noir, en quelques instants (4). C'est la réaction du fer et du tanin — la même qui noircit le cuir dans la fosse du tanneur.
+6. **Écrivez** à la plume d'oie ou au porte-plume. L'encre est pâle en sortant du flacon et noircit à l'air, en une heure ; elle brunira en vieillissant, comme les manuscrits. Bouchez le flacon, étiquetez-le, et lavez tout.
+
+**[Légende]** Deux pas-à-pas en six croquis chacun, au gabarit de la collection : à gauche, du gland dans la main au jeune chêne d'un an ; à droite, de la galle au mot écrit. Les numéros sont posés à la mise en page.
+
+**[Bulle]** « Pour le premier, je peux aider. Pour le second, non. »
+
+**(1)** *La Hulotte*, notice *Plantez un chêne*, 2024 — le « test de la piscine » (les glands qui flottent sont écartés), « un gland sec est un gland mort », pot d'au moins 15 cm, gland posé à l'horizontale, 20 à 40 cm de tige et près d'un mètre de racine la première année ; le test de flottaison est aussi l'usage des pépiniéristes pour éliminer les glands vides ou attaqués par les insectes.
+**(2)** Prévosto B., Ripert C., Amandier L., et al., *Semis de glands de chêne blanc et de chêne vert*, Forêt méditerranéenne (INRAE-Cemagref, Aix-en-Provence), 2008-2012 : glands triés par flottaison, trois glands par poquet à 3-4 cm de profondeur, recouverts de deux centimètres de terre sous un carré de grillage à mailles de 6 mm posé à plat — aucune prédation par les rongeurs avec ce dispositif ; levée de 60 à 78 % des glands.
+**(3)** Croissance de la plantule la première année : *Flore forestière française*, t. 1 ; *La Hulotte*, 2024 (voir page 31).
+**(4)** Composition de l'encre ferro-gallique — tanins de noix de galle, sulfate de fer, gomme arabique, eau — et proportions : Université de Liège, *Encres anciennes : l'encre ferro-gallique*, atelier de chimie, 2012 (recette : 3 g de noix de galle bouillis dans 50 ml d'eau réduits à 45 ml, 1,5 g de gomme arabique, filtrage, 1,5 g de sulfate de fer) ; Rouchon V. et al., 2011, *Les encres ferro-galliques*, CeROArt (composition, acidité, excès de fer dans les recettes anciennes). Sécurité : le sulfate de fer est classé irritant (fiche de données de sécurité) ; recette à faire sous surveillance d'un adulte.
+
+---
+
+### Page 56 — En poche
+
+**Les quatre gestes**, pour la promenade — la planche des pages 4-5 tient en quatre lignes :
+
+1. **Le pétiole** : court comme un ongle, pédonculé ; long comme une allumette, sessile.
+2. **Le pied du gland** : au bout d'une queue, pédonculé ; assis sur le rameau, sessile.
+3. **La base de la feuille** : deux oreillettes, pédonculé ; un coin net, sessile.
+4. **Les nervures** qui n'atteignent pas un lobe : trois ou plus, pédonculé ; moins, sessile.
+
+Trois sur quatre : un hybride est possible, et vous avez le droit d'hésiter (page 5). L'hiver : bourgeon globuleux et écorce en plaquettes profondes d'un côté, bourgeon pointu et fines lanières de l'autre.
+
+**Trois codes à flasher.**
+
+- **Le cri du geai** — le cri d'alarme râpeux qui prévient toute la forêt, et deux imitations enregistrées par l'auteur dans la haie de [lieu] [adresse à fixer].
+- **Le débourrement en accéléré** — le chêne suivi, du bourgeon fermé à la feuille d'été, une photo par jour depuis le point de vue fixe de la page 8 [adresse à fixer].
+- **Les photographies d'origine** — pour chaque dessin du livre, la photo de l'auteur dont il est tiré, et la fiche de contrôle de la planche [adresse à fixer].
+
+**Envoyez votre observation au Jacques.** Votre fiche de la page 54, une photo de votre chêne, une question, une erreur trouvée dans ce livre : [adresse web à fixer]. Le Jacques répond à partir du tome 3 (page 62).
+
+**[Légende]** Quatre croquis-gestes en bandeau — la main qui tient la feuille par le pétiole, le gland sur sa queue et le gland assis, la base de la feuille, le doigt qui compte les nervures — et trois codes QR dessinés comme des feuilles de chêne stylisées. Les codes sont testés avant impression.
+
+**[Bulle]** « Flashez mon cri. Ensuite, essayez de le faire. Personne n'y arrive. »
+
+---
+
+## L'ÉNIGME DU JACQUES
+
+### Page 57 — L'énigme du Jacques
+
+Douze tomes, douze arbres, douze lettres. À chaque tome, le Jacques pose une charade dont les premiers tiroirs assemblent un nom d'arbre et dont le dernier en tire **une lettre** : écrivez-la dans le gland qui porte le numéro du tome. Au douzième, les douze glands font une phrase, et cette phrase répond à la question que voici.
+
+**La question de la série.** *Il y a quinze mille ans, presque aucun de ces arbres ne vivait en France. Comment sont-ils arrivés jusqu'ici ?*
+
+**[Parole du Jacques]** « Voici la charade du tome 1. Mon premier, c'est ce que fait la pluie quand elle s'arrête. Mon second est une terre entourée d'eau. Mon tout est le chêne dont les glands sont assis à même la branche, sans queue — vous l'avez croisé à la page 5. Et maintenant le tiroir : la lettre à écrire dans le premier gland est **la voyelle que mon tout possède et que son frère pédonculé n'a pas**. Droite comme un tronc. Je ne dis rien de plus ; je tiens la plume, pas la réponse. »
+
+La grille ci-dessous est la vôtre : douze glands, un par tome. Le tome 2, *Le Sapin pectiné*, apportera la deuxième lettre en novembre. La réponse complète sera donnée au tome 12, en septembre, avec la grande carte des arbres qui marchent — et vous pourrez, avant, l'envoyer au Jacques (page 62) : parmi les bonnes réponses, un tirage au sort désigne le gagnant d'un tirage d'art numéroté de la collection.
+
+**[Légende]** La grille des douze glands, dessinés grandeur nature en ligne, chacun avec sa cupule et son numéro de 1 à 12 ; le premier, légèrement ouvert, attend sa lettre. Le Jacques, plume à la patte, au bout de la ligne.
+
+**[Bulle]** « Une lettre par tome. À ce rythme, j'aurai fini avant le chêne. »
+
+---
+
+## REPÈRES
+
+### Page 58 — Six chênes à aller voir
+
+Six arbres, du plus célèbre au plus proche, avec pour chacun l'âge que dit la pancarte et ce qu'on en sait vraiment (page 39). Positions relevées au mètre près sur la carte de l'IGN ; accès et état de chaque arbre à vérifier avant d'y aller : un vieux chêne change d'une année sur l'autre.
+
+**Le chêne d'Allouville-Bellefosse** (Seine-Maritime). Le plus connu de France : un pédonculé creux de dix-huit mètres, dont le tronc, qui approche dix mètres de tour à hauteur d'homme et davantage au pied, abrite deux chapelles superposées, installées en 1696 par le curé du village, Jacques Delalande du Détroit, et desservies par un escalier qui s'enroule autour de l'arbre. On lui prête de huit cents à douze cents ans et la légende le fait naître en 911, l'année de la Normandie ; aucun cerne ne peut être compté dans un arbre creux, et le tour du tronc d'un chêne de plein champ grossit vite. Il est étayé, bardé de tuiles de bois, et soigné depuis le XIXe siècle (1).
+
+**Les chênes de Tronçais** (Allier). Ici, les âges sont connus : la forêt a des archives depuis Colbert, et les forestiers lisent les cernes des arbres abattus. Les dix-neuf chênes remarquables de la futaie ont trois à quatre cents ans : le chêne Carré, six mètres quarante-quatre de tour, né vers 1630 ; la Sentinelle, six mètres cinquante-cinq, vers 1580 ; les Jumeaux, deux troncs voisins de plus de quatre cents ans. Ce sont des sessiles de futaie, droits et hauts comme des immeubles. La futaie Colbert elle-même est devenue réserve biologique intégrale en 2017 et ne se visite plus ; les arbres nommés, eux, ont leur sentier (2).
+
+**La Futaie des Clos, en forêt de Bercé** (Sarthe). Huit hectares de sessiles nés vers 1670, plus de quatre cents arbres de plus de trois siècles, quarante-cinq mètres de haut en moyenne — l'une des plus hautes chênaies d'Europe, mesurée arbre par arbre par les forestiers depuis 1895. Le chêne Boppe, foudroyé en 1934 à deux cent soixante-deux ans, a laissé une souche de quatre mètres soixante-dix-sept de tour, protégée sous un abri ; le chêne Roulleau de la Roussière, baptisé en 1952 du nom de l'inspecteur qui sauva la futaie de la coupe, dépasse quarante-cinq mètres (3). Un sentier de cinq cents mètres traverse la futaie.
+
+**Le chêne à Guillotin, à Concoret** (Morbihan), en lisière de Brocéliande. Un pédonculé creux de neuf mètres soixante de tour pour seize mètres de haut, labellisé Arbre remarquable de France en 2003. La pancarte dit mille ans ; les auteurs prudents écrivent « plus de cinq cents ». L'abbé Guillotin, prêtre réfractaire, s'y serait caché en 1799, protégé d'une toile d'araignée ; avant lui, l'arbre s'appelait le chêne des Rues-Éon, du nom d'un ermite du XIIe siècle (4).
+
+**Le chêne de Plassay** (Charente-Maritime). Dans un champ de la Jacqueterie, un pédonculé de vingt-quatre mètres et de huit mètres soixante-quatre de tour à hauteur de poitrine, « le vieux chêne » des gens du pays, recensé parmi les arbres remarquables du département ; âge non mesuré, plusieurs siècles. Il est sur un terrain privé : on y va après les récoltes, pas quand le champ est en culture (5).
+
+**Le chêne de l'Attaque, à Montmédy** (Meuse). Dans la forêt communale, au bord du ruisseau du Chabot, un chêne de six mètres de tour, totalement creux, dont le tronc ne monte plus qu'à quatre mètres et dont une seule grande branche s'élève encore à neuf ; il est classé depuis 1937. Il marque l'endroit où, en 1412, Antoine de Bourgogne, frère de Jean sans Peur, prit Montmédy à son gouverneur Huart d'Autel : d'où les six cents ans qu'on lui donne — un âge déduit de la bataille, pas de l'arbre, qui pourrait d'ailleurs être un remplaçant planté à la même place (6). [Autre chêne lorrain possible : le chêne de Bainville-aux-Saules, dans les Vosges, classé en 1921, qui mesurait déjà quatre mètres cinquante de tour en 1913 — au choix de l'auteur.]
+
+**[Carte]** La France des six chênes : six points positionnés par le géocodeur de l'IGN, du plus célèbre au plus proche ; le lieu de l'individu suivi en rouge. Autour, six vignettes à dessiner d'après les photographies de l'auteur sur place : l'arbre entier, un adulte au pied.
+
+**[Bulle]** « Six cents ans, mille ans, douze cents. Je n'étais pas né. Enfin, pas moi personnellement. »
+
+**(1)** Chêne chapelle d'Allouville-Bellefosse : chapelles Notre-Dame-de-la-Paix et du Calvaire aménagées en 1696 par l'abbé Jacques Delalande du Détroit (base Mérimée, ministère de la Culture) ; hauteur 18 m ; circonférence donnée de 10 à 15 m selon la hauteur de mesure ; âge estimé de 800 à 1 200 ans selon les sources, non mesuré ; environ 60 000 visiteurs par an ; état fragile, arbre étayé (presse régionale, 2024-2025). Voir page 39.
+**(2)** ONF, forêt domaniale de Tronçais, Forêt d'Exception® (2018) : dix-neuf chênes remarquables ; chêne Carré, 6,44 m de circonférence, né vers 1630, parcelle 215 ; la Sentinelle, 6,55 m, vers 1580, rond de Richebourg ; chênes Jumeaux, 4,45 et 5,10 m, plus de 400 ans, parcelle 137 ; futaie Colbert classée réserve biologique intégrale en 2017 ; âges de 300 à 350 ans établis par dendrochronologie sur les arbres exploités (ONF, entretien INA, 1992).
+**(3)** Lebourgeois F., Cousseau G., Ducos Y., 2003, *Étude d'une chênaie sessiliflore exceptionnelle : la Futaie des Clos (Sarthe)*, Revue forestière française 55 : 333-346, et 2004, Annals of Forest Science 61 : 361-372 — parcelle 226a, 8 ha, plus de 400 chênes de plus de 300 ans en 2001, diamètre moyen 92 cm, hauteur moyenne 45,2 m ; mesures depuis 1895 (rapport Roulleau de la Roussière) ; ONF, Forêt d'Exception® Bercé (2017) ; fiche PR *Le Chêne Boppe*, FFRandonnée-Sarthe (chêne Boppe foudroyé en 1934 à 262 ans, souche de 4,77 m sous abri ; chêne Roulleau de la Roussière baptisé en 1952).
+**(4)** Département du Morbihan et CPIE de Brocéliande, inventaire des arbres remarquables (depuis 1997) : chêne à Guillotin, Concoret, 9,60 m de circonférence, environ 16 m de haut, label Arbre remarquable de France 2003, âge « estimé aux environs de mille ans » ; Wikipédia (d'après Cottin A., *Guide de Brocéliande*, 1979) : « plus de cinq cents ans », ancien chêne des Rues-Éon. Position : géocodeur IGN, objet « arbre ».
+**(5)** Nature Environnement 17, *Arbres remarquables de Charente-Maritime*, Saintes, 1999, et inventaire départemental en cours : chêne pédonculé de la Jacqueterie, Plassay, 24 m de haut, 8,64 m de circonférence à 1,30 m, terrain privé. [L'arbre « de Montravail » cité au chemin de fer n'a pas été retrouvé dans les inventaires ; à confirmer par l'auteur.]
+**(6)** DREAL Grand Est, fiche de site classé *Le chêne de l'Attaque à Montmédy* (Meuse) : protection du 15 mars 1937 ; circonférence 6 m, tronc creux de 4 m de haut, branche maîtresse à 9 m ; âge estimé à environ 600 ans d'après la bataille de 1412 (Antoine de Bourgogne contre Huart d'Autel), avec l'hypothèse d'un arbre replanté au même endroit ; forêt communale, ruisseau du Chabot, 1,8 km au sud de la ville. Position : géocodeur IGN, objet « arbre ». Bainville-aux-Saules (Vosges) : DREAL Grand Est, site classé du 27 juillet 1921, 4,50 m de circonférence en 1913.
+
+---
+
+### Page 59 — Lexique
+
+Dix-huit mots du livre, dans l'ordre de l'alphabet, avec la page où ils travaillent.
+
+**Akène** — fruit sec qui ne s'ouvre pas et ne contient qu'une graine ; le gland en est un (p. 28).
+**Cerne** — anneau de bois formé en une année : bois clair du printemps, bois sombre de l'été ; on compte les cernes pour dater (p. 15, 25).
+**Chandelle** — arbre mort resté debout, écorce tombée, bois blanchi (p. 39) ; par extension, les branches mortes qui dépassent d'une cime (p. 44).
+**Cupule** — le « chapeau » écailleux du gland, fait d'écailles soudées (p. 28).
+**Débourrement** — ouverture des bourgeons au printemps, quand les premières feuilles sortent (p. 8-9).
+**Descente de cime** — recul de la cime d'un vieux chêne ou d'un chêne stressé : le haut meurt, un houppier plus bas se reforme sur des rejets ; ce n'est pas une agonie (p. 37, 44).
+**Glandée** — forte production de glands, certaines années seulement ; aussi le droit ancien de mener les porcs au bois en automne (p. 18, 49).
+**Hypogée (germination)** — « sous la terre » : les cotylédons restent dans le gland, sous la litière ; seule la tige sort (p. 31).
+**Komorebi** — mot japonais : la lumière qui passe à travers les feuilles (p. 45).
+**Marcescent** — se dit d'un feuillage mort qui reste accroché aux branches tout l'hiver (p. 22).
+**Monoïque** — « une seule maison » : un même arbre porte les fleurs mâles et les fleurs femelles (p. 10).
+**Mutation somatique** — changement apparu dans les cellules d'une branche, et non dans la graine ; un vieux chêne en accumule (p. 51).
+**Mycorhize** — « champignon-racine » : l'association d'une racine fine et d'un champignon qui lui apporte eau et sels minéraux (p. 35).
+**Pédoncule** — la queue qui porte la fleur, puis le gland ; le pédonculé en a une longue, le sessile n'en a pas (p. 4-5).
+**Récalcitrante (graine)** — graine qui ne supporte ni le séchage ni l'attente : le gland (p. 29).
+**Refuge glaciaire** — région du sud de l'Europe où une espèce a survécu pendant la dernière glaciation avant de remonter vers le nord (p. 46).
+**Sessile** — « assis » : le chêne dont les glands sont posés directement sur le rameau (p. 4-5) ; aussi la lettre de l'énigme (p. 57).
+**Shinrin-yoku** — « bain de forêt », mot forgé au Japon en 1982 (p. 45).
+**Viriditas** — « verdeur » : chez Hildegarde de Bingen, la force verte qui traverse tout ce qui vit (p. 49).
+
+**[Bulle]** « Dix-huit mots. Le dix-neuvième, c'est moi, et je ne me définis pas. »
+
+---
+
+## SOURCES
+
+### Pages 60-61 — Sources et bibliographie
+
+Les notes de bas de page donnent, à chaque chiffre, son auteur et son année ; voici les références complètes, et la façon dont les images ont été faites. Les mentions « à préciser » qui subsistent dans les notes des pages 1 à 53 sont levées ou signalées ici ; rien de ce qui porte un chiffre dans ce livre n'a été écrit sans source.
+
+**Références de la collection.** Rameau J.-C., Mansion D., Dumé G., Gauberville C. et al., *Flore forestière française. Guide écologique illustré*, Institut pour le développement forestier : t. 1, *Plaines et collines* (1989, rééd.), t. 2, *Montagnes* (1993), t. 3, *Région méditerranéenne* (2008) — référence de tous les critères d'identification, de l'écologie et de la répartition ; sert à vérifier les planches, jamais à les produire. — Hildegarde de Bingen, *Physica (Liber subtilitatum diversarum naturarum creaturarum)*, vers 1150-1158, livre III *De arboribus* : texte latin dans la *Patrologia Latina* 197 (Migne, 1882) ; édition critique Hildebrandt R. & Gloning T., De Gruyter, 2010 ; traductions françaises de Monat P. (Millon) et Verten B. (Éd. Grégoriennes, 2013), consultées et non recopiées.
+
+**Articles et ouvrages.**
+Antonelli M., Barbieri G., Donelli D., 2019, *Effects of forest bathing (shinrin-yoku) on levels of cortisol*, International Journal of Biometeorology 63 : 1117-1134. — Bartholomé J., Brachi B., Marçais B., Mougou-Hamdane A., Bodénès C., Plomion C., Robin C., Desprez-Loustau M.-L., 2020, *The genetics of exapted resistance to two exotic pathogens in pedunculate oak*, New Phytologist 226 : 1088-1103. — Bertrand R. et al., 2011, *Changes in plant community composition lag behind climate warming in lowland forests*, Nature 479 : 517-520. — Bonal R. et al., travaux sur *Curculio* et la prédation des glands (à préciser) ; Bonnet-Masimbert M., 1984, biologie florale des chênes, cité dans ONF, *Rendez-vous techniques* 13, 2006. — Bossema I., 1979, *Jays and oaks: an eco-ethological study of a symbiosis*, Behaviour 70 : 1-117. — Brewer S., Cheddadi R., de Beaulieu J.-L., Reille M., 2002, *The spread of deciduous Quercus throughout Europe since the last glacial period*, Forest Ecology and Management 156 : 27-48. — Clark J.S. et al., 1998, *Reid's paradox of rapid plant migration*, BioScience 48 : 13-24. — den Ouden J., Jansen P.A., Smit R., 2005, dans Forget P.-M. et al. (dir.), *Seed Fate*, CABI (mise en réserve des glands par les rongeurs). — Drénou C., Bouvier M., Lemaire J., 2011, *La méthode de diagnostic ARCHI. Application aux chênes pédonculés dépérissants*, Forêt-entreprise 200 : 4-15 ; 2012, *Rôles des gourmands dans la résilience des chênes pédonculés dépérissants*, Forêt Wallonne 116 : 42-55. — Ducousso A., Bordács S., *Fiche technique pour la conservation génétique : chênes pédonculé et sessile*, EUFORGEN. — Dupouey J.-L., Bodin J., 2007, *Déplacements déjà observés des espèces végétales*, Rendez-vous techniques de l'ONF, hors-série 3 : 34-39. — El Alaoui N., 2014, *Le chêne, le cheval, le bûcheron. Une collection d'écorçoirs au MuCEM*, Revue d'ethnoécologie 5. — Epaud F., 2019, *Charpente de Notre-Dame : stop aux idées reçues !*, CNRS Le journal. — Gay J., 1990, *À propos du 74 canons : des nombres surprenants à retenir*, Neptunia 177 : 20-25. — Géroudet P., 1998, *Les Passereaux d'Europe* / *Les Pics*, Delachaux et Niestlé (territoire du pic mar, cité par les Cahiers d'habitats). — Giesecke T. et al., 2017, *Postglacial change of the floristic diversity gradient in Europe*, Journal of Biogeography 44 : 1441-1456. — Gómez J.M., 2003, *Spatial patterns in long-distance dispersal of Quercus ilex acorns by jays in a heterogeneous landscape*, Ecography 26 : 573-584. — Jactel H., Brockerhoff E.G., 2007, *Tree diversity reduces herbivory by forest insects*, Ecology Letters 10 : 835-848. — Johnson W.C., Webb T., 1989, *The role of blue jays in the postglacial dispersal of fagaceous trees in eastern North America*, Journal of Biogeography 16 : 561-571. — Jones M., 2016, *La forêt dans les comptes ducaux bretons, vers 1260-vers 1360*, Mémoires de la Société d'histoire et d'archéologie de Bretagne 94. — Karst J., Jones M.D., Hoeksema J.D., 2023, *Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests*, Nature Ecology & Evolution 7 : 501-511. — Kelly D., Sork V.L., 2002, *Mast seeding in perennial plants*, Annual Review of Ecology and Systematics 33 : 427-447. — Kremer A., Ronce O., Robledo-Arnuncio J.J. et al., 2012, *Long-distance gene flow and adaptation of forest trees to rapid climate change*, Ecology Letters 15 : 378-392. — Kremer A., Hipp A.L., 2020, *Oaks: an evolutionary success story*, New Phytologist 225 : 1382-1393. — Lebourgeois F., 2001, *Les chênes sessile et pédonculé dans le réseau Renecofor*, Revue forestière française 53 ; Lebourgeois F., Cousseau G., Ducos Y., 2003, *Étude d'une chênaie sessiliflore exceptionnelle : la Futaie des Clos*, Revue forestière française 55 : 333-346, et 2004, Annals of Forest Science 61 : 361-372 ; Lebourgeois F., 2008, *Reconnaissance des chênes sessile et pédonculé*, formation ONF, AgroParisTech-ENGREF. — Lee D.W., Gould K.S., 2002, *Anthocyanins in leaves and other vegetative organs*, Advances in Botanical Research 37. — Lenoir J. et al., 2008, *A significant upward shift in plant species optimum elevation during the 20th century*, Science 320 : 1768-1771. — Leroy T., Louvet J.-M., Lalanne C., Le Provost G., Labadie K., Aury J.-M., Delzon S., Plomion C., Kremer A., 2020, *Adaptive introgression as a driver of local adaptation to climate in European white oaks*, New Phytologist 226 : 1171-1182 ; Leroy T. et al., 2020, *Massive postglacial gene flow between European white oaks*, New Phytologist 226. — Li Q., 2010, *Effect of forest bathing trips on human immune function*, Environmental Health and Preventive Medicine 15 : 9-17 ; Miyazaki Y., université de Chiba, entretien Nippon.com (premières mesures à Yakushima, 1990). — Mirabel A. et al., 2024, mortalité comparée des feuillus (cité par le DSF, août 2025). — Mitchell A., 1974, *A Field Guide to the Trees of Britain and Northern Europe*, Collins. — Mitchell R.J., Bellamy P.E., Ellis C.J. et al., 2019, *OakEcol: a database of oak-associated biodiversity within the UK*, Data in Brief 25. — Mougou-Hamdane A. et al., 2010, Mycoscience 52 ; Desprez-Loustau M.-L., Mougou A., Feau N., Dutech C., *Oïdium des chênes : une maladie, plusieurs agents pathogènes*, INRA. — Pastoureau M., 2011, *Symbolique médiévale et moderne*, Annuaire de l'EPHE 143. — Pébarthé-Courrouilh A. et al., 2025, *Antimicrobial properties of tannin extracts against the phytopathogenic oomycete Plasmopara viticola*, OENO One 59 (1). — Petit R.J., Pineau E., Demesure B., Bacilieri R., Ducousso A., Kremer A., 1997, *Chloroplast DNA footprints of postglacial recolonization by oaks*, PNAS 94 : 9996-10001 ; Petit R.J. et al., 2002, *Identification of refugia and post-glacial colonisation routes of European white oaks*, Forest Ecology and Management 156 : 49-74 ; Petit R.J., Bodénès C., Ducousso A., Roussel G., Kremer A., 2004, *Hybridization as a mechanism of invasion in oaks*, New Phytologist 161 : 151-164. — Plomion C. et al., 2018, *Oak genome reveals facets of long lifespan*, Nature Plants 4 : 440-452. — Pons J., Pausas J.G., 2007, *Not only size matters: acorn selection by the European jay*, Oecologia 153 : 1-9 (suivi radio des glands). — Pot G., Viguier J., Besseau B., Lanvin J.-D., Reuling D., 2024, projet TreCEffiQuaS (Arts et Métiers, Ducerf, FCBA) ; Kuffer P. et al., 2025, journées du GDR Sciences du bois. — Prévosto B., Ripert C., Amandier L. et al., 2008-2012, semis de glands de chêne blanc et de chêne vert, Forêt méditerranéenne. — Reed T.E., Grøtan V., Jenouvrier S., Sæther B.-E., Visser M.E., 2013, *Population growth in a wild bird is buffered against phenological mismatch*, Science 340 : 488-491 ; Visser M.E. et al., 2021, Proceedings of the Royal Society B. — Reid C., 1899, *The Origin of the British Flora*, Londres. — Renard N., 2025, Annales historiques de la Révolution française 422 (les arbres de la liberté). — Roman L.A., Scatena F.N., 2011, *Street tree survival rates*, Urban Forestry & Urban Greening 10 : 269-274. — Rouchon V. et al., 2011, *Les encres ferro-galliques*, CeROArt. — Sáenz-Romero C. et al., 2017, *Adaptive and plastic responses of Quercus petraea populations to climate across Europe*, Global Change Biology 23 : 2831-2847. — Saleh D., Chen J., Leplé J.-C., Leroy T., Truffaut L. et al., Kremer A., 2022, *Genome-wide evolutionary response of European oaks during the Anthropocene*, Evolution Letters 6 : 4-20. — Stone G.N. et al., 2002, *The population biology of oak gall wasps*, Annual Review of Entomology 47 : 633-668. — Terhürne-Berson R., Litt T., Cheddadi R., 2004, *The spread of Abies throughout Europe since the last glacial period*, Vegetation History and Archaeobotany 13 : 257-268 (pour le tome 2, à vérifier). — Tsunetsugu Y., Park B.-J., Miyazaki Y., 2010, *Trends in research related to « Shinrin-yoku » in Japan*, Environmental Health and Preventive Medicine 15 : 27-37. — Vallauri D., André J., Dodelin B., Eynard-Machet R., Rambaud D. (coord.), 2005, *Bois mort et à cavités, une clé pour des forêts vivantes*, Lavoisier. — Van Haluwyn C., Lerond M., 1993, *Guide des lichens*, Lechevalier. — Vincke C. et al., 2001, Annals of Forest Science (flux de sève des chênaies pédonculées). — Wagner S. et al., 2018, *High-Throughput DNA sequencing of ancient wood*, Molecular Ecology 27 : 1138-1154 ; Wagner S. et al., 2023, Molecular Ecology. — White J., 1998, *Estimating the Age of Large and Veteran Trees in Britain*, Forestry Commission Information Note 12. — Wohlgemuth T., Nussbaumer A., Burkart A., Bollmann K., 2016, *Eichenmast und Wildschweine*, Zürcher Wald 3/16.
+
+**Institutions, rapports, fiches.**
+IGN, *Mémento de l'inventaire forestier*, éditions 2023, 2024 et 2025 ; *Inventaire forestier national, résultats 2025* (14 octobre 2025). — Département de la santé des forêts (ministère de l'Agriculture) : fiche *La processionnaire du chêne* ; *Bilan de la santé des forêts, chênaies*, 2024 ; pôle Bourgogne-Franche-Comté, *Bilan de l'état sanitaire du chêne sessile et du chêne pédonculé*, août 2025 ; *Situation sanitaire de 52 massifs de chênes*, octobre 2020. — Ministère de l'Agriculture, fiches du conseil d'utilisation des matériels forestiers de reproduction : *Quercus robur*, *Quercus petraea*, *Quercus pubescens*, 2023. — ONF : *Rendez-vous techniques*, hors-série 1 (2004), n° 13 (2006), hors-série 3 (2007) ; instruction 09-T-71 (2009) ; projet Giono (2011) et îlots d'avenir (depuis 2019) ; forêts domaniales de Tronçais et de Bercé, Forêts d'Exception® ; Nicolas M., réseau Renecofor, 2019. — INRAE : communiqué du 6 janvier 2022 (évolution des chênes depuis le Petit Âge glaciaire) ; projet ExtraFor_Est (2015-2021), INRAE-Silva, LERMAB, IGN, ONF, FCBA ; projections CASTANEA et ForCEEPS (BioGeCo). — CNPF : *Distinguer les chênes sessile et pédonculé*, Bretagne – Pays de la Loire, 2018 ; *Chêne sessile, chêne pédonculé : comment les reconnaître ?*, Bourgogne-Franche-Comté ; méthode ARCHI. — CDAF-Chimay, planche comparative pédonculé / sessile, 2012. — AgroParisTech-RMT AFORCE, *100 îlots d'avenir en Lorraine*, 2019. — Muséum national d'histoire naturelle / INPN, *Cahiers d'habitats Natura 2000*, t. 7 (fiches 1083, 1084, 1088) et *Oiseaux* (fiche *Dendrocopos medius*) ; LPO (fiches espèces). — Musée national de la Marine, *La construction navale en bois aux XVIIe et XVIIIe siècles*, 2023. — France Bois Forêt, *Lettre d'information Notre-Dame de Paris* n° 3, juin 2021 ; Fransylva, *État des lieux au 22 septembre 2021* ; Lambert G.-N., Hoffsummer P., Bernard V., Chevrier V., note dendrochronologique sur la charpente de Notre-Dame ; projet CASIMODO (ANR, 2020). — ITV France, *L'élevage des vins en fûts neufs de chêne*, Itinéraires 6, 2003 ; Syndicat des Mérandiers de France, communiqué du 1er septembre 2025 ; Fédération des Tonneliers de France, exercice 2022-2023. — WSL (Suisse) : fiche *Néomycètes : oïdium du chêne*, 2020 ; Blaser S. et al., 2022, *La processionnaire du chêne*, Notice pour le praticien 71 ; réseau mastweb.ch. — FREDON Grand Est / ARS, fiche *Processionnaire du chêne*. — Office fédéral de l'environnement (Suisse), bois mort et biodiversité. — Agence régionale de la biodiversité Nouvelle-Aquitaine, fiche *Forêt de l'Adour*, 2022 ; Bastard L., 2004, *Les tanneurs et corroyeurs*, Musée du Compagnonnage ; Perrin C., 2011, *De sale à durable ? Le tannage du XIXe au XXIe siècle*. — *Dictionnaire historique de la Suisse*, art. « Glandage, glandée ». — *La Hulotte*, notice *Plantez un chêne*, 2024. — Université de Liège, atelier *Encres anciennes : l'encre ferro-gallique*, 2012. — Monnaie de Paris, face française des pièces de 1 et 2 euros (Jimenez J., 1999). — DREAL Grand Est, fiches des sites classés *Le chêne de l'Attaque à Montmédy* et *Le chêne centenaire de Bainville-aux-Saules* ; Département du Morbihan et CPIE de Brocéliande, inventaire des arbres remarquables ; Nature Environnement 17, *Arbres remarquables de Charente-Maritime*, 1999 ; association A.R.B.R.E.S., label Arbre remarquable de France ; base Mérimée (ministère de la Culture), chapelles d'Allouville-Bellefosse. — Agence japonaise des forêts, 1982 (origine du *shinrin-yoku*) ; Gouvernement du Japon, *Highlighting Japan*, août 2019. — oiseaux.net, fiche *Garrulus glandarius* ; *Larousse*, encyclopédie en ligne, art. « geai des chênes » ; Conseil départemental de la Sarthe, fiches espèces du bocage (pique-prune).
+
+**Sources anciennes et dictionnaires.** Homère, *Odyssée*, XIV, 327-330 ; Hérodote, *Histoires*, II, 54-57 ; Pline l'Ancien, *Histoire naturelle*, XVI, 95 ; Willibald, *Vita sancti Bonifatii*, chap. 6 (v. 760) ; polyptyque d'Irminon (éd. Guérard, 1844) ; Joinville, *Vie de saint Louis*, § 59-60 (éd. Monfrin, 1995) ; *Très Riches Heures du duc de Berry*, Novembre (Jean Colombe, v. 1485), musée Condé, Chantilly ; Grégoire H., *Essai historique et patriotique sur les arbres de la liberté*, 12 germinal an II ; Littré É., *Dictionnaire de la langue française*, art. « jacquot », « jaquet » ; Dauzat A., Rostaing C., 1963, *Dictionnaire étymologique des noms de lieux en France* ; Nègre E., 1990-1991, *Toponymie générale de la France* ; Delamarre X., 2003, *Dictionnaire de la langue gauloise* ; Couplan F., *Le régal végétal*.
+
+**Données des cartes et des graphiques.** Fonds de carte : IGN, Admin Express (contours des départements et des régions, via france-geojson, licence ouverte) ; Natural Earth (Europe). Positions des communes et des forêts : géocodeur de l'IGN (Géoplateforme), relevé du 9 novembre 2026. Carte de la page 53 : IGN, BD TOPO v3, couche « zones de végétation », nature « forêt fermée de feuillus », comptée par département via le service WFS de la Géoplateforme le 9 novembre 2026 (compte d'objets, non de surface ; départements côtiers sommés par arrondissement ou canton ; Finistère et Var incomplets, Corse-du-Sud non calculée). Chiffres des graphiques : IGN, Mémentos 2023 et 2025. Aires de présence des espèces (pages 6-7 et 47) : transcription indicative des cartes de l'inventaire forestier et des fiches MFR, signalée comme telle. Les figures de données sont dessinées en vectoriel, jamais générées.
+
+**Images.** Toutes les illustrations de ce livre — planches, scènes, pas-à-pas et le Jacques lui-même — sont des dessins générés avec un outil d'intelligence artificielle (Magnific) à partir des photographies de l'auteur, sous sa direction, dans un style fixé pour toute la collection, puis vérifiés contre la *Flore forestière française* et contre la photographie d'origine ; aucune planche d'un autre ouvrage ni aucune photographie d'autrui n'a servi à les produire. Les planches d'identification ont passé la liste de contrôle botanique de la collection. Les bulles, numéros, cercles et légendes sont composés à la mise en page, jamais dessinés par l'outil. Voir le colophon, page 63.
+
+**[Bulle]** « Deux pages de sources. Moi, ma source, c'est l'arbre. Mais je ne suis pas cité. »
+
+---
+
+## LE COURRIER
+
+### Page 62 — Le Jacques vous écrit
+
+**[Parole du Jacques]** « Ce livre est le premier d'une série de vingt-cinq, et j'ai l'intention de répondre à ceux qui m'écrivent — à partir du tome 3, le temps que le courrier arrive, je vole mais la poste non. Envoyez-moi : votre fiche de la page 54, avec le lieu ; une photo de votre chêne, l'hiver de préférence, c'est là qu'on voit tout ; vos observations — le jour où les feuilles sont sorties, le jour où les glands sont tombés, qui est venu les manger ; vos questions ; et les erreurs que vous aurez trouvées dans ce livre, parce qu'il y en a, et que je préfère les apprendre de vous. Envoyez aussi, quand vous l'aurez, votre réponse à l'énigme : une lettre par tome, douze lettres, une phrase. Parmi les bonnes réponses, un tirage au sort à la sortie du tome 12 ; le gagnant recevra un tirage d'art numéroté, un seul, de la planche de son choix. Une chose : n'envoyez pas de glands. Je sais où en trouver. »
+
+**Pour écrire au Jacques.** [Adresse web du formulaire « Envoyez votre observation » — à fixer.] Les observations reçues alimentent, avec l'accord de leurs auteurs, la lettre d'information de la collection et la page des photographies d'origine (page 56). Les enfants écrivent avec un adulte, qui laisse son adresse.
+
+**[Légende]** Le Jacques à son bureau : une souche de chêne, une plume d'oie à la patte, un encrier de noix de galle, une pile de fiches de la page 54 et, dans le coin, un gland qu'on a tout de même envoyé.
+
+**[Bulle]** « Je réponds à tout. Sauf aux lettres qui commencent par “Monsieur le Pigeon”. »
+
+---
+
+## LA SUITE
+
+### Page 63 — Dans le prochain tome, et colophon
+
+**Dans le prochain tome :** *Le Sapin pectiné* — en novembre, pour Noël.
+
+Le vrai sapin : celui dont on ne trouve jamais les cônes par terre, parce qu'ils poussent debout sur les branches et s'y défont écaille par écaille, ne laissant sur l'arbre qu'un axe nu, comme une bougie. Celui dont les aiguilles portent deux bandes blanches dessous et laissent, en tombant, une cicatrice ronde et lisse là où l'épicéa laisse un piquet. Celui qu'on appelle *Abies alba*, le « sapin blanc », pour son écorce claire. Il attend ses premières graines plus de trente ans, vit cinq siècles, et il est redescendu des montagnes du Sud bien plus lentement que le chêne : ce que dit le pollen fossile des Vosges, c'est l'affaire du tome 2 — et de la deuxième lettre de votre grille (1).
+
+**Colophon.** *Le Geai*, tome 1 : *Le Chêne — La vie secrète du roi de nos forêts*. Texte, découpage, photographies et vérification : [nom d'auteur]. Narrateur : le Jacques, personnage créé pour la collection. Les images de ce livre sont des dessins générés avec un outil d'intelligence artificielle (Magnific) à partir des photographies de l'auteur, sous sa direction, et vérifiés contre la *Flore forestière française* (IDF) et contre les photographies d'origine ; les cartes et graphiques sont dessinés en vectoriel d'après les données citées page 61 (IGN, Natural Earth, publications). Caractères : [polices à fixer] ; bulles du Jacques en Patrick Hand (licence OFL). Format 17,8 × 25,4 cm. Impression à la demande : Amazon KDP, [pays d'impression]. ISBN [à fixer]. Dépôt légal : [mois année]. © [année] [nom d'auteur], tous droits réservés. « Le Geai », son cartouche et « le Jacques » sont des marques et des dessins déposés [INPI, en cours]. Les images générées sont déclarées comme telles à l'éditeur en ligne, et le présent colophon le dit au lecteur.
+
+**[Légende]** Une branche de sapin pectiné : les aiguilles plates, à bout arrondi, rangées sur deux rangs, et, sur le rameau, les cicatrices rondes et lisses des aiguilles tombées. Sur la branche du haut, un cône dressé à demi défait, et l'axe nu d'un cône de l'an passé.
+
+**[Bulle]** « Un arbre qui ne laisse pas tomber ses cônes. Qu'est-ce que je vais planter, moi ? »
+
+**(1)** *Flore forestière française*, t. 2, *Montagnes* : *Abies alba* Mill., cônes dressés se désarticulant à maturité sur l'arbre, aiguilles à deux bandes stomatiques blanches dessous, cicatrices foliaires circulaires et planes (l'épicéa laisse des coussinets saillants), écorce gris clair ; première fructification vers 30 à 50 ans ; longévité de 300 à 500 ans, plus rarement 600. Recolonisation post-glaciaire du sapin : Terhürne-Berson R. et al., 2004, et base de données pollinique européenne — à développer au tome 2.
+
+---
+
+### Page 64 — La collection
+
+Vingt-cinq tomes, un par mois, chacun au mois où l'arbre se remarque — ou juste avant, pour qu'on aille voir. Douze arbres, douze arbustes, et un hors-série pour deux mal-aimés de la haie. Trois tomes font une saison ; chaque saison est reprise en un recueil relié.
+
+**Série 1 — Les arbres.** 1. *Le Chêne* (octobre) · 2. *Le Sapin pectiné* (novembre) · 3. *L'Épicéa* (décembre) · 4. *Le Douglas* (janvier) · 5. *Le Pin sylvestre* (février) · 6. *Le Chêne pubescent* (mars) · 7. *Le Charme* (avril) · 8. *Le Hêtre* (mai) · 9. *Le Frêne* (juin) · 10. *Le Châtaignier* (juillet) · 11. *Le Chêne vert* (août) · 12. *Le Pin maritime* (septembre) — avec la réponse à l'énigme des arbres.
+
+**Série 2 — Les arbustes.** 13. *Le Fusain* (octobre) · 14. *Le Houx* (novembre) · 15. *Le Cornouiller sanguin* (décembre) · 16. *Le Noisetier* (janvier) · 17. *Le Buis* (février) · 18. *Le Prunellier* (mars) · 19. *L'Aubépine* (avril) · 20. *Le Genêt à balais* (mai) · 21. *Le Troène* (juin) · 22. *La Bourdaine* (juillet) · 23. *L'Églantier* (août) · 24. *Le Sureau* (septembre) — avec une seconde énigme, et sa grille de douze baies.
+
+**Hors-série.** *La Ronce & le Lierre* (octobre de la troisième année) : les deux grands nourrisseurs d'oiseaux de la haie, et la réponse à la seconde énigme.
+
+**Les recueils.** *Le Geai — Automne*, *Hiver*, *Printemps*, *Été* : trois tomes reliés par saison, pour chaque série.
+
+**[Légende]** Les vingt-cinq dos alignés sur une étagère, chacun à la couleur de son tome, le numéro en haut et le nom de l'arbre en long ; le tome 1 en vert bouteille, sorti d'un cran. Le Jacques perché sur la tranche du dernier.
+
+**[Bulle]** « Vingt-cinq tomes. Je suis dans tous. Lisez-les dans l'ordre, je vieillis. »
+
+---
+
+## Annexe — Note de fabrication et ce qui reste à fixer
+
+**Choix faits dans cette livraison.** La fiche de la page 54 et la grille de la page 57 sont des figures vectorielles au gabarit de la collection ; les pas-à-pas de la page 55, les gestes de la page 56, le bureau du Jacques (p. 62) et la branche de sapin (p. 63) sont des images à générer d'après les légendes ; les six vignettes de la page 58 attendent les photographies de l'auteur sur place (un arbre remarquable se dessine d'après sa photo, pas d'après sa réputation). La carte de la page 58 est exacte : les six arbres sont positionnés par le géocodeur de l'IGN, qui connaît le chêne à Guillotin et le chêne de l'Attaque comme objets « arbre ». Les pages 60-61 rassemblent toutes les notes des quatre livraisons ; les mentions « à préciser » encore ouvertes dans les notes des pages 1 à 53 (composition du gland, seuil de dessiccation, marcescence, lichens, nourrissage des mésanges, protection par la ronce) sont listées ci-dessous et non levées.
+
+**Reste à fixer par l'auteur :**
+- Les trois adresses web (cri du geai, débourrement, photographies d'origine) et l'adresse du formulaire « Envoyez votre observation » ; les codes QR, à tester avant impression.
+- Le nom d'auteur, les polices définitives, l'ISBN, le dépôt légal, le pays d'impression, la mention INPI.
+- L'arbre de Charente-Maritime : « Montravail » n'a pas été retrouvé (seul un centre équestre porte ce nom, à Oléron) ; le chêne de Plassay le remplace provisoirement.
+- Le chêne lorrain : Montmédy (Meuse, site classé 1937) proposé ; Bainville-aux-Saules (Vosges, site classé 1921) en réserve ; un chêne de Meurthe-et-Moselle serait préférable si l'auteur en connaît un.
+- Les sources encore « à préciser » des livraisons 1 et 2 : composition du gland et seuil de dessiccation ; café et pain de glands ; intoxication des bovins ; croissance des semis selon la station ; protection par la ronce ; marcescence ; lichens bio-indicateurs ; les « 900 becquées » des mésanges ; régime du coucou.
+- La vérification sur place, avant impression, de l'accès et de l'état des six arbres de la page 58.

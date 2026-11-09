@@ -392,6 +392,152 @@ def fig_petits_bois():
     print("  effectifs par classe :", effectifs, "| Paris et petite couronne :", round(fus["densite_100km2"]), "/100 km²")
 
 
+# ---- pages de fin (livraison 4)
+
+def _case(ax, x, y, s=0.32):
+    ax.add_patch(plt.Rectangle((x, y - s / 2), s, s, facecolor="white", edgecolor=DARK, linewidth=0.9))
+
+
+def _ligne(ax, x0, x1, y):
+    ax.plot([x0, x1], [y, y], color=GREY, lw=0.7, ls=(0, (1, 2)))
+
+
+def fig_fiche_mon_chene():
+    """La fiche d'observation de la page 54, au gabarit de la collection : cases à cocher, lignes de mesure, cadre à croquis."""
+    fig, ax = plt.subplots(figsize=(7.4, 10.9))
+    ax.set_xlim(0, 100); ax.set_ylim(0, 147); ax.axis("off")
+    ax.add_patch(plt.Rectangle((1, 1), 98, 145, facecolor="white", edgecolor=GREEN, linewidth=1.6))
+    ax.add_patch(plt.Rectangle((1, 136), 98, 10, facecolor=GREEN, edgecolor="none"))
+    ax.text(4, 141, "MON CHÊNE", fontsize=20, color="white", fontweight="bold", va="center")
+    ax.text(96, 141, "fiche d'observation · Le Geai, tome 1 · page 54", fontsize=8.5, color="white", va="center", ha="right", style="italic")
+    y = 131
+    def titre(txt):
+        nonlocal y
+        ax.text(4, y, txt, fontsize=11, color=GREEN, fontweight="bold", va="center"); y -= 5
+    def champ(label, x0=4, x1=96):
+        nonlocal y
+        ax.text(x0, y, label, fontsize=9, color=DARK, va="center")
+        _ligne(ax, x0 + len(label) * 1.05 + 1.5, x1, y - 1.2); y -= 5
+    def cases(items, cols=2, x0=4, w=46):
+        nonlocal y
+        for i, it in enumerate(items):
+            cx = x0 + (i % cols) * w
+            if i and i % cols == 0:
+                y -= 4.6
+            _case(ax, cx, y, 2.6)
+            ax.text(cx + 3.8, y, it, fontsize=9, color=DARK, va="center")
+        y -= 5.5
+    titre("Où et quand")
+    champ("Lieu (commune, lieu-dit, repère) :"); champ("Date :", 4, 48); ax.text(52, y + 5, "Météo :", fontsize=9, color=DARK, va="center"); _ligne(ax, 60, 96, y + 3.8)
+    titre("Qui est-il ? — les quatre gestes (pages 4-5)")
+    cases(["pétiole court comme un ongle (pédonculé)", "pétiole long comme une allumette (sessile)",
+           "gland au bout d'une queue (pédonculé)", "gland assis sur le rameau (sessile)",
+           "base de la feuille à oreillettes (pédonculé)", "base de la feuille en coin (sessile)",
+           "nervures sans lobe : trois ou plus (pédonculé)", "nervures sans lobe : moins de trois (sessile)"])
+    cases(["pédonculé", "sessile", "je ne sais pas (hybride ?)"], cols=3, w=30)
+    titre("Comment vit-il ? (page 44)")
+    cases(["seul (haie, pré, parc, rue)", "accompagné (forêt mélangée)", "en peuplement pur (futaie)"], cols=3, w=31)
+    titre("Ses mesures")
+    champ("Hauteur, méthode du bâton (pas d'un mètre) :", 4, 70); ax.text(71, y + 5, "m", fontsize=9, color=DARK, va="center")
+    champ("Tour du tronc à 1,30 m du sol :", 4, 60); ax.text(61, y + 5, "cm", fontsize=9, color=DARK, va="center")
+    ax.text(4, y, "Âge, à peu près : tour ÷ 2,5 s'il a poussé seul · tour ÷ 1,5 en forêt  →", fontsize=9, color=DARK, va="center")
+    _ligne(ax, 78, 92, y - 1.2); ax.text(93, y, "ans", fontsize=9, color=DARK, va="center"); y -= 6
+    titre("Qui habite là ?")
+    cases(["galles sur les feuilles", "chenilles, feuilles trouées", "lichens sur l'écorce",
+           "champignons au pied", "une cavité", "du bois mort dans la cime",
+           "un pic, ou ses trous", "une mésange", "un écureuil",
+           "un geai — ou ses cris", "autre chose (dessinez-le)", ""], cols=3, w=31)
+    titre("La saison")
+    cases(["bourgeons fermés", "feuilles qui sortent", "feuilles d'été", "glands", "feuilles brunes", "branches nues, feuilles accrochées"], cols=3, w=31)
+    # cadre à croquis
+    hc = y - 6
+    ax.add_patch(plt.Rectangle((4, 7), 92, hc, facecolor="#FBFBF8", edgecolor=GREY, linewidth=0.8))
+    ax.text(6, 7 + hc - 2.5, "Croquis : la silhouette, une feuille, un gland — et ce que vous ne savez pas nommer.", fontsize=8.5, color=GREY, style="italic", va="center")
+    ax.text(50, 3.5, "Photocopiez-moi.", fontsize=10, color=GREEN, ha="center", va="center", style="italic")
+    save(fig, "p54-fiche-mon-chene")
+
+
+def fig_grille_enigme():
+    """La grille des douze glands de l'énigme (page 57) : douze glands numérotés, le premier à remplir."""
+    fig, ax = plt.subplots(figsize=(12.4, 3.2))
+    ax.set_xlim(0, 124); ax.set_ylim(0, 32); ax.axis("off")
+    from matplotlib.patches import Ellipse, Wedge, Arc
+    for i in range(12):
+        cx = 7 + i * 10
+        # corps du gland
+        ax.add_patch(Ellipse((cx, 13), 7.2, 11, facecolor="white", edgecolor=DARK, linewidth=1.3))
+        ax.plot([cx], [7.4], marker="v", ms=4, color=DARK)
+        # cupule : demi-ellipse écailleuse
+        ax.add_patch(Wedge((cx, 16.5), 4.2, 0, 180, facecolor=OCHRE_L, edgecolor=DARK, linewidth=1.2))
+        for k in range(-3, 4):
+            ax.add_patch(Arc((cx + k * 1.1, 17.2), 1.6, 1.4, theta1=0, theta2=180, color=DARK, lw=0.6))
+        ax.plot([cx, cx + 0.6], [20.7, 23.5], color=DARK, lw=1.4)  # pédoncule court
+        ax.text(cx, 2.2, str(i + 1), ha="center", va="center", fontsize=11, color=GREEN, fontweight="bold")
+        if i == 0:
+            ax.text(cx, 12.6, "?", ha="center", va="center", fontsize=13, color=GREY_L, fontweight="bold")
+    ax.text(62, 29.5, "une lettre par tome — douze glands, une phrase", ha="center", fontsize=10, color=GREY, style="italic")
+    save(fig, "p57-grille-douze-glands")
+
+
+def fig_chenes_a_visiter():
+    """Les six chênes de la page 58, positionnés par le géocodeur de l'IGN."""
+    deps = geoms(os.path.join(GEO, "departements.geojson"), "code")
+    pts = [c for c in donnees("ign-geocodage.json")["chenes_page_58"] if c["n"] != "réserve"]
+    fig, ax = plt.subplots(figsize=(7.4, 7.2))
+    france_axes(ax)
+    for code, g in deps.items():
+        if code.startswith("97"):
+            continue
+        draw_geom(ax, g, facecolor="#F6F6F2", edgecolor="#D3D6CE", linewidth=0.45)
+    decal = {1: (0.3, 0.3), 2: (0.3, -0.1), 3: (0.3, 0.2), 4: (-0.3, -0.05), 5: (0.3, -0.3), 6: (0.3, 0.3)}
+    for c in pts:
+        x, y = c["lon"], c["lat"]
+        ax.plot([x], [y], marker="o", ms=11, color=GREEN, mec="white", mew=1.4)
+        ax.text(x, y, str(c["n"]), ha="center", va="center", fontsize=7.5, color="white", fontweight="bold")
+        dx, dy = decal[c["n"]]
+        ax.text(x + dx, y + dy, c["nom"], fontsize=9, color=GREEN, va="center", ha="left" if dx > 0 else "right",
+                bbox=dict(boxstyle="round,pad=0.15", facecolor="white", edgecolor="none", alpha=0.85))
+    ax.plot([6.2], [48.7], marker="o", ms=9, mfc="none", mec=RED, mew=1.8)
+    ax.text(6.55, 48.7, "[lieu]", fontsize=8.5, color=RED, va="center")
+    lignes = ["1  Allouville-Bellefosse (76) — le chêne aux deux chapelles",
+              "2  Tronçais (03) — le chêne Carré, la Sentinelle, les Jumeaux",
+              "3  Bercé (72) — la Futaie des Clos, le chêne Boppe",
+              "4  Concoret (56) — le chêne à Guillotin",
+              "5  Plassay (17) — le vieux chêne de la Jacqueterie",
+              "6  Montmédy (55) — le chêne de l'Attaque"]
+    for i, l in enumerate(lignes):
+        ax.text(-5.2, 43.1 - 0.42 * i, l, fontsize=8.5, color=DARK, va="center")
+    ax.text(-5.3, 51.25, "Six chênes à aller voir ; positions relevées par le géocodeur de l'IGN (9 novembre 2026), les deux arbres bretons et lorrain comme objets « arbre ». " + FOND, **NOTE)
+    save(fig, "p58-carte-six-chenes")
+
+
+def fig_collection_dos():
+    """Les vingt-cinq dos de la collection alignés (page 64) ; le tome 1 en vert bouteille, sorti d'un cran."""
+    tomes = ["Le Chêne", "Le Sapin pectiné", "L'Épicéa", "Le Douglas", "Le Pin sylvestre", "Le Chêne pubescent", "Le Charme",
+             "Le Hêtre", "Le Frêne", "Le Châtaignier", "Le Chêne vert", "Le Pin maritime",
+             "Le Fusain", "Le Houx", "Le Cornouiller sanguin", "Le Noisetier", "Le Buis", "Le Prunellier", "L'Aubépine",
+             "Le Genêt à balais", "Le Troène", "La Bourdaine", "L'Églantier", "Le Sureau", "La Ronce & le Lierre"]
+    mois = ["oct.", "nov.", "déc.", "janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept."] * 2 + ["oct."]
+    fig, ax = plt.subplots(figsize=(12.6, 4.6))
+    ax.set_xlim(0, 25 * 1.3 + 0.6); ax.set_ylim(0, 10.6); ax.axis("off")
+    ax.plot([0, 25 * 1.3 + 0.6], [0.5, 0.5], color=OCHRE, lw=3)  # l'étagère
+    teintes = ["#DADFD6", "#E2E4DC", "#D4DAD0", "#E7E6DE"]
+    for i, (t, m) in enumerate(zip(tomes, mois)):
+        x = 0.3 + i * 1.3
+        y0 = 0.5 + (0.45 if i == 0 else 0)
+        col = GREEN if i == 0 else (OCHRE_L if i == 24 else teintes[i % 4])
+        txt = "white" if i == 0 else DARK
+        ax.add_patch(plt.Rectangle((x, y0), 1.1, 8.6, facecolor=col, edgecolor=GREY if i else GREEN, linewidth=0.7))
+        ax.text(x + 0.55, y0 + 8.1, "HS" if i == 24 else str(i + 1), ha="center", va="center", fontsize=9, color=txt, fontweight="bold")
+        ax.text(x + 0.55, y0 + 4.3, t, ha="center", va="center", fontsize=8.6, color=txt, rotation=90)
+        ax.text(x + 0.55, y0 + 0.55, m, ha="center", va="center", fontsize=6.8, color=txt)
+        if i in (0, 12):
+            ax.text(x, 9.9 + (0.45 if i == 0 else 0), "série 1 — les arbres" if i == 0 else "série 2 — les arbustes", fontsize=9, color=GREEN if i == 0 else GREY, va="bottom")
+    ax.text(0.3 + 24 * 1.3, 9.9, "hors-série", fontsize=9, color=OCHRE, va="bottom")
+    ax.text(0.3, 0.1, "Les couleurs des tomes 2 à 25 seront fixées à leur parution ; le gabarit du dos est celui de la couverture (charte, section 8).", **NOTE)
+    save(fig, "p64-les-25-dos")
+
+
 if __name__ == "__main__":
     fig_carte_deux_chenes()
     fig_echelle_des_vies()
@@ -401,3 +547,7 @@ if __name__ == "__main__":
     fig_chromosomes()
     fig_graphique_ign()
     fig_petits_bois()
+    fig_fiche_mon_chene()
+    fig_grille_enigme()
+    fig_chenes_a_visiter()
+    fig_collection_dos()
