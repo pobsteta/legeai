@@ -330,7 +330,7 @@ Le balanin des glands, *Curculio glandium*, est un charançon de cinq à huit mi
 
 Un gland sur dix, un sur trois les mauvaises années : le balanin prélève sa part avant tout le monde. Le Jacques, lui, les trie au poids et rejette ceux qui sonnent creux — page 20.
 
-Et dans les bois du domaine, pas loin, les sangliers attendent. Ils savent, eux aussi, compter les glands verts.
+Et dans les bois du domaine, pas loin — Gonvaux, la Bouclière —, les sangliers attendent. Ils savent, eux aussi, compter les glands verts.
 
 **[Légende]** Le balanin grandeur ×8, rostre déployé ; un gland vert en coupe, la larve dans sa chambre ; un gland d'automne avec son trou de sortie.
 
@@ -359,7 +359,7 @@ Dans le parc, un oiseau criard commence à faire des réserves.
 ### Page 18 — La glandée
 
 **[Regard]**
-*Octobre. Sous le chêne, le sol craque à chaque pas, et le parc sent la feuille mouillée et le champignon. Le mot est ancien et la seigneurie l'a connu avant d'avoir un château de pierre : la glandée. On menait les cochons sous les chênes, en automne, par le droit qu'avaient les habitants de ramasser ce que l'arbre donnait, et les registres des seigneurs de Pange en gardent la trace [à vérifier aux archives], comme les allées que l'on prend encore sans savoir pourquoi elles passent là. Les cochons ne viennent plus. Les sangliers, si.*
+*Octobre. Sous le chêne, le sol craque à chaque pas, et le parc sent la feuille mouillée et le champignon. Le mot est ancien et la seigneurie l'a connu avant d'avoir un château de pierre : la glandée. On menait les cochons sous les chênes, en automne, par le droit qu'avaient les habitants de ramasser ce que l'arbre donnait, et les papiers des seigneurs de Pange, toujours gardés au château, en tiennent peut-être le compte [à demander à la famille], comme les allées que l'on prend encore sans savoir pourquoi elles passent là. Les cochons ne viennent plus. Les sangliers, si.*
 
 Une bonne année, un chêne adulte laisse tomber plusieurs dizaines de milliers de glands ; les très grandes années, on approche les cent mille (1). L'année suivante, presque rien. Et ce qui frappe, c'est que tous les chênes de la région font la même chose la même année : glandée partout, ou nulle part.
 
@@ -548,7 +548,7 @@ Comment un gland devient un chêne, et combien de temps cela prend : c'est tout 
 ## Annexe — Ce qui reste à relever pour cette livraison
 
 - Les noms lorrains et vosgiens du chêne (glossaires : Lucien Adam, Richard, Mathis, Oberlin — voir Lexilogos).
-- Le lieu est fixé (9 novembre) : le parc du château de Pange, Moselle, au bord de la Nied française ; les regards des pages 8, 11, 18 et 23 ont été réécrits pour ce décor d'après les documents publics sur le domaine (château de 1720, douves et tours supprimées en 1806, parc à l'anglaise du XIXe siècle, occupations militaires, jardin de Louis Benech 2000-2003, « chênes tricentenaires »). Restent à l'auteur : la carte postale ancienne du château pour le regard de la page 23 ; la feuille de Cassini et les plans du parc (XVIIIe siècle, comte de Choulot) pour la page 8 ; les archives de la seigneurie pour la glandée de la page 18 ; la position exacte du chêne dans le parc, son tour et son âge (page 34).
+- Le lieu est fixé (9 novembre) : le parc du château de Pange, Moselle, au bord de la Nied française ; les regards des pages 8, 11, 18 et 23 ont été réécrits pour ce décor d'après les documents publics sur le domaine (château de 1720, douves et tours supprimées en 1806, parc à l'anglaise du XIXe siècle, occupations militaires, jardin de Louis Benech 2000-2003, « chênes tricentenaires »). Restent à l'auteur : la carte postale ancienne du château pour le regard de la page 23 ; la feuille de Cassini et les plans du parc (XVIIIe siècle, comte de Choulot) pour la page 8 ; les archives de la seigneurie pour la glandée de la page 18 (elles sont conservées au château, chez la famille de Pange, et ont été dépouillées par l'historien Emmanuel de Waresquiel pour le XIXe siècle : on peut les demander) ; la position exacte du chêne dans le parc, son tour et son âge (page 34).
 - Les dates réelles du débourrement et des quatre passages photographiques (pages 8-9).
 - Les cernes à légender sur la rondelle de la page 25 (années de sécheresse connues du lieu).
 - Références primaires : levées le 9 novembre 2026 (anthocyanes : Lee & Gould 2002, Karageorgou & Manetas 2006 ; cynips : Stone et al. 2002 ; encre : Rouchon 2011, Liège 2012 ; balanin : Espelta 2009, Bonal 2007, 2009 ; glandée : Crawley & Long 1995, Kelly & Sork 2002 ; marcescence : Svendsen 2001, Otto & Nilsson 1981, Abadía 1996 ; lichens : LeBlanc & De Sloover 1970, AFNOR 2008 ; mésanges : Gibb 1955, Royama 1966, Barba 2009 ; caches : Balda & Kamil 1992, Clayton & Dickinson 1998). La phrase sur les feuilles rouges (p. 9) a été réécrite : l'effet parasol est une hypothèse peu confirmée, l'effet contre les insectes est mesuré.

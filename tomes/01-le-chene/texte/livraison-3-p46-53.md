@@ -11,7 +11,7 @@
 ### Page 46 — Hier
 
 **[Regard]**
-*Posez le doigt sur Pange, tout en haut de la carte. Au temps des glaces, là où vous êtes, il n'y avait pas un arbre : de l'herbe rase, du vent, des rennes. Les chênes attendaient très loin au sud, serrés dans les montagnes, et personne ne savait qu'ils reviendraient. Sur la carte de Cassini, bien plus tard, le bois de [nom du bois sur Cassini] est déjà dessiné à sa place. Entre les deux, il y a ce que raconte cette page.*
+*Posez le doigt sur Pange, tout en haut de la carte. Au temps des glaces, là où vous êtes, il n'y avait pas un arbre : de l'herbe rase, du vent, des rennes. Les chênes attendaient très loin au sud, serrés dans les montagnes, et personne ne savait qu'ils reviendraient. Sur la carte de Cassini, bien plus tard, le bois de Gonvaux est déjà dessiné à sa place [à vérifier sur la feuille de Cassini]. Entre les deux, il y a ce que raconte cette page.*
 
 Il y a vingt mille ans, la glace couvrait la Scandinavie, la Baltique et la moitié des îles Britanniques ; la France était une steppe froide. Les chênes avaient reculé jusqu'aux montagnes du sud de l'Espagne, du sud de l'Italie et des Balkans — trois refuges, que l'on a retrouvés en lisant le pollen fossile au fond des lacs et des tourbières (1).
 
@@ -237,7 +237,7 @@ Pas de sermon : un inventaire des gestes qui marchent, avec ce qu'on en sait.
 **Reste à relever :**
 - Le chapitre « De quercu » de la *Physica* (texte latin, chapitre, colonne) pour l'encadré de la page 49 — l'auteur.
 - Les noms lorrains du chêne et les toponymes de la région (page 50) — l'auteur.
-- La carte postale ancienne du château de Pange (regard de la page 48) et le nom du bois sur la feuille de Cassini (regard de la page 46) — l'auteur. Le lieu est fixé le 9 novembre : parc du château de Pange (Moselle).
+- La carte postale ancienne du château de Pange (regard de la page 48) et la feuille de Cassini (regard de la page 46) — l'auteur. Le bois retenu est celui de Gonvaux, le plus grand de la commune de Pange dans la BD TOPO de l'IGN (avec ceux de Mont, de Conrois et de la Bouclière), et l'un des bois du domaine rendus à la famille en 1800 (Waresquiel) ; reste à voir sur Cassini s'il y porte déjà ce nom. Le lieu est fixé le 9 novembre : parc du château de Pange (Moselle).
 - Un exemple précis de forêt carolingienne évaluée en porcs (polyptyque d'Irminon, éd. Guérard).
 - La lignée génétique des chênes de Lorraine sur la carte de Petit et al. 2002 (page 46).
 - L'étymologie *tanno* → *tan* (Delamarre), et la couronne de chêne de la Légion d'honneur (règlement de 1802) — vérifications de détail.
