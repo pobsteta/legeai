@@ -44,13 +44,15 @@ ELEMENTS = {  # clé : (fichier, recadrage bas en fraction, nom de fichier de so
     "ecorce_ses": ("sessile_ecorce.png", 0.0, "sessile_ecorce.png"),
     "port_ped": ("pedoncule_port.png", 0.0, "pedoncule_port.png"),
     "port_ses": ("sessile_port.png", 0.0, "sessile_port.png"),
+    "fleur_ped": ("pedoncule_fleurs.png", 0.0, "pedoncule_fleurs.png"),
+    "fleur_ses": ("sessile_fleurs.png", 0.0, "sessile_fleurs.png"),
 }
 
 # Zoom appliqué au dessin dans la case (jamais au fichier) : met les deux colonnes d'une ligne au même grossissement
 # (bourgeon terminal : 6,5 mm pédonculé, 8,5 mm sessile) et laisse la place de la loupe.
-ZOOM = {"bourgeon_ped": 0.60, "bourgeon_ses": 0.63, "gland_ses": 0.87}
+ZOOM = {"bourgeon_ped": 0.60, "bourgeon_ses": 0.63, "gland_ses": 0.87, "fleur_ped": 0.78, "fleur_ses": 0.78}
 # Ancrage du dessin zoomé dans la case : "centre" (défaut) ou "bas-gauche".
-ANCRE = {"bourgeon_ped": "bas-gauche", "bourgeon_ses": "bas-gauche"}
+ANCRE = {"bourgeon_ped": "bas-gauche", "bourgeon_ses": "bas-gauche", "fleur_ped": "bas-gauche", "fleur_ses": "bas-gauche"}
 # Bord à rogner (px) dans la case : enlève les traces de bord de feuille du générateur (le fichier n'est pas modifié).
 ROGNE = {"port_ses": 28, "port_ped": 12}
 
@@ -65,13 +67,18 @@ ECHELLE = {
     "bourgeon_ses": (176, "libre"), # bourgeon terminal de 8,5 mm (150 px) ; 111 px/cm après zoom 0,63
     "ecorce_ped": (30, "sur"),      # plaques de 4 cm de large environ, cadre de 20 cm
     "ecorce_ses": (30, "sur"),      # lanières de 1,5 cm de large environ
+    "fleur_ped": (62, "libre"),     # pousse de mai de 12 cm, chatons de 4 à 6 cm ; 48 px/cm après zoom 0,78
+    "fleur_ses": (62, "libre"),
 }
 
 # Loupe : (fichier du gros plan, centre du bouquet terminal sur le dessin du rameau en coordonnées source 600 × 800,
 #          rayon du cercle de visée autour du bouquet, centre et rayon du cercle de la loupe dans la case).
+# Dernier champ facultatif : cadre à garder dans le gros plan, en fractions (gauche, haut, droite, bas) de son contenu.
 LOUPE = {
-    "bourgeon_ped": ("pedoncule_bourgeon_loupe.png", (429, 170), 76, (452, 158), 132),
-    "bourgeon_ses": ("sessile_bourgeon_loupe.png", (422, 193), 70, (452, 158), 132),
+    "bourgeon_ped": ("pedoncule_bourgeon_loupe.png", (429, 170), 76, (452, 158), 132, (0, 0, 1, 0.78)),
+    "bourgeon_ses": ("sessile_bourgeon_loupe.png", (422, 193), 70, (452, 158), 132, (0, 0, 1, 0.78)),
+    "fleur_ped": ("pedoncule_fleur_loupe.png", (356, 62), 44, (452, 158), 132, (-0.45, -0.02, 0.75, 0.24)),
+    "fleur_ses": ("sessile_fleur_loupe.png", (300, 215), 56, (452, 158), 132, (0.3, 0.3, 0.75, 0.75)),
 }
 
 
@@ -205,7 +212,7 @@ def poser_loupe(cell, key, transfo):
     """Cercle de visée sur le bouquet terminal du rameau, deux traits, et la loupe avec le gros plan."""
     if key not in LOUPE:
         return
-    fn, (sx, sy), r_vise, (lx, ly), r_loupe = LOUPE[key]
+    fn, (sx, sy), r_vise, (lx, ly), r_loupe, cadre = LOUPE[key]
     z, dx, dy = transfo
     vx, vy = sx * z + dx, sy * z + dy  # bouquet terminal dans la case
     d = ImageDraw.Draw(cell)
@@ -213,7 +220,11 @@ def poser_loupe(cell, key, transfo):
     gp = normaliser(Image.open(SRC + fn).convert("L"))
     bbox = ImageOps.invert(gp).getbbox()
     gp = gp.crop(bbox)
-    gp = gp.crop((0, 0, gp.width, int(gp.height * 0.78)))  # le bourgeon et sa base, moins de rameau
+    l, t, r_, b = cadre  # fractions du contenu ; des valeurs hors [0, 1] ajoutent du blanc autour
+    box = (int(gp.width * l), int(gp.height * t), int(gp.width * r_), int(gp.height * b))
+    canvas = Image.new("L", (box[2] - box[0], box[3] - box[1]), 255)
+    canvas.paste(gp, (-box[0], -box[1]))
+    gp = canvas
     side = int(2 * r_loupe * 0.88)
     gp = ImageOps.contain(gp, (side, side), method=Image.LANCZOS)
     disque = Image.new("L", (2 * r_loupe, 2 * r_loupe), 255)
@@ -252,7 +263,7 @@ def pied(avec_piece, avec_loupe):
             "aucune photographie ni planche d'autrui n'a été fournie au générateur. ")
     if avec_piece:
         foot += "La pièce de 1 € (23 mm) est dessinée à l'échelle du sujet de chaque case"
-        foot += " ; la loupe montre le bourgeon terminal grossi une dizaine de fois. " if avec_loupe else ". "
+        foot += " ; les loupes montrent le détail grossi dix à quinze fois (bourgeon terminal, fleur femelle). " if avec_loupe else ". "
     return foot + "Maquette d'étude pour Le Geai, tome 1, pages 4-5 — 8 et 9 novembre 2026."
 
 
@@ -330,8 +341,11 @@ if __name__ == "__main__":
               ("ecorce_ses", "Plus lisse, moins rugueuse : rhytidome mince et gris clair, fines lanières longitudinales coupées en petites plaquettes carrées, fissures peu profondes"))],
             "planche-II-bourgeon-ecorce")
 
-    planche("III", "Le port — l'arbre entier, en hiver",
+    planche("III", "Le port et la fleur — l'arbre entier en hiver, la pousse fleurie en mai",
             [("Le port",
               ("port_ped", "Tronc court et massif, divisé bas en grosses branches maîtresses tortueuses partant en coude · ramification désordonnée · houppier large et irrégulier, plus large que haut (arbre de haie ou de pré)"),
-              ("port_ses", "Fût droit, long et cylindrique, sans branche basse · branches fines et régulières dressées en éventail · houppier régulier, plus haut que large (arbre de futaie)"))],
-            "planche-III-port")
+              ("port_ses", "Fût droit, long et cylindrique, sans branche basse · branches fines et régulières dressées en éventail · houppier régulier, plus haut que large (arbre de futaie)")),
+             ("La fleur",
+              ("fleur_ped", "Floraison en avril-mai, avec les feuilles · fleurs mâles en longs chatons grêles et pendants à la base de la pousse · fleurs femelles minuscules, par 1 à 5, au bout d'un long pédoncule dressé, le futur pédoncule des glands (loupe)"),
+              ("fleur_ses", "Floraison une à deux semaines plus tard · mêmes chatons mâles pendants à la base de la pousse · fleurs femelles minuscules, par 2 à 5, sessiles à l'aisselle des feuilles supérieures de la pousse (loupe)"))],
+            "planche-III-port-fleur")
