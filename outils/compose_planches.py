@@ -48,19 +48,21 @@ ELEMENTS = {  # clé : (fichier, recadrage bas en fraction, nom de fichier de so
 
 # Zoom appliqué au dessin dans la case (jamais au fichier) : met les deux colonnes d'une ligne au même grossissement
 # (bourgeon terminal : 6,5 mm pédonculé, 8,5 mm sessile) et laisse la place de la loupe.
-ZOOM = {"bourgeon_ped": 0.80, "bourgeon_ses": 0.70}
+ZOOM = {"bourgeon_ped": 0.60, "bourgeon_ses": 0.63, "gland_ses": 0.87}
 # Ancrage du dessin zoomé dans la case : "centre" (défaut) ou "bas-gauche".
 ANCRE = {"bourgeon_ped": "bas-gauche", "bourgeon_ses": "bas-gauche"}
+# Bord à rogner (px) dans la case : enlève les traces de bord de feuille du générateur (le fichier n'est pas modifié).
+ROGNE = {"port_ses": 28, "port_ped": 12}
 
 # Échelle de chaque dessin en pixels par centimètre (avant zoom) et mode de pose de la pièce :
 # "libre" = posée sur le papier, dans un coin libre ; "sur" = posée sur l'écorce, en bas à droite.
 ECHELLE = {
     "feuille_ped": (66, "libre"),   # feuille de 10 cm environ, pétiole compris
     "feuille_ses": (66, "libre"),   # feuille de 11 cm environ, long pétiole compris
-    "gland_ped": (56, "libre"),     # gland de 2,5 cm, pédoncule de 8 cm
-    "gland_ses": (56, "libre"),     # gland de 2 cm
-    "bourgeon_ped": (108, "libre"), # bourgeon terminal de 6,5 mm, rameau grossi trois fois
-    "bourgeon_ses": (125, "libre"), # bourgeon terminal de 8,5 mm ; ramené à 108 × 0,8 par le zoom
+    "gland_ped": (48, "libre"),     # gland de 2,5 cm (120 px), pédoncule de 8 à 9 cm
+    "gland_ses": (55, "libre"),     # gland de 2 cm (110 px) ; ramené à 48 par le zoom 0,87
+    "bourgeon_ped": (185, "libre"), # bourgeon terminal de 6,5 mm (120 px) ; 111 px/cm après zoom 0,60
+    "bourgeon_ses": (176, "libre"), # bourgeon terminal de 8,5 mm (150 px) ; 111 px/cm après zoom 0,63
     "ecorce_ped": (30, "sur"),      # plaques de 4 cm de large environ, cadre de 20 cm
     "ecorce_ses": (30, "sur"),      # lanières de 1,5 cm de large environ
 }
@@ -68,8 +70,8 @@ ECHELLE = {
 # Loupe : (fichier du gros plan, centre du bouquet terminal sur le dessin du rameau en coordonnées source 600 × 800,
 #          rayon du cercle de visée autour du bouquet, centre et rayon du cercle de la loupe dans la case).
 LOUPE = {
-    "bourgeon_ped": ("pedoncule_bourgeon_loupe.png", (437, 179), 62, (452, 158), 132),
-    "bourgeon_ses": ("sessile_bourgeon_loupe.png", (464, 150), 52, (452, 158), 132),
+    "bourgeon_ped": ("pedoncule_bourgeon_loupe.png", (429, 170), 76, (452, 158), 132),
+    "bourgeon_ses": ("sessile_bourgeon_loupe.png", (422, 193), 70, (452, 158), 132),
 }
 
 
@@ -96,6 +98,9 @@ def prep(key, w=600, h=800):
     im = ImageOps.pad(im, (w, h), color=255, method=Image.LANCZOS)
     os.makedirs(OUT + "elements", exist_ok=True)
     im.save(OUT + "elements/" + out)
+    r = ROGNE.get(key, 0)  # appliqué à la case seulement, jamais au fichier (sinon le rognage s'accumulerait)
+    if r:
+        im = ImageOps.pad(im.crop((r, r, w - r, h - r)), (w, h), color=255, method=Image.LANCZOS)
     z = ZOOM.get(key, 1.0)
     dx = dy = 0.0
     if z != 1.0 or ANCRE.get(key):
@@ -103,7 +108,7 @@ def prep(key, w=600, h=800):
         content = im.crop(bbox)
         content = content.resize((max(1, int(content.width * z)), max(1, int(content.height * z))), Image.LANCZOS)
         if ANCRE.get(key) == "bas-gauche":
-            px, py = 24, h - content.height - 24
+            px, py = 36, h - content.height - 36
         else:
             px, py = (w - content.width) // 2, (h - content.height) // 2
         canvas = Image.new("L", (w, h), 255)
@@ -318,8 +323,8 @@ if __name__ == "__main__":
 
     planche("II", "Bourgeon et écorce — quand il n'y a ni feuilles ni glands",
             [("Le bourgeon",
-              ("bourgeon_ped", "Bourgeons ovoïdes globuleux, courts et arrondis, groupés en bouquet au bout du rameau anguleux (rameau grossi trois fois ; bourgeon terminal dans la loupe)"),
-              ("bourgeon_ses", "Bourgeons ovoïdes pointus, allongés et effilés, groupés eux aussi en bouquet terminal (même grossissement, même loupe)")),
+              ("bourgeon_ped", "Bourgeons ovoïdes globuleux, courts et arrondis, groupés en bouquet au bout du rameau anguleux et noueux (bourgeon terminal dans la loupe)"),
+              ("bourgeon_ses", "Bourgeons ovoïdes pointus, allongés et effilés, groupés eux aussi en bouquet au bout d'un rameau plus mince (même échelle, même loupe)")),
              ("L'écorce",
               ("ecorce_ped", "Grossière, rugueuse : rhytidome épais, crevasses profondes longitudinales et transversales, découpé en plaquettes trapézoïdales anguleuses rangées en colonnes"),
               ("ecorce_ses", "Plus lisse, moins rugueuse : rhytidome mince et gris clair, fines lanières longitudinales coupées en petites plaquettes carrées, fissures peu profondes"))],
