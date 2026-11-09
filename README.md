@@ -33,6 +33,7 @@ outils/
   geai_suivi.py                    — génère le classeur de suivi des photos vierge (openpyxl)
   carte_cassini.py                 — génère la carte de Cassini des forêts de chêne (shapely, SVG ; données Natural Earth et france-geojson, voir l'en-tête du script)
   compose_planches.py              — assemble les planches comparatives à partir de planches/elements/ (Pillow)
+  retouche_oreillettes.py          — retouche documentée de la base de la feuille de pédonculé (oreillettes), maquette d'étude
   requirements.txt
 ```
 
@@ -85,7 +86,7 @@ python3 outils/carte_cassini.py && rsvg-convert -f pdf -o carte.pdf geo/carte-ca
 
 - Collection : positionnement, charte, 24 charades, fiche de personnage et brief de la planche modèle rédigés et validés. Générateur d'images retenu : Magnific.
 - Photos : fiche de prises de vue et tableur de suivi prêts ; la campagne commence maintenant (glandée en cours, geais au travail — point E, indispensable à la planche modèle du Jacques).
-- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraison 1 (p. 1-27) écrite et sourcée**, carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude. Restent les livraisons 2 (p. 28-45 : la vie, les habitants, « Seul ou en forêt »), 3 (p. 46-53 : le voyage, l'arbre et nous, menaces) et 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
+- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraison 1 (p. 1-27) écrite et sourcée**, carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude (pièce de 1 € à l'échelle dans chaque case au centimètre, homme debout pour le port ; base de la feuille de pédonculé retouchée pour marquer les oreillettes — voir `planches/prompts-planches-comparatives.md`). Restent les livraisons 2 (p. 28-45 : la vie, les habitants, « Seul ou en forêt »), 3 (p. 46-53 : le voyage, l'arbre et nous, menaces) et 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
 - À fournir par l'auteur : le lieu de l'individu suivi (pour vérifier les regards sur Cassini et le cadastre), une photographie ancienne du village, les dates réelles de débourrement, les noms lorrains du chêne, le chapitre « De quercu » de la *Physica* (Monat ou Verten), un chêne remarquable lorrain pour la p. 58, le nom d'auteur de couverture.
 
 ## Droits
