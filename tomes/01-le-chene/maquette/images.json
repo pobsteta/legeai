@@ -220,7 +220,7 @@
   "note": "le réseau « qui dépend de qui » reste à dessiner en vectoriel sous les portraits"
  },
  "44": [
-  "tomes/01-le-chene/images/p44-trois-chenes-trois-vies_0esOJftTfW.jpg"
+  "tomes/01-le-chene/images/p44-trois-chenes-trois-vies_fHZ079WCDY.jpg"
  ],
  "45": {
   "fichiers": [
@@ -239,7 +239,7 @@
   "fichiers": [
    "tomes/01-le-chene/images/p47-france-trois-chenes.png"
   ],
-  "note": "figure vectorielle ; aires par département indicatives, à vérifier"
+  "note": "figure vectorielle ; aires par département indicatives, à vérifier ; forêts positionnées par le géocodeur IGN"
  },
  "48": [
   "tomes/01-le-chene/images/p48-charpente-merrain-barrique_Sy8CfVMUb8.jpg"
@@ -254,7 +254,7 @@
   ],
   "empiler": true,
   "hauteur_mm": 95,
-  "note": "la carte des noms est une illustration à compléter avec les noms lorrains"
+  "note": "la carte des noms est une illustration à compléter avec les noms lorrains ; communes positionnées par le géocodeur IGN"
  },
  "51": {
   "fichiers": [
@@ -268,7 +268,20 @@
   ],
   "note": "figure vectorielle ; la hauteur de la barre 2015-2024 n'est qu'indicative (+ 125 %)"
  },
- "53": [
-  "tomes/01-le-chene/images/p53-haie-en-octobre_P3fbqx242C.jpg"
- ]
+ "53": {
+  "zones": [
+   {
+    "fichiers": [
+     "tomes/01-le-chene/images/p53-carte-petits-bois.png"
+    ],
+    "hauteur_mm": 112,
+    "note": "carte calculée sur la BD TOPO (IGN) via le MCP Géoplateforme ; compte d'objets, pas de surface ; Finistère et Var incomplets, Corse-du-Sud non calculée"
+   },
+   {
+    "fichiers": [
+     "tomes/01-le-chene/images/p53-haie-en-octobre_P3fbqx242C.jpg"
+    ]
+   }
+  ]
+ }
 }

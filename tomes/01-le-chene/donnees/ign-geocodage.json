@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "source": "IGN, Géoplateforme, service d'autocomplétion (géocodage) via le MCP geocontext_ign, outil geocode",
+  "date_releve": "2026-11-09",
+  "usage": "positions exactes des lieux portés sur les cartes vectorielles du tome 1 (pages 47 et 50) ; coordonnées WGS84 lon/lat",
+  "regle": "on retient le résultat de type municipality / administratif / bois quand il existe ; sinon une voie située dans la commune (précision : le bourg)"
+ },
+ "toponymes_page_50": [
+  {"nom": "Le Chesnay", "commune": "Le Chesnay-Rocquencourt (78)", "racine": "cassanos", "lon": 2.118964, "lat": 48.826372, "kind": "municipality"},
+  {"nom": "Le Quesnoy", "commune": "Le Quesnoy (59)", "racine": "cassanos", "lon": 3.624064, "lat": 50.250739, "kind": "municipality"},
+  {"nom": "Chassagne-Montrachet", "commune": "Chassagne-Montrachet (21)", "racine": "cassanos", "lon": 4.726798, "lat": 46.933553, "kind": "administratif"},
+  {"nom": "Cassagnes-Bégonhès", "commune": "Cassagnes-Bégonhès (12)", "racine": "cassanos", "lon": 2.515204, "lat": 44.17675, "kind": "administratif"},
+  {"nom": "Cassagnes", "commune": "Cassagnes (66)", "racine": "cassanos", "lon": 2.634991, "lat": 42.746894, "kind": "municipality"},
+  {"nom": "Chenay", "commune": "Chenay (72)", "racine": "cassanos", "lon": 0.177014, "lat": 48.449891, "kind": "street (bourg)"},
+  {"nom": "Chênehutte", "commune": "Chênehutte-Trèves-Cunault, Gennes-Val-de-Loire (49)", "racine": "cassanos", "lon": -0.146116, "lat": 47.302875, "kind": "street (bourg)"},
+  {"nom": "Le Chesne", "commune": "Le Chesne, Bairon et ses environs (08)", "racine": "cassanos", "lon": 4.775437, "lat": 49.515394, "kind": "street (bourg)"},
+  {"nom": "Rouvray", "commune": "Rouvray (21)", "racine": "robur", "lon": 4.113995, "lat": 47.424033, "kind": "municipality"},
+  {"nom": "Rouvres-en-Plaine", "commune": "Rouvres-en-Plaine (21)", "racine": "robur", "lon": 5.129661, "lat": 47.24125, "kind": "administratif"},
+  {"nom": "Rouvroy", "commune": "Rouvroy (62)", "racine": "robur", "lon": 2.902194, "lat": 50.394687, "kind": "street (bourg)"},
+  {"nom": "Rouvroy", "commune": "Rouvroy (02)", "racine": "robur", "lon": 3.320221, "lat": 49.854426, "kind": "municipality"},
+  {"nom": "Saint-Étienne-du-Rouvray", "commune": "Saint-Étienne-du-Rouvray (76)", "racine": "robur", "lon": 1.08898, "lat": 49.385269, "kind": "municipality"},
+  {"nom": "Rouvres", "commune": "Rouvres (28)", "racine": "robur", "lon": 1.486263, "lat": 48.841547, "kind": "street (bourg)"},
+  {"nom": "Garrigues", "commune": "Garrigues (81)", "racine": "garric", "lon": 1.697609, "lat": 43.699189, "kind": "municipality"},
+  {"nom": "Garrigues", "commune": "Garrigues (34)", "racine": "garric", "lon": 4.015325, "lat": 43.794154, "kind": "municipality"}
+ ],
+ "forets_page_47": [
+  {"nom": "Tronçais", "libelle": "Forêt de Tronçais, Braize (03)", "lon": 2.668335, "lat": 46.642865, "kind": "bois", "role": "étude INRAE 1680-2020 ; régénération naturelle ; réserve de Colbert"},
+  {"nom": "Bercé", "libelle": "Forêt domaniale de Bercé, Jupilles (72)", "lon": 0.43169, "lat": 47.803742, "kind": "bois", "role": "étude INRAE 1680-2020"},
+  {"nom": "Réno-Valdieu", "libelle": "Forêt domaniale de Réno-Valdieu, Saint-Mard-de-Réno (61)", "lon": 0.669348, "lat": 48.509259, "kind": "bois", "role": "étude INRAE 1680-2020"},
+  {"nom": "Petite Charnie", "libelle": "Forêt domaniale de la Petite Charnie, Saint-Symphorien (72)", "lon": -0.168234, "lat": 48.086258, "kind": "bois", "role": "peuplement mélangé suivi sur deux générations ; plantation comparative"},
+  {"nom": "Verdun", "libelle": "Forêt domaniale de Verdun, Beaumont-en-Verdunois (55)", "lon": 5.398531, "lat": 49.256426, "kind": "bois", "role": "projet Giono (ONF) : hêtres de la Sainte-Baume"}
+ ]
+}

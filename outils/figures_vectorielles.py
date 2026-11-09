@@ -11,11 +11,17 @@ Sorties (PNG 2 000 px de large + PDF vectoriel) dans tomes/01-le-chene/images/ :
     p50-carte-toponymes           — quelques noms de lieux du chêne (cassanos, robur, garric)
     p51-chromosomes               — les douze chromosomes du chêne pédonculé, schéma
     p52-graphique-ign             — mortalité et dépérissement d'après l'IGN
+    p53-carte-petits-bois         — densité de bois feuillus par département, comptée dans la BD TOPO (IGN) via le MCP Géoplateforme
 
 Données géographiques (non versionnées, ~10 Mo) : GEO_DIR (défaut /tmp/geo) doit contenir
-ne_50m_admin_0_countries.geojson (Natural Earth) et departements.geojson, regions.geojson (france-geojson).
-Les aires de présence par département sont une transcription indicative des cartes IGN/MFR, à vérifier
-avant maquette finale ; les figures le disent en pied.
+ne_50m_admin_0_countries.geojson (Natural Earth) et departements.geojson, regions.geojson (france-geojson,
+conversion des contours IGN Admin Express, licence ouverte : le fond de carte est donc un fond IGN).
+Données IGN relevées par le MCP Géoplateforme, versionnées dans tomes/01-le-chene/donnees/ :
+    ign-geocodage.json                       — positions des lieux des pages 47 et 50 (géocodeur IGN)
+    bdtopo-petits-bois-departements.json     — comptes BD TOPO par département (outils/ign_bdtopo_consolide.py)
+Les aires de présence par espèce (pages 6-7 et 47) restent une transcription indicative des cartes IGN/MFR :
+le catalogue WFS de la Géoplateforme n'expose ni la BD Forêt ni les données d'essences de l'inventaire ;
+les figures le disent en pied.
 """
 import json
 import math
@@ -31,8 +37,15 @@ from shapely.geometry import shape, Polygon, MultiPolygon, box
 
 REPO = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 OUT = os.path.join(REPO, "tomes", "01-le-chene", "images")
+DON = os.path.join(REPO, "tomes", "01-le-chene", "donnees")
 GEO = os.environ.get("GEO_DIR", "/tmp/geo")
 os.makedirs(OUT, exist_ok=True)
+FOND = "Fond de carte : IGN Admin Express (via france-geojson)."
+
+
+def donnees(name):
+    with open(os.path.join(DON, name), encoding="utf-8") as fh:
+        return json.load(fh)
 
 # ---- polices et couleurs de la collection
 FD = "/usr/share/fonts/truetype/crosextra/"
@@ -109,7 +122,7 @@ def fig_carte_deux_chenes():
     ax.add_patch(plt.Rectangle((-5.1, 42.0), 0.45, 0.32, facecolor=GREEN_L)); ax.text(-4.5, 42.16, "pédonculé seul", fontsize=9, va="center")
     ax.add_patch(plt.Rectangle((-5.1, 41.55), 0.45, 0.32, facecolor=GREEN, alpha=0.85)); ax.text(-4.5, 41.71, "pédonculé et sessile", fontsize=9, va="center")
     ax.add_patch(plt.Rectangle((-1.9, 42.0), 0.45, 0.32, facecolor="#F1F1EC", edgecolor=GREY_L)); ax.text(-1.3, 42.16, "ni l'un ni l'autre (ou rares)", fontsize=9, va="center")
-    ax.text(-5.3, 51.25, "Schéma indicatif par département, d'après les cartes de l'inventaire forestier — à vérifier avant maquette finale.", **NOTE)
+    ax.text(-5.3, 51.25, "Schéma indicatif par département, d'après les cartes de l'inventaire forestier — à vérifier avant maquette finale. " + FOND, **NOTE)
     save(fig, "p06-07-carte-deux-chenes")
 
 
@@ -218,15 +231,25 @@ def fig_france_trois_chenes():
     for x in (1.5, 4.0, 6.5):
         ax.add_patch(FancyArrowPatch((x, 45.2), (x, 48.3), arrowstyle="-|>,head_length=7,head_width=3.5", color=OCHRE, lw=1.8))
     ax.text(2.0, 49.3, "attendu plus au nord", fontsize=9, color=OCHRE, ha="center")
-    for (x, y, lab) in [(5.38, 49.16, "Verdun"), (2.70, 46.65, "Tronçais")]:
-        ax.plot([x], [y], marker="o", ms=6, color=GREEN, mec="white", mew=1)
-        ax.text(x + 0.25, y, lab, fontsize=8.5, color=GREEN, va="center")
+    forets = {f["nom"]: f for f in donnees("ign-geocodage.json")["forets_page_47"]}
+    for nom in ("Verdun", "Tronçais"):
+        f = forets[nom]
+        ax.plot([f["lon"]], [f["lat"]], marker="o", ms=6, color=GREEN, mec="white", mew=1)
+        ax.text(f["lon"] + 0.25, f["lat"], nom, fontsize=8.5, color=GREEN, va="center")
     ax.text(-5.2, 41.5, "points : essais de migration assistée (ONF)", fontsize=8.5, color=GREEN)
+    # panneau du sessile : les trois forêts où l'INRAE a lu l'évolution des chênes depuis 1680 (Saleh et al. 2022)
+    ax = axes[1]
+    for nom, dx, dy in (("Tronçais", 0.3, 0), ("Bercé", -0.3, -0.3), ("Réno-Valdieu", 0.3, 0.1)):
+        f = forets[nom]
+        ax.plot([f["lon"]], [f["lat"]], marker="s", ms=6.5, color=OCHRE, mec="white", mew=1)
+        ax.text(f["lon"] + dx, f["lat"] + dy, nom, fontsize=8.5, color=OCHRE, va="center", ha="left" if dx > 0 else "right",
+                bbox=dict(boxstyle="round,pad=0.15", facecolor="white", edgecolor="none", alpha=0.85))
+    ax.text(-5.2, 41.5, "carrés : les trois forêts où l'on a lu\nl'évolution du sessile depuis 1680 (INRAE)", fontsize=8.5, color=OCHRE, va="bottom")
     ax = axes[0]
     ax.add_patch(FancyArrowPatch((0.5, 44.0), (-0.5, 46.5), arrowstyle="-|>,head_length=7,head_width=3.5", color=RED, lw=1.6))
     ax.text(-4.9, 43.0, "recul attendu\nau sud-ouest", fontsize=8.5, color=RED)
     fig.text(0.5, 0.02, "Aires de présence indicatives par département, transcrites des cartes de l'inventaire forestier et des fiches MFR — à vérifier avant maquette finale ; "
-             "les flèches donnent le sens, pas la date.", ha="center", **NOTE)
+             "les flèches donnent le sens, pas la date. Forêts positionnées par le géocodeur IGN. " + FOND, ha="center", **NOTE)
     save(fig, "p47-france-trois-chenes")
 
 
@@ -238,23 +261,23 @@ def fig_toponymes():
         if code in ("01", "02", "03", "04", "06"):
             continue
         draw_geom(ax, g, facecolor="#F6F6F2", edgecolor="#C9CCC3", linewidth=0.5)
-    villes = [  # nom, lon, lat, racine
-        ("Le Chesnay", 2.12, 48.82, "cassanos"), ("Le Quesnoy", 3.64, 50.25, "cassanos"), ("Chassagne-Montrachet", 4.74, 46.93, "cassanos"),
-        ("Cassagnes-Bégonhès", 2.65, 44.17, "cassanos"), ("Cassagnes", 2.67, 42.74, "cassanos"), ("Chenay", -0.46, 47.98, "cassanos"),
-        ("Chênehutte", -0.15, 47.30, "cassanos"), ("Le Chesne", 4.77, 49.51, "cassanos"),
-        ("Rouvray", 4.11, 47.43, "robur"), ("Rouvres-en-Plaine", 5.15, 47.26, "robur"), ("Rouvroy", 2.90, 50.39, "robur"),
-        ("Rouvroy", 3.32, 49.83, "robur"), ("Saint-Étienne-du-Rouvray", 1.10, 49.38, "robur"), ("Rouvres", 1.45, 48.63, "robur"),
-        ("la garrigue", 3.90, 43.75, "garric"), ("Garrigues", 2.30, 43.95, "garric"), ("Garrigues", 4.10, 43.95, "garric"),
-    ]
+    # positions relevées par le géocodeur IGN (tomes/01-le-chene/donnees/ign-geocodage.json)
+    villes = [(v["nom"], v["lon"], v["lat"], v["racine"]) for v in donnees("ign-geocodage.json")["toponymes_page_50"]]
     col = {"cassanos": GREEN, "robur": "#6B4A1E", "garric": OCHRE}
+    decal = {("Rouvray", "robur"): (-0.14, -0.3), ("Rouvres-en-Plaine", "robur"): (0.14, 0.14), ("Chenay", "cassanos"): (0.14, 0.12),
+             ("Chassagne-Montrachet", "cassanos"): (-0.14, -0.3), ("Rouvres", "robur"): (-0.14, 0.05), ("Garrigues", "garric"): (0.14, -0.22),
+             ("Saint-Étienne-du-Rouvray", "robur"): (-0.14, 0.05)}
     for nom, x, y, r in villes:
         ax.plot([x], [y], marker="o", ms=6.5, color=col[r], mec="white", mew=0.8)
-        ax.text(x + 0.14, y + 0.05, nom, fontsize=7.8, color=col[r])
+        dx, dy = decal.get((nom, r), (0.14, 0.05))
+        ax.text(x + dx, y + dy, nom, fontsize=7.8, color=col[r], ha="right" if dx < 0 else "left")
+    ax.text(3.5, 43.97, "la garrigue", fontsize=8.5, color=OCHRE, style="italic", ha="center")
     for i, (r, lab) in enumerate([("cassanos", "cassanos, le gaulois → chêne, chesne, casse"), ("robur", "robur, le latin → rouvre"), ("garric", "garric, le mot du Midi → garrigue")]):
         ax.plot([-5.0], [42.3 - 0.42 * i], marker="o", ms=7, color=col[r], mec="white")
         ax.text(-4.7, 42.3 - 0.42 * i, lab, fontsize=9, va="center", color=col[r])
     ax.text(6.0, 48.7, "[noms lorrains : à fournir]", fontsize=8.5, color=RED)
-    ax.text(-5.3, 51.25, "Quelques exemples parmi des centaines (Dauzat & Rostaing ; Nègre) — carte d'illustration, à compléter avec les noms de la région.", **NOTE)
+    ax.text(-5.3, 51.25, "Quelques exemples parmi des centaines (Dauzat & Rostaing ; Nègre) — carte d'illustration, à compléter avec les noms de la région.\n"
+            "Communes positionnées par le géocodeur de l'IGN (Géoplateforme, 9 novembre 2026). " + FOND, **NOTE)
     save(fig, "p50-carte-toponymes")
 
 
@@ -311,6 +334,64 @@ def fig_graphique_ign():
     save(fig, "p52-graphique-ign")
 
 
+def fig_petits_bois():
+    """La France des petits bois : nombre d'objets « forêt fermée de feuillus » de la BD TOPO (IGN) pour 100 km²,
+    par département, comptés via le MCP Géoplateforme (voir outils/ign_bdtopo_consolide.py)."""
+    deps = geoms(os.path.join(GEO, "departements.geojson"), "code")
+    data = donnees("bdtopo-petits-bois-departements.json")
+    recs = {r["code"]: r for r in data["departements"]}
+    # Paris et la petite couronne forment une seule unité : quatre départements minuscules brouilleraient la lecture
+    pc = ["75", "92", "93", "94"]
+    fus = dict(code="75+", nom="Paris et petite couronne", feuillus=sum(recs[c]["feuillus"] for c in pc),
+               surface_km2=sum(recs[c]["surface_km2"] for c in pc), complet=True, cartographie=True)
+    fus["densite_100km2"] = fus["feuillus"] / fus["surface_km2"] * 100
+    bornes = [0, 100, 140, 180, 230, 10_000]
+    palette = ["#EEF2EA", "#C9D8C2", "#9DB894", "#5F8A5F", GREEN]
+    labels = ["moins de 100", "100 à 140", "140 à 180", "180 à 230", "plus de 230"]
+
+    def classe(d):
+        for i in range(5):
+            if bornes[i] <= d < bornes[i + 1]:
+                return i
+        return 4
+
+    fig, ax = plt.subplots(figsize=(7.4, 7.4))
+    france_axes(ax)
+    effectifs = [0] * 5
+    for code, g in deps.items():
+        if code.startswith("97"):
+            continue
+        r = fus if code in pc else recs[code]
+        if not r.get("cartographie"):
+            draw_geom(ax, g, facecolor="white", edgecolor=GREY, linewidth=0.5, hatch="////")
+            continue
+        k = classe(r["densite_100km2"])
+        if code not in pc or code == "75":
+            effectifs[k] += 1
+        draw_geom(ax, g, facecolor=palette[k], edgecolor="white", linewidth=0.45)
+        if not r.get("complet"):
+            draw_geom(ax, g, facecolor="none", edgecolor=GREY, linewidth=0.5, hatch="\\\\\\\\\\\\", alpha=0.6)
+    # légende, à l'est (hors de l'hexagone, au-dessus de la Corse)
+    x0, y0 = 7.05, 46.3
+    for i, lab in enumerate(labels[::-1]):
+        k = 4 - i
+        ax.add_patch(plt.Rectangle((x0, y0 - 0.38 * i), 0.5, 0.3, facecolor=palette[k], edgecolor=GREY_L, linewidth=0.4))
+        ax.text(x0 + 0.65, y0 - 0.38 * i + 0.15, lab, fontsize=8.5, va="center", color=DARK)
+    ax.text(x0, y0 + 0.55, "bois et forêts fermés de feuillus\npour 100 km²", fontsize=9, color=DARK, va="bottom")
+    ax.add_patch(plt.Rectangle((x0, y0 - 0.38 * 5 - 0.1), 0.5, 0.3, facecolor="none", edgecolor=GREY, linewidth=0.5, hatch="\\\\\\\\\\\\"))
+    ax.text(x0 + 0.65, y0 - 0.38 * 5 + 0.05, "compte incomplet (Finistère, Var)", fontsize=8, va="center", color=GREY)
+    ax.add_patch(plt.Rectangle((x0, y0 - 0.38 * 6 - 0.1), 0.5, 0.3, facecolor="white", edgecolor=GREY, linewidth=0.5, hatch="////"))
+    ax.text(x0 + 0.65, y0 - 0.38 * 6 + 0.05, "non calculé (Corse-du-Sud)", fontsize=8, va="center", color=GREY)
+    # le lieu
+    ax.plot([6.2], [48.7], marker="o", ms=8, mfc="none", mec=RED, mew=1.8)
+    ax.text(6.55, 48.7, "[lieu]", fontsize=8.5, color=RED, va="center")
+    ax.text(-5.3, 51.3, "Nombre d'objets « forêt fermée de feuillus » de la BD TOPO (IGN) dont le contour touche le département, rapporté à sa surface : "
+            "un compte de bois distincts,\npas une surface boisée. Relevé par le service WFS de la Géoplateforme le 9 novembre 2026 ; "
+            "départements côtiers sommés par arrondissement ou canton. " + FOND, **NOTE)
+    save(fig, "p53-carte-petits-bois")
+    print("  effectifs par classe :", effectifs, "| Paris et petite couronne :", round(fus["densite_100km2"]), "/100 km²")
+
+
 if __name__ == "__main__":
     fig_carte_deux_chenes()
     fig_echelle_des_vies()
@@ -319,3 +400,4 @@ if __name__ == "__main__":
     fig_toponymes()
     fig_chromosomes()
     fig_graphique_ign()
+    fig_petits_bois()
