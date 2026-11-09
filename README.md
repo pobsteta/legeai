@@ -25,7 +25,8 @@ tomes/
     echantillon-de-voix.md         — l'échantillon validé des trois registres (p. 3, 8-12, 44-45, 49, 51)
     texte/livraison-1-p01-27.md    — texte définitif des pages 1 à 27 (ouverture, planche, état civil, l'année)
     texte/livraison-2-p28-45.md    — texte définitif des pages 28 à 45 (la vie en quatre âges, les habitants, seul ou en forêt)
-    pdf/livraison-{1,2}-*.pdf      — les PDF de relecture correspondants
+    texte/livraison-3-p46-53.md    — texte définitif des pages 46 à 53 (d'où il vient, où il va ; l'arbre et nous, menaces et protection)
+    pdf/livraison-{1,2,3}-*.pdf    — les PDF de relecture correspondants
     cartes/carte-cassini-forets-de-chene.{svg,pdf,png} — carte « à la manière de Cassini » des plus belles forêts de chêne (base de la p. 58)
     planches/                      — planches comparatives pédonculé / sessile (maquette d'étude, p. 4-5) : planches I (feuille, gland), II (bourgeon, écorce) et III (port, fleur), éléments, prompts et contrôle
 references/                        — fiches techniques de référence (CNPF, ONF…) et leur synthèse
@@ -59,7 +60,7 @@ Chaque tome est écrit en Markdown, une page du livre = une section `## Page N �
 | `**[Bulle]** « … »` | le Jacques, bulle de marge (une par page) |
 | `**[Parole du Jacques]** « … »` | le Jacques, cartouche (un par chapitre) |
 | `**[Légende]**` | sous l'image |
-| `**[Encadré — titre]**` | cadre dans la page (ex. « Chez le sessile ») |
+| `**[Encadré — titre]**` | cadre dans la page (ex. « Chez le sessile ») ; seul sur sa ligne, il ouvre un encadré long qui prend les paragraphes suivants jusqu'au prochain marqueur (ex. « Hildegarde dit », p. 49) |
 | `**[Image]**`, `**[Carte]**`, `**[Sommaire]**` | emplacement d'image ou de carte |
 | `**(n)** …` | note de bas de page, numérotée par page ; `(n)` dans le texte renvoie à la note |
 | `[lieu]`, `[25 avril]`… | ce qui dépend de l'individu suivi et reste à vérifier (Cassini, cadastre, archives) |
@@ -79,6 +80,10 @@ python3 outils/build_pdf.py tomes/01-le-chene/texte/livraison-2-p28-45.md tomes/
   --tome "Tome 1" --titre "Le Chêne" --sous-titre "La vie secrète du roi de nos forêts" \
   --livraison "Texte, livraison 2 — pages 28 à 45" --contenu "La vie (quatre âges) · Les habitants · Seul ou en forêt" \
   --date "9 novembre 2026"
+python3 outils/build_pdf.py tomes/01-le-chene/texte/livraison-3-p46-53.md tomes/01-le-chene/pdf/livraison-3-p46-53.pdf \
+  --tome "Tome 1" --titre "Le Chêne" --sous-titre "La vie secrète du roi de nos forêts" \
+  --livraison "Texte, livraison 3 — pages 46 à 53" --contenu "D'où il vient, où il va · L'arbre et nous, menaces et protection" \
+  --date "9 novembre 2026"
 
 # Classeur de suivi des photos vierge
 python3 outils/geai_suivi.py photos/suivi-des-photos.xlsx
@@ -93,7 +98,7 @@ python3 outils/carte_cassini.py && rsvg-convert -f pdf -o carte.pdf geo/carte-ca
 
 - Collection : positionnement, charte, 24 charades, fiche de personnage et brief de la planche modèle rédigés et validés. Générateur d'images retenu : Magnific. **Planche modèle v0 du Jacques** (trois angles, douze attitudes, huit têtes) générée le 9 novembre d'après la seule description de la fiche — maquette d'étude, à refaire en v1 à partir des photos de geais de l'auteur (`collection/jacques/`).
 - Photos : fiche de prises de vue et tableur de suivi prêts ; la campagne commence maintenant (glandée en cours, geais au travail — point E, indispensable à la planche modèle du Jacques).
-- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraisons 1 (p. 1-27) et 2 (p. 28-45) écrites et sourcées** (la livraison 2 remplace les pages 44-45 de l'échantillon de voix, désormais sourcées), carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude (pièce de 1 € à l'échelle dans chaque case au centimètre, homme debout pour le port ; loupe sur le bourgeon terminal dans les cases des bourgeons ; tous les dessins régénérés en 2 k le 9 novembre sur le compte Magnific abonné — voir `planches/prompts-planches-comparatives.md`). Restent les livraisons 3 (p. 46-53 : le voyage, l'arbre et nous, menaces) et 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
+- Tome 1 *Le Chêne* : chemin de fer de 64 pages, échantillon de voix validé, **livraisons 1 (p. 1-27), 2 (p. 28-45) et 3 (p. 46-53) écrites et sourcées** (les livraisons 2 et 3 reprennent les pages 44-45, 49 et 51 de l'échantillon de voix, désormais sourcées ; la p. 51 corrige l'entrée « tanins contre le mildiou », infirmée par l'étude de 2025), carte de Cassini des forêts de chêne, trois planches comparatives pédonculé / sessile en maquette d'étude (pièce de 1 € à l'échelle dans chaque case au centimètre, homme debout pour le port ; loupe sur le bourgeon terminal dans les cases des bourgeons ; tous les dessins régénérés en 2 k le 9 novembre sur le compte Magnific abonné — voir `planches/prompts-planches-comparatives.md`). Reste la livraison 4 (p. 54-64 : à faire, énigme, repères, sources, courrier, suite).
 - À fournir par l'auteur : le lieu de l'individu suivi (pour vérifier les regards sur Cassini et le cadastre), une photographie ancienne du village, les dates réelles de débourrement, les noms lorrains du chêne, le chapitre « De quercu » de la *Physica* (Monat ou Verten), un chêne remarquable lorrain pour la p. 58, le nom d'auteur de couverture.
 
 ## Droits

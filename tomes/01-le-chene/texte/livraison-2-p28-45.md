@@ -224,7 +224,7 @@ Ils ne vivent que là. Pas dans un jeune chêne, pas dans une forêt de cinquant
 
 **[Légende]** Planche des hôtes des cavités, grandeur nature pour les insectes : le lucane et sa larve, le grand capricorne et sa galerie, le pique-prune dans son terreau ; le pic mar à l'entrée de sa loge ; une noctule ; la martre.
 
-**[Bulle]** « Un ver de dix centimètres, cinq ans dans une racine. Et moi qui me plains de l'hiver. »
+**[Bulle]** « Un ver de dix centimètres, cinq ans dans une racine. Et je trouvais mes caches longues à creuser. »
 
 **(1)** Lucane cerf-volant : cycle de cinq à six ans, larve dans le bois mort des souches et racines, surtout de chênes ; directive Habitats, annexe II — *Cahiers d'habitats Natura 2000*, tome 7, fiche 1083, MNHN/INPN.
 **(2)** Grand capricorne : développement larvaire de trente et un mois dans les vieux chênes dépérissants ; espèce strictement protégée (annexes II et IV de la directive Habitats, arrêté du 23 avril 2007) — *Cahiers d'habitats*, fiche 1088.

@@ -10,6 +10,8 @@ Usage :
 Conventions attendues dans le markdown : voir collection/02-charte-de-style.md et
 tomes/01-le-chene/texte/livraison-1-p01-27.md (## Page N — titre, **[Regard]**, **[Bulle]**,
 **[Parole du Jacques]**, **[Légende]**, **[Encadré — titre]**, **(n)** notes).
+Un encadré long s'ouvre par **[Encadré — titre]** seul sur sa ligne : les paragraphes qui
+suivent lui appartiennent jusqu'au prochain marqueur, note, titre ou séparateur ---.
 """
 import re
 import argparse
@@ -152,10 +154,14 @@ def legende_box(text, W):
 
 
 def encadre_box(title, text, W):
+    """text : une chaîne (un paragraphe) ou une liste de paragraphes (encadré long,
+    ouvert par un marqueur **[Encadré — titre]** sans texte sur la même ligne)."""
     inner = [Paragraph("ENCADRÉ", label)]
     if title:
         inner.append(Paragraph(inline(title), ParagraphStyle("et", parent=encadre, fontName="Caladea-Bold", spaceAfter=2)))
-    inner.append(Paragraph(inline(text), encadre))
+    paras = text if isinstance(text, list) else [text]
+    for i, t in enumerate(paras):
+        inner.append(Paragraph(inline(t), ParagraphStyle("ep%d" % i, parent=encadre, spaceAfter=3 if i < len(paras) - 1 else 0)))
     return [KeepTogether(box(inner, border=RULE, width=W)), Spacer(1, 7)]
 
 
@@ -190,6 +196,7 @@ def parse(md):
     lst = None  # (kind, items)
     pending_regard = False
     title_mode = False
+    open_enc = None  # liste des paragraphes d'un encadré long en cours
 
     def flush_para():
         nonlocal para, pending_regard
@@ -198,6 +205,8 @@ def parse(md):
             if pending_regard:
                 blocks.append(("regard", text))
                 pending_regard = False
+            elif open_enc is not None:
+                open_enc.append(text)
             else:
                 blocks.append(("para", text))
             para = []
@@ -213,11 +222,11 @@ def parse(md):
         if not line.strip():
             flush_para(); flush_list(); continue
         if line.strip() == "---":
-            flush_para(); flush_list(); continue
+            flush_para(); flush_list(); open_enc = None; continue
         if line.startswith("# "):
-            flush_para(); flush_list(); blocks.append(("doctitle", line[2:].strip())); continue
+            flush_para(); flush_list(); open_enc = None; blocks.append(("doctitle", line[2:].strip())); continue
         if line.startswith("## ") or line.startswith("### "):
-            flush_para(); flush_list()
+            flush_para(); flush_list(); open_enc = None
             text = line.lstrip("#").strip()
             if re.match(r"^Pages? [\d\-]+ — ", text):
                 blocks.append(("page", text))
@@ -231,17 +240,20 @@ def parse(md):
             continue
         m = re.match(r"^\*\*\[([^\]]+)\]\*\*\s*(.*)$", line)
         if m:
-            flush_para(); flush_list()
+            flush_para(); flush_list(); open_enc = None
             kind, rest = m.group(1), m.group(2)
             if kind == "Regard":
                 pending_regard = True
                 if rest:
                     para.append(rest)
+            elif kind.startswith("Encadré") and not rest:
+                open_enc = []
+                blocks.append(("marker", (kind, open_enc)))
             else:
                 blocks.append(("marker", (kind, rest)))
             continue
         if re.match(r"^\*\*\(\d+\)\*\*", line):
-            flush_para(); flush_list()
+            flush_para(); flush_list(); open_enc = None
             if blocks and blocks[-1][0] == "notes":
                 blocks[-1][1].append(line)
             else:
