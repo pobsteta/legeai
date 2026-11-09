@@ -9,13 +9,13 @@ et le bout de rameau ne bougent pas. Rien n'est dessiné à la main : ce sont le
 
 Usage (depuis la racine du dépôt) :
     python3 outils/retouche_oreillettes.py
-Lit  tomes/01-le-chene/planches/elements/avant-retouche/pedoncule_feuille_ovPxVs5829_sans-oreillettes.png
+Lit  tomes/01-le-chene/planches/elements/remplaces/pedoncule_feuille_ovPxVs5829_sans-oreillettes.png
 Écrit tomes/01-le-chene/planches/elements/pedoncule_feuille.png
 """
 from PIL import Image
 import numpy as np, math
 
-SRC = "tomes/01-le-chene/planches/elements/avant-retouche/pedoncule_feuille_ovPxVs5829_sans-oreillettes.png"
+SRC = "tomes/01-le-chene/planches/elements/remplaces/pedoncule_feuille_ovPxVs5829_sans-oreillettes.png"
 OUT = "tomes/01-le-chene/planches/elements/pedoncule_feuille.png"
 
 PETIOLE = (293, 306)       # colonnes du pétiole, laissées intactes
