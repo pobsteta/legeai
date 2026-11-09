@@ -2,7 +2,7 @@
 
 *Texte définitif proposé pour l'ouverture et le chapitre « L'année ». Conventions : **[Regard]** = paragraphe en italique sur l'image pleine page ; corps de texte = l'enquête ; **[Bulle]** et **[Parole du Jacques]** = le Jacques ; **[Légende]** = sous l'image ; **[Encadré]** = cadre dans la page ; **(n)** = note de bas de page, numérotée par page. Les crochets [ ] signalent ce qui dépend de l'individu suivi et de son lieu, à remplir après vérification (Cassini, cadastre, archives). Toutes les notes sont sourcées (passe de sourçage du 9 novembre 2026).*
 
-*Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les noms lorrains du chêne ; la photographie ancienne du village pour le regard d'hiver ; le chapitre d'Hildegarde (livraison 3).*
+*Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les noms lorrains du chêne ; la carte postale ancienne du château de Pange pour le regard d'hiver ; les mesures du chêne suivi.*
 
 ---
 
@@ -171,7 +171,7 @@ Fin avril. Les saules de la Nied sont en feuilles depuis trois semaines ; le ch�
 
 Regardez-le depuis l'allée : un squelette gris dans un paysage qui a déjà repris des couleurs. Les bourgeons sont là, serrés par petits bouquets au bout des rameaux, bruns, gros comme des grains de blé. Ils gonflent depuis mars. Ils n'ont pas bougé.
 
-Ce retard est une assurance. Un chêne qui ouvre ses feuilles trop tôt les perd à la première gelée blanche, et il doit alors tout refaire avec des réserves entamées. Celui-ci a quatre-vingts printemps derrière lui et débourre, chaque année, parmi les derniers de la haie. Seul le frêne, en face, sortira ses feuilles plus tard encore.
+Ce retard est une assurance. Un chêne qui ouvre ses feuilles trop tôt les perd à la première gelée blanche, et il doit alors tout refaire avec des réserves entamées. Celui-ci a des dizaines de printemps derrière lui — peut-être trois siècles : le tour du tronc le dira, page 34 — et débourre, chaque année, parmi les derniers du parc. Seul le frêne sortira ses feuilles plus tard encore.
 
 Et puis un matin, sans prévenir, les écailles des bourgeons s'écartent.
 
@@ -227,7 +227,7 @@ Dans les fissures de l'écorce, près des bourgeons, de minuscules œufs ont pas
 
 Certaines années, elles sont des centaines de milliers sur un seul arbre. On entend alors, sous le chêne, un bruit de pluie fine : ce sont leurs crottes. En trois semaines, l'arbre peut être aussi nu qu'en janvier.
 
-Mais une chenille grasse en mai, c'est exactement ce que guettent d'autres bouches. La mésange charbonnière cale sa ponte sur elle : ses poussins éclosent quand les chenilles sont les plus nombreuses, et le couple en apporte au nid jusqu'à neuf cents becquées par jour (1). Pendant trois semaines, le chêne nourrit la haie entière.
+Mais une chenille grasse en mai, c'est exactement ce que guettent d'autres bouches. La mésange charbonnière cale sa ponte sur elle : ses poussins éclosent quand les chenilles sont les plus nombreuses, et le couple en apporte au nid jusqu'à neuf cents becquées par jour (1). Pendant trois semaines, le chêne nourrit le parc entier.
 
 Cet accord entre le bourgeon, la chenille et l'oiseau tient depuis des millénaires. Il se dérègle. Avec des printemps plus chauds, les bourgeons et les chenilles prennent de l'avance ; les mésanges, qui règlent leur ponte sur d'autres signaux, suivent moins vite. Aux Pays-Bas, où l'on compte chenilles et mésanges dans la même forêt de chênes depuis les années 1950, le pic des chenilles a avancé deux fois plus vite que la ponte des oiseaux (2). Les dernières années, plus variables, ont resserré l'écart ; les chercheurs s'attendent à le voir se rouvrir (3). Chez nous, on commence à regarder.
 
@@ -270,7 +270,7 @@ Combien d'habitants ? Personne ne les a comptés en France. Au Royaume-Uni, des 
 
 Deux mille trois cents. Un bourg entier, sur un arbre. Et ce chiffre vient d'une île qui compte moins d'espèces que le continent : chez nous, il est sans doute plus élevé. Le compte reste à faire — c'est l'une des questions que ce livre laisse ouvertes.
 
-Que font-ils là ? Ils mangent les feuilles, le bois, les glands, les champignons de l'écorce, ou ceux qui les mangent. Ils nichent dans les cavités, pondent sous l'écorce, dorment dans les fissures. Ils y trouvent ce qu'aucun autre arbre de la haie n'offre dans ces quantités : de la surface, de l'ombre, du temps.
+Que font-ils là ? Ils mangent les feuilles, le bois, les glands, les champignons de l'écorce, ou ceux qui les mangent. Ils nichent dans les cavités, pondent sous l'écorce, dorment dans les fissures. Ils y trouvent ce qu'aucun autre arbre du parc n'offre dans ces quantités : de la surface, de l'ombre, du temps.
 
 **[Légende]** La canopée vue d'en bas, un midi de juillet. Les numéros renvoient à l'immeuble des pages 40-41.
 
@@ -344,7 +344,7 @@ Et dans les bois du domaine, pas loin, les sangliers attendent. Ils savent, eux 
 
 Fin août, les glands sont pleins. Encore verts, mais lourds : la cupule ne les retient plus qu'à peine. Les feuilles sont fatiguées, trouées, tachées de brun aux endroits où l'été a brûlé. Les chatons de mai ont disparu depuis longtemps ; les pommes de chêne ont séché ; les galles en cerise rougissent.
 
-Le ciel aussi se charge. Les premières nuits fraîches arrivent, et avec elles les premiers glands qui tombent — pas encore la pluie, mais quelques coups, la nuit, sur le chemin.
+Le ciel aussi se charge. Les premières nuits fraîches arrivent, et avec elles les premiers glands qui tombent — pas encore la pluie, mais quelques coups, la nuit, sur l'allée.
 
 Dans le parc, un oiseau criard commence à faire des réserves.
 
@@ -441,7 +441,7 @@ En novembre, les feuilles du chêne brunissent — pas de rouge, pas d'or : un b
 
 ### Page 22 — Fin novembre
 
-Fin novembre, le chêne a lâché ses dernières feuilles. Le chemin est jonché de cupules vides, de glands troués, de coques entaillées. Les sangliers sont passés deux fois ; le sol de la lisière ressemble à un champ retourné.
+Fin novembre, le chêne a lâché ses dernières feuilles. L'allée est jonchée de cupules vides, de glands troués, de coques entaillées. Les sangliers sont passés deux fois ; le sol, sous les arbres du fond, ressemble à un champ retourné.
 
 Mais sous les feuilles mortes, dans la friche où le Jacques est venu trois cents fois, dans la mousse de la berge, au pied de la clôture de la prairie, quatre mille petites racines descendent dans le noir.
 
@@ -460,7 +460,7 @@ L'hiver peut venir : le chêne a déjà commencé.
 **[Regard]**
 *Janvier. Le chêne est nu sur un ciel blanc, et c'est maintenant qu'on le reconnaît le mieux : la même silhouette que sur la carte postale du château d'avant la Grande Guerre, celle où l'on voit la Nied, la façade et les arbres du parc [à vérifier sur la carte postale]. Les branches ont changé — l'une est tombée, deux ont poussé — mais le dessin est le même, tortueux, large, planté. Le photographe est mort, le château a été occupé, vidé, rendu, restauré, et l'arbre a gardé la pose.*
 
-Comment reconnaître un chêne sans feuilles ? Par ses bourgeons : au bout de chaque rameau, trois, quatre, cinq bourgeons serrés en bouquet, bruns, ovoïdes — aucun autre arbre de la haie ne fait cela (1). Par ses rameaux, anguleux, qui changent de direction à chaque année de pousse. Par ses grosses branches, tortueuses, qui partent en coude. Par son écorce, crevassée en long. Et par le sol : des cupules vides, des glands troués, et sur les jeunes sujets, des feuilles mortes encore accrochées.
+Comment reconnaître un chêne sans feuilles ? Par ses bourgeons : au bout de chaque rameau, trois, quatre, cinq bourgeons serrés en bouquet, bruns, ovoïdes — aucun autre arbre du parc ne fait cela (1). Par ses rameaux, anguleux, qui changent de direction à chaque année de pousse. Par ses grosses branches, tortueuses, qui partent en coude. Par son écorce, crevassée en long. Et par le sol : des cupules vides, des glands troués, et sur les jeunes sujets, des feuilles mortes encore accrochées.
 
 Ce que l'arbre fait en hiver se voit peu. Il ne dort pas tout à fait : les racines travaillent tant que le sol n'est pas gelé, les bourgeons achèvent de se former, les réserves — l'amidon fabriqué l'été — attendent dans le bois et les racines. Il résiste au froid parce que son eau n'est plus dans les feuilles, et parce que sa sève, concentrée, gèle moins vite que l'eau pure.
 
