@@ -118,9 +118,12 @@
   "style": "scène"
  },
  "27": {
-  "id": "dtJiPnvXSL",
+  "id": "8a4GANaIrU",
   "ratio": "3:4",
-  "style": "scène"
+  "style": "scène",
+  "remplace": "dtJiPnvXSL",
+  "variante_non_retenue": "1lMtIpZr4r",
+  "date": "2026-11-09, reprise : tige droite"
  },
  "28": {
   "id": "vQ3Y2B6a47",
