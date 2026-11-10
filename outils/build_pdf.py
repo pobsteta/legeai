@@ -49,6 +49,8 @@ ap.add_argument("--kdp", action="store_true",
                 help="format du livre imprimé (KDP) : 7 × 10 pouces, marges miroir, corps 11 pt, sans en-tête de relecture, sans annexes ni notes d'image provisoire")
 ap.add_argument("--format", default="7x10", choices=["7x10", "8x10", "8.25x11", "8.5x11"],
                 help="format KDP en pouces (largeur x hauteur), avec --kdp")
+ap.add_argument("--double", action="store_true",
+                help="avec --kdp : chaque page du chemin de fer devient une double page et commence sur une page paire (gauche)")
 ap.add_argument("--notes-fin", dest="notes_fin", default=None,
                 help="avec --kdp : JSON des notes des livraisons précédentes ; ajoute la section « Notes » en fin de volume")
 ap.add_argument("--note-couverture", dest="note_couverture", default=None, help="paragraphe ajouté au cadre de conventions de la couverture")
@@ -541,7 +543,7 @@ def parse(md):
 
 
 # ---------- Calibrage KDP ----------
-from reportlab.platypus.flowables import Flowable
+from reportlab.platypus.flowables import Flowable, DocIf
 KDP_L, KDP_H = (float(x) for x in ARGS.format.split("x"))
 KDP_ECHELLE = float(os.environ.get("KDP_ECHELLE_IMAGES", KDP_H / 10))  # hauteur des images (référence 7 × 10 = 1)
 NOTES_FIN = []  # (clé de page, lignes de notes) — renvoyées en fin de volume en KDP
@@ -658,7 +660,12 @@ def build():
             pending_season = data
             continue
         if kind == "page":
-            if first_page_done:
+            if ARGS.double and ARGS.kdp:
+                # commencer sur une page paire : saut de page, puis un second si l'on tombe sur une impaire
+                if first_page_done:
+                    story.append(PageBreak())
+                story.append(DocIf("(doc.page + %d) %% 2 == 1" % (ARGS.premiere_page - 1), [PageBreak()]))
+            elif first_page_done:
                 story.append(PageBreak())
             first_page_done = True
             if pending_season:

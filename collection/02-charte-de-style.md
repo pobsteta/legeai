@@ -108,7 +108,7 @@ Les trois voix se répondent sur la même double page : le regard dit que la hai
 ## 7. La maquette
 
 - **Format** : 17,8 × 25,4 cm, intérieur couleur.
-- **Pagination** : 48 à 64 pages par tome (rythme mensuel) ; les recueils reliés regroupent trois tomes, une saison.
+- **Pagination** : 144 pages imprimées (décidé par l'auteur le 10 novembre 2026, sur le calibrage du tome 1) : chaque page du chemin de fer devient une double page, qui commence sur une page paire (à gauche) ; les notes de source sont regroupées en fin de volume, page par page ; la page 1 est la page de titre. Une page de droite laissée libre reçoit une image pleine page, jamais du remplissage. Les recueils reliés (trois tomes, une saison) sont à repenser.
 - **Grille** : une colonne de texte large, une marge extérieure généreuse pour les vignettes et les notes du Jacques.
 - **Typographie** : titres de chapitres lettrés ; paragraphe de regard en italique, corps 12 points, sur l'image d'ouverture ; texte courant dans une seule police lisible, 11 points minimum ; notes en 9 points ; bulles du Jacques dans une police manuscrite, toujours la même ; grimoire dans une police à empattements distincte, sur fond parchemin ; page des découvertes avec ses années en grand et ses pastilles de statut.
 - **Pages fixes, dans l'ordre** (budget indicatif pour 58 pages) :

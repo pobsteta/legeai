@@ -1,6 +1,6 @@
 # Le Geai — Tome 1 : *Le Chêne* — Chemin de fer
 
-*64 pages, 17,8 × 25,4 cm, couleur. Parution : octobre. Couleur du tome : vert bouteille. Titre Amazon : « Le Chêne — La vie secrète du roi de nos forêts (le reconnaître, le planter, l'observer) » — Le Geai, t. 1. Narrateur : le Jacques.*
+*64 pages de chemin de fer, imprimées sur 144 pages (chaque page devient une double page ; notes en fin de volume ; décidé le 10 novembre 2026), 17,8 × 25,4 cm, couleur. Parution : octobre. Couleur du tome : vert bouteille. Titre Amazon : « Le Chêne — La vie secrète du roi de nos forêts (le reconnaître, le planter, l'observer) » — Le Geai, t. 1. Narrateur : le Jacques.*
 
 **Parti pris du tome.** Le tome couvre les deux chênes blancs, pédonculé (*Quercus robur*) et sessile (*Q. petraea*). Le feuilleton de l'année suit **un seul individu** : un chêne pédonculé adulte de plaine (le plus répandu), que le lecteur retrouve de page en page ; le sessile apparaît dans la planche, dans des encadrés « Chez le sessile » et dans la carte du voyage. Deux horloges : **l'année** (p. 8-27) raconte, **la vie** (p. 28-39) explique. Trois registres (charte, section 5) : le **regard** en italique sur l'image d'ouverture de chaque chapitre, l'**enquête** dans le corps, le **Jacques** dans les marges. Trois regards venus d'ailleurs : la double page **« Seul ou en forêt — le bain »** (p. 44-45), le grimoire **« Hildegarde dit »** (p. 49) et la page **« Ce qu'on découvre aujourd'hui »** (p. 51).
 

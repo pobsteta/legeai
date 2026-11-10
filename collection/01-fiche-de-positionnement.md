@@ -59,14 +59,14 @@ Le chapitre « Graine » de chaque tome est l'âge du voyage : c'est là que le 
 ## 6. Intérieur
 
 - **Format** : impression à la demande, intérieur couleur, 17,8 × 25,4 cm (7 × 10 pouces).
-- **Pagination** : 48 à 64 pages par tome, compatible avec le rythme mensuel. Les grands arbres et les duos prennent 64 pages, les arbustes 48-56.
-- **Recueils** : tous les trois tomes, un recueil relié par saison (*Le Geai — Automne*, *Hiver*, *Printemps*, *Été*), 150-190 pages, pour les cadeaux.
+- **Pagination** : **144 pages imprimées** pour les grands arbres et les duos (décidé par l'auteur le 10 novembre 2026, sur le calibrage du tome 1). Le chemin de fer garde ses 64 pages, mais chacune devient une double page, ouverte à gauche ; les notes de source vont en fin de volume. Le tome 1 en 7 × 10 pouces, texte inchangé, tient en 141 pages ; les pages de droite restées libres accueilleront des images pleine page. Pagination des arbustes : à fixer (la règle des 48-56 pages ne vaut plus).
+- **Recueils** : tous les trois tomes, un recueil relié par saison (*Le Geai — Automne*, *Hiver*, *Printemps*, *Été*), 150-190 pages, pour les cadeaux. **À repenser** : trois tomes de 144 pages font plus de 430 pages.
 - **Prix** (à valider avec le calculateur d'impression KDP) : tome broché couleur 12,90 – 14,90 € ; recueil relié 29,90 – 34,90 € ; Kindle (mise en page fixe) 4,99 – 6,99 €, tome 1 en prix d'appel.
 - **Structure d'un tome** : voir la charte de style, sections 4 et 7.
 
 ## 7. Mécanique de série
 
-- **Cadence : une parution par mois.** Le rythme est le moteur de l'algorithme Amazon et de l'habitude du lecteur ; il impose des tomes courts (48-64 pages) et une réserve de **trois tomes terminés avant la sortie du premier**, pour ne jamais rater un mois.
+- **Cadence : une parution par mois.** Le rythme est le moteur de l'algorithme Amazon et de l'habitude du lecteur ; il imposait des tomes courts (48-64 pages) et une réserve de **trois tomes terminés avant la sortie du premier**, pour ne jamais rater un mois. **À revoir avec le passage à 144 pages.**
 - Page « série » Amazon activée dès le tome 1 ; même gabarit ; numéros visibles ; date du tome suivant annoncée en dernière page.
 - Tome 1 = le chêne, lancé en octobre, le mois où le Jacques plante les chênes.
 - Chaque trimestre : le recueil relié de la saison (cadeau de Noël dès la première année avec le recueil *Automne*).
