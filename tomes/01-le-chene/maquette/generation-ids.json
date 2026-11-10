@@ -261,10 +261,8 @@
   "date": "2026-11-09, livraison 4"
  },
  "23/carte-postale": {
-  "variantes": [
-   "EbAEJKAuuO",
-   "p8wp5mKehw"
-  ],
+  "retenue": "p8wp5mKehw",
+  "ecartee": "EbAEJKAuuO",
   "reference": "yiayMgYPW9 (carte postale « Pange, Château », vers 1900, domaine public)",
   "exception_charte": "10 novembre 2026"
  }
