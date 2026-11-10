@@ -2,7 +2,7 @@
 
 *Texte définitif proposé pour l'ouverture et le chapitre « L'année ». Conventions : **[Regard]** = paragraphe en italique sur l'image pleine page ; corps de texte = l'enquête ; **[Bulle]** et **[Parole du Jacques]** = le Jacques ; **[Légende]** = sous l'image ; **[Encadré]** = cadre dans la page ; **(n)** = note de bas de page, numérotée par page. Les crochets [ ] signalent ce qui dépend de l'individu suivi et de son lieu, à remplir après vérification (Cassini, cadastre, archives). Toutes les notes sont sourcées (passe de sourçage du 9 novembre 2026).*
 
-*Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les noms lorrains du chêne ; les mesures du chêne suivi. La carte postale ancienne du château a été fournie par l'auteur le 10 novembre : le chêne suivi y figure (page 23).*
+*Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les mesures du chêne suivi. Les noms du chêne en patois messin ont été levés le 10 novembre (Zéliqzon 1924). La carte postale ancienne du château a été fournie par l'auteur le 10 novembre : le chêne suivi y figure (page 23).*
 
 ---
 
@@ -129,7 +129,7 @@ Quatre gestes d'accord : vous savez. Trois sur quatre : lisez l'encadré. Et l'h
 
 **Prénoms.** *Robur*, pour le pédonculé : le mot latin de la force et du bois dur — notre « robuste » en vient. *Petraea*, pour le sessile : « des rochers », parce qu'il pousse où le sol est mince et sec.
 
-**Surnoms.** Rouvre, chêne blanc ; drille pour le sessile en Bourgogne ; chagne ou chaigne dans l'Est et le Centre ; *casse* en pays d'oc ; tchêne en Picardie ; [noms lorrains et vosgiens à relever dans les glossaires].
+**Surnoms.** Rouvre, chêne blanc ; drille pour le sessile en Bourgogne ; chagne ou chaigne dans l'Est et le Centre ; *casse* en pays d'oc ; tchêne en Picardie ; *chéne* en pays messin, où le petit chêne est un *chénat* (1).
 
 **Famille.** Les Fagacées — la famille du hêtre et du châtaignier. Dans le monde, plus de quatre cents espèces de chênes ; en France, une dizaine de spontanées.
 
@@ -141,7 +141,7 @@ Quatre gestes d'accord : vous savez. Trois sur quatre : lisez l'encadré. Et l'h
 
 ### Domicile
 
-Les deux chênes blancs sont la première essence de France : **333 millions de mètres cubes de bois vivant chacun**, soit, à eux deux, près d'un quart de tout le bois qui pousse dans le pays (1). Le pédonculé est présent sur 5,6 millions d'hectares, le sessile sur 4,2 millions (1) — autant dire partout, sauf en haute montagne et au bord de la Méditerranée.
+Les deux chênes blancs sont la première essence de France : **333 millions de mètres cubes de bois vivant chacun**, soit, à eux deux, près d'un quart de tout le bois qui pousse dans le pays (2). Le pédonculé est présent sur 5,6 millions d'hectares, le sessile sur 4,2 millions (2) — autant dire partout, sauf en haute montagne et au bord de la Méditerranée.
 
 Ils ne se partagent pourtant pas le territoire au hasard. Le pédonculé aime les sols profonds et frais : les plaines, les fonds de vallée, les bords de rivière, les prés humides et leurs haies. Le sessile se contente de moins d'eau : les coteaux, les plateaux, les sols qui sèchent en été. Sur les plateaux de Lorraine, la forêt type s'appelle la chênaie-charmaie : des chênes au-dessus, des charmes en dessous — et c'est le sessile qui y domine, le pédonculé restant dans les creux [à confirmer sur la carte de la forêt du lieu].
 
@@ -149,14 +149,15 @@ Ils ne se partagent pourtant pas le territoire au hasard. Le pédonculé aime le
 
 ### Les cousins
 
-Le **chêne pubescent**, du Sud et des coteaux calcaires, au duvet sous les feuilles (tome 6). Le **chêne vert**, aux feuilles persistantes, du Midi (tome 11). Le **chêne-liège**, dont on tire les bouchons, dans les Landes, en Provence et en Corse. Le **chêne kermès**, un arbuste épineux des garrigues. Le **chêne tauzin**, aux feuilles veloutées, du Sud-Ouest. Le **chêne chevelu**, aux cupules hérissées, du Sud-Est et des parcs. Le **chêne rouge d'Amérique**, planté pour ses couleurs d'automne, dont nos insectes ne veulent guère (2).
+Le **chêne pubescent**, du Sud et des coteaux calcaires, au duvet sous les feuilles (tome 6). Le **chêne vert**, aux feuilles persistantes, du Midi (tome 11). Le **chêne-liège**, dont on tire les bouchons, dans les Landes, en Provence et en Corse. Le **chêne kermès**, un arbuste épineux des garrigues. Le **chêne tauzin**, aux feuilles veloutées, du Sud-Ouest. Le **chêne chevelu**, aux cupules hérissées, du Sud-Est et des parcs. Le **chêne rouge d'Amérique**, planté pour ses couleurs d'automne, dont nos insectes ne veulent guère (3).
 
 **[Légende]** Une feuille de chaque cousin, à la même échelle.
 
 **[Bulle]** « Un quart du bois de France. Devinez qui l'a planté. »
 
-**(1)** IGN, *Mémento de l'inventaire forestier*, édition 2024, tableaux « Principaux chiffres sur les essences » — volumes de bois vivant et surfaces de présence par essence ; volume total 2 827 millions de m³.
-**(2)** Les espèces liées au chêne pédonculé sont bien plus nombreuses qu'au chêne rouge, essence introduite — ONF, *Rendez-vous techniques*, hors-série n° 1, 2004 ; voir aussi p. 13.
+**(1)** Patois messin : Zéliqzon L., *Dictionnaire des patois romans de la Moselle*, 1924, art. « Chḗne », « Chḗnat ».
+**(2)** IGN, *Mémento de l'inventaire forestier*, édition 2024, tableaux « Principaux chiffres sur les essences » — volumes de bois vivant et surfaces de présence par essence ; volume total 2 827 millions de m³.
+**(3)** Les espèces liées au chêne pédonculé sont bien plus nombreuses qu'au chêne rouge, essence introduite — ONF, *Rendez-vous techniques*, hors-série n° 1, 2004 ; voir aussi p. 13.
 
 ---
 
@@ -547,7 +548,7 @@ Comment un gland devient un chêne, et combien de temps cela prend : c'est tout 
 
 ## Annexe — Ce qui reste à relever pour cette livraison
 
-- Les noms lorrains et vosgiens du chêne (glossaires : Lucien Adam, Richard, Mathis, Oberlin — voir Lexilogos).
+- Levé le 10 novembre : le nom du chêne en patois messin, *chéne*, et le petit chêne, *chénat* (Zéliqzon, *Dictionnaire des patois romans de la Moselle*, 1924) ; les notes de la page 6-7 sont renumérotées.
 - Le lieu est fixé (9 novembre) : le parc du château de Pange, Moselle, au bord de la Nied française ; les regards des pages 8, 11, 18 et 23 ont été réécrits pour ce décor d'après les documents publics sur le domaine (château de 1720, douves et tours supprimées en 1806, parc à l'anglaise du XIXe siècle, occupations militaires, jardin de Louis Benech 2000-2003, « chênes tricentenaires »). La carte postale ancienne « Pange, Château » (vers 1900, message en allemand au recto, vue prise de la rive de la Nied) a été fournie le 10 novembre : le chêne suivi est l'arbre au bord de l'eau, à gauche ; le regard de la page 23 est écrit d'après elle, et elle est reproduite telle quelle en vignette (photographie anonyme de plus de cent ans, domaine public ; jamais donnée à l'outil de génération). Restent à l'auteur : la feuille de Cassini et les plans du parc (XVIIIe siècle, comte de Choulot) pour la page 8 ; les archives de la seigneurie pour la glandée de la page 18 (elles sont conservées au château, chez la famille de Pange, et ont été dépouillées par l'historien Emmanuel de Waresquiel pour le XIXe siècle : on peut les demander) ; la position exacte du chêne dans le parc, son tour et son âge (page 34).
 - Les dates réelles du débourrement et des quatre passages photographiques (pages 8-9).
 - Les cernes à légender sur la rondelle de la page 25 (années de sécheresse connues du lieu).
