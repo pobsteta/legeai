@@ -12,7 +12,7 @@ Tout le livre repose sur un seul arbre du parc. Ce choix se fait à la première
 
 - [ ] **Autorisation de la famille de Pange** : photographier le parc toute l'année, depuis un point fixe, à des heures variées ; citer le château et le parc dans le livre. Garder une trace écrite (un courriel suffit).
 - [x] **L'arbre est choisi** (10 novembre) : le chêne au bord de la Nied, à gauche sur la carte postale « Pange, Château » (vers 1900). Il était déjà grand quand la carte a été imprimée.
-- [ ] **Le point de vue fixe = celui de la carte postale** : la rive de la Nied face au château, le château au fond derrière la prairie et son reflet dans l'eau, le chêne à gauche. Retrouver l'endroit exact (alignement des pavillons, bord de l'eau au premier plan) et le marquer. Toutes les photos de saison se prennent de là ; la page 23 met côte à côte la carte et votre photo d'hiver.
+- [ ] **Le point de vue fixe = celui de la carte postale** : la rive de la Nied face au château, le château au fond derrière la prairie et son reflet dans l'eau, le chêne à gauche. Retrouver l'endroit exact (alignement des pavillons, bord de l'eau au premier plan) et le marquer. Toutes les photos de saison se prennent de là ; la page 23 met côte à côte le dessin du parc vers 1900, fait d'après la carte, et votre photo d'hiver.
 - [ ] **Un second point de vue depuis l'allée** (page 8 : « Regardez-le depuis l'allée »), si l'arbre y est visible ; sinon, me le dire et je change la phrase.
 - [ ] **Vérifier l'espèce avec les quatre gestes** (pages 4-5) : pétiole, pied du gland, base de la feuille, nervures intercalaires. *Le texte suppose un pédonculé (oreillettes p. 9, glands sur pédoncule).* Si c'est un sessile ou un hybride, me le dire : six passages du texte changent.
 - [ ] **Position** : point GPS de l'arbre et point GPS du point de vue fixe (photo du repère : piquet, borne, pierre, angle de mur). Je les reporterai sur la carte des pages 6-7 et 58.
@@ -47,7 +47,7 @@ La fin de l'automne est encore là : c'est la dernière chance avant un an pour 
 
 | Page | Quoi | Remarques |
 |---|---|---|
-| 23 | **L'arbre nu depuis le point fixe**, ciel blanc, givre si possible | Image provisoire à remplacer. **Exactement le cadrage de la carte postale** : elle sera imprimée à côté. |
+| 23 | **L'arbre nu depuis le point fixe**, ciel blanc, givre si possible | Image provisoire à remplacer. **Exactement le cadrage de la carte postale** : le dessin fait d'après elle sera imprimé à côté. |
 | 23 | **Bouquet de bourgeons** au bout d'un rameau, en macro | Médaillon ×3. |
 | 24 | **Trente centimètres d'écorce, côté nord**, pièce de 1 € dans un coin | Lichens (si possible quatre espèces différentes), mousses ; noter s'il y a une cavité (page 24 parle d'une cavité à six mètres : à confirmer ou à retirer). |
 | 24 | Grimpereau, sittelle, pic épeiche sur le tronc | Si l'occasion se présente ; sinon le texte reste générique. |
