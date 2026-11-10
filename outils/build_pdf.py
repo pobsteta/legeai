@@ -45,6 +45,8 @@ ap.add_argument("--poses", default=None, help="JSON page → attitude du Jacques
 ap.add_argument("--entete", default=None, help="mention d'en-tête (défaut : « Manuscrit de travail », ou « Maquette de relecture illustrée » avec --illustre)")
 ap.add_argument("--sans-couverture", dest="sans_couverture", action="store_true", help="ne pas produire la page de couverture")
 ap.add_argument("--premiere-page", dest="premiere_page", type=int, default=1, help="numéro de la première page du PDF (pour assembler plusieurs livraisons)")
+ap.add_argument("--kdp", action="store_true",
+                help="format du livre imprimé (KDP) : 7 × 10 pouces, marges miroir, corps 11 pt, sans en-tête de relecture, sans annexes ni notes d'image provisoire")
 ap.add_argument("--note-couverture", dest="note_couverture", default=None, help="paragraphe ajouté au cadre de conventions de la couverture")
 ARGS = ap.parse_args()
 SRC, OUT, DATE = ARGS.src, ARGS.out, ARGS.date
@@ -125,6 +127,10 @@ legende = ParagraphStyle("legende", fontName="Carlito-Italic", fontSize=9, leadi
 encadre = ParagraphStyle("encadre", parent=body, fontSize=10, leading=13.5, spaceAfter=0)
 note = ParagraphStyle("note", fontName="Caladea", fontSize=8.5, leading=11, alignment=TA_LEFT,
                       textColor=colors.HexColor("#333333"), leftIndent=16, firstLineIndent=-16, spaceAfter=2)
+if ARGS.kdp:  # charte : texte courant 11 pt minimum, notes 9 pt
+    body.fontSize, body.leading = 11, 14.6
+    note.fontSize, note.leading = 9, 11.4
+    encadre.fontSize, encadre.leading = 10.5, 14
 label = ParagraphStyle("label", fontName="Carlito-Bold", fontSize=7.5, leading=9, textColor=GREY, spaceAfter=2)
 label_ochre = ParagraphStyle("label_ochre", parent=label, textColor=OCHRE)
 label_green = ParagraphStyle("label_green", parent=label, textColor=GREEN)
@@ -355,7 +361,9 @@ def _fit(f, max_w, max_h):
     return RLImage(f, width=w, height=h)
 
 
-def image_zone(page_key, legende_text, W, max_h=118 * mm, zone=0):
+def image_zone(page_key, legende_text, W, max_h=None, zone=0):
+    if max_h is None:
+        max_h = (100 if ARGS.kdp else 118) * mm
     """Image(s) existante(s) de la page + légende ; sinon cadre gris « image à produire » portant la légende (le brief).
     images.json : liste de fichiers, ou objet {fichiers, note, hauteur_mm, empiler, une_par_page}, ou {zones: [...]}
     quand la page a plusieurs emplacements d'image (zone = rang de l'emplacement dans la page)."""
@@ -370,7 +378,7 @@ def image_zone(page_key, legende_text, W, max_h=118 * mm, zone=0):
         files, note = spec.get("fichiers", []), spec.get("note")
         empiler, une_par_page = bool(spec.get("empiler")), bool(spec.get("une_par_page"))
         if spec.get("hauteur_mm"):
-            max_h = float(spec["hauteur_mm"]) * mm
+            max_h = float(spec["hauteur_mm"]) * mm * (0.82 if ARGS.kdp else 1)
     elif isinstance(spec, list):
         files = spec
     files = [os.path.join(REPO, f) for f in files if os.path.exists(os.path.join(REPO, f))]
@@ -381,11 +389,12 @@ def image_zone(page_key, legende_text, W, max_h=118 * mm, zone=0):
         flow = []
         for i, f in enumerate(files):
             flow.append(PageBreak())
-            img = _fit(f, W, 228 * mm if i == len(files) - 1 else 252 * mm)
+            img = _fit(f, W, ((186 if i == len(files) - 1 else 205) if ARGS.kdp else (228 if i == len(files) - 1 else 252)) * mm)
             img.hAlign = "CENTER"
             flow.append(img)
         if note:
-            flow += [Spacer(1, 3), Paragraph("<b>Image provisoire —</b> " + inline(note), note_image)]
+            if not ARGS.kdp:
+                flow += [Spacer(1, 3), Paragraph("<b>Image provisoire —</b> " + inline(note), note_image)]
         flow += [Spacer(1, 4), leg, Spacer(1, 7)]
         return flow
     if files:
@@ -404,7 +413,8 @@ def image_zone(page_key, legende_text, W, max_h=118 * mm, zone=0):
                                    ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 3)]))
             out.append(t)
         if note:
-            out.append(Paragraph("<b>Image provisoire —</b> " + inline(note), note_image))
+            if not ARGS.kdp:
+                out.append(Paragraph("<b>Image provisoire —</b> " + inline(note), note_image))
             out.append(Spacer(1, 2))
         out.append(leg)
     else:
@@ -526,18 +536,52 @@ def parse(md):
     return blocks
 
 
+# ---------- Calibrage KDP ----------
+from reportlab.platypus.flowables import Flowable
+CALIBRAGE = []  # (clé de page du livre, page physique où elle commence)
+
+
+class MarquePage(Flowable):
+    """Repère invisible : note la page physique où commence une page du livre."""
+    def __init__(self, cle):
+        super().__init__(); self.cle = cle; self.width = self.height = 0
+
+    def wrap(self, aw, ah):
+        return 0, 0
+
+    def draw(self):
+        CALIBRAGE.append((self.cle, self.canv.getPageNumber() + ARGS.premiere_page - 1))
+
+
 # ---------- Construction ----------
 def build():
     md = open(SRC, encoding="utf-8").read()
     blocks = parse(md)
 
-    PAGE_W, PAGE_H = A4
-    LM = RM = 22 * mm
-    TM, BM = 20 * mm, 17 * mm
+    if ARGS.kdp:
+        # KDP, 7 × 10 pouces (17,78 × 25,4 cm), sans fond perdu ; marges miroir au-delà des minimums KDP
+        # (intérieur ≥ 0,375 po soit 9,5 mm pour 24 à 150 pages ; extérieur ≥ 0,25 po soit 6,4 mm)
+        PAGE_W, PAGE_H = 7 * 72, 10 * 72
+        IN_M, OUT_M = 17 * mm, 13 * mm
+        TM, BM = 14 * mm, 16 * mm
+        LM, RM = IN_M, OUT_M
+    else:
+        PAGE_W, PAGE_H = A4
+        LM = RM = 22 * mm
+        TM, BM = 20 * mm, 17 * mm
     W = PAGE_W - LM - RM
 
     def on_page(canv, doc):
         canv.saveState()
+        if ARGS.kdp:
+            n = doc.page + ARGS.premiere_page - 1
+            canv.setFont("Carlito", 9); canv.setFillColor(GREY)
+            if n % 2:  # page impaire = belle page, à droite : folio à l'extérieur droit
+                canv.drawRightString(PAGE_W - OUT_M, 9 * mm, str(n))
+            else:
+                canv.drawString(OUT_M, 9 * mm, str(n))
+            canv.restoreState()
+            return
         if doc.page > 1 or ARGS.sans_couverture:
             canv.setFont("Carlito", 8.5); canv.setFillColor(GREY)
             canv.drawString(LM, PAGE_H - 13 * mm, "LE GEAI · %s · %s — %s" % (ARGS.tome, ARGS.titre, ARGS.livraison))
@@ -549,8 +593,17 @@ def build():
             canv.drawCentredString(PAGE_W / 2, 11 * mm, str(doc.page + ARGS.premiere_page - 1))
         canv.restoreState()
 
-    frame = Frame(LM, BM, W, PAGE_H - TM - BM, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
-    doc = BaseDocTemplate(OUT, pagesize=A4, pageTemplates=[PageTemplate(id="p", frames=[frame], onPage=on_page)],
+    if ARGS.kdp:
+        odd_first = ARGS.premiere_page % 2 == 1
+        f_odd = Frame(IN_M, BM, W, PAGE_H - TM - BM, id="fo", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
+        f_even = Frame(OUT_M, BM, W, PAGE_H - TM - BM, id="fe", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
+        t_odd = PageTemplate(id="impaire", frames=[f_odd], onPage=on_page, autoNextPageTemplate="paire")
+        t_even = PageTemplate(id="paire", frames=[f_even], onPage=on_page, autoNextPageTemplate="impaire")
+        templates = [t_odd, t_even] if odd_first else [t_even, t_odd]
+    else:
+        frame = Frame(LM, BM, W, PAGE_H - TM - BM, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
+        templates = [PageTemplate(id="p", frames=[frame], onPage=on_page)]
+    doc = BaseDocTemplate(OUT, pagesize=(PAGE_W, PAGE_H), pageTemplates=templates,
                           title="Le Geai — %s : %s — %s" % (ARGS.tome, ARGS.titre, ARGS.livraison),
                           author="Collection Le Geai", subject=ENTETE, lang="fr")
 
@@ -583,8 +636,13 @@ def build():
     cur_page = None       # clé de page courante ('28', '4-5') pour la maquette illustrée
     jacques_count = 0     # compteur pour le cycle d'attitudes par défaut
     zone_idx = 0          # rang de l'emplacement d'image dans la page courante
+    in_annexe = False
     for kind, data in blocks:
         if kind == "doctitle":
+            continue
+        if kind == "page" and ARGS.kdp:
+            in_annexe = data.startswith("Annexe")
+        if in_annexe:
             continue
         if kind == "para" and intro_skipped < 2 and not first_page_done:
             intro_skipped += 1
@@ -602,7 +660,9 @@ def build():
             m = re.match(r"^(Pages? [\d\-]+|Annexe) — (.*)$", data)
             cur_page = m.group(1).split(" ", 1)[1] if (m and m.group(1) != "Annexe") else None
             zone_idx = 0
-            if m:
+            if ARGS.kdp and m:
+                story.append(MarquePage(m.group(1).split(" ", 1)[1]))
+            elif m:
                 story.append(Paragraph(m.group(1).upper(), h_pagenum))
                 story.append(Paragraph(inline(m.group(2), flag_brackets=False), h_page))
             else:
@@ -661,6 +721,9 @@ def build():
             continue
 
     doc.build(story)
+    if ARGS.kdp:
+        with open(OUT[:-4] + ".calibrage.json", "w", encoding="utf-8") as fh:
+            json.dump({"pages_physiques": doc.page, "debuts": CALIBRAGE}, fh, ensure_ascii=False)
     print("OK", OUT)
 
 
