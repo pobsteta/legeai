@@ -11,7 +11,9 @@
 Tout le livre repose sur un seul arbre du parc. Ce choix se fait à la première visite, avec la famille.
 
 - [ ] **Autorisation de la famille de Pange** : photographier le parc toute l'année, depuis un point fixe, à des heures variées ; citer le château et le parc dans le livre. Garder une trace écrite (un courriel suffit).
-- [ ] **Choisir l'arbre** parmi les « chênes tricentenaires » du parc : silhouette entière visible depuis un point accessible toute l'année, de préférence vu depuis l'allée (page 8 : « Regardez-le depuis l'allée »), avec la Nied ou les saules dans le champ si possible.
+- [x] **L'arbre est choisi** (10 novembre) : le chêne au bord de la Nied, à gauche sur la carte postale « Pange, Château » (vers 1900). Il était déjà grand quand la carte a été imprimée.
+- [ ] **Le point de vue fixe = celui de la carte postale** : la rive de la Nied face au château, le château au fond derrière la prairie et son reflet dans l'eau, le chêne à gauche. Retrouver l'endroit exact (alignement des pavillons, bord de l'eau au premier plan) et le marquer. Toutes les photos de saison se prennent de là ; la page 23 met côte à côte la carte et votre photo d'hiver.
+- [ ] **Un second point de vue depuis l'allée** (page 8 : « Regardez-le depuis l'allée »), si l'arbre y est visible ; sinon, me le dire et je change la phrase.
 - [ ] **Vérifier l'espèce avec les quatre gestes** (pages 4-5) : pétiole, pied du gland, base de la feuille, nervures intercalaires. *Le texte suppose un pédonculé (oreillettes p. 9, glands sur pédoncule).* Si c'est un sessile ou un hybride, me le dire : six passages du texte changent.
 - [ ] **Position** : point GPS de l'arbre et point GPS du point de vue fixe (photo du repère : piquet, borne, pierre, angle de mur). Je les reporterai sur la carte des pages 6-7 et 58.
 - [ ] **Mesures** (page 34, et elles servent d'exemple page 54) :
@@ -45,7 +47,7 @@ La fin de l'automne est encore là : c'est la dernière chance avant un an pour 
 
 | Page | Quoi | Remarques |
 |---|---|---|
-| 23 | **L'arbre nu depuis le point fixe**, ciel blanc, givre si possible | Image provisoire à remplacer. Même cadrage que la carte postale ancienne si vous l'avez trouvée (voir § 6). |
+| 23 | **L'arbre nu depuis le point fixe**, ciel blanc, givre si possible | Image provisoire à remplacer. **Exactement le cadrage de la carte postale** : elle sera imprimée à côté. |
 | 23 | **Bouquet de bourgeons** au bout d'un rameau, en macro | Médaillon ×3. |
 | 24 | **Trente centimètres d'écorce, côté nord**, pièce de 1 € dans un coin | Lichens (si possible quatre espèces différentes), mousses ; noter s'il y a une cavité (page 24 parle d'une cavité à six mètres : à confirmer ou à retirer). |
 | 24 | Grimpereau, sittelle, pic épeiche sur le tronc | Si l'occasion se présente ; sinon le texte reste générique. |
@@ -107,13 +109,13 @@ Si un voyage n'est pas possible avant la mise en page, la vignette de cet arbre 
 - [ ] Les **papiers de la seigneurie** gardés au château : y a-t-il une mention de glandée, de panage ou de porcs menés au bois (page 18) ? Ils ont été classés par Hervé Birklé (université de Metz) et utilisés par Emmanuel de Waresquiel.
 - [ ] La **date du château** : 1720 (date courante) ou 1756 (Waresquiel : terre achetée en 1720, château construit en 1756) ? Et la suppression des tours : 1805 ou 1806 ?
 - [ ] La **charpente** : chêne ? d'où venait le bois — des bois du domaine ? (page 48)
-- [ ] Une **carte postale ancienne** ou une photo d'avant 1914 dans leurs archives, montrant le parc et, avec de la chance, l'arbre (pages 23 et 48).
+- [ ] D'autres **cartes ou photos anciennes** du parc dans leurs archives, si elles montrent le chêne sous un autre angle ou en hiver (la carte « Pange, Château » est trouvée).
 - [ ] L'**âge des chênes du parc** : y a-t-il un plan, une date de plantation de l'allée ?
 
 **En ligne, chez vous** :
 - [ ] **Carte de Cassini** de Pange (Géoportail, couche « Carte de Cassini », ou remonterletemps.ign.fr) : le bois de Gonvaux y figure-t-il, et sous quel nom ? Une capture d'écran suffit (page 46). Regarder aussi si le parc ou des allées sont dessinés (page 8).
 - [ ] **Cadastre napoléonien** de Pange (Archives départementales de la Moselle, en ligne) : le parc, les allées, le nom des parcelles boisées (page 8).
-- [ ] **Carte postale ancienne** du château sur les sites de vente (Delcampe, Geneanet) : en acheter une — un original dont vous êtes propriétaire peut être redessiné ; une photo d'avant 1914 sans auteur connu est en principe dans le domaine public, mais gardez la référence.
+- [x] **Carte postale ancienne** : « Pange, Château », trouvée le 10 novembre. Si vous en achetez l'original, notez l'éditeur et la date du cachet au dos : je les mettrai en légende.
 - [ ] **Noms lorrains du chêne** (pages 6 et 50) : glossaires patois de Lorraine (Lucien Adam, Richard, Mathis, Oberlin — via Lexilogos) ; et ce que disent les anciens du village.
 
 **Pour l'édition** :

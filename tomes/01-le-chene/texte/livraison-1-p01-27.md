@@ -2,7 +2,7 @@
 
 *Texte définitif proposé pour l'ouverture et le chapitre « L'année ». Conventions : **[Regard]** = paragraphe en italique sur l'image pleine page ; corps de texte = l'enquête ; **[Bulle]** et **[Parole du Jacques]** = le Jacques ; **[Légende]** = sous l'image ; **[Encadré]** = cadre dans la page ; **(n)** = note de bas de page, numérotée par page. Les crochets [ ] signalent ce qui dépend de l'individu suivi et de son lieu, à remplir après vérification (Cassini, cadastre, archives). Toutes les notes sont sourcées (passe de sourçage du 9 novembre 2026).*
 
-*Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les noms lorrains du chêne ; la carte postale ancienne du château de Pange pour le regard d'hiver ; les mesures du chêne suivi.*
+*Bilan de la passe de sourçage pour cette livraison : mésanges et chenilles (Reed et al. 2013 ; Visser et al. 2021 ; nourrissage LPO/MNHN), transpiration (ONF, réseau Renecofor), glandée (ONF ; WSL), charpente de Notre-Dame (Epaud 2019 ; Lambert et al.), gui et druides (Pline, XVI, 95), geai (Bossema 1979 ; Gómez 2003), « jacques » comme nom du geai (Littré, via jacquot/jaquet). Restent à relever : les noms lorrains du chêne ; les mesures du chêne suivi. La carte postale ancienne du château a été fournie par l'auteur le 10 novembre : le chêne suivi y figure (page 23).*
 
 ---
 
@@ -458,7 +458,7 @@ L'hiver peut venir : le chêne a déjà commencé.
 ### Page 23 — Le même qu'autrefois
 
 **[Regard]**
-*Janvier. Le chêne est nu sur un ciel blanc, et c'est maintenant qu'on le reconnaît le mieux : la même silhouette que sur la carte postale du château d'avant la Grande Guerre, celle où l'on voit la Nied, la façade et les arbres du parc [à vérifier sur la carte postale]. Les branches ont changé — l'une est tombée, deux ont poussé — mais le dessin est le même, tortueux, large, planté. Le photographe est mort, le château a été occupé, vidé, rendu, restauré, et l'arbre a gardé la pose.*
+*Janvier. Le chêne est nu sur un ciel blanc, et c'est maintenant qu'on le reconnaît le mieux. Il est déjà sur une carte postale d'il y a plus d'un siècle : « Pange, Château » imprimé en bas, quelques mots d'allemand écrits à la plume en travers du ciel, du temps où le village s'appelait Spangen. Au premier plan, la Nied ; derrière la prairie, le château, qui se reflète dans l'eau ; et à gauche, penchée sur la rivière, une grande masse sombre de feuillage : lui, en plein été. Le photographe est mort, la carte a voyagé, le village a changé de pays et de nom, le château a été occupé, vidé, rendu, restauré. L'arbre n'a pas quitté le bord de l'eau.*
 
 Comment reconnaître un chêne sans feuilles ? Par ses bourgeons : au bout de chaque rameau, trois, quatre, cinq bourgeons serrés en bouquet, bruns, ovoïdes — aucun autre arbre du parc ne fait cela (1). Par ses rameaux, anguleux, qui changent de direction à chaque année de pousse. Par ses grosses branches, tortueuses, qui partent en coude. Par son écorce, crevassée en long. Et par le sol : des cupules vides, des glands troués, et sur les jeunes sujets, des feuilles mortes encore accrochées.
 
@@ -466,9 +466,9 @@ Ce que l'arbre fait en hiver se voit peu. Il ne dort pas tout à fait : les raci
 
 **[Encadré — Chez le sessile]** En hiver, la différence se voit de loin : le sessile a le fût droit et les branches plus régulières ; le pédonculé a les coudes.
 
-**[Légende]** L'individu suivi en janvier, même point de vue. En médaillon : le bouquet de bourgeons au bout d'un rameau, grandeur ×3. [Vignette : la carte postale ancienne du château et du parc, redessinée, si l'arbre y figure.]
+**[Légende]** L'individu suivi en janvier, même point de vue. En médaillon : le bouquet de bourgeons au bout d'un rameau, grandeur ×3. En vignette : la carte postale « Pange, Château », reproduite telle quelle — le chêne est la grande masse de feuillage à gauche, au bord de la Nied.
 
-**[Bulle]** « Même silhouette qu'avant la guerre. Moi, j'ai changé de plumes dix-huit fois. »
+**[Bulle]** « Sur la carte, il était déjà vieux. Moi, j'ai changé de plumes dix-huit fois. »
 
 **(1)** Caractères hivernaux des chênes : *Flore forestière française*, t. 1 ; longévité du geai, jusqu'à 18 ans — oiseaux.net, fiche *Garrulus glandarius*.
 
@@ -548,7 +548,7 @@ Comment un gland devient un chêne, et combien de temps cela prend : c'est tout 
 ## Annexe — Ce qui reste à relever pour cette livraison
 
 - Les noms lorrains et vosgiens du chêne (glossaires : Lucien Adam, Richard, Mathis, Oberlin — voir Lexilogos).
-- Le lieu est fixé (9 novembre) : le parc du château de Pange, Moselle, au bord de la Nied française ; les regards des pages 8, 11, 18 et 23 ont été réécrits pour ce décor d'après les documents publics sur le domaine (château de 1720, douves et tours supprimées en 1806, parc à l'anglaise du XIXe siècle, occupations militaires, jardin de Louis Benech 2000-2003, « chênes tricentenaires »). Restent à l'auteur : la carte postale ancienne du château pour le regard de la page 23 ; la feuille de Cassini et les plans du parc (XVIIIe siècle, comte de Choulot) pour la page 8 ; les archives de la seigneurie pour la glandée de la page 18 (elles sont conservées au château, chez la famille de Pange, et ont été dépouillées par l'historien Emmanuel de Waresquiel pour le XIXe siècle : on peut les demander) ; la position exacte du chêne dans le parc, son tour et son âge (page 34).
+- Le lieu est fixé (9 novembre) : le parc du château de Pange, Moselle, au bord de la Nied française ; les regards des pages 8, 11, 18 et 23 ont été réécrits pour ce décor d'après les documents publics sur le domaine (château de 1720, douves et tours supprimées en 1806, parc à l'anglaise du XIXe siècle, occupations militaires, jardin de Louis Benech 2000-2003, « chênes tricentenaires »). La carte postale ancienne « Pange, Château » (vers 1900, message en allemand au recto, vue prise de la rive de la Nied) a été fournie le 10 novembre : le chêne suivi est l'arbre au bord de l'eau, à gauche ; le regard de la page 23 est écrit d'après elle, et elle est reproduite telle quelle en vignette (photographie anonyme de plus de cent ans, domaine public ; jamais donnée à l'outil de génération). Restent à l'auteur : la feuille de Cassini et les plans du parc (XVIIIe siècle, comte de Choulot) pour la page 8 ; les archives de la seigneurie pour la glandée de la page 18 (elles sont conservées au château, chez la famille de Pange, et ont été dépouillées par l'historien Emmanuel de Waresquiel pour le XIXe siècle : on peut les demander) ; la position exacte du chêne dans le parc, son tour et son âge (page 34).
 - Les dates réelles du débourrement et des quatre passages photographiques (pages 8-9).
 - Les cernes à légender sur la rondelle de la page 25 (années de sécheresse connues du lieu).
 - Références primaires : levées le 9 novembre 2026 (anthocyanes : Lee & Gould 2002, Karageorgou & Manetas 2006 ; cynips : Stone et al. 2002 ; encre : Rouchon 2011, Liège 2012 ; balanin : Espelta 2009, Bonal 2007, 2009 ; glandée : Crawley & Long 1995, Kelly & Sork 2002 ; marcescence : Svendsen 2001, Otto & Nilsson 1981, Abadía 1996 ; lichens : LeBlanc & De Sloover 1970, AFNOR 2008 ; mésanges : Gibb 1955, Royama 1966, Barba 2009 ; caches : Balda & Kamil 1992, Clayton & Dickinson 1998). La phrase sur les feuilles rouges (p. 9) a été réécrite : l'effet parasol est une hypothèse peu confirmée, l'effet contre les insectes est mesuré.
