@@ -32,9 +32,9 @@
    },
    {
     "fichiers": [
-     "tomes/01-le-chene/images/p06-07-feuilles-des-cousins_eI767rRdqL.jpg"
+     "tomes/01-le-chene/images/p06-07-feuilles-des-cousins-numerotees.png"
     ],
-    "note": "planche d'identification : les sept feuilles sont à contrôler une à une contre la Flore forestière française"
+    "note": "planche recomposée (outils/planche_cousins.py) : feuilles remises à l'échelle d'après des longueurs typiques, numéros et pièce de 1 € posés en vectoriel ; longueurs et dessins (tauzin et chevelu surtout) à contrôler contre la Flore forestière française"
    }
   ]
  },

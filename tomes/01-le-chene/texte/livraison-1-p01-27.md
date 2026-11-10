@@ -149,9 +149,9 @@ Ils ne se partagent pourtant pas le territoire au hasard. Le pédonculé aime le
 
 ### Les cousins
 
-Le **chêne pubescent**, du Sud et des coteaux calcaires, au duvet sous les feuilles (tome 6). Le **chêne vert**, aux feuilles persistantes, du Midi (tome 11). Le **chêne-liège**, dont on tire les bouchons, dans les Landes, en Provence et en Corse. Le **chêne kermès**, un arbuste épineux des garrigues. Le **chêne tauzin**, aux feuilles veloutées, du Sud-Ouest. Le **chêne chevelu**, aux cupules hérissées, du Sud-Est et des parcs. Le **chêne rouge d'Amérique**, planté pour ses couleurs d'automne, dont nos insectes ne veulent guère (3).
+Le **chêne pubescent** (feuille 1), du Sud et des coteaux calcaires, au duvet sous les feuilles (tome 6). Le **chêne vert** (feuille 2), aux feuilles persistantes, du Midi (tome 11). Le **chêne-liège** (feuille 3), dont on tire les bouchons, dans les Landes, en Provence et en Corse. Le **chêne kermès** (feuille 4), un arbuste épineux des garrigues. Le **chêne tauzin** (feuille 5), aux feuilles veloutées, du Sud-Ouest. Le **chêne chevelu** (feuille 6), aux cupules hérissées, du Sud-Est et des parcs. Le **chêne rouge d'Amérique** (feuille 7), planté pour ses couleurs d'automne, dont nos insectes ne veulent guère (3).
 
-**[Légende]** Une feuille de chaque cousin, à la même échelle.
+**[Légende]** Une feuille de chaque cousin, à la même échelle : 1 pubescent, 2 vert, 3 liège, 4 kermès, 5 tauzin, 6 chevelu, 7 rouge d'Amérique. La pièce de 1 euro, dessinée à la même échelle, donne la mesure.
 
 **[Bulle]** « Un quart du bois de France. Devinez qui l'a planté. »
 
