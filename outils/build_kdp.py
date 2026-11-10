@@ -5,7 +5,7 @@ Construit les quatre livraisons avec build_pdf.py --kdp, à la suite (folios con
 les concatène, puis écrit un rapport : pages physiques occupées par chaque page du
 livre, comparées au budget du chemin de fer (1 page, 2 pour les doubles pages).
 """
-import json, subprocess, sys
+import argparse, json, subprocess, sys
 from pathlib import Path
 from pypdf import PdfReader, PdfWriter
 
@@ -13,24 +13,30 @@ RACINE = Path(__file__).resolve().parent.parent
 TOME = RACINE / "tomes/01-le-chene"
 LIVRAISONS = ["livraison-1-p01-27", "livraison-2-p28-45", "livraison-3-p46-53", "livraison-4-p54-64"]
 BUDGET_TOTAL = 64
+ap = argparse.ArgumentParser()
+ap.add_argument("--format", default="7x10", choices=["7x10", "8x10", "8.25x11", "8.5x11"])
+FMT = ap.parse_args().format
 
 sortie = TOME / "pdf"; sortie.mkdir(exist_ok=True)
 tmp = Path("/tmp/kdp"); tmp.mkdir(exist_ok=True)
-debuts, fichiers, page = [], [], 1
-for nom in LIVRAISONS:
-    out = tmp / f"{nom}.pdf"
-    subprocess.run([sys.executable, str(RACINE / "outils/build_pdf.py"), str(TOME / "texte" / f"{nom}.md"),
-                    str(out), "--illustre", "--kdp", "--sans-couverture", "--premiere-page", str(page)],
-                   check=True, stdout=subprocess.DEVNULL)
+debuts, fichiers, notes, page = [], [], [], 1
+for i, nom in enumerate(LIVRAISONS):
+    out = tmp / f"{nom}-{FMT}.pdf"
+    cmd = [sys.executable, str(RACINE / "outils/build_pdf.py"), str(TOME / "texte" / f"{nom}.md"),
+           str(out), "--illustre", "--kdp", "--format", FMT, "--sans-couverture", "--premiere-page", str(page)]
+    if i == len(LIVRAISONS) - 1:  # la dernière livraison porte les notes de tout le volume
+        nf = tmp / f"notes-{FMT}.json"; nf.write_text(json.dumps(notes, ensure_ascii=False), encoding="utf-8")
+        cmd += ["--notes-fin", str(nf)]
+    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
     cal = json.loads(out.with_suffix(".calibrage.json").read_text(encoding="utf-8"))
-    debuts += cal["debuts"]; fichiers.append(out); page += cal["pages_physiques"]
+    debuts += cal["debuts"]; notes += cal["notes"]; fichiers.append(out); page += cal["pages_physiques"]
 total = page - 1
 
 w = PdfWriter()
 for f in fichiers:
     for p in PdfReader(str(f)).pages:
         w.add_page(p)
-pdf = sortie / "interieur-kdp-prototype.pdf"
+pdf = sortie / f"interieur-kdp-{FMT}.pdf"
 with open(pdf, "wb") as fh:
     w.write(fh)
 
@@ -38,6 +44,9 @@ lignes, depassements = [], []
 for i, (cle, debut) in enumerate(debuts):
     fin = debuts[i + 1][1] if i + 1 < len(debuts) else total + 1
     occupe = fin - debut
+    if cle == "Notes":
+        lignes.append(f"| Notes (fin de volume) | {debut} | {occupe} | — | hors chemin de fer |")
+        continue
     a, _, b = cle.partition("-")
     budget = int(b) - int(a) + 1 if b else 1
     ecart = occupe - budget
@@ -49,18 +58,20 @@ for i, (cle, debut) in enumerate(debuts):
         depassements.append((ecart, cle))
 
 depassements.sort(reverse=True)
+pages_notes = next((total + 1 - d for c, d in debuts if c == "Notes"), 0)
 rapport = [
-    "# Tome 1 — Calibrage de l'intérieur KDP (prototype)",
+    f"# Tome 1 — Calibrage de l'intérieur KDP, format {FMT.replace('x', ' × ')} pouces",
     "",
-    f"Format 7 × 10 pouces, marges miroir, corps 11 pt. Généré par `outils/build_kdp.py`.",
+    "Marges miroir, corps 11 pt, notes de source renvoyées en fin de volume. "
+    f"Généré par `outils/build_kdp.py --format {FMT}`.",
     "",
-    f"**Pages physiques : {total}** pour un budget de **{BUDGET_TOTAL}** "
-    f"(écart : {total - BUDGET_TOTAL:+d}).",
+    f"**Pages physiques : {total}**, dont {total - pages_notes} pour les 64 pages du livre "
+    f"et {pages_notes} pour les notes en fin de volume (budget du chemin de fer : {BUDGET_TOTAL}).",
     "",
     "Pages du livre qui débordent le plus : "
     + ", ".join(f"p. {c} (+{e})" for e, c in depassements[:10]) + ".",
     "",
-    "Repère : une page de 7 × 10 pouces en corps 11 tient environ 450 mots sans image, "
+    "Repère (7 × 10) : une page en corps 11 tient environ 450 mots sans image, "
     "environ 230 avec une image de 10 cm, la bulle et la légende.",
     "",
     "| Page du livre | Commence à | Pages occupées | Budget | Écart |",
@@ -68,5 +79,5 @@ rapport = [
     *lignes,
     "",
 ]
-(TOME / "pdf/calibrage-kdp.md").write_text("\n".join(rapport), encoding="utf-8")
+(TOME / f"pdf/calibrage-kdp-{FMT}.md").write_text("\n".join(rapport), encoding="utf-8")
 print(pdf, total)

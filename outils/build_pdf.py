@@ -47,6 +47,10 @@ ap.add_argument("--sans-couverture", dest="sans_couverture", action="store_true"
 ap.add_argument("--premiere-page", dest="premiere_page", type=int, default=1, help="numéro de la première page du PDF (pour assembler plusieurs livraisons)")
 ap.add_argument("--kdp", action="store_true",
                 help="format du livre imprimé (KDP) : 7 × 10 pouces, marges miroir, corps 11 pt, sans en-tête de relecture, sans annexes ni notes d'image provisoire")
+ap.add_argument("--format", default="7x10", choices=["7x10", "8x10", "8.25x11", "8.5x11"],
+                help="format KDP en pouces (largeur x hauteur), avec --kdp")
+ap.add_argument("--notes-fin", dest="notes_fin", default=None,
+                help="avec --kdp : JSON des notes des livraisons précédentes ; ajoute la section « Notes » en fin de volume")
 ap.add_argument("--note-couverture", dest="note_couverture", default=None, help="paragraphe ajouté au cadre de conventions de la couverture")
 ARGS = ap.parse_args()
 SRC, OUT, DATE = ARGS.src, ARGS.out, ARGS.date
@@ -363,7 +367,7 @@ def _fit(f, max_w, max_h):
 
 def image_zone(page_key, legende_text, W, max_h=None, zone=0):
     if max_h is None:
-        max_h = (100 if ARGS.kdp else 118) * mm
+        max_h = (100 * KDP_ECHELLE if ARGS.kdp else 118) * mm
     """Image(s) existante(s) de la page + légende ; sinon cadre gris « image à produire » portant la légende (le brief).
     images.json : liste de fichiers, ou objet {fichiers, note, hauteur_mm, empiler, une_par_page}, ou {zones: [...]}
     quand la page a plusieurs emplacements d'image (zone = rang de l'emplacement dans la page)."""
@@ -378,7 +382,7 @@ def image_zone(page_key, legende_text, W, max_h=None, zone=0):
         files, note = spec.get("fichiers", []), spec.get("note")
         empiler, une_par_page = bool(spec.get("empiler")), bool(spec.get("une_par_page"))
         if spec.get("hauteur_mm"):
-            max_h = float(spec["hauteur_mm"]) * mm * (0.82 if ARGS.kdp else 1)
+            max_h = float(spec["hauteur_mm"]) * mm * (0.82 * KDP_ECHELLE if ARGS.kdp else 1)
     elif isinstance(spec, list):
         files = spec
     files = [os.path.join(REPO, f) for f in files if os.path.exists(os.path.join(REPO, f))]
@@ -389,7 +393,7 @@ def image_zone(page_key, legende_text, W, max_h=None, zone=0):
         flow = []
         for i, f in enumerate(files):
             flow.append(PageBreak())
-            img = _fit(f, W, ((186 if i == len(files) - 1 else 205) if ARGS.kdp else (228 if i == len(files) - 1 else 252)) * mm)
+            img = _fit(f, W, ((186 * KDP_ECHELLE if i == len(files) - 1 else 205 * KDP_ECHELLE) if ARGS.kdp else (228 if i == len(files) - 1 else 252)) * mm)
             img.hAlign = "CENTER"
             flow.append(img)
         if note:
@@ -538,6 +542,9 @@ def parse(md):
 
 # ---------- Calibrage KDP ----------
 from reportlab.platypus.flowables import Flowable
+KDP_L, KDP_H = (float(x) for x in ARGS.format.split("x"))
+KDP_ECHELLE = float(os.environ.get("KDP_ECHELLE_IMAGES", KDP_H / 10))  # hauteur des images (référence 7 × 10 = 1)
+NOTES_FIN = []  # (clé de page, lignes de notes) — renvoyées en fin de volume en KDP
 CALIBRAGE = []  # (clé de page du livre, page physique où elle commence)
 
 
@@ -561,7 +568,7 @@ def build():
     if ARGS.kdp:
         # KDP, 7 × 10 pouces (17,78 × 25,4 cm), sans fond perdu ; marges miroir au-delà des minimums KDP
         # (intérieur ≥ 0,375 po soit 9,5 mm pour 24 à 150 pages ; extérieur ≥ 0,25 po soit 6,4 mm)
-        PAGE_W, PAGE_H = 7 * 72, 10 * 72
+        PAGE_W, PAGE_H = KDP_L * 72, KDP_H * 72
         IN_M, OUT_M = 17 * mm, 13 * mm
         TM, BM = 14 * mm, 16 * mm
         LM, RM = IN_M, OUT_M
@@ -706,6 +713,9 @@ def build():
             else:  # Image, Carte, Sommaire
                 story += placeholder_box(mk, rest, W)
             continue
+        if kind == "notes" and ARGS.kdp:
+            NOTES_FIN.append((cur_page, data))
+            continue
         if kind == "notes":
             story += notes_block(data)
             continue
@@ -720,10 +730,22 @@ def build():
             story.append(Spacer(1, 4))
             continue
 
+    if ARGS.kdp and ARGS.notes_fin:
+        precedentes = json.load(open(ARGS.notes_fin, encoding="utf-8"))
+        toutes = [tuple(x) for x in precedentes] + NOTES_FIN
+        story += [PageBreak(), MarquePage("Notes"), Paragraph("Notes", h_page),
+                  Paragraph("Les sources de chaque page, dans l'ordre du livre. Le numéro entre "
+                            "parenthèses renvoie à l'appel dans le texte.", note), Spacer(1, 6)]
+        for cle, lignes in toutes:
+            story.append(Paragraph("Page %s" % cle, h_sub))
+            for n in lignes:
+                m = re.match(r"^\*\*\((\d+)\)\*\*\s*(.*)$", n)
+                story.append(Paragraph("<b>(%s)</b> %s" % (m.group(1), inline(m.group(2), superscript_refs=False)), note))
+            story.append(Spacer(1, 3))
     doc.build(story)
     if ARGS.kdp:
         with open(OUT[:-4] + ".calibrage.json", "w", encoding="utf-8") as fh:
-            json.dump({"pages_physiques": doc.page, "debuts": CALIBRAGE}, fh, ensure_ascii=False)
+            json.dump({"pages_physiques": doc.page, "debuts": CALIBRAGE, "notes": NOTES_FIN}, fh, ensure_ascii=False)
     print("OK", OUT)
 
 
