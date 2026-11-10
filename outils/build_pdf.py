@@ -22,7 +22,7 @@ from reportlab.lib.units import mm
 from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_JUSTIFY, TA_LEFT, TA_CENTER
-from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer,
+from reportlab.platypus import (KeepInFrame, BaseDocTemplate, PageTemplate, Frame, Paragraph, Spacer,
                                 PageBreak, Table, TableStyle, KeepTogether, ListFlowable,
                                 ListItem, HRFlowable)
 from reportlab.pdfbase import pdfmetrics
@@ -367,7 +367,7 @@ def _fit(f, max_w, max_h):
     return RLImage(f, width=w, height=h)
 
 
-def image_zone(page_key, legende_text, W, max_h=None, zone=0):
+def image_zone(page_key, legende_text, W, max_h=None, zone=0, pleine=False):
     if max_h is None:
         max_h = (100 * KDP_ECHELLE if ARGS.kdp else 118) * mm
     """Image(s) existante(s) de la page + légende ; sinon cadre gris « image à produire » portant la légende (le brief).
@@ -383,10 +383,13 @@ def image_zone(page_key, legende_text, W, max_h=None, zone=0):
     if isinstance(spec, dict):
         files, note = spec.get("fichiers", []), spec.get("note")
         empiler, une_par_page = bool(spec.get("empiler")), bool(spec.get("une_par_page"))
-        if spec.get("hauteur_mm"):
+        if pleine:
+            empiler, une_par_page = len(spec.get("fichiers", [])) > 1, False
+        elif spec.get("hauteur_mm"):
             max_h = float(spec["hauteur_mm"]) * mm * (0.82 * KDP_ECHELLE if ARGS.kdp else 1)
     elif isinstance(spec, list):
         files = spec
+        empiler = pleine and len(files) > 1
     files = [os.path.join(REPO, f) for f in files if os.path.exists(os.path.join(REPO, f))]
     out = []
     leg = box([Paragraph("LÉGENDE", label), Paragraph(inline(legende_text), legende)], left_bar=RULE, pad=5, width=W)
@@ -408,7 +411,7 @@ def image_zone(page_key, legende_text, W, max_h=None, zone=0):
         gap = 5 * mm
         if empiler:
             for f in files:
-                img = _fit(f, W, max_h); img.hAlign = "CENTER"
+                img = _fit(f, W, (max_h - 4 * (len(files) - 1)) / len(files) if pleine else max_h); img.hAlign = "CENTER"
                 out += [img, Spacer(1, 4)]
         else:
             cw = (W - gap * (n - 1)) / n
@@ -646,6 +649,35 @@ def build():
     jacques_count = 0     # compteur pour le cycle d'attitudes par défaut
     zone_idx = 0          # rang de l'emplacement d'image dans la page courante
     in_annexe = False
+    SPREAD = ARGS.double and ARGS.kdp and ARGS.illustre
+    droite = []  # emplacements d'image de la page courante, posés en pleine page à droite (mode double)
+
+    def poser_droite():
+        """Page de droite : les images de la page du livre, en pleine page, avec leurs légendes."""
+        if not droite:
+            return
+        H = PAGE_H - TM - BM
+        n = len(droite)
+        h_zone = (H - n * 30 * mm) / n  # 30 mm par légende et espacement
+        bloc = []
+        courante = []
+        for key, leg, z in droite:
+            bloc.extend(image_zone(key, leg, W, max_h=h_zone, zone=z, pleine=True))
+            courante.extend(image_zone(key, leg, W, zone=z))
+        # la page de droite : le bloc image + légende centré verticalement
+        plat = []
+        for f in bloc:  # KeepTogether ne se dessine pas dans une cellule : on l'ouvre
+            plat.extend(f._content if isinstance(f, KeepTogether) else [f])
+        cadre = Table([[KeepInFrame(W, H - 4, plat, mode="shrink")]], colWidths=[W], rowHeights=[H - 4])
+        cadre.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                   ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 0),
+                                   ("BOTTOMPADDING", (0, 0), (-1, -1), 0)]))
+        pleine = [PageBreak(), cadre]
+        # texte tenu sur la page de gauche (paire) : images en pleine page à droite ;
+        # texte déjà passé à droite : images à leur taille courante, à la suite du texte
+        story.append(DocIf("(doc.page + %d) %% 2 == 0" % (ARGS.premiere_page - 1), pleine, courante))
+        droite.clear()
+
     for kind, data in blocks:
         if kind == "doctitle":
             continue
@@ -660,6 +692,8 @@ def build():
             pending_season = data
             continue
         if kind == "page":
+            if SPREAD:
+                poser_droite()
             if ARGS.double and ARGS.kdp:
                 # commencer sur une page paire : saut de page, puis un second si l'on tombe sur une impaire
                 if first_page_done:
@@ -708,13 +742,17 @@ def build():
                 else:
                     story += jacques_box(rest, W, "Parole")
             elif mk == "Légende":
-                if illustre:
+                if illustre and SPREAD:
+                    droite.append((cur_page, rest, zone_idx)); zone_idx += 1
+                elif illustre:
                     story += image_zone(cur_page, rest, W, zone=zone_idx); zone_idx += 1
                 else:
                     story += legende_box(rest, W)
             elif mk.startswith("Encadré"):
                 title = mk.split("—", 1)[1].strip() if "—" in mk else ""
                 story += encadre_box(title, rest, W)
+            elif mk in ("Image", "Carte") and illustre and SPREAD:
+                droite.append((cur_page, mk + " : " + rest, zone_idx)); zone_idx += 1
             elif mk in ("Image", "Carte") and illustre:
                 story += image_zone(cur_page, mk + " : " + rest, W, zone=zone_idx); zone_idx += 1
             else:  # Image, Carte, Sommaire
@@ -737,6 +775,8 @@ def build():
             story.append(Spacer(1, 4))
             continue
 
+    if SPREAD:
+        poser_droite()
     if ARGS.kdp and ARGS.notes_fin:
         precedentes = json.load(open(ARGS.notes_fin, encoding="utf-8"))
         toutes = [tuple(x) for x in precedentes] + NOTES_FIN

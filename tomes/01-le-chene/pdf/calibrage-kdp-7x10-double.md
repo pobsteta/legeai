@@ -2,9 +2,9 @@
 
 Marges miroir, corps 11 pt, notes de source renvoyées en fin de volume. Généré par `outils/build_kdp.py --format 7x10 --double`. Chaque page du chemin de fer devient une double page, ouverte sur une page paire (à gauche) ; la page 1 est réservée au titre.
 
-**Pages physiques : 141**, dont 130 pour les 64 pages du livre et 11 pour les notes en fin de volume (budget du chemin de fer : 144).
+**Pages physiques : 140**, dont 129 pour les 64 pages du livre et 11 pour les notes en fin de volume (budget du chemin de fer : 144).
 
-Pages du livre qui débordent le plus : p. 60-61 (+2), p. 54 (+2), p. 4-5 (+2).
+Pages du livre qui débordent le plus : p. 60-61 (+2), p. 4-5 (+2).
 
 Repère (7 × 10) : une page en corps 11 tient environ 450 mots sans image, environ 230 avec une image de 10 cm, la bulle et la légende.
 
@@ -59,14 +59,14 @@ Repère (7 × 10) : une page en corps 11 tient environ 450 mots sans image, envi
 | 51 | 100 | 2 | 2 | 0 |
 | 52 | 102 | 2 | 2 | 0 |
 | 53 | 104 | 2 | 2 | 0 |
-| 54 | 106 | 4 | 2 | +2 |
-| 55 | 110 | 2 | 2 | 0 |
-| 56 | 112 | 2 | 2 | 0 |
-| 57 | 114 | 2 | 2 | 0 |
-| 58 | 116 | 2 | 2 | 0 |
-| 59 | 118 | 2 | 2 | 0 |
-| 60-61 | 120 | 6 | 4 | +2 |
-| 62 | 126 | 2 | 2 | 0 |
-| 63 | 128 | 2 | 2 | 0 |
-| 64 | 130 | 1 | 2 | -1 |
-| Notes (fin de volume) | 131 | 11 | — | hors chemin de fer |
+| 54 | 106 | 2 | 2 | 0 |
+| 55 | 108 | 2 | 2 | 0 |
+| 56 | 110 | 2 | 2 | 0 |
+| 57 | 112 | 2 | 2 | 0 |
+| 58 | 114 | 2 | 2 | 0 |
+| 59 | 116 | 2 | 2 | 0 |
+| 60-61 | 118 | 6 | 4 | +2 |
+| 62 | 124 | 2 | 2 | 0 |
+| 63 | 126 | 2 | 2 | 0 |
+| 64 | 128 | 2 | 2 | 0 |
+| Notes (fin de volume) | 130 | 11 | — | hors chemin de fer |
