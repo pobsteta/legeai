@@ -101,7 +101,7 @@ Douze tomes, douze arbres, douze lettres. À chaque tome, le Jacques pose une ch
 
 **[Parole du Jacques]** « Voici la charade du tome 1. Mon premier, c'est ce que fait la pluie quand elle s'arrête. Mon second est une terre entourée d'eau. Mon tout est le chêne dont les glands sont assis à même la branche, sans queue — vous l'avez croisé à la page 5. Et maintenant le tiroir : la lettre à écrire dans le premier gland est **la voyelle que mon tout possède et que son frère pédonculé n'a pas**. Droite comme un tronc. Je ne dis rien de plus ; je tiens la plume, pas la réponse. »
 
-La grille ci-dessous est la vôtre : douze glands, un par tome. Le tome 2, *Le Sapin pectiné*, apportera la deuxième lettre en novembre. La réponse complète sera donnée au tome 12, en septembre, avec la grande carte des arbres qui marchent — et vous pourrez, avant, l'envoyer au Jacques (page 62) : parmi les bonnes réponses, un tirage au sort désigne qui recevra le tome 12 dédicacé — par l'auteur, et d'un coup de patte du Jacques.
+La grille ci-dessous est la vôtre : douze glands, un par tome. Le tome 2, *Le Sapin pectiné*, apportera la deuxième lettre. La réponse complète sera donnée au tome 12, avec la grande carte des arbres qui marchent — et vous pourrez, avant, l'envoyer au Jacques (page 62) : parmi les bonnes réponses, un tirage au sort désigne qui recevra le tome 12 dédicacé — par l'auteur, et d'un coup de patte du Jacques.
 
 **[Légende]** La grille des douze glands, dessinés grandeur nature en ligne, chacun avec sa cupule et son numéro de 1 à 12 ; le premier, légèrement ouvert, attend sa lettre. Le Jacques, plume à la patte, au bout de la ligne.
 
@@ -210,7 +210,7 @@ IGN, *Mémento de l'inventaire forestier*, éditions 2023, 2024 et 2025 ; *Inven
 
 ### Page 63 — Dans le prochain tome, et colophon
 
-**Dans le prochain tome :** *Le Sapin pectiné* — en novembre, pour Noël.
+**Dans le prochain tome :** *Le Sapin pectiné*.
 
 Le vrai sapin : celui dont on ne trouve jamais les cônes par terre, parce qu'ils poussent debout sur les branches et s'y défont écaille par écaille, ne laissant sur l'arbre qu'un axe nu, comme une bougie. Celui dont les aiguilles portent deux bandes blanches dessous et laissent, en tombant, une cicatrice ronde et lisse là où l'épicéa laisse un piquet. Celui qu'on appelle *Abies alba*, le « sapin blanc », pour son écorce claire. Il attend ses premières graines plus de trente ans, vit cinq siècles, et il est redescendu des montagnes du Sud bien plus lentement que le chêne : ce que dit le pollen fossile des Vosges, c'est l'affaire du tome 2 — et de la deuxième lettre de votre grille (1).
 
@@ -226,13 +226,13 @@ Le vrai sapin : celui dont on ne trouve jamais les cônes par terre, parce qu'il
 
 ### Page 64 — La collection
 
-Vingt-cinq tomes, un par mois, chacun au mois où l'arbre se remarque — ou juste avant, pour qu'on aille voir. Douze arbres, douze arbustes, et un hors-série pour deux mal-aimés de la haie. Trois tomes font une saison ; chaque saison est reprise en un recueil relié.
+Vingt-cinq tomes, chacun construit autour de la saison où l'arbre se remarque. Chacun paraîtra quand il sera prêt. Douze arbres, douze arbustes, et un hors-série pour deux mal-aimés de la haie. Trois tomes font une saison ; chaque saison est reprise en un recueil relié.
 
-**Série 1 — Les arbres.** 1. *Le Chêne* (octobre) · 2. *Le Sapin pectiné* (novembre) · 3. *L'Épicéa* (décembre) · 4. *Le Douglas* (janvier) · 5. *Le Pin sylvestre* (février) · 6. *Le Chêne pubescent* (mars) · 7. *Le Charme* (avril) · 8. *Le Hêtre* (mai) · 9. *Le Frêne* (juin) · 10. *Le Châtaignier* (juillet) · 11. *Le Chêne vert* (août) · 12. *Le Pin maritime* (septembre) — avec la réponse à l'énigme des arbres.
+**Série 1 — Les arbres.** 1. *Le Chêne* · 2. *Le Sapin pectiné* · 3. *L'Épicéa* · 4. *Le Douglas* · 5. *Le Pin sylvestre* · 6. *Le Chêne pubescent* · 7. *Le Charme* · 8. *Le Hêtre* · 9. *Le Frêne* · 10. *Le Châtaignier* · 11. *Le Chêne vert* · 12. *Le Pin maritime* — avec la réponse à l'énigme des arbres.
 
-**Série 2 — Les arbustes.** 13. *Le Fusain* (octobre) · 14. *Le Houx* (novembre) · 15. *Le Cornouiller sanguin* (décembre) · 16. *Le Noisetier* (janvier) · 17. *Le Buis* (février) · 18. *Le Prunellier* (mars) · 19. *L'Aubépine* (avril) · 20. *Le Genêt à balais* (mai) · 21. *Le Troène* (juin) · 22. *La Bourdaine* (juillet) · 23. *L'Églantier* (août) · 24. *Le Sureau* (septembre) — avec une seconde énigme, et sa grille de douze baies.
+**Série 2 — Les arbustes.** 13. *Le Fusain* · 14. *Le Houx* · 15. *Le Cornouiller sanguin* · 16. *Le Noisetier* · 17. *Le Buis* · 18. *Le Prunellier* · 19. *L'Aubépine* · 20. *Le Genêt à balais* · 21. *Le Troène* · 22. *La Bourdaine* · 23. *L'Églantier* · 24. *Le Sureau* — avec une seconde énigme, et sa grille de douze baies.
 
-**Hors-série.** *La Ronce & le Lierre* (octobre de la troisième année) : les deux grands nourrisseurs d'oiseaux de la haie, et la réponse à la seconde énigme.
+**Hors-série.** *La Ronce & le Lierre* : les deux grands nourrisseurs d'oiseaux de la haie, et la réponse à la seconde énigme.
 
 **Les recueils.** *Le Geai — Automne*, *Hiver*, *Printemps*, *Été* : trois tomes reliés par saison, pour chaque série.
 

@@ -66,51 +66,51 @@ Le chapitre « Graine » de chaque tome est l'âge du voyage : c'est là que le 
 
 ## 7. Mécanique de série
 
-- **Cadence : une parution par mois.** Le rythme est le moteur de l'algorithme Amazon et de l'habitude du lecteur ; il imposait des tomes courts (48-64 pages) et une réserve de **trois tomes terminés avant la sortie du premier**, pour ne jamais rater un mois. **À revoir avec le passage à 144 pages.**
-- Page « série » Amazon activée dès le tome 1 ; même gabarit ; numéros visibles ; date du tome suivant annoncée en dernière page.
-- Tome 1 = le chêne, lancé en octobre, le mois où le Jacques plante les chênes.
-- Chaque trimestre : le recueil relié de la saison (cadeau de Noël dès la première année avec le recueil *Automne*).
+- **Parution : chaque tome sort quand il est prêt** (décidé par l'auteur le 10 novembre 2026). Aucune date de sortie n'est annoncée, ni dans les livres ni ailleurs ; la dernière page annonce le tome suivant sans date. Le calendrier mensuel prévu au départ est abandonné.
+- Page « série » Amazon activée dès le tome 1 ; même gabarit ; numéros visibles ; tome suivant annoncé en dernière page, sans date.
+- Tome 1 = le chêne.
+- Les recueils reliés par saison : à repenser (voir section 6).
 - **Les énigmes** (section 9) tiennent le lecteur d'un tome à l'autre et alimentent la newsletter : on envoie sa réponse au Jacques.
 - Chaque page « à faire » renvoie vers une page web « envoyez votre observation » → collecte d'e-mails → la lettre du Geai (l'audience qu'on possède, pas qu'on loue).
-- Abonnement direct possible sur le site de l'auteur, en parallèle d'Amazon (le modèle qui fait vivre *La Hulotte*) : un rythme mensuel s'y prête parfaitement.
+- Abonnement direct possible sur le site de l'auteur, en parallèle d'Amazon (le modèle qui fait vivre *La Hulotte*) : à envisager quand plusieurs tomes seront parus.
 
 ## 8. Plan de parution — 25 tomes
 
-**Série 1 — Les arbres (année 1).** Les treize essences principales de l'inventaire forestier (IGN, Mémento 2024) en douze tomes : les deux chênes blancs (pédonculé et sessile) forment le tome 1, parce que le grand public cherche « chêne », pas « sessile ». Chaque tome sort au mois où l'espèce se remarque — ou juste avant, pour que le lecteur puisse aller voir.
+**Série 1 — Les arbres.** Les treize essences principales de l'inventaire forestier (IGN, Mémento 2024) en douze tomes : les deux chênes blancs (pédonculé et sessile) forment le tome 1, parce que le grand public cherche « chêne », pas « sessile ». Chaque tome est construit autour de la saison où l'espèce se remarque ; il paraît quand il est prêt.
 
-| N° | Mois | Tome | Pourquoi ce mois |
-|---|---|---|---|
-| 1 | Octobre | **Le Chêne** (pédonculé & sessile) | La glandée ; le Jacques plante. Lancement. |
-| 2 | Novembre | **Le Sapin pectiné** | « Le vrai sapin » avant Noël. Cadeau. |
-| 3 | Décembre | **L'Épicéa** | L'arbre de Noël des Français ; les scolytes. Cadeau. |
-| 4 | Janvier | **Le Douglas** | Le sapin de Noël des Américains, roi de nos plantations ; l'odeur d'orange. |
-| 5 | Février | **Le Pin sylvestre** | L'écorce saumon dans la lumière d'hiver ; écureuils, becs-croisés. |
-| 6 | Mars | **Le Chêne pubescent** | Il lâche ses feuilles mortes de l'hiver quand les neuves arrivent. |
-| 7 | Avril | **Le Charme** | Fleurs et feuilles d'avril ; charme ou hêtre ? Charmilles. |
-| 8 | Mai | **Le Hêtre** | La hêtraie s'allume : la feuillaison. |
-| 9 | Juin | **Le Frêne** | Le dernier à se décider ; samares ; chalarose. |
-| 10 | Juillet | **Le Châtaignier** | Les chatons de juillet, le miel ; « l'arbre à pain ». |
-| 11 | Août | **Le Chêne vert** | Le Midi, les cigales, la garrigue. |
-| 12 | Septembre | **Le Pin maritime** | Landes, dunes, résine ; fin d'été. Solution de l'énigme 1. |
+| N° | Tome | Quand il se remarque |
+|---|---|---|
+| 1 | **Le Chêne** (pédonculé & sessile) | La glandée ; le Jacques plante. |
+| 2 | **Le Sapin pectiné** | « Le vrai sapin » avant Noël. |
+| 3 | **L'Épicéa** | L'arbre de Noël des Français ; les scolytes. |
+| 4 | **Le Douglas** | Le sapin de Noël des Américains, roi de nos plantations ; l'odeur d'orange. |
+| 5 | **Le Pin sylvestre** | L'écorce saumon dans la lumière d'hiver ; écureuils, becs-croisés. |
+| 6 | **Le Chêne pubescent** | Il lâche ses feuilles mortes de l'hiver quand les neuves arrivent. |
+| 7 | **Le Charme** | Fleurs et feuilles d'avril ; charme ou hêtre ? Charmilles. |
+| 8 | **Le Hêtre** | La hêtraie s'allume : la feuillaison. |
+| 9 | **Le Frêne** | Le dernier à se décider ; samares ; chalarose. |
+| 10 | **Le Châtaignier** | Les chatons de juillet, le miel ; « l'arbre à pain ». |
+| 11 | **Le Chêne vert** | Le Midi, les cigales, la garrigue. |
+| 12 | **Le Pin maritime** | Landes, dunes, résine ; fin d'été. Solution de l'énigme 1. |
 
-**Série 2 — Les arbustes (année 2).** Douze arbustes parmi les plus fréquents des forêts et des haies.
+**Série 2 — Les arbustes.** Douze arbustes parmi les plus fréquents des forêts et des haies.
 
-| N° | Mois | Tome | Pourquoi ce mois |
-|---|---|---|---|
-| 13 | Octobre | **Le Fusain** | Les bonnets d'évêque ; fruit rose et toxique. |
-| 14 | Novembre | **Le Houx** | Noël ; baies, grives, dioïque. Cadeau. |
-| 15 | Décembre | **Le Cornouiller sanguin** | Rameaux rouges sur la neige. |
-| 16 | Janvier | **Le Noisetier** | Le premier à fleurir ; chatons en plein hiver. |
-| 17 | Février | **Le Buis** | Juste avant les Rameaux ; la pyrale. |
-| 18 | Mars | **Le Prunellier** | Floraison blanche avant les feuilles ; la haie se réveille. |
-| 19 | Avril | **L'Aubépine** | Juste avant la fleur de mai. |
-| 20 | Mai | **Le Genêt à balais** | Les collines jaunes ; les gousses qui claquent. |
-| 21 | Juin | **Le Troène** | Fleurs parfumées ; haies ; baies noires d'hiver. |
-| 22 | Juillet | **La Bourdaine** | Fleurs et fruits tout l'été ; le papillon citron ; la poudre à canon. |
-| 23 | Août | **L'Églantier** | Juste avant les cynorhodons ; la rose des chiens. |
-| 24 | Septembre | **Le Sureau** | Les baies noires ; les oiseaux s'en gavent avant de migrer. |
+| N° | Tome | Quand il se remarque |
+|---|---|---|
+| 13 | **Le Fusain** | Les bonnets d'évêque ; fruit rose et toxique. |
+| 14 | **Le Houx** | Noël ; baies, grives, dioïque. |
+| 15 | **Le Cornouiller sanguin** | Rameaux rouges sur la neige. |
+| 16 | **Le Noisetier** | Le premier à fleurir ; chatons en plein hiver. |
+| 17 | **Le Buis** | Juste avant les Rameaux ; la pyrale. |
+| 18 | **Le Prunellier** | Floraison blanche avant les feuilles ; la haie se réveille. |
+| 19 | **L'Aubépine** | Juste avant la fleur de mai. |
+| 20 | **Le Genêt à balais** | Les collines jaunes ; les gousses qui claquent. |
+| 21 | **Le Troène** | Fleurs parfumées ; haies ; baies noires d'hiver. |
+| 22 | **La Bourdaine** | Fleurs et fruits tout l'été ; le papillon citron ; la poudre à canon. |
+| 23 | **L'Églantier** | Juste avant les cynorhodons ; la rose des chiens. |
+| 24 | **Le Sureau** | Les baies noires ; les oiseaux s'en gavent avant de migrer. |
 
-**Hors-série (octobre, année 3) — La Ronce & le Lierre.** Les deux ligneux les plus présents dans les placettes de l'inventaire, les mal-aimés, les garde-manger de la haie. Le lierre fleurit en octobre : dernier nectar de l'année. Solution de l'énigme 2 et synthèse du fil conducteur.
+**Hors-série — La Ronce & le Lierre.** Les deux ligneux les plus présents dans les placettes de l'inventaire, les mal-aimés, les garde-manger de la haie. Le lierre fleurit en octobre : dernier nectar de l'année. Solution de l'énigme 2 et synthèse du fil conducteur.
 
 **Recueils reliés par saison** (trois tomes chacun) : *Automne*, *Hiver*, *Printemps*, *Été*, pour chaque série.
 
@@ -151,7 +151,7 @@ Réponse : **ELLES ONT VOLÉ** — dans le ventre des oiseaux. Révélée dans l
 ## 10. Canaux prioritaires
 
 1. **Amazon lui-même** : titre, mots-clés, A+, « Feuilleter » activé, puis Amazon Ads sur mots-clés exacts (« livre arbres », « reconnaître les arbres », « bain de forêt », titres concurrents) une fois que la fiche convertit.
-2. **Vidéo courte** (Instagram / TikTok / Shorts) : le Jacques en voix off, 20-40 s. Quatre formats : « l'arbre en 20 secondes » (reconnaître une espèce à une feuille, un bourgeon, une écorce), « la charade du mois » (l'énigme en teaser), « ils ont marché » (une carte animée du voyage d'une espèce), « vingt minutes sous un arbre » (le bain de la saison, en silence, un plan fixe). Hooks :
+2. **Vidéo courte** (Instagram / TikTok / Shorts) : le Jacques en voix off, 20-40 s. Quatre formats : « l'arbre en 20 secondes » (reconnaître une espèce à une feuille, un bourgeon, une écorce), « la charade du tome » (l'énigme en teaser), « ils ont marché » (une carte animée du voyage d'une espèce), « vingt minutes sous un arbre » (le bain de la saison, en silence, un plan fixe). Hooks :
    - « Ce chêne a été planté par un oiseau. Et il l'a oublié. »
    - « Il y a un arbre devant chez vous. Vous ne savez pas lequel. En 20 secondes, on règle ça. »
    - « L'aubépine de votre haie a peut-être 300 ans. »
@@ -163,7 +163,7 @@ Réponse : **ELLES ONT VOLÉ** — dans le ventre des oiseaux. Révélée dans l
 
 ## 11. Plan d'action
 
-**Le chemin critique : la banque de photos.** Chaque image du livre est générée à partir d'une photo de l'auteur ; il faut donc, pour chaque espèce, les quatre saisons sur un même individu, les quatre âges, les huit éléments de la planche et les trois situations (seul, forêt mélangée, peuplement pur) **avant** d'écrire le tome. Un tome lancé en octobre exige des photos prises au printemps précédent : la campagne de prises de vue commence maintenant et dure un an, pour les 25 espèces en parallèle.
+**Le chemin critique : la banque de photos.** Chaque image du livre est générée à partir d'une photo de l'auteur ; il faut donc, pour chaque espèce, les quatre saisons sur un même individu, les quatre âges, les huit éléments de la planche et les trois situations (seul, forêt mélangée, peuplement pur) **avant** d'écrire le tome. Un tome exige les photos d'une année entière sur le même arbre : la campagne de prises de vue commence maintenant et dure un an, pour les 25 espèces en parallèle.
 
 | Fenêtre | À photographier (toutes espèces) |
 |---|---|
@@ -185,7 +185,7 @@ Réponse : **ELLES ONT VOLÉ** — dans le ventre des oiseaux. Révélée dans l
 7. Écrire le texte du tome 1 (Le Chêne) sur le chemin de fer et l'échantillon de voix validés ; vérifier sur Cassini et le cadastre les affirmations du regard pour l'individu choisi ; relever les références précises de la page « Ce qu'on découvre aujourd'hui » ; les images suivront les saisons.
 
 **Avant publication**
-8. Tomes 1 à 3 terminés (Le Chêne, Le Sapin, L'Épicéa), planches contrôlées : la réserve de trois mois.
+8. Tome 1 terminé, planches contrôlées.
 9. Compte KDP, mots-clés, catégories, page série, contenu A+, version Kindle, déclaration des images générées par IA.
 10. Page web « envoyez votre observation / votre réponse » + newsletter.
 
@@ -208,7 +208,7 @@ Réponse : **ELLES ONT VOLÉ** — dans le ventre des oiseaux. Révélée dans l
 
 **Décidé (7 novembre 2026)**
 - Nom de la collection : Le Geai. Narrateur : le Jacques (article lorrain devant le prénom). Cible : 7 à 77 ans. Périmètre : arbres et arbustes de France.
-- Une parution par mois ; série 1 = 12 arbres, série 2 = 12 arbustes, hors-série ronce & lierre ; recueils reliés par saison.
+- Une parution par mois (remplacé le 10 novembre 2026 : chaque tome sort quand il est prêt) ; série 1 = 12 arbres, série 2 = 12 arbustes, hors-série ronce & lierre ; recueils reliés par saison.
 - Fil conducteur : « Les arbres marchent » (migration postglaciaire, dispersion, climat en deuxième acte).
 - Deux énigmes en charades à tiroirs : ILS ONT MARCHÉ (révélée au tome 12) et ELLES ONT VOLÉ (révélée dans le hors-série).
 - Structure de chaque tome : une année (quatre saisons) + une vie (graine, jeune pousse, adulte, sénescence), avec la frise « L'échelle des vies ».
@@ -221,7 +221,6 @@ Réponse : **ELLES ONT VOLÉ** — dans le ventre des oiseaux. Révélée dans l
 - Outil de génération d'images : **Magnific** (mode Auto en offre gratuite pour les maquettes d'étude, 1 k ; offre payante pour les images définitives en 2 k avec image de référence). Les prompts du dépôt (`tomes/01-le-chene/planches/`, brief de la planche modèle du Jacques) sont écrits pour lui. Premières planches comparatives pédonculé / sessile produites les 8 et 9 novembre ; aucune photographie d'autrui n'est donnée au générateur.
 
 **Ouvert**
-- Mois de lancement réel (octobre recommandé : la campagne photo d'un an le permet).
 - Version Kindle dès le tome 1 ?
 - Abonnement direct sur site en parallèle d'Amazon ?
 - Nom d'auteur et marque éditoriale sur la couverture.

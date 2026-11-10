@@ -1,6 +1,6 @@
 # Le Geai — Tome 1 : *Le Chêne* — Chemin de fer
 
-*64 pages de chemin de fer, imprimées sur 144 pages (chaque page devient une double page ; notes en fin de volume ; décidé le 10 novembre 2026), 17,8 × 25,4 cm, couleur. Parution : octobre. Couleur du tome : vert bouteille. Titre Amazon : « Le Chêne — La vie secrète du roi de nos forêts (le reconnaître, le planter, l'observer) » — Le Geai, t. 1. Narrateur : le Jacques.*
+*64 pages de chemin de fer, imprimées sur 144 pages (chaque page devient une double page ; notes en fin de volume ; décidé le 10 novembre 2026), 17,8 × 25,4 cm, couleur. Couleur du tome : vert bouteille. Titre Amazon : « Le Chêne — La vie secrète du roi de nos forêts (le reconnaître, le planter, l'observer) » — Le Geai, t. 1. Narrateur : le Jacques.*
 
 **Parti pris du tome.** Le tome couvre les deux chênes blancs, pédonculé (*Quercus robur*) et sessile (*Q. petraea*). Le feuilleton de l'année suit **un seul individu** : un chêne pédonculé adulte de plaine (le plus répandu), que le lecteur retrouve de page en page ; le sessile apparaît dans la planche, dans des encadrés « Chez le sessile » et dans la carte du voyage. Deux horloges : **l'année** (p. 8-27) raconte, **la vie** (p. 28-39) explique. Trois registres (charte, section 5) : le **regard** en italique sur l'image d'ouverture de chaque chapitre, l'**enquête** dans le corps, le **Jacques** dans les marges. Trois regards venus d'ailleurs : la double page **« Seul ou en forêt — le bain »** (p. 44-45), le grimoire **« Hildegarde dit »** (p. 49) et la page **« Ce qu'on découvre aujourd'hui »** (p. 51).
 
@@ -130,8 +130,8 @@ Chaque chapitre s'ouvre sur l'image pleine page de l'individu suivi depuis le po
 |---|---|---|---|
 | **60-61** | **Sources et bibliographie** (voir liste ci-dessous), notes numérotées du tome, crédits. | — | — |
 | **62** | **Le Jacques vous écrit.** Le courrier des lecteurs commence au tome 3 : envoyez observations, photos, réponses à l'énigme ; tirage au sort parmi les bonnes réponses finales. Adresse web, newsletter. | Le Jacques au bureau, plume à la patte. | — |
-| **63** | **Dans le prochain tome : *Le Sapin pectiné*** (novembre). Teaser : « Le vrai sapin — celui dont on ne trouve jamais les cônes par terre. » Colophon : images générées à partir des photographies de l'auteur et vérifiées contre la *Flore forestière française* ; mention des outils ; dépôt légal, ISBN. | Une branche de sapin, cicatrices rondes. | — |
-| **64** | **La collection** : les 25 tomes, un par mois, avec leur mois de parution ; les recueils par saison. | Les 25 dos de tomes alignés, colorés. | Mise à jour à chaque tome. |
+| **63** | **Dans le prochain tome : *Le Sapin pectiné***, sans date. Teaser : « Le vrai sapin — celui dont on ne trouve jamais les cônes par terre. » Colophon : images générées à partir des photographies de l'auteur et vérifiées contre la *Flore forestière française* ; mention des outils ; dépôt légal, ISBN. | Une branche de sapin, cicatrices rondes. | — |
+| **64** | **La collection** : les 25 tomes, dans l'ordre de la collection, sans date de parution ; les recueils par saison. | Les 25 dos de tomes alignés, colorés. | Mise à jour à chaque tome. |
 
 ---
 

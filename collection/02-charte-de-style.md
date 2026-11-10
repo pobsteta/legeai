@@ -158,4 +158,4 @@ Les trois voix se répondent sur la même double page : le regard dit que la hai
 - [ ] Couverture lisible en miniature sur un téléphone.
 - [ ] Colophon : mention des outils d'IA et des photos de l'auteur ; déclaration faite à KDP.
 - [ ] QR codes testés.
-- [ ] Dernière page : annonce du tome suivant avec sa date.
+- [ ] Dernière page : annonce du tome suivant, sans date de sortie (chaque tome paraît quand il est prêt).

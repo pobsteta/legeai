@@ -52,7 +52,7 @@ outils/
 
 ## Ordre de lecture
 
-1. `collection/01-fiche-de-positionnement.md` — pourquoi, pour qui, dans quel ordre (25 tomes, un par mois à partir d'octobre).
+1. `collection/01-fiche-de-positionnement.md` — pourquoi, pour qui, dans quel ordre (25 tomes, chacun publié quand il est prêt).
 2. `collection/02-charte-de-style.md` — comment on écrit et comment on dessine ; la liste de contrôle avant publication est à la fin.
 3. `collection/04-fiche-de-personnage-le-jacques.md` puis `05-brief-atrioma…` — le narrateur, puis sa planche modèle, premier chantier d'image.
 4. `photos/fiche-de-prises-de-vue.md` — quoi photographier, quand ; le tableur tient le compte.
