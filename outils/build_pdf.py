@@ -208,6 +208,24 @@ def renvois(s):
     return RE_RENVOI.sub(sub, s)
 
 
+LIENS = {"page": None, "appels": set(), "notes": set()}  # mode KDP : appels de note cliquables vers les notes de fin
+
+
+def _ancre(cle, num):
+    return "%s_%s" % (str(cle).replace("-", "_"), num)
+
+
+def _appel(m):
+    num, cle = m.group(1), LIENS["page"]
+    sup = '<super><font size="7">%s</font></super>' % num
+    a = _ancre(cle, num)
+    if not (ARGS.kdp and cle) or a not in LIENS["notes"]:  # pas de note correspondante : pas de lien
+        return sup
+    nom = "" if a in LIENS["appels"] else '<a name="appel_%s"/>' % a
+    LIENS["appels"].add(a)
+    return '%s<a href="#note_%s" color="#2F5D3A">%s</a>' % (nom, a, sup)
+
+
 def inline(s, flag_brackets=True, superscript_refs=True):
     s = esc(renvois(s))
     s = french_spaces(s)
@@ -216,7 +234,7 @@ def inline(s, flag_brackets=True, superscript_refs=True):
     if flag_brackets:
         s = re.sub(r"\[([^\]]*)\]", r'<font color="#A3392B">[\1]</font>', s)
     if superscript_refs:
-        s = re.sub(r" ?\((\d)\)", r'<super><font size="7">\1</font></super>', s)
+        s = re.sub(r" ?\((\d)\)", _appel, s)
     return s
 
 
@@ -610,6 +628,14 @@ class MarquePage(Flowable):
 def build():
     md = open(SRC, encoding="utf-8").read()
     blocks = parse(md)
+    _p = None
+    for _k, _d in blocks:  # notes existantes, pour ne lier que les appels qui ont leur note
+        if _k == "page":
+            _m = re.match(r"^Pages? ([\d\-]+) — ", _d)
+            _p = _m.group(1) if _m else None
+        elif _k == "notes" and _p:
+            for _n in _d:
+                LIENS["notes"].add(_ancre(_p, re.match(r"^\*\*\((\d+)\)", _n).group(1)))
 
     if ARGS.kdp:
         # KDP, 7 × 10 pouces (17,78 × 25,4 cm), sans fond perdu ; marges miroir au-delà des minimums KDP
@@ -748,6 +774,7 @@ def build():
                 pending_season = None
             m = re.match(r"^(Pages? [\d\-]+|Annexe) — (.*)$", data)
             cur_page = m.group(1).split(" ", 1)[1] if (m and m.group(1) != "Annexe") else None
+            LIENS["page"] = cur_page
             zone_idx = 0
             if ARGS.kdp and m:
                 story.append(MarquePage(m.group(1).split(" ", 1)[1]))
@@ -833,7 +860,9 @@ def build():
             story.append(Paragraph("Page %s" % folio, h_sub))
             for n in lignes:
                 m = re.match(r"^\*\*\((\d+)\)\*\*\s*(.*)$", n)
-                story.append(Paragraph("<b>(%s)</b> %s" % (m.group(1), inline(m.group(2), superscript_refs=False)), note))
+                a = _ancre(cle, m.group(1))
+                story.append(Paragraph('<a name="note_%s"/><a href="#appel_%s" color="#2F5D3A"><b>(%s)</b></a> %s'
+                                       % (a, a, m.group(1), inline(m.group(2), superscript_refs=False)), note))
             story.append(Spacer(1, 3))
     doc.build(story)
     if ARGS.kdp:

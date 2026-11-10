@@ -24,20 +24,25 @@ if A.double:
 sortie = TOME / "pdf"; sortie.mkdir(exist_ok=True)
 tmp = Path("/tmp/kdp"); tmp.mkdir(exist_ok=True)
 def construire(renvois=None):
-    debuts, fichiers, notes, page = [], [], [], 2 if A.double else 1  # page 1 : titre
+    """Les quatre livraisons en un seul document (les liens des notes doivent rester dans le même PDF)."""
+    parties = []
     for i, nom in enumerate(LIVRAISONS):
-        out = tmp / f"{nom}-{SUFFIXE}.pdf"
-        cmd = [sys.executable, str(RACINE / "outils/build_pdf.py"), str(TOME / "texte" / f"{nom}.md"),
-               str(out), "--illustre", "--kdp", "--format", FMT, "--sans-couverture", "--premiere-page", str(page)]
-        cmd += ["--double"] if A.double else []
-        cmd += ["--renvois", str(renvois)] if renvois else []
-        if i == len(LIVRAISONS) - 1:  # la dernière livraison porte les notes de tout le volume
-            nf = tmp / f"notes-{SUFFIXE}.json"; nf.write_text(json.dumps(notes, ensure_ascii=False), encoding="utf-8")
-            cmd += ["--notes-fin", str(nf)]
-        subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
-        cal = json.loads(out.with_suffix(".calibrage.json").read_text(encoding="utf-8"))
-        debuts += cal["debuts"]; notes += cal["notes"]; fichiers.append(out); page += cal["pages_physiques"]
-    return debuts, fichiers, page
+        md = (TOME / "texte" / f"{nom}.md").read_text(encoding="utf-8")
+        if i:  # en-tête des livraisons suivantes (titre, paragraphes de présentation) : retiré
+            md = md[md.index("\n## "):]
+        parties.append(md)
+    src = tmp / f"tome-{SUFFIXE}.md"
+    src.write_text("\n\n".join(parties), encoding="utf-8")
+    out = tmp / f"tome-{SUFFIXE}.pdf"
+    page = 2 if A.double else 1  # page 1 : titre
+    nf = tmp / "notes-vides.json"; nf.write_text("[]", encoding="utf-8")
+    cmd = [sys.executable, str(RACINE / "outils/build_pdf.py"), str(src), str(out), "--illustre", "--kdp",
+           "--format", FMT, "--sans-couverture", "--premiere-page", str(page), "--notes-fin", str(nf)]
+    cmd += ["--double"] if A.double else []
+    cmd += ["--renvois", str(renvois)] if renvois else []
+    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
+    cal = json.loads(out.with_suffix(".calibrage.json").read_text(encoding="utf-8"))
+    return cal["debuts"], [out], page + cal["pages_physiques"]
 
 
 def unites(debuts, fin):
@@ -65,8 +70,7 @@ if A.double:  # page de titre provisoire, blanche, en page 1
 
 w = PdfWriter()
 for f in fichiers:
-    for p in PdfReader(str(f)).pages:
-        w.add_page(p)
+    w.append(str(f))  # garde les destinations nommées : liens des appels de note vers les notes de fin
 pdf = sortie / f"interieur-kdp-{SUFFIXE}.pdf"
 with open(pdf, "wb") as fh:
     w.write(fh)
