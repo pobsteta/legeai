@@ -51,6 +51,9 @@ ap.add_argument("--format", default="7x10", choices=["7x10", "8x10", "8.25x11", 
                 help="format KDP en pouces (largeur x hauteur), avec --kdp")
 ap.add_argument("--double", action="store_true",
                 help="avec --kdp : chaque page du chemin de fer devient une double page et commence sur une page paire (gauche)")
+ap.add_argument("--renvois", default=None,
+                help="avec --kdp : JSON {unites: [[clé, page de début, pages occupées], …]} ; remplace les renvois « page N » "
+                     "du chemin de fer par les folios imprimés")
 ap.add_argument("--notes-fin", dest="notes_fin", default=None,
                 help="avec --kdp : JSON des notes des livraisons précédentes ; ajoute la section « Notes » en fin de volume")
 ap.add_argument("--note-couverture", dest="note_couverture", default=None, help="paragraphe ajouté au cadre de conventions de la couverture")
@@ -167,8 +170,46 @@ def french_spaces(s):
     return s
 
 
+# ---------- Renvois : numéros du chemin de fer → folios imprimés ----------
+RENVOIS = {}  # page du livre (int) → (folio de début, folio de fin) de l'unité qui la contient
+if ARGS.renvois:
+    for cle, debut, occ in json.load(open(ARGS.renvois, encoding="utf-8"))["unites"]:
+        a, _, b = str(cle).partition("-")
+        if not a.isdigit():
+            continue
+        for n in range(int(a), int(b or a) + 1):
+            RENVOIS[n] = (debut, debut + occ - 1)
+
+_N = r"\d{1,2}(?!\d)"
+_PLAGE = r"%s(?:\s?(?:-|à)\s?%s)?" % (_N, _N)
+RE_RENVOI = re.compile(r"\b(pages?|p\.)(\s)(%s(?:(?:,\s?|\set\s)%s)*)" % (_PLAGE, _PLAGE))
+
+
+def _plage(txt):
+    m = re.match(r"(\d+)(?:(\s?(?:-|à)\s?)(\d+))?$", txt)
+    a, sep, b = int(m.group(1)), m.group(2), m.group(3)
+    if a not in RENVOIS or (b and int(b) not in RENVOIS):
+        return txt
+    if not b:
+        return str(RENVOIS[a][0])
+    return "%d%s%d" % (RENVOIS[a][0], sep, RENVOIS[int(b)][1])
+
+
+def renvois(s):
+    """« page 34 », « p. 4-5 », « pages 20 et 30 » : folios imprimés à la place des numéros du chemin de fer."""
+    if not RENVOIS:
+        return s
+    def sub(m):
+        corps = re.sub(r"\d{1,2}(?:\s?(?:-|à)\s?\d{1,2})?(?!\d)", lambda x: _plage(x.group(0)), m.group(3))
+        mot = m.group(1)
+        if mot == "page" and re.search(r"\d\s?(-|à|,|et)\s?\d", corps):
+            mot = "pages"
+        return mot + m.group(2) + corps
+    return RE_RENVOI.sub(sub, s)
+
+
 def inline(s, flag_brackets=True, superscript_refs=True):
-    s = esc(s)
+    s = esc(renvois(s))
     s = french_spaces(s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
     s = re.sub(r"\*(.+?)\*", r"<i>\1</i>", s)
@@ -755,6 +796,9 @@ def build():
                 droite.append((cur_page, mk + " : " + rest, zone_idx)); zone_idx += 1
             elif mk in ("Image", "Carte") and illustre:
                 story += image_zone(cur_page, mk + " : " + rest, W, zone=zone_idx); zone_idx += 1
+            elif mk == "Sommaire" and RENVOIS:
+                story += placeholder_box(mk, re.sub(r"(?<=\D )(\d{1,2})(?= —|\.?$)",
+                                                    lambda x: str(RENVOIS.get(int(x.group(1)), (x.group(1),))[0]), rest), W)
             else:  # Image, Carte, Sommaire
                 story += placeholder_box(mk, rest, W)
             continue
@@ -782,9 +826,11 @@ def build():
         toutes = [tuple(x) for x in precedentes] + NOTES_FIN
         story += [PageBreak(), MarquePage("Notes"), Paragraph("Notes", h_page),
                   Paragraph("Les sources de chaque page, dans l'ordre du livre. Le numéro entre "
-                            "parenthèses renvoie à l'appel dans le texte.", note), Spacer(1, 6)]
+                            "parenthèses renvoie au petit chiffre placé en exposant dans le texte de la page.", note), Spacer(1, 6)]
         for cle, lignes in toutes:
-            story.append(Paragraph("Page %s" % cle, h_sub))
+            a = str(cle).split("-")[0]
+            folio = RENVOIS.get(int(a), (cle,))[0] if a.isdigit() else cle
+            story.append(Paragraph("Page %s" % folio, h_sub))
             for n in lignes:
                 m = re.match(r"^\*\*\((\d+)\)\*\*\s*(.*)$", n)
                 story.append(Paragraph("<b>(%s)</b> %s" % (m.group(1), inline(m.group(2), superscript_refs=False)), note))

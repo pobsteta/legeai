@@ -23,17 +23,38 @@ if A.double:
 
 sortie = TOME / "pdf"; sortie.mkdir(exist_ok=True)
 tmp = Path("/tmp/kdp"); tmp.mkdir(exist_ok=True)
-debuts, fichiers, notes, page = [], [], [], 2 if A.double else 1  # page 1 : titre
-for i, nom in enumerate(LIVRAISONS):
-    out = tmp / f"{nom}-{SUFFIXE}.pdf"
-    cmd = [sys.executable, str(RACINE / "outils/build_pdf.py"), str(TOME / "texte" / f"{nom}.md"),
-           str(out), "--illustre", "--kdp", "--format", FMT, "--sans-couverture", "--premiere-page", str(page)] + (["--double"] if A.double else [])
-    if i == len(LIVRAISONS) - 1:  # la dernière livraison porte les notes de tout le volume
-        nf = tmp / f"notes-{SUFFIXE}.json"; nf.write_text(json.dumps(notes, ensure_ascii=False), encoding="utf-8")
-        cmd += ["--notes-fin", str(nf)]
-    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
-    cal = json.loads(out.with_suffix(".calibrage.json").read_text(encoding="utf-8"))
-    debuts += cal["debuts"]; notes += cal["notes"]; fichiers.append(out); page += cal["pages_physiques"]
+def construire(renvois=None):
+    debuts, fichiers, notes, page = [], [], [], 2 if A.double else 1  # page 1 : titre
+    for i, nom in enumerate(LIVRAISONS):
+        out = tmp / f"{nom}-{SUFFIXE}.pdf"
+        cmd = [sys.executable, str(RACINE / "outils/build_pdf.py"), str(TOME / "texte" / f"{nom}.md"),
+               str(out), "--illustre", "--kdp", "--format", FMT, "--sans-couverture", "--premiere-page", str(page)]
+        cmd += ["--double"] if A.double else []
+        cmd += ["--renvois", str(renvois)] if renvois else []
+        if i == len(LIVRAISONS) - 1:  # la dernière livraison porte les notes de tout le volume
+            nf = tmp / f"notes-{SUFFIXE}.json"; nf.write_text(json.dumps(notes, ensure_ascii=False), encoding="utf-8")
+            cmd += ["--notes-fin", str(nf)]
+        subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
+        cal = json.loads(out.with_suffix(".calibrage.json").read_text(encoding="utf-8"))
+        debuts += cal["debuts"]; notes += cal["notes"]; fichiers.append(out); page += cal["pages_physiques"]
+    return debuts, fichiers, page
+
+
+def unites(debuts, fin):
+    return [[c, d, (debuts[i + 1][1] if i + 1 < len(debuts) else fin + 1) - d] for i, (c, d) in enumerate(debuts)]
+
+
+# 1re passe : où tombe chaque page ; passes suivantes : renvois remplacés par les folios, jusqu'à stabilité
+debuts, fichiers, page = construire()
+rv = tmp / f"renvois-{SUFFIXE}.json"
+for _ in range(3):
+    rv.write_text(json.dumps({"unites": unites(debuts, page - 1)}, ensure_ascii=False), encoding="utf-8")
+    d2, fichiers, page = construire(rv)
+    stable = d2 == debuts
+    debuts = d2
+    if stable:
+        break
+print("renvois stables" if stable else "renvois NON stabilisés")
 total = page - 1
 blanche = None
 if A.double:  # page de titre provisoire, blanche, en page 1
